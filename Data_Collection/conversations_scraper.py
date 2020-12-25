@@ -36,19 +36,18 @@ def format_to_table(conversations, stock):
 
 def main():
     # Stock Ticker
-    stock = 'BABA'
+    stock = 'NFLX'
     print("\nFetching conversations for " + stock + "...\n")
     title = 'Recent conversations for ' + stock
 
     # List of sources
     source_1 = np.array(get_yahoo_conversations(stock))
-    overall_conversations = np.concatenate(source_1, axis=None)
-    overall_conversations = list(overall_conversations)
+    overall_conversations = list(np.concatenate(source_1, axis=None))
     opinion_table = pd.DataFrame(columns=[title])
 
     # Formatting to a table
     if len(source_1) != 0:
-        opinion_table = format_to_table(source_1, stock)
+        opinion_table = format_to_table(overall_conversations, stock)
     else:
         print("Invalid ticker or no conversations available.")
 
