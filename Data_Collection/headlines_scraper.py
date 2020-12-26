@@ -12,6 +12,20 @@ def cleanup(line):
     return str(line).lower()
 
 
+def get_soup(request, element, class_value):
+    html_page = requests.get(request).text
+    soup = BeautifulSoup(html_page, 'lxml')
+    return soup.find_all(element, class_=class_value)
+
+
+def create_headlines_array(headlines_list):
+    list_of_headlines = []
+    for li in headlines_list:
+        list_of_headlines.append(li.text)  # Gets the text from HTML
+
+    return list_of_headlines
+
+
 def format_to_table(headlines, stock):
     title = 'Recent headlines for ' + stock
     headlines_table = pd.DataFrame(columns=[title])
@@ -23,12 +37,10 @@ def format_to_table(headlines, stock):
 
 
 def get_morningstar_headlines(stock):
-    html_page = requests.get('https://www.morningstar.com/stocks/xnas/' + stock.lower() + '/news').text
+    request = 'https://www.morningstar.com/stocks/xnas/' + stock.lower() + '/news'
+    headlines_list = get_soup(request, 'a', 'mdc-link mdc-news-module__headline mds-link mds-link--no-underline')
 
     list_of_headlines = []
-    soup = BeautifulSoup(html_page, 'lxml')
-    headlines_list = soup.find_all('a', class_='mdc-link mdc-news-module__headline mds-link mds-link--no-underline')
-
     for li in headlines_list:
         list_of_headlines.append(' '.join(li.text.split()))
 
@@ -36,39 +48,22 @@ def get_morningstar_headlines(stock):
 
 
 def get_usa_today_headlines(stock):
-    html_page = requests.get('https://www.usatoday.com/search/?q=' + stock).text
-    soup = BeautifulSoup(html_page, 'lxml')
-
-    list_of_headlines = []
-    headlines_list = soup.find_all('a', class_='gnt_se_a gnt_se_a__hd gnt_se_a__hi')
-
-    for li in headlines_list:
-        list_of_headlines.append(li.text)
-
-    return list_of_headlines
+    request = 'https://www.usatoday.com/search/?q=' + stock
+    headlines_list = get_soup(request, 'a', 'gnt_se_a gnt_se_a__hd gnt_se_a__hi')
+    return create_headlines_array(headlines_list)
 
 
 def get_reuters_headlines(stock):
-    html_page = requests.get('https://www.reuters.com/search/news?blob=' + stock).text
-
-    list_of_headlines = []
-    soup = BeautifulSoup(html_page, 'lxml')
-    headlines_list = soup.find_all('h3', class_='search-result-title')
-
-    for li in headlines_list:
-        list_of_headlines.append(li.text)
-
-    return list_of_headlines
+    request = 'https://www.reuters.com/search/news?blob=' + stock
+    headlines_list = get_soup(request, 'h3', 'search-result-title')
+    return create_headlines_array(headlines_list)
 
 
 def get_cnbc_headlines(stock):
-    html_page = requests.get('https://www.cnbc.com/quotes/?symbol=' + stock.lower() +
-                             '&qsearchterm=' + stock.lower() + '&tab=news').text
+    request = 'https://www.cnbc.com/quotes/?symbol=' + stock.lower() + '&qsearchterm=' + stock.lower() + '&tab=news'
+    li_list = get_soup(request, 'div', 'assets')
 
     list_of_headlines = []
-    soup = BeautifulSoup(html_page, 'lxml')
-    li_list = soup.find_all('div', class_='assets')
-
     for li in li_list:
         headline = li.select_one("span")
         if headline.text != "":
@@ -88,7 +83,6 @@ def main():
     source_2 = np.array(get_reuters_headlines(stock))
     source_3 = np.array(get_morningstar_headlines(stock))
     source_4 = np.array(get_usa_today_headlines(stock))
-    get_usa_today_headlines(stock)
 
     # Combining all sources, initializing data frame
     overall_headlines = np.concatenate((source_1, source_2, source_3, source_4), axis=None)

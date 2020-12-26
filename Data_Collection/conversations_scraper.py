@@ -12,16 +12,24 @@ def cleanup(line):
     return str(line).lower()
 
 
-def get_yahoo_conversations(stock):
-    html_page = requests.get('https://finance.yahoo.com/quote/' + stock + '/community?p=' + stock).text
+def get_soup(request, element, class_value):
+    html_page = requests.get(request).text
     soup = BeautifulSoup(html_page, 'lxml')
-    opinions = soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')
-    list_of_conversations = []
+    return soup.find_all(element, class_=class_value)
 
-    for opinion in opinions:
-        list_of_conversations.append(opinion.text)
+
+def create_conversation_array(conversation_list):
+    list_of_conversations = []
+    for li in conversation_list:
+        list_of_conversations.append(li.text)  # Gets the text from HTML
 
     return list_of_conversations
+
+
+def get_yahoo_conversations(stock):
+    request = 'https://finance.yahoo.com/quote/' + stock + '/community?p=' + stock
+    opinions = get_soup(request, 'div', 'C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')
+    return create_conversation_array(opinions)
 
 
 def format_to_table(conversations, stock):
@@ -51,6 +59,7 @@ def main():
     else:
         print("Invalid ticker or no conversations available.")
 
+    opinion_table.drop_duplicates(subset=title, keep=False, inplace=True)
     print(opinion_table)
 
 
