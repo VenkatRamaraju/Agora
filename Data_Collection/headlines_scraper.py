@@ -7,9 +7,7 @@ import numpy as np
 
 def cleanup(line):
     cleaned_text = str.maketrans('', '', r"-()\"#/@;:<>{}-=~|.?,")
-    line = line.translate(cleaned_text)
-
-    return str(line).lower()
+    return str(line.translate(cleaned_text)).lower()
 
 
 def get_soup(request, element, class_value):
@@ -21,7 +19,8 @@ def get_soup(request, element, class_value):
 def create_headlines_array(headlines_list):
     list_of_headlines = []
     for li in headlines_list:
-        list_of_headlines.append(li.text)  # Gets the text from HTML
+        if li.text != "":
+            list_of_headlines.append(' '.join(li.text.split()))  # Removes tabs, newlines, and gets text from HTML
 
     return list_of_headlines
 
@@ -39,12 +38,7 @@ def format_to_table(headlines, stock):
 def get_morningstar_headlines(stock):
     request = 'https://www.morningstar.com/stocks/xnas/' + stock.lower() + '/news'
     headlines_list = get_soup(request, 'a', 'mdc-link mdc-news-module__headline mds-link mds-link--no-underline')
-
-    list_of_headlines = []
-    for li in headlines_list:
-        list_of_headlines.append(' '.join(li.text.split()))
-
-    return list_of_headlines
+    return create_headlines_array(headlines_list)
 
 
 def get_usa_today_headlines(stock):
@@ -74,7 +68,7 @@ def get_cnbc_headlines(stock):
 
 def main():
     # Stock Ticker
-    stock = 'TSLA'
+    stock = 'AAPL'
     title = 'Recent headlines for ' + stock
     print("\nFetching headlines for " + stock + "...\n")
 
