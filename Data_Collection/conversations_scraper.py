@@ -10,9 +10,8 @@ def get_yahoo_conversations(stock):
 
 def main():
     # Stock Ticker
-    stock = 'TSLA'
+    stock = 'AAPL'
     print("\nFetching conversations for " + stock + "...\n")
-    title = 'Recent headlines/conversations for ' + stock
 
     # List of sources
     source_1 = np.array(get_yahoo_conversations(stock))

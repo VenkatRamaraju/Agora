@@ -66,6 +66,12 @@ def get_cnbc_headlines(stock):
     return list_of_headlines
 
 
+def get_google_finance_headlines(stock):
+    request = 'https://www.google.com/finance/quote/' + stock + ':NASDAQ'
+    headlines_list = get_soup(request, 'div', 'AoCdqe')
+    return create_array(headlines_list)
+
+
 def output(overall_data, stock):
     title = 'Recent headlines/conversations for ' + stock
     headlines_table = pd.DataFrame(columns=[title])
@@ -83,7 +89,7 @@ def output(overall_data, stock):
 
 def main():
     # Stock Ticker
-    stock = 'AAPL'
+    stock = 'TSLA'
     print("\nFetching headlines for " + stock + "...\n")
 
     # List of sources
@@ -91,9 +97,10 @@ def main():
     source_2 = np.array(get_reuters_headlines(stock))
     source_3 = np.array(get_morningstar_headlines(stock))
     source_4 = np.array(get_usa_today_headlines(stock))
+    source_5 = np.array(get_google_finance_headlines(stock))
 
     # Combining all sources, initializing data frame
-    overall_headlines = list(np.concatenate((source_1, source_2, source_3, source_4), axis=None))
+    overall_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5), axis=None))
 
     # Output
     output(overall_headlines, stock)
