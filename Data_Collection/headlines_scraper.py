@@ -3,11 +3,14 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
+import string
+import demoji
 
 
 def cleanup(line):
-    cleaned_text = str.maketrans('', '', r"-()\"#/@;:<>{}-=~|.?,")
-    return str(line.translate(cleaned_text)).lower()
+    cleaned_text = str.maketrans('', '', string.punctuation)
+    cleaned_text = str(line.translate(cleaned_text)).lower()
+    return demoji.replace(cleaned_text, '')
 
 
 def get_soup(request, element, class_value):
@@ -53,6 +56,12 @@ def get_reuters_headlines(stock):
     return create_array(headlines_list)
 
 
+def get_google_finance_headlines(stock):
+    request = 'https://www.google.com/finance/quote/' + stock + ':NASDAQ'
+    headlines_list = get_soup(request, 'div', 'AoCdqe')
+    return create_array(headlines_list)
+
+
 def get_cnbc_headlines(stock):
     request = 'https://www.cnbc.com/quotes/?symbol=' + stock.lower() + '&qsearchterm=' + stock.lower() + '&tab=news'
     li_list = get_soup(request, 'div', 'assets')
@@ -64,12 +73,6 @@ def get_cnbc_headlines(stock):
             list_of_headlines.append(headline.text)
 
     return list_of_headlines
-
-
-def get_google_finance_headlines(stock):
-    request = 'https://www.google.com/finance/quote/' + stock + ':NASDAQ'
-    headlines_list = get_soup(request, 'div', 'AoCdqe')
-    return create_array(headlines_list)
 
 
 def output(overall_data, stock):
@@ -91,6 +94,9 @@ def main():
     # Stock Ticker
     stock = 'TSLA'
     print("\nFetching headlines for " + stock + "...\n")
+
+    # Initializations
+    # demoji.download_codes()
 
     # List of sources
     source_1 = np.array(get_cnbc_headlines(stock))

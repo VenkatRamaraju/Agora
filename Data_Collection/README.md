@@ -7,4 +7,6 @@ pip install requests
 pip install lxml
 pip install pandas
 pip install numpy
+pip install demoji
+python -c "import demoji;demoji.download_codes()"
 ```
