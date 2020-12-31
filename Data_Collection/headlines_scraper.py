@@ -95,9 +95,6 @@ def main():
     stock = 'TSLA'
     print("\nFetching headlines for " + stock + "...\n")
 
-    # Initializations
-    # demoji.download_codes()
-
     # List of sources
     source_1 = np.array(get_cnbc_headlines(stock))
     source_2 = np.array(get_reuters_headlines(stock))
