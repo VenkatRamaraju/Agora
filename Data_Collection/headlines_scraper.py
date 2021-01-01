@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+"""
+Authors: Venkat Ramaraju, Jayanth Rao
+Functionality implemented:
+- Scraper that retrieves headlines from multiple online web sources
+- Formats and outputs headlines in a Pandas table
+"""
+
 # Libraries and Dependencies
 import requests
 from bs4 import BeautifulSoup
@@ -8,18 +16,36 @@ import demoji
 
 
 def cleanup(line):
+    """
+    Removes all punctuations, emojis and returns the text in lower case. This cleanup is useful for making the semantics
+    and meaning of the text more easily identifiable.
+    :param line: Single headline that needs to be cleaned up.
+    :return: Headline after removing punctuations, emojis and converting it to lower case.
+    """
     cleaned_text = str.maketrans('', '', string.punctuation)
     cleaned_text = str(line.translate(cleaned_text)).lower()
     return demoji.replace(cleaned_text, '')
 
 
 def get_soup(request, element, class_value):
+    """
+    Uses the BeautifulSoup library to retrieve the HTML text for a given webpage request.
+    :param request: The webpage request for which the HTML text is to be retrieved.
+    :param element: The element of the webpage. Ex: div, a, etc.
+    :param class_value: The class of the element. Used to identify which parts of the HTML page are to be returned.
+    :return: All instances of a given element and class (As an array).
+    """
     html_page = requests.get(request).text
     soup = BeautifulSoup(html_page, 'lxml')
     return soup.find_all(element, class_=class_value)
 
 
 def create_array(data_list):
+    """
+    Returns all texts from a given soup.
+    :param data_list: Soup array with all headlines/conversations embedded as text.
+    :return: Array of headlines/conversations, retrieved from the soup.
+    """
     result_array = []
     for li in data_list:
         if li.text != "":
@@ -28,15 +54,24 @@ def create_array(data_list):
     return result_array
 
 
-def format_to_table(headlines, stock):
+def format_to_table(data_array, stock):
+    """
+    Formats a pandas table with all the headlines/conversations obtained from the provided web sources.
+    :param data_array: Array with all headlines/conversations obtained from the provided web sources.
+    :param stock: Name of the stock for which all the above data is being retrieved.
+    :return: A pandas table with a single column, where each index is, sequentially, the elements of the data_array.
+    """
     title = 'Recent headlines/conversations for ' + stock
-    headlines_table = pd.DataFrame(columns=[title])
+    table = pd.DataFrame(columns=[title])
 
-    for line in headlines:
-        headlines_table = headlines_table.append({title: cleanup(line)}, ignore_index=True)
+    for line in data_array:
+        table = table.append({title: cleanup(line)}, ignore_index=True)
 
-    return headlines_table
+    return table
 
+
+# Each of the methods below retrieves the HTML text from the respective web page link and returns an array, leveraging
+# all the methods above as subroutines.
 
 def get_morningstar_headlines(stock):
     request = 'https://www.morningstar.com/stocks/xnas/' + stock.lower() + '/news'
@@ -76,14 +111,20 @@ def get_cnbc_headlines(stock):
 
 
 def output(overall_data, stock):
+    """
+    Prints out the pandas table after removing duplicates.
+    :param overall_data: Array of headlines/conversations after retrieving from respective web sources, in text form.
+    :param stock: Name of the stock for which all the above data is being retrieved.
+    :return None.
+    """
     title = 'Recent headlines/conversations for ' + stock
-    headlines_table = pd.DataFrame(columns=[title])
 
     # Formatting to a table
     if len(overall_data) != 0:
         headlines_table = format_to_table(overall_data, stock)
     else:
         print("Invalid ticker or no headlines/conversations available.")
+        return
 
     # Printing out formatted table of headlines
     headlines_table.drop_duplicates(subset=title, keep=False, inplace=True)
@@ -102,10 +143,8 @@ def main():
     source_4 = np.array(get_usa_today_headlines(stock))
     source_5 = np.array(get_google_finance_headlines(stock))
 
-    # Combining all sources, initializing data frame
+    # Combining all sources, outputting the table
     overall_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5), axis=None))
-
-    # Output
     output(overall_headlines, stock)
 
 
