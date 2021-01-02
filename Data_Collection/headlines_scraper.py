@@ -97,6 +97,12 @@ def get_google_finance_headlines(stock):
     return create_array(headlines_list)
 
 
+def get_business_insider_headlines(stock):
+    request = 'https://markets.businessinsider.com/stocks/' + stock.lower() + '-stock'
+    headlines_list = get_soup(request, 'a', 'instrument-stories__link')
+    return create_array(headlines_list)
+
+
 def get_cnbc_headlines(stock):
     request = 'https://www.cnbc.com/quotes/?symbol=' + stock.lower() + '&qsearchterm=' + stock.lower() + '&tab=news'
     li_list = get_soup(request, 'div', 'assets')
@@ -142,9 +148,10 @@ def main():
     source_3 = np.array(get_morningstar_headlines(stock))
     source_4 = np.array(get_usa_today_headlines(stock))
     source_5 = np.array(get_google_finance_headlines(stock))
+    source_6 = np.array(get_business_insider_headlines(stock))
 
     # Combining all sources, outputting the table
-    overall_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5), axis=None))
+    overall_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6), axis=None))
     output(overall_headlines, stock)
 
 
