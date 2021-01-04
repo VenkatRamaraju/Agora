@@ -95,17 +95,16 @@ def output(overall_data, stock):
     :param stock: Name of the stock for which all the above data is being retrieved.
     :return None.
     """
-    title = 'Recent headlines/conversations for ' + stock
+
+    # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
+    overall_data = list(set(overall_data))
 
     # Formatting to a dataframe
     if len(overall_data) != 0:
         overall_dataframe = format_to_dataframe(overall_data, stock)
+        print(overall_dataframe)
     else:
         print("Invalid ticker or no headlines/conversations available.")
-        return
-
-    overall_dataframe.drop_duplicates(subset=title, keep=False, inplace=True)
-    print(overall_dataframe)
 
 
 # Each of the methods below retrieves the HTML text from the respective web page link and returns an array of the
@@ -147,6 +146,15 @@ def get_cnn_headlines(stock):
     return create_array(headlines_list)
 
 
+def get_yahoo_headlines(stock):
+    request = 'https://finance.yahoo.com/quote/' + stock + '/news?p=' + stock
+    headlines_list = get_soup(request, 'a', 'js-content-viewer wafer-caas Fw(b) Fz(18px) Lh(23px) LineClamp(2,46px) '
+                                            'Fz(17px)--sm1024 Lh(19px)--sm1024 LineClamp(2,38px)--sm1024 '
+                                            'mega-item-header-link Td(n) C(#0078ff):h C(#000) LineClamp(2,46px) '
+                                            'LineClamp(2,38px)--sm1024 not-isInStreamVideoEnabled')
+    return create_array(headlines_list)
+
+
 def get_cnbc_headlines(stock):
     request = 'https://www.cnbc.com/quotes/?symbol=' + stock.lower() + '&qsearchterm=' + stock.lower() + '&tab=news'
     li_list = get_soup(request, 'div', 'assets')
@@ -162,8 +170,8 @@ def get_cnbc_headlines(stock):
 
 def main():
     # Ticker and company
-    stock = 'TSLA'
-    company = 'tesla'
+    stock = 'NFLX'
+    company = 'netflix'
     print("\nFetching headlines for " + stock + "...\n")
 
     # List of sources
@@ -174,10 +182,11 @@ def main():
     source_5 = np.array(get_google_finance_headlines(stock))
     source_6 = np.array(get_business_insider_headlines(stock))
     source_7 = np.array(get_cnn_headlines(stock))
+    source_8 = np.array(get_yahoo_headlines(stock))
 
-    # Combining all sources, cleaning up data and outputting the dataframe
-    total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7),
-                                          axis=None))
+    # Combine all sources, clean up data and output the dataframe
+    total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
+                                           source_8), axis=None))
     total_headlines = cleanup_array(total_headlines, stock, company)
     output(total_headlines, stock)
 
