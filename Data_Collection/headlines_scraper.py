@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """
 Authors: Venkat Ramaraju, Jayanth Rao
 Functionality implemented:
@@ -170,8 +171,8 @@ def get_cnbc_headlines(stock):
 
 def main():
     # Ticker and company
-    stock = 'NFLX'
-    company = 'netflix'
+    stock = 'AAPL'
+    company = 'apple'
     print("\nFetching headlines for " + stock + "...\n")
 
     # List of sources

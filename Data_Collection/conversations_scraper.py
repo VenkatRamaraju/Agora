@@ -8,7 +8,8 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
-from headlines_scraper import *
+from headlines_scraper import get_soup, create_array, output
+import numpy as np
 
 
 def get_yahoo_conversations(stock):
@@ -19,7 +20,7 @@ def get_yahoo_conversations(stock):
 
 def main():
     # Stock Ticker
-    stock = 'AAPL'
+    stock = 'TSLA'
     print("\nFetching conversations for " + stock + "...\n")
 
     # List of sources
