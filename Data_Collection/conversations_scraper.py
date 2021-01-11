@@ -25,6 +25,7 @@ def get_all_conversations(stock):
     :param stock: Name of stock ticker.
     :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
     """
+
     # List of sources
     source_1 = np.array(get_yahoo_conversations(stock))
 
