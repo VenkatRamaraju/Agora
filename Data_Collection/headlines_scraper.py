@@ -169,11 +169,14 @@ def get_cnbc_headlines(stock):
     return list_of_headlines
 
 
-def main():
-    # Ticker and company
-    stock = 'AAPL'
-    company = 'apple'
-    print("\nFetching headlines for " + stock + "...\n")
+def get_all_headlines(stock, company):
+    """
+    Gets headlines from various sources, concatenates the arrays of headlines, cleans up the text and returns the
+    overall array.
+    :param stock: Name of stock ticker.
+    :param company: Name of company.
+    :return: Overall array of headlines from various sources after cleaning (Removal of punctuations).
+    """
 
     # List of sources
     source_1 = np.array(get_cnbc_headlines(stock))
@@ -185,10 +188,20 @@ def main():
     source_7 = np.array(get_cnn_headlines(stock))
     source_8 = np.array(get_yahoo_headlines(stock))
 
-    # Combine all sources, clean up data and output the dataframe
+    # Combine all sources, clean up dataframe
     total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
                                            source_8), axis=None))
-    total_headlines = cleanup_array(total_headlines, stock, company)
+
+    return cleanup_array(total_headlines, stock, company)
+
+
+def main():
+    # Ticker and company
+    stock = 'TSLA'
+    company = 'tesla'
+    print("\nFetching headlines for " + stock + "...\n")
+
+    total_headlines = get_all_headlines(stock, company)
     output(total_headlines, stock)
 
 

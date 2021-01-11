@@ -18,16 +18,25 @@ def get_yahoo_conversations(stock):
     return create_array(opinions)
 
 
+def get_all_conversations(stock):
+    """
+    Gets conversations from various sources, concatenates the arrays of conversations, cleans up the text and returns
+    the overall array.
+    :param stock: Name of stock ticker.
+    :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
+    """
+    # List of sources
+    source_1 = np.array(get_yahoo_conversations(stock))
+
+    return list(np.concatenate(source_1, axis=None))
+
+
 def main():
     # Stock Ticker
     stock = 'TSLA'
     print("\nFetching conversations for " + stock + "...\n")
 
-    # List of sources
-    source_1 = np.array(get_yahoo_conversations(stock))
-
-    # Combining all sources, outputting the table
-    overall_conversations = list(np.concatenate(source_1, axis=None))
+    overall_conversations = get_all_conversations(stock)
     output(overall_conversations, stock)
 
 
