@@ -105,7 +105,7 @@ def output(overall_data, stock):
         overall_dataframe = format_to_dataframe(overall_data, stock)
         print(overall_dataframe)
     else:
-        print("Invalid ticker or no headlines/conversations available.")
+        print("Invalid ticker/company or no headlines/conversations available.")
 
 
 # Each of the methods below retrieves the HTML text from the respective web page link and returns an array of the
@@ -113,47 +113,40 @@ def output(overall_data, stock):
 
 def get_morningstar_headlines(stock):
     request = 'https://www.morningstar.com/stocks/xnas/' + stock.lower() + '/news'
-    headlines_list = get_soup(request, 'a', 'mdc-link mdc-news-module__headline mds-link mds-link--no-underline')
-    return create_array(headlines_list)
+    return create_array(get_soup(request, 'a', 'mdc-link mdc-news-module__headline mds-link mds-link--no-underline'))
 
 
 def get_usa_today_headlines(stock):
     request = 'https://www.usatoday.com/search/?q=' + stock
-    headlines_list = get_soup(request, 'a', 'gnt_se_a gnt_se_a__hd gnt_se_a__hi')
-    return create_array(headlines_list)
+    return create_array(get_soup(request, 'a', 'gnt_se_a gnt_se_a__hd gnt_se_a__hi'))
 
 
 def get_reuters_headlines(stock):
     request = 'https://www.reuters.com/search/news?blob=' + stock
-    headlines_list = get_soup(request, 'h3', 'search-result-title')
-    return create_array(headlines_list)
+    return create_array(get_soup(request, 'h3', 'search-result-title'))
 
 
 def get_google_finance_headlines(stock):
     request = 'https://www.google.com/finance/quote/' + stock + ':NASDAQ'
-    headlines_list = get_soup(request, 'div', 'AoCdqe')
-    return create_array(headlines_list)
+    return create_array(get_soup(request, 'div', 'AoCdqe'))
 
 
 def get_business_insider_headlines(stock):
     request = 'https://markets.businessinsider.com/stocks/' + stock.lower() + '-stock'
-    headlines_list = get_soup(request, 'a', 'instrument-stories__link')
-    return create_array(headlines_list)
+    return create_array(get_soup(request, 'a', 'instrument-stories__link'))
 
 
 def get_cnn_headlines(stock):
     request = 'https://money.cnn.com/quote/news/news.html?symb=' + stock
-    headlines_list = get_soup(request, 'a', 'wsod_bold')
-    return create_array(headlines_list)
+    return create_array(get_soup(request, 'a', 'wsod_bold'))
 
 
 def get_yahoo_headlines(stock):
     request = 'https://finance.yahoo.com/quote/' + stock + '/news?p=' + stock
-    headlines_list = get_soup(request, 'a', 'js-content-viewer wafer-caas Fw(b) Fz(18px) Lh(23px) LineClamp(2,46px) '
-                                            'Fz(17px)--sm1024 Lh(19px)--sm1024 LineClamp(2,38px)--sm1024 '
-                                            'mega-item-header-link Td(n) C(#0078ff):h C(#000) LineClamp(2,46px) '
-                                            'LineClamp(2,38px)--sm1024 not-isInStreamVideoEnabled')
-    return create_array(headlines_list)
+    return create_array(get_soup(request, 'a', 'js-content-viewer wafer-caas Fw(b) Fz(18px) Lh(23px) LineClamp(2,46px) '
+                                               'Fz(17px)--sm1024 Lh(19px)--sm1024 LineClamp(2,38px)--sm1024 '
+                                               'mega-item-header-link Td(n) C(#0078ff):h C(#000) LineClamp(2,46px) '
+                                               'LineClamp(2,38px)--sm1024 not-isInStreamVideoEnabled'))
 
 
 def get_cnbc_headlines(stock):

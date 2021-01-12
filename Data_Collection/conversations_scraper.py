@@ -8,14 +8,32 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
-from headlines_scraper import get_soup, create_array, output
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from headlines_scraper import create_array, output
 import numpy as np
+import time
 
 
 def get_yahoo_conversations(stock):
-    request = 'https://finance.yahoo.com/quote/' + stock + '/community?p=' + stock
-    opinions = get_soup(request, 'div', 'C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')
-    return create_array(opinions)
+    url = "https://finance.yahoo.com/quote/" + stock + "/community?p=" + stock
+
+    # Selenium Web Driver to click load more button and continue to retrieve conversation
+    driver = webdriver.Chrome(ChromeDriverManager().install(), service_log_path='/dev/null')
+    driver.get(url)
+    WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button'))).click()
+    time.sleep(4)   # Temporary - Need to figure out how to scrape after loading is complete
+
+    # Retrieving soup after load more button is clicked
+    soup = BeautifulSoup(driver.page_source, 'lxml')
+    driver.quit()
+
+    return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)'))
 
 
 def get_all_conversations(stock):
