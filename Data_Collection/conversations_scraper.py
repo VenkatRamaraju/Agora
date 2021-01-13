@@ -23,11 +23,13 @@ def get_yahoo_conversations(stock):
     url = "https://finance.yahoo.com/quote/" + stock + "/community?p=" + stock
 
     # Selenium Web Driver to click load more button and continue to retrieve conversation
-    driver = webdriver.Chrome(ChromeDriverManager().install(), service_log_path='/dev/null')
+    option = webdriver.ChromeOptions()
+    option.add_argument('headless')     # Runs without opening browser
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
     driver.get(url)
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button'))).click()
-    time.sleep(4)   # Temporary - Need to figure out how to scrape after loading is complete
+    time.sleep(3)   # Temporary - Need to figure out how to scrape after loading is complete
 
     # Retrieving soup after load more button is clicked
     soup = BeautifulSoup(driver.page_source, 'lxml')
@@ -52,7 +54,7 @@ def get_all_conversations(stock):
 
 def main():
     # Stock Ticker
-    stock = 'TSLA'
+    stock = 'MRNA'
     print("\nFetching conversations for " + stock + "...\n")
 
     overall_conversations = get_all_conversations(stock)
