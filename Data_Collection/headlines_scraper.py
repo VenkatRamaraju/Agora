@@ -16,7 +16,7 @@ import string
 import demoji
 
 
-def cleanup(line):
+def cleanup_text(line):
     """
     Removes all punctuations, emojis and returns the text in lower case. This cleanup is useful for making the semantics
     and meaning of the text more easily identifiable.
@@ -55,22 +55,6 @@ def create_array(data_list):
     return result_array
 
 
-def format_to_dataframe(data_array, stock):
-    """
-    Formats a pandas dataframe with all the headlines/conversations obtained from the provided web sources.
-    :param data_array: Array with all headlines/conversations obtained from the provided web sources.
-    :param stock: Name of the stock for which all the above data is being retrieved.
-    :return: A pandas dataframe with a single column, where each index is, sequentially, the elements of the data_array.
-    """
-    title = 'Recent headlines/conversations for ' + stock
-    dataframe = pd.DataFrame(columns=[title])
-
-    for line in data_array:
-        dataframe = dataframe.append({title: cleanup(line)}, ignore_index=True)
-
-    return dataframe
-
-
 def cleanup_array(overall_array, stock, company):
     """
     Cleans up the array of headlines/conversations by removing headlines that do not contain the stock ticker or
@@ -101,8 +85,10 @@ def output(overall_data, stock):
     overall_data = list(set(overall_data))
 
     # Formatting to a dataframe
-    if len(overall_data) != 0:
-        overall_dataframe = format_to_dataframe(overall_data, stock)
+    if len(overall_data) > 0:
+        title = 'Recent headlines/conversations for ' + stock
+        overall_dataframe = pd.DataFrame(overall_data, columns=[title])
+        overall_dataframe[title] = overall_dataframe[title].apply(cleanup_text)
         print(overall_dataframe)
     else:
         print("Invalid ticker/company or no headlines/conversations available.")
@@ -181,7 +167,7 @@ def get_all_headlines(stock, company):
     source_7 = np.array(get_cnn_headlines(stock))
     source_8 = np.array(get_yahoo_headlines(stock))
 
-    # Combine all sources, clean up dataframe
+    # Combine all sources, clean up the array
     total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
                                            source_8), axis=None))
 
