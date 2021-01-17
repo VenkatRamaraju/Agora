@@ -14,6 +14,7 @@ import pandas as pd
 import numpy as np
 import string
 import demoji
+import conversations_scraper
 
 
 def cleanup_text(line):
@@ -86,10 +87,10 @@ def output(overall_data, stock):
 
     # Formatting to a dataframe
     if len(overall_data) > 0:
-        title = 'Recent headlines/conversations for ' + stock
+        title = 'Recent headlines and conversations for ' + stock
         overall_dataframe = pd.DataFrame(overall_data, columns=[title])
         overall_dataframe[title] = overall_dataframe[title].apply(cleanup_text)
-        print(overall_dataframe)
+        return overall_dataframe
     else:
         print("Invalid ticker/company or no headlines/conversations available.")
 
@@ -178,10 +179,14 @@ def main():
     # Ticker and company
     stock = 'TSLA'
     company = 'tesla'
-    print("\nFetching headlines for " + stock + "...\n")
 
     total_headlines = get_all_headlines(stock, company)
-    output(total_headlines, stock)
+    conversations = conversations_scraper.main()
+
+    # Combining data and output to CSV
+    headlines = output(total_headlines, stock)
+    result = pd.concat([headlines, conversations], ignore_index=True)
+    result.to_csv('scraper_results.csv')
 
 
 if __name__ == "__main__":

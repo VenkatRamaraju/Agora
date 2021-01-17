@@ -14,7 +14,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from headlines_scraper import create_array, output, cleanup_text
+from headlines_scraper import create_array, output
 import numpy as np
 import time
 
@@ -59,10 +59,9 @@ def get_all_conversations(stock):
 def main():
     # Stock Ticker
     stock = 'TSLA'
-    print("\nFetching conversations for " + stock + "...\n")
 
     overall_conversations = get_all_conversations(stock)
-    output(overall_conversations, stock)
+    return output(overall_conversations, stock)
 
 
 if __name__ == "__main__":
