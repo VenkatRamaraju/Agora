@@ -16,7 +16,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from headlines_scraper import create_array, output
 import numpy as np
-import time
 
 
 def get_yahoo_conversations(stock):
@@ -27,13 +26,13 @@ def get_yahoo_conversations(stock):
     option.add_argument('headless')     # Runs without opening browser
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
     driver.get(url)
+
     i = 0
     while i < 20:
-        WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 5).until(
             EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button'))).click()
-        i += 1
 
-    time.sleep(1)   # Temporary - Need to figure out how to scrape after loading is complete
+        i += 1
 
     # Retrieving soup after load more button is clicked
     soup = BeautifulSoup(driver.page_source, 'lxml')
@@ -58,10 +57,10 @@ def get_all_conversations(stock):
 
 def main():
     # Stock Ticker
-    stock = 'TSLA'
+    stock = 'AAPL'
 
     overall_conversations = get_all_conversations(stock)
-    return output(overall_conversations, stock)
+    output(overall_conversations, stock, "conversations")
 
 
 if __name__ == "__main__":

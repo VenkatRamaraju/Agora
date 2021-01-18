@@ -14,7 +14,6 @@ import pandas as pd
 import numpy as np
 import string
 import demoji
-import conversations_scraper
 
 
 def cleanup_text(line):
@@ -74,11 +73,12 @@ def cleanup_array(overall_array, stock, company):
     return cleaned_array
 
 
-def output(overall_data, stock):
+def output(overall_data, stock, category):
     """
     Prints out the pandas dataframe after removing duplicates.
     :param overall_data: Array of headlines/conversations after retrieving from respective web sources, in text form.
     :param stock: Name of the stock for which all the above data is being retrieved.
+    :param category: Headlines or Conversations
     :return None.
     """
 
@@ -90,7 +90,7 @@ def output(overall_data, stock):
         title = 'Recent headlines and conversations for ' + stock
         overall_dataframe = pd.DataFrame(overall_data, columns=[title])
         overall_dataframe[title] = overall_dataframe[title].apply(cleanup_text)
-        return overall_dataframe
+        overall_dataframe.to_csv(category.lower() + '_results.csv')
     else:
         print("Invalid ticker/company or no headlines/conversations available.")
 
@@ -177,16 +177,13 @@ def get_all_headlines(stock, company):
 
 def main():
     # Ticker and company
-    stock = 'TSLA'
-    company = 'tesla'
+    stock = 'AAPL'
+    company = 'apple'
 
     total_headlines = get_all_headlines(stock, company)
-    conversations = conversations_scraper.main()
 
     # Combining data and output to CSV
-    headlines = output(total_headlines, stock)
-    result = pd.concat([headlines, conversations], ignore_index=True)
-    result.to_csv('scraper_results.csv')
+    output(total_headlines, stock, "headlines")
 
 
 if __name__ == "__main__":
