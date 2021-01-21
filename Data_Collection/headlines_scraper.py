@@ -90,7 +90,12 @@ def output(overall_data, stock, category):
         title = 'Recent headlines and conversations for ' + stock
         overall_dataframe = pd.DataFrame(overall_data, columns=[title])
         overall_dataframe[title] = overall_dataframe[title].apply(cleanup_text)
-        overall_dataframe.to_csv(category.lower() + '_results.csv')
+        current_dataframe = pd.read_csv(category.lower() + '_results.csv')
+
+        # Appending to CSV
+        overall_dataframe = pd.concat([overall_dataframe, current_dataframe], ignore_index=True)
+        overall_dataframe.drop_duplicates(subset=title, inplace=True)
+        overall_dataframe.to_csv(category.lower() + '_results.csv', index=False)
     else:
         print("Invalid ticker/company or no headlines/conversations available.")
 
@@ -177,8 +182,8 @@ def get_all_headlines(stock, company):
 
 def main():
     # Ticker and company
-    stock = 'AAPL'
-    company = 'apple'
+    stock = 'TSLA'
+    company = 'tesla'
 
     total_headlines = get_all_headlines(stock, company)
 
