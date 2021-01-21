@@ -1,0 +1,17 @@
+Stock Target Advisor : Analyst Ratings
+All rights reserved - Redistribution or sharing without prior permission of Stock Target Advisor is prohibited
+Download Date : 2021-01-21
+Download Created for User : venky2063@gmail.com 
+(C) www.stocktargetadvisor.com
+ 
+Symbol,Name,Exchange,Type,Currency,Market Cap,Analyst,Action,Rating,Closing Price,Target Price,Date
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,DZ Bank,Upgrades,Buy,586.34,650,01/21/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,Benchmark,Target Raised by,Sell,586.34,485,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,JPMorgan Chase,Target Set by,Buy,586.34,685,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,Pivotal Research,Target Raised by,Buy,586.34,750,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,KeyBanc,Maintains,Overweight,586.34,650,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,Wells Fargo,Upgraded by,Equal Weight - Overweight,586.34,700,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,UBS,Upgrades,Buy,586.34,650,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,Deutsche Bank,Target Raised by,Buy,586.34,600,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,Canaccord Genuity,Target Raised by,Buy,586.34,670,01/20/2021
+NFLX,Netflix, Inc,NSD,Common Stock,USD ,221679468544,Monness Crespi,Target Raised by,Buy,586.34,650,01/20/2021
