@@ -1,9 +1,3 @@
-Stock Target Advisor : Analyst Ratings
-All rights reserved - Redistribution or sharing without prior permission of Stock Target Advisor is prohibited
-Download Date : 2021-01-21
-Download Created for User : venky2063@gmail.com 
-(C) www.stocktargetadvisor.com
- 
 Symbol,Name,Exchange,Type,Currency,Market Cap,Analyst,Action,Rating,Closing Price,Target Price,Date
 TSLA,Tesla, Inc,NSD,Common Stock,USD ,800549765120,Oppenheimer Holdings,Target Raised by,Outperform,850.45,1036,01/20/2021
 TSLA,Tesla, Inc,NSD,Common Stock,USD ,800549765120,Deutsche Bank,Target Raised by,Buy,850.45,890,01/20/2021
