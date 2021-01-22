@@ -187,14 +187,15 @@ def get_all_headlines(stock, company):
 
 
 def main():
-    # Ticker and company
-    stock = 'TSLA'
-    company = 'tesla'
+    # Tickers and companies
+    stocks = ["TSLA", "NFLX", "AAPL"]
+    companies = ['tesla', 'netflix', 'apple']
 
-    total_headlines = get_all_headlines(stock, company)
+    for i in range(0, len(stocks)):
+        total_headlines = get_all_headlines(stocks[i], companies[i])
 
-    # Combining data and output to CSV
-    output(total_headlines, stock, "headlines")
+        # Combining data and output to CSV
+        output(total_headlines, stocks[i], "headlines")
 
 
 if __name__ == "__main__":

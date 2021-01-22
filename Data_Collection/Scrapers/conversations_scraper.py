@@ -49,18 +49,18 @@ def get_all_conversations(stock):
     :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
     """
 
-    # List of sources
-    source_1 = np.array(get_yahoo_conversations(stock))
+    yahoo_conversations = np.array(get_yahoo_conversations(stock))
 
-    return list(np.concatenate(source_1, axis=None))
+    return list(np.concatenate(yahoo_conversations, axis=None))
 
 
 def main():
-    # Stock Ticker
-    stock = 'NFLX'
+    # Tickers and companies
+    stocks = ["TSLA", "NFLX", "AAPL"]
 
-    overall_conversations = get_all_conversations(stock)
-    output(overall_conversations, stock, "conversations")
+    for stock in stocks:
+        overall_conversations = get_all_conversations(stock)
+        output(overall_conversations, stock, "conversations")
 
 
 if __name__ == "__main__":
