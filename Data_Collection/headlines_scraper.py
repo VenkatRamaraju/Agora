@@ -14,6 +14,7 @@ import pandas as pd
 import numpy as np
 import string
 import demoji
+from os import path
 
 
 def cleanup_text(line):
@@ -84,18 +85,21 @@ def output(overall_data, stock, category):
 
     # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
     overall_data = list(set(overall_data))
+    file_path = 'CSV_Results/' + stock.upper() + '_' + category.lower() + '_results.csv'
 
-    # Formatting to a dataframe
     if len(overall_data) > 0:
+        # Formatting current dataframe, merging with previously existing (if it exists)
         title = 'Recent headlines and conversations for ' + stock
         overall_dataframe = pd.DataFrame(overall_data, columns=[title])
         overall_dataframe[title] = overall_dataframe[title].apply(cleanup_text)
-        current_dataframe = pd.read_csv('CSV_Results/' + category.lower() + '_results.csv')
+        current_dataframe = pd.DataFrame(columns=[title])
+        if path.exists(file_path):
+            current_dataframe = pd.read_csv(file_path)
 
-        # Appending to CSV
+        # Appending to CSV, or creating new one for stock
         overall_dataframe = pd.concat([overall_dataframe, current_dataframe], ignore_index=True)
         overall_dataframe.drop_duplicates(subset=title, inplace=True)
-        overall_dataframe.to_csv('CSV_Results/' + category.lower() + '_results.csv', index=False)
+        overall_dataframe.to_csv(file_path, index=False)
     else:
         print("Invalid ticker/company or no headlines/conversations available.")
 
@@ -182,8 +186,8 @@ def get_all_headlines(stock, company):
 
 def main():
     # Ticker and company
-    stock = 'TSLA'
-    company = 'tesla'
+    stock = 'NFLX'
+    company = 'netflix'
 
     total_headlines = get_all_headlines(stock, company)
 

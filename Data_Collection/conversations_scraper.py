@@ -57,7 +57,7 @@ def get_all_conversations(stock):
 
 def main():
     # Stock Ticker
-    stock = 'TSLA'
+    stock = 'NFLX'
 
     overall_conversations = get_all_conversations(stock)
     output(overall_conversations, stock, "conversations")
