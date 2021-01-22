@@ -16,7 +16,7 @@ def get_analyst_ratings(stock):
     :param stock: Name of ticker for which analyst reviews are being generated
     """
 
-    path = './Analyst_Ratings/' + stock.upper() + '_Ratings.csv'
+    path = '../Analyst_Ratings/' + stock.upper() + '_Ratings.csv'
     ratings_dataframe = pd.read_csv(path)
 
     print(ratings_dataframe)
