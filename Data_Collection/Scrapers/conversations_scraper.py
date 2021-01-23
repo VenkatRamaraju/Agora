@@ -23,12 +23,12 @@ def get_yahoo_conversations(stock):
 
     # Selenium Web Driver to click load more button and continue to retrieve conversation
     option = webdriver.ChromeOptions()
-    option.add_argument('headless')     # Runs without opening browser
+    option.add_argument('headless')  # Runs without opening browser
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
     driver.get(url)
 
     i = 0
-    while i < 20:
+    while i < 500:
         WebDriverWait(driver, 5).until(
             EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
@@ -41,7 +41,8 @@ def get_yahoo_conversations(stock):
     soup = BeautifulSoup(driver.page_source, 'lxml')
     driver.quit()
 
-    return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)'))
+    return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')), \
+        create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
 
 
 def get_all_conversations(stock):
@@ -52,17 +53,20 @@ def get_all_conversations(stock):
     :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
     """
 
-    yahoo_conversations = np.array(get_yahoo_conversations(stock))
+    yahoo_conversations, yahoo_dates = get_yahoo_conversations(stock)
+    yahoo_conversations = np.array(yahoo_conversations)
+    yahoo_dates = np.array(yahoo_dates)
 
-    return list(np.concatenate(yahoo_conversations, axis=None))
+    return list(np.concatenate(yahoo_conversations, axis=None)), list(np.concatenate(yahoo_dates, axis=None))
 
 
 def main():
     # Tickers and companies
-    stocks = ["TSLA", "NFLX", "AAPL"]
+    stocks = ["TSLA", "NFLX", "AAPL", "TWTR"]
+    # stocks = ["TSLA"]
 
     for stock in stocks:
-        overall_conversations = get_all_conversations(stock)
+        overall_conversations, dates = get_all_conversations(stock)
         output(overall_conversations, stock, "conversations")
 
 

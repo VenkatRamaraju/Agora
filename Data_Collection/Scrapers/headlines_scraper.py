@@ -188,8 +188,8 @@ def get_all_headlines(stock, company):
 
 def main():
     # Tickers and companies
-    stocks = ["TSLA", "NFLX", "AAPL"]
-    companies = ['tesla', 'netflix', 'apple']
+    stocks = ["TSLA", "NFLX", "AAPL", "TWTR"]
+    companies = ['tesla', 'netflix', 'apple', 'twitter']
 
     for i in range(0, len(stocks)):
         total_headlines = get_all_headlines(stocks[i], companies[i])
