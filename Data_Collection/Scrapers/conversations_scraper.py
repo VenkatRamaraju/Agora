@@ -30,7 +30,10 @@ def get_yahoo_conversations(stock):
     i = 0
     while i < 20:
         WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button'))).click()
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
+
+        element = driver.find_element_by_xpath('//*[@id="canvass-0-CanvassApplet"]/div/button')
+        driver.execute_script("arguments[0].click();", element)
 
         i += 1
 
@@ -49,18 +52,18 @@ def get_all_conversations(stock):
     :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
     """
 
-    # List of sources
-    source_1 = np.array(get_yahoo_conversations(stock))
+    yahoo_conversations = np.array(get_yahoo_conversations(stock))
 
-    return list(np.concatenate(source_1, axis=None))
+    return list(np.concatenate(yahoo_conversations, axis=None))
 
 
 def main():
-    # Stock Ticker
-    stock = 'NFLX'
+    # Tickers and companies
+    stocks = ["TSLA", "NFLX", "AAPL"]
 
-    overall_conversations = get_all_conversations(stock)
-    output(overall_conversations, stock, "conversations")
+    for stock in stocks:
+        overall_conversations = get_all_conversations(stock)
+        output(overall_conversations, stock, "conversations")
 
 
 if __name__ == "__main__":

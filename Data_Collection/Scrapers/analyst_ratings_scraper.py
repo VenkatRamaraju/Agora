@@ -8,6 +8,7 @@ Functionality implemented:
 
 # Libraries and Dependencies
 import pandas as pd
+from pathlib import Path
 
 
 def get_analyst_ratings(stock):
@@ -16,15 +17,18 @@ def get_analyst_ratings(stock):
     :param stock: Name of ticker for which analyst reviews are being generated
     """
 
-    path = './Analyst_Ratings/' + stock.upper() + '_Ratings.csv'
+    path = str(Path(__file__).resolve().parents[1]) + '/Analyst_Ratings/' + stock.upper() + '_Ratings.csv'
     ratings_dataframe = pd.read_csv(path)
 
     print(ratings_dataframe)
 
 
 def main():
-    stock = 'NFLX'
-    get_analyst_ratings(stock)
+    # Tickers and companies
+    stocks = ["TSLA", "NFLX", "AAPL"]
+
+    for stock in stocks:
+        get_analyst_ratings(stock)
 
 
 if __name__ == "__main__":

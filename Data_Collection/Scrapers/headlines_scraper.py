@@ -15,6 +15,7 @@ import numpy as np
 import string
 import demoji
 from os import path
+from pathlib import Path
 
 
 def cleanup_text(line):
@@ -85,7 +86,8 @@ def output(overall_data, stock, category):
 
     # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
     overall_data = list(set(overall_data))
-    file_path = 'CSV_Results/' + stock.upper() + '_' + category.lower() + '_results.csv'
+    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_' + \
+        category.lower() + '_results.csv'
 
     if len(overall_data) > 0:
         # Formatting current dataframe, merging with previously existing (if it exists)
@@ -185,14 +187,15 @@ def get_all_headlines(stock, company):
 
 
 def main():
-    # Ticker and company
-    stock = 'NFLX'
-    company = 'netflix'
+    # Tickers and companies
+    stocks = ["TSLA", "NFLX", "AAPL"]
+    companies = ['tesla', 'netflix', 'apple']
 
-    total_headlines = get_all_headlines(stock, company)
+    for i in range(0, len(stocks)):
+        total_headlines = get_all_headlines(stocks[i], companies[i])
 
-    # Combining data and output to CSV
-    output(total_headlines, stock, "headlines")
+        # Combining data and output to CSV
+        output(total_headlines, stocks[i], "headlines")
 
 
 if __name__ == "__main__":
