@@ -25,7 +25,7 @@ def get_analyst_ratings(stock):
 
 def main():
     # Tickers and companies
-    stocks = ["TSLA", "NFLX", "AAPL"]
+    stocks = ["TSLA", "NFLX", "AAPL", "TWTR"]
 
     for stock in stocks:
         get_analyst_ratings(stock)
