@@ -62,7 +62,8 @@ def get_all_conversations(stock):
 
 def main():
     # Tickers and companies
-    stocks = ["TSLA", "NFLX", "AAPL", "TWTR"]
+    # stocks = ["TSLA", "NFLX", "AAPL", "TWTR"]
+    stocks = ["GME"]
 
     for stock in stocks:
         overall_conversations, dates = get_all_conversations(stock)
