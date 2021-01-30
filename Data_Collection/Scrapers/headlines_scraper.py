@@ -30,6 +30,7 @@ def cleanup_text(line):
     return demoji.replace(cleaned_text, '')
 
 
+
 def get_soup(request, element, class_value):
     """
     Uses the BeautifulSoup library to retrieve the HTML text for a given webpage request.
