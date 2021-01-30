@@ -8,27 +8,13 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
+import demoji
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
-import string
-import demoji
 from os import path
 from pathlib import Path
-
-
-def cleanup_text(line):
-    """
-    Removes all punctuations, emojis and returns the text in lower case. This cleanup is useful for making the semantics
-    and meaning of the text more easily identifiable.
-    :param line: Single headline that needs to be cleaned up.
-    :return: Headline after removing punctuations, emojis and converting it to lower case.
-    """
-    cleaned_text = str.maketrans('', '', string.punctuation)
-    cleaned_text = str(line.translate(cleaned_text)).lower()
-    return demoji.replace(cleaned_text, '')
-
 
 
 def get_soup(request, element, class_value):
@@ -94,7 +80,7 @@ def output(overall_data, stock, category):
         # Formatting current dataframe, merging with previously existing (if it exists)
         title = 'Recent headlines and conversations for ' + stock
         overall_dataframe = pd.DataFrame(overall_data, columns=[title])
-        overall_dataframe[title] = overall_dataframe[title].apply(cleanup_text)
+        overall_dataframe[title] = overall_dataframe[title].apply(demoji.replace)
         current_dataframe = pd.DataFrame(columns=[title])
         if path.exists(file_path):
             current_dataframe = pd.read_csv(file_path)
