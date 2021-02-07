@@ -18,7 +18,10 @@ def get_sentiments():
     
     for csv in all_csv_results:
         csv_df = pd.read_csv(file_path + csv)
-        csv_df["polarity"] = ""
+        csv_df['Negative'] = ""
+        csv_df['Positive'] = ""
+        csv_df['Neutral'] = ""
+        csv_df["Compound"] = ""
 
         avg = 0.0
         rows = 0
@@ -30,7 +33,10 @@ def get_sentiments():
         for index, row in csv_df.iterrows():
             text = row[csv_df.columns[0]]
             scores = sia.polarity_scores(text)  # print 'scores' object to see all of the fields offered
-            row["polarity"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
+            row['Negative'] = scores["neg"]
+            row['Positive'] = scores["pos"]
+            row['Neutral'] = scores["neu"]
+            row["Compound"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
             if scores["compound"] == 0.0:
                 zero += 1
             elif scores["compound"] > 0.0:
@@ -59,5 +65,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
