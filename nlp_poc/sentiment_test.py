@@ -22,10 +22,8 @@ def get_sentiments():
         csv_df['Positive'] = ""
         csv_df['Neutral'] = ""
         csv_df["Compound"] = ""
-
         avg = 0.0
         rows = 0
-
         positive = 0
         zero = 0
         negative = 0
@@ -47,11 +45,12 @@ def get_sentiments():
             avg += scores["compound"]
             rows += 1
 
-        print(csv.split(".")[0].split("_")[0], csv.split(".")[0].split("_")[1])
         file_name = csv.split(".")[0] + "_+_polarity"
     
         csv_df.to_csv(f"../nlp_poc/csvs_with_polarity/{file_name}.csv")
 
+        # Analysis
+        print(csv.split(".")[0].split("_")[0], csv.split(".")[0].split("_")[1])
         print("Average: ", avg/rows)
         print("Positive: ", positive)
         print("Negative: ", negative)
