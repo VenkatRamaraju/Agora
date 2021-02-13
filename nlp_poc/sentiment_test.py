@@ -1,6 +1,9 @@
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pandas as pd
 import os
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
 ##############################################################
 # TODO:
@@ -9,36 +12,43 @@ import os
 ##############################################################
 
 sia = SentimentIntensityAnalyzer()
+lemmatizer = WordNetLemmatizer()
 
 
 def get_sentiments():
     file_path = "../Data_Collection/CSV_Results/"
     
     all_csv_results = [f for f in os.listdir("../Data_Collection/CSV_Results/") if f.endswith("csv")]
-
     print("Analysis:\n")
     for csv in all_csv_results:
         csv_df = pd.read_csv(file_path + csv)
         csv_df["Compound"], csv_df['Neutral'], csv_df['Negative'], csv_df['Positive'] = "", "", "", ""
+
         avg = 0.0
         rows = 0
         zero, positive, negative = 0, 0, 0
 
         for index, row in csv_df.iterrows():
-            text = row[csv_df.columns[0]]
-            scores = sia.polarity_scores(text)  # print 'scores' object to see all of the fields offered
+            # Processing of text - Lemmatization, tokenization, removal of stopwords, etc.
+            lemma_text = lemmatizer.lemmatize(row[csv_df.columns[0]])
+            # tokens = word_tokenize(row[csv_df.columns[0]])
+            # cleaned_tokens = [word for word in row[csv_df.columns[0]].split() if not word in stopwords.words()]
+            # text = " ".join(lemma_text)
+
+            scores = sia.polarity_scores(lemma_text)
             row['Negative'] = scores["neg"]
             row['Positive'] = scores["pos"]
             row['Neutral'] = scores["neu"]
             row["Compound"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
-            if scores["compound"] == 0.0:
+
+            if row["Compound"] == 0.0:
                 zero += 1
-            elif scores["compound"] > 0.0:
+            elif row["Compound"] > 0.0:
                 positive += 1
             else:
                 negative += 1
 
-            avg += scores["compound"]
+            avg += row["Compound"]
             rows += 1
 
         file_name = csv.split(".")[0] + "_+_polarity"
