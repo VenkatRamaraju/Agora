@@ -2,8 +2,6 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pandas as pd
 import os
 from nltk.stem import WordNetLemmatizer
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 
 ##############################################################
 # TODO:
@@ -11,8 +9,18 @@ from nltk.tokenize import word_tokenize
 #   - Start looking at what a weighted average would look like
 ##############################################################
 
+# Global Variables
 sia = SentimentIntensityAnalyzer()
 lemmatizer = WordNetLemmatizer()
+
+
+def get_stock_terminology():
+    stock_lexicon = {}
+    csv_df = pd.read_csv('new_stock_lex.csv')
+    for index, row in csv_df.iterrows():
+        stock_lexicon[row['Item']] = row['Polarity']
+
+    sia.lexicon.update(stock_lexicon)
 
 
 def get_sentiments():
@@ -29,12 +37,7 @@ def get_sentiments():
         zero, positive, negative = 0, 0, 0
 
         for index, row in csv_df.iterrows():
-            # Processing of text - Lemmatization, tokenization, removal of stopwords, etc.
             lemma_text = lemmatizer.lemmatize(row[csv_df.columns[0]])
-            # tokens = word_tokenize(row[csv_df.columns[0]])
-            # cleaned_tokens = [word for word in row[csv_df.columns[0]].split() if not word in stopwords.words()]
-            # text = " ".join(lemma_text)
-
             scores = sia.polarity_scores(lemma_text)
             row['Negative'] = scores["neg"]
             row['Positive'] = scores["pos"]
@@ -65,6 +68,7 @@ def get_sentiments():
 
 
 def main():
+    get_stock_terminology()
     get_sentiments()
 
 
