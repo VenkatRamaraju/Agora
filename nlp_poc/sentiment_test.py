@@ -5,7 +5,7 @@ from nltk.stem import WordNetLemmatizer
 
 ##############################################################
 # TODO:
-#   - Work on getting the sentiment in a better way
+#   - WIP: Work on getting the sentiment in a better way
 #   - Start looking at what a weighted average would look like
 ##############################################################
 
@@ -30,7 +30,8 @@ def get_sentiments():
     print("Analysis:\n")
     for csv in all_csv_results:
         csv_df = pd.read_csv(file_path + csv)
-        csv_df["Compound"], csv_df['Neutral'], csv_df['Negative'], csv_df['Positive'] = "", "", "", ""
+        csv_df["Polarity"] = ""
+        # csv_df['Neutral'], csv_df['Negative'], csv_df['Positive'] = "", "", ""
 
         avg = 0.0
         rows = 0
@@ -39,19 +40,19 @@ def get_sentiments():
         for index, row in csv_df.iterrows():
             lemma_text = lemmatizer.lemmatize(row[csv_df.columns[0]])
             scores = sia.polarity_scores(lemma_text)
-            row['Negative'] = scores["neg"]
-            row['Positive'] = scores["pos"]
-            row['Neutral'] = scores["neu"]
-            row["Compound"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
+            # row['Negative'] = scores["neg"]
+            # row['Positive'] = scores["pos"]
+            # row['Neutral'] = scores["neu"]
+            row["Polarity"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
 
-            if row["Compound"] == 0.0:
+            if row["Polarity"] == 0.0:
                 zero += 1
-            elif row["Compound"] > 0.0:
+            elif row["Polarity"] > 0.0:
                 positive += 1
             else:
                 negative += 1
 
-            avg += row["Compound"]
+            avg += row["Polarity"]
             rows += 1
 
         file_name = csv.split(".")[0] + "_+_polarity"
