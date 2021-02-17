@@ -31,7 +31,6 @@ def get_sentiments():
     for csv in all_csv_results:
         csv_df = pd.read_csv(file_path + csv)
         csv_df["Polarity"] = ""
-        # csv_df['Neutral'], csv_df['Negative'], csv_df['Positive'] = "", "", ""
 
         avg = 0.0
         rows = 0
@@ -40,9 +39,6 @@ def get_sentiments():
         for index, row in csv_df.iterrows():
             lemma_text = lemmatizer.lemmatize(row[csv_df.columns[0]])
             scores = sia.polarity_scores(lemma_text)
-            # row['Negative'] = scores["neg"]
-            # row['Positive'] = scores["pos"]
-            # row['Neutral'] = scores["neu"]
             row["Polarity"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
 
             if row["Polarity"] == 0.0:
