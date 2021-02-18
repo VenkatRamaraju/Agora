@@ -14,8 +14,12 @@ sia = SentimentIntensityAnalyzer()
 lemmatizer = WordNetLemmatizer()
 
 
-def get_stock_terminology():
+def update_stock_terminology():
     stock_lexicon = {}
+    csv_df = pd.read_csv('modified_stock_lex.csv')
+    for index, row in csv_df.iterrows():
+        stock_lexicon[row['Word']] = row['Polarity']
+
     csv_df = pd.read_csv('new_stock_lex.csv')
     for index, row in csv_df.iterrows():
         stock_lexicon[row['Item']] = row['Polarity']
@@ -65,7 +69,7 @@ def get_sentiments():
 
 
 def main():
-    get_stock_terminology()
+    update_stock_terminology()
     get_sentiments()
 
 
