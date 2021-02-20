@@ -1,8 +1,8 @@
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import nltk
 import pandas as pd
 nltk.download('vader_lexicon')
 nltk.download('punkt')
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 words = pd.DataFrame(columns=['Text', 'Polarity'])
 csv_df = pd.read_csv('stock_lex.csv')
@@ -24,13 +24,13 @@ for index, row in positive_df.iterrows():
     text = row[positive_df.columns[0]].lower()
     row[positive_df.columns[0]] = text
     scores = sia.polarity_scores(text)
-    row["Polarity"] = scores["compound"]*5
+    row["Polarity"] = scores["compound"]*2
 
 for index, row in negative_df.iterrows():
     text = row[negative_df.columns[0]].lower()
     row[negative_df.columns[0]] = text
     scores = sia.polarity_scores(text)
-    row["Polarity"] = scores["compound"]*5
+    row["Polarity"] = scores["compound"]*2
 
 
 overall_df = positive_df.append(negative_df)
