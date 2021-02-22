@@ -15,12 +15,16 @@ lemmatizer = WordNetLemmatizer()
 
 
 def update_stock_terminology():
+    """
+    Creates dictionary with updated terminologies for SentimentIntensityAnalyzer. Includes positive and negative words,
+    along with polarized words with weights. Used to improve VADER accuracy
+    """
     stock_lexicon = {}
-    csv_df = pd.read_csv('new_stock_lex.csv')
+    csv_df = pd.read_csv('setup_csvs/new_stock_lex.csv')
     for index, row in csv_df.iterrows():
         stock_lexicon[row['Item']] = row['Polarity']
 
-    csv_df = pd.read_csv('modified_stock_lex.csv')
+    csv_df = pd.read_csv('setup_csvs/modified_stock_lex.csv')
     for index, row in csv_df.iterrows():
         stock_lexicon[row['Word']] = row['Polarity']
 
@@ -31,6 +35,10 @@ def update_stock_terminology():
 
 
 def get_sentiments():
+    """
+    Analyze polarities of the given stock tickers, based on  terminologies inserted in SentimentIntensityAnalyzer.
+    Prints out the analysis.
+    """
     file_path = "../Data_Collection/CSV_Results/"
     
     all_csv_results = [f for f in os.listdir("../Data_Collection/CSV_Results/") if f.endswith("csv")]
@@ -60,7 +68,7 @@ def get_sentiments():
 
         file_name = csv.split(".")[0] + "_+_polarity"
     
-        csv_df.to_csv(f"../nlp_poc/csvs_with_polarity/{file_name}.csv")
+        csv_df.to_csv(f"../Polarity_Analysis/csvs_with_polarity/{file_name}.csv")
 
         # Analysis
         print(csv.split(".")[0].split("_")[0], csv.split(".")[0].split("_")[1])

@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Data_Collection/Scrapers" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/nlp_poc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Polarity_Analysis" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/nlp_poc/csvs_with_polarity/TSLA_conversations_results_+_polarity.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/nlp_poc/modified_stock_lex.csv">
           <value>
             <Attribute>
