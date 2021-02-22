@@ -23,14 +23,12 @@ sia = SentimentIntensityAnalyzer()
 for index, row in positive_df.iterrows():
     text = row[positive_df.columns[0]].lower()
     row[positive_df.columns[0]] = text
-    scores = sia.polarity_scores(text)
-    row["Polarity"] = scores["compound"]*2
+    row["Polarity"] = 1
 
 for index, row in negative_df.iterrows():
     text = row[negative_df.columns[0]].lower()
     row[negative_df.columns[0]] = text
-    scores = sia.polarity_scores(text)
-    row["Polarity"] = scores["compound"]*2
+    row["Polarity"] = -1
 
 
 overall_df = positive_df.append(negative_df)

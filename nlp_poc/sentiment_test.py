@@ -16,15 +16,18 @@ lemmatizer = WordNetLemmatizer()
 
 def update_stock_terminology():
     stock_lexicon = {}
-    csv_df = pd.read_csv('modified_stock_lex.csv')
-    for index, row in csv_df.iterrows():
-        stock_lexicon[row['Word']] = row['Polarity']
-
     csv_df = pd.read_csv('new_stock_lex.csv')
     for index, row in csv_df.iterrows():
         stock_lexicon[row['Item']] = row['Polarity']
 
-    sia.lexicon.update(stock_lexicon)
+    csv_df = pd.read_csv('modified_stock_lex.csv')
+    for index, row in csv_df.iterrows():
+        stock_lexicon[row['Word']] = row['Polarity']
+
+    resulting_lex = {}
+    resulting_lex.update(stock_lexicon)
+    resulting_lex.update(sia.lexicon)
+    sia.lexicon = resulting_lex
 
 
 def get_sentiments():
