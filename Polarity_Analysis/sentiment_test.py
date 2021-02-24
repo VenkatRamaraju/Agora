@@ -5,7 +5,6 @@ from nltk.stem import WordNetLemmatizer
 
 ##############################################################
 # TODO:
-#   - WIP: Work on getting the sentiment in a better way
 #   - Start looking at what a weighted average would look like
 ##############################################################
 
