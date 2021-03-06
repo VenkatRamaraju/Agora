@@ -3,15 +3,14 @@ import pandas as pd
 import os
 from nltk.stem import WordNetLemmatizer
 
-##############################################################
+####################################################################
 # TODO:
-#   - Start looking at what a weighted average would look like
-##############################################################
+#   - Develop model whose predictions line up with Analyst Ratings
+####################################################################
 
 # Global Variables
 sia = SentimentIntensityAnalyzer()
 lemmatizer = WordNetLemmatizer()
-
 
 def update_stock_terminology():
     """
@@ -39,9 +38,10 @@ def get_sentiments():
     Prints out the analysis.
     """
     file_path = "../Data_Collection/CSV_Results/"
-    
+    conversations_map = {}
+    headlines_map = {}
     all_csv_results = [f for f in os.listdir("../Data_Collection/CSV_Results/") if f.endswith("csv")]
-    print("Analysis:\n")
+
     for csv in all_csv_results:
         csv_df = pd.read_csv(file_path + csv)
         csv_df["Polarity"] = ""
@@ -69,18 +69,42 @@ def get_sentiments():
     
         csv_df.to_csv(f"../Polarity_Analysis/csvs_with_polarity/{file_name}.csv")
 
-        # Analysis
-        print(csv.split(".")[0].split("_")[0], csv.split(".")[0].split("_")[1])
-        print("Average Sentiment: ", round(avg/rows, 3))
-        print("Positive : ", round((positive/rows)*100, 2), "%")
-        print("Negative : ", round((negative/rows)*100, 2), "%")
-        print("Zero: ", round((zero/rows)*100, 2), "%")
-        print()
+        ticker = csv.split(".")[0].split("_")[0]
+        category = csv.split(".")[0].split("_")[1]
+        polarity = round(avg/rows, 3)
+
+        if category == "headlines":
+            headlines_map[ticker] = polarity
+        else:
+            conversations_map[ticker] = polarity
+
+        # print("Average Sentiment: ", round(avg/rows, 3))
+        # print("Positive : ", round((positive/rows)*100, 2), "%")
+        # print("Negative : ", round((negative/rows)*100, 2), "%")
+        # print("Zero: ", round((zero/rows)*100, 2), "%")
+        # print()
+
+    return headlines_map, conversations_map
+
+
+def generate_aggregated_csv(headlines_map, conversations_map):
+    """
+    Generates a CSV with the aggregated polarities of headlines and conversations for the group of stocks that are
+    being analyzed.
+    """
+    aggregated_df = pd.DataFrame(columns=["Ticker", "Conversations", "Headlines"])
+
+    for ticker, headlines_polarity in headlines_map.items():
+        row = {"Ticker": ticker, "Conversations": conversations_map[ticker], "Headlines": headlines_polarity}
+        aggregated_df = aggregated_df.append(row, ignore_index=True)
+
+    aggregated_df.to_csv("aggregated_polarities.csv")
 
 
 def main():
     update_stock_terminology()
-    get_sentiments()
+    headlines_map, conversations_map = get_sentiments()
+    generate_aggregated_csv(headlines_map, conversations_map)
 
 
 if __name__ == "__main__":
