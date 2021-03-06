@@ -12,6 +12,7 @@ from nltk.stem import WordNetLemmatizer
 sia = SentimentIntensityAnalyzer()
 lemmatizer = WordNetLemmatizer()
 
+
 def update_stock_terminology():
     """
     Creates dictionary with updated terminologies for SentimentIntensityAnalyzer. Includes positive and negative words,
