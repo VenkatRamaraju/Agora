@@ -36,7 +36,7 @@ def update_stock_terminology():
 def get_sentiments():
     """
     Analyze polarities of the given stock tickers, based on  terminologies inserted in SentimentIntensityAnalyzer.
-    Prints out the analysis.
+    Prints out the aggregated results to CSV.
     """
     file_path = "../Data_Collection/CSV_Results/"
     conversations_map = {}
@@ -46,30 +46,19 @@ def get_sentiments():
     for csv in all_csv_results:
         csv_df = pd.read_csv(file_path + csv)
         csv_df["Polarity"] = ""
-
         avg = 0.0
         rows = 0
-        zero, positive, negative = 0, 0, 0
 
         for index, row in csv_df.iterrows():
             lemma_text = lemmatizer.lemmatize(row[csv_df.columns[0]])
             scores = sia.polarity_scores(lemma_text)
             row["Polarity"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
 
-            if row["Polarity"] == 0.0:
-                zero += 1
-            elif row["Polarity"] > 0.0:
-                positive += 1
-            else:
-                negative += 1
-
             avg += row["Polarity"]
             rows += 1
 
         file_name = csv.split(".")[0] + "_+_polarity"
-    
         csv_df.to_csv(f"../Polarity_Analysis/csvs_with_polarity/{file_name}.csv")
-
         ticker = csv.split(".")[0].split("_")[0]
         category = csv.split(".")[0].split("_")[1]
         polarity = round(avg/rows, 3)
@@ -78,12 +67,6 @@ def get_sentiments():
             headlines_map[ticker] = polarity
         else:
             conversations_map[ticker] = polarity
-
-        # print("Average Sentiment: ", round(avg/rows, 3))
-        # print("Positive : ", round((positive/rows)*100, 2), "%")
-        # print("Negative : ", round((negative/rows)*100, 2), "%")
-        # print("Zero: ", round((zero/rows)*100, 2), "%")
-        # print()
 
     return headlines_map, conversations_map
 
