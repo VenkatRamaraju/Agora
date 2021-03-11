@@ -3,11 +3,6 @@ import pandas as pd
 import os
 from nltk.stem import WordNetLemmatizer
 
-####################################################################
-# TODO:
-#   - Develop model whose predictions line up with Analyst Ratings
-####################################################################
-
 # Global Variables
 sia = SentimentIntensityAnalyzer()
 lemmatizer = WordNetLemmatizer()
