@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 ####################################################################
 # TODO:
@@ -13,8 +14,17 @@ def get_data():
     """
     Returns the training data set required for the model development.
     """
+
     polarity_csv = pd.read_csv('../Polarity_Analysis/aggregated_polarities.csv', index_col=0)
-    print(polarity_csv)
+    print(polarity_csv)  # Input of training data set
+    print()
+
+    file_path = "../Data_Collection/Analyst_Ratings/"
+    all_csv_results = [f for f in os.listdir("../Data_Collection/Analyst_Ratings/") if f.endswith("csv")]
+
+    for csv in all_csv_results:
+        ticker_analyst_csv = pd.read_csv(file_path + csv)
+        print(ticker_analyst_csv)  # "Output" of training data set
 
 
 def main():
