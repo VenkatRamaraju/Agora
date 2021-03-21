@@ -14,6 +14,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
 from headlines_scraper import create_array, output
 import numpy as np
 
@@ -27,9 +29,11 @@ def get_yahoo_conversations(stock):
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
     driver.get(url)
 
+    ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
+
     i = 0
     while i < 500:
-        WebDriverWait(driver, 5).until(
+        WebDriverWait(driver, 5, ignored_exceptions).until(
             EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
         element = driver.find_element_by_xpath('//*[@id="canvass-0-CanvassApplet"]/div/button')
@@ -52,7 +56,7 @@ def get_all_conversations(stock):
     :param stock: Name of stock ticker.
     :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
     """
-
+    print("\nGetting convos for:", stock)
     yahoo_conversations, yahoo_dates = get_yahoo_conversations(stock)
     yahoo_conversations = np.array(yahoo_conversations)
     yahoo_dates = np.array(yahoo_dates)
@@ -62,7 +66,10 @@ def get_all_conversations(stock):
 
 def main():
     # Tickers and companies
-    stocks = ["TSLA", "NFLX", "AAPL", "TWTR"]
+    # stocks = ["TSLA", "NFLX", "AAPL", "TWTR", "MSFT", "FB", "GOOGL", "JNJ", "V", "NVDA", "HD", "UNH", "VZ", "ADBE",
+    #           "PYPL", "DIS", "INTC", "T", "KO", "NKE", "COST", "PEP", "CSCO", "MCD", "QCOM"]
+    stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
+              "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
 
     for stock in stocks:
         overall_conversations, dates = get_all_conversations(stock)

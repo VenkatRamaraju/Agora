@@ -156,6 +156,8 @@ def get_all_headlines(stock, company):
     :return: Overall array of headlines from various sources after cleaning (Removal of punctuations).
     """
 
+    print("\nParsing headlines for:", stock)
+
     # List of sources
     source_1 = np.array(get_cnbc_headlines(stock))
     source_2 = np.array(get_reuters_headlines(stock))
@@ -175,14 +177,38 @@ def get_all_headlines(stock, company):
 
 def main():
     # Tickers and companies
-    stocks = ["TSLA", "NFLX", "AAPL", "TWTR"]
-    companies = ['tesla', 'netflix', 'apple', 'twitter']
 
-    for i in range(0, len(stocks)):
-        total_headlines = get_all_headlines(stocks[i], companies[i])
+    stocks = {
+        "QCOM": "qualcomm",
+        "GE": "general_electric_company",
+        "PLTR": "palantir",
+        "AAPL": "apple",
+        "COST": "costco",
+        "CSCO": "cisco",
+        "DIS": "disney",
+        "FB": "facebook",
+        "GOOGL": "alphabet",
+        "INTC": "intel",
+        "JNJ": "johnson_&_johnson",
+        "MSFT": "microsoft",
+        "NFLX": "netflix",
+        "NKE": "nike",
+        "NVDA": "nvidia",
+        "PYPL": "paypal",
+        "T": "at&t",
+        "TSLA": "tesla",
+        "TWTR": "twitter",
+        "VZ": "verizon"
+    }
+
+    tickers = list(stocks.keys())
+    companies = list(stocks.values())
+
+    for i in range(0, len(tickers)):
+        total_headlines = get_all_headlines(tickers[i], companies[i])
 
         # Combining data and output to CSV
-        output(total_headlines, stocks[i], "headlines")
+        output(total_headlines, tickers[i], "headlines")
 
 
 if __name__ == "__main__":
