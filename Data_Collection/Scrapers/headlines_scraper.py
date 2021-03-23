@@ -180,7 +180,7 @@ def main():
 
     stocks = {
         "QCOM": "qualcomm",
-        "GE": "general_electric_company",
+        "GE": "general electric company",
         "PLTR": "palantir",
         "AAPL": "apple",
         "COST": "costco",
@@ -189,7 +189,7 @@ def main():
         "FB": "facebook",
         "GOOGL": "alphabet",
         "INTC": "intel",
-        "JNJ": "johnson_&_johnson",
+        "JNJ": "johnson & johnson",
         "MSFT": "microsoft",
         "NFLX": "netflix",
         "NKE": "nike",
