@@ -1,5 +1,5 @@
 import pandas as pd
-import os
+import yfinance as yf
 
 ####################################################################
 # TODO:
@@ -15,16 +15,24 @@ def get_data():
     Returns the training data set required for the model development.
     """
 
-    polarity_csv = pd.read_csv('../Polarity_Analysis/aggregated_polarities.csv', index_col=0)
-    print(polarity_csv)  # Input of training data set
-    print()
+    df = pd.read_csv('../Polarity_Analysis/aggregated_polarities.csv', index_col=0)
+    new_columns = ['payoutRatio', 'beta', 'regularMarketVolume', 'profitMargins', '52WeekChange',
+                   'forwardEps', 'bookValue', 'sharesShort', 'sharesPercentSharesOut', 'trailingEps',
+                   'heldPercentInstitutions', 'heldPercentInsiders', 'mostRecentQuarter', 'nextFiscalYearEnd',
+                   'shortRatio', 'enterpriseValue', 'earningsQuarterlyGrowth', 'sharesShortPriorMonth',
+                   'shortPercentOfFloat', 'pegRatio']
 
-    file_path = "../Data_Collection/Analyst_Ratings/"
-    all_csv_results = [f for f in os.listdir("../Data_Collection/Analyst_Ratings/") if f.endswith("csv")]
+    df = df.reindex(columns=df.columns.tolist() + new_columns)
 
-    for csv in all_csv_results:
-        ticker_analyst_csv = pd.read_csv(file_path + csv)
-        print(ticker_analyst_csv)  # "Output" of training data set
+    for column in new_columns:
+        df[column] = 0.0
+
+    for index, row in df.iterrows():
+        ticker = yf.Ticker(row['Ticker'])
+        for col in new_columns:
+            df.at[index, col] = ticker.info[col]
+
+    df.to_csv('training_data.csv')
 
 
 def main():
