@@ -66,8 +66,6 @@ def get_all_conversations(stock):
 
 def main():
     # Tickers and companies
-    # stocks = ["TSLA", "NFLX", "AAPL", "TWTR", "MSFT", "FB", "GOOGL", "JNJ", "V", "NVDA", "HD", "UNH", "VZ", "ADBE",
-    #           "PYPL", "DIS", "INTC", "T", "KO", "NKE", "COST", "PEP", "CSCO", "MCD", "QCOM"]
     stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
               "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
 
