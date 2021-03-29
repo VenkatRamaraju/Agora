@@ -1,0 +1,117 @@
+RATING DEFINITIONS:
+- Buy: buy the stock
+- Sell: sell the stock
+- Hold: expected to perform at the same pace as comparable companies or in-line with the market
+- Underperform: stock is expected to do slightly worse than the overall stock market return
+- Outperform: stock is expected to do slightly better than the overall stock market return
+
+- Offshoots of these ratings:
+    - Equal Weight: analyst believes the stock price will perform in line or similarly than the benchmark index being used for comparison.
+    - Sector Perform: returns expected to be in line with sector average over 12 months
+    - Market Perform: expectation for a given stock is that it will provide returns in line with those of the S&P 500 or other leading market averages; a neutral assessment
+    - In-line: basically the same as market perform
+    - Positive: same as "Buy"/"Outperform"
+    - Peer Perform: similar to sector perform; company will perform the same as companies within its sector
+
+
+--------------------------------------------------------
+
+RATING WORDS
+Buy
+Buy - Conviction-Buy
+Buy - Hold
+Buy - Overweight
+Equal Weight
+Equal Weight - Overweight
+Equal-Weight
+Hold
+Hold - Buy
+In-Line
+In-Line - Buy
+Market Perform
+Market Perform - Under Perform
+Neutral
+Neutral - Buy
+Neutral - Overweight
+Outperform
+Outperform - Sector Perform
+Overweight
+Peer Perform
+Perform
+Positive
+Positive - Buy
+Positive - Neutral
+Positive - Overweight
+Positive - Sector Perform
+Sector Perform
+Sell
+Sell - Overweight
+Top Pick - Outperform
+Underperform
+Underweight
+
+
+--------------------------------------------
+
+RATING CATEGORIES:
+    SELL
+        - Sell
+    UNDERPERFORM
+        - Market Perform - Under Perform
+        - Underperform
+        - Underweight
+    HOLD
+        - Equal Weight
+        - Equal Weight - Overweight
+        - Equal-Weight
+        - Hold
+        - In-Line
+        - Market Perform
+        - Neutral
+        - Neutral - Overweight
+        - Outperform - Sector Perform
+        - Overweight
+        - Peer Perform
+        - Perform
+        - Positive - Neutral
+        - Positive - Sector Perform
+        - Sector Perform
+        - Sell - Overweight
+    OUTPERFORM
+        - Buy - Conviction-Buy
+        - Buy - Hold
+        - Buy - Overweight
+        - Hold - Buy
+        - In-Line - Buy
+        - Neutral - Buy
+        - Outperform
+        - Positive - Buy
+        - Positive - Overweight
+        - Top Pick - Outperform
+    BUY
+        - Buy
+
+--------------------------------------------------------
+
+NOTES:
+    - Fundamental Analysis: using data from publicly available sources (balance sheets, cash flow, income statements) to perform analysis.
+    - Financial Ratios to look at in the short-term:
+        - Liquidity: current assets / current liabilities
+            - good financial health: liquidity ratio > 1
+        - ROE: net income / total common equity
+            - good financial health: ROE ratio is 20%
+        - ROIC: (EBIT - Tax Provision) / total invested capital
+            - Good ROIC: greater than 2%
+        - Price Earnings to Growth (PEG) ratio: [Forward (P/E)] / expected earnings growth rate
+            - ticker.info[pegRatio]
+            - pegRatio > 1 --> overvalued; pegRatio < 1 --> undervalued or fairly priced
+
+    - we should go by quarterly reports for most short-term data
+    - not all data is readily available from Yahoo Finance API; we'll have to code some of these formulas, but they're just ratios so not too bad
+    - KNN Model can have the following:
+        - polarities
+        - liquidity ratio
+        - ROE
+        - ROIC
+        - PEG Ratio
+    - We just have to figure out how to take those properties and classify them
