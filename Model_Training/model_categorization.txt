@@ -115,3 +115,8 @@ NOTES:
         - ROIC
         - PEG Ratio
     - We just have to figure out how to take those properties and classify them
+
+    - Short ratio: the number of shares of a stock that are currently shorted over the stock's average daily trading volume
+        - tells investors how many days it would take short sellers to cover their positions if the price of a given stock were to increase
+        - if short ratio is increasing, then investor sentiment maybe becoming negative
+        - if it's decreasing, then stock price might be increasing

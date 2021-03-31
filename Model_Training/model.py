@@ -5,6 +5,7 @@ import glob
 import pprint
 from collections import Counter
 
+
 ####################################################################
 # TODO:
 #   - Develop model whose predictions line up with Analyst Ratings
@@ -14,17 +15,33 @@ from collections import Counter
 ####################################################################
 
 
-def get_data():
+def liquidity(current_assets, current_liabilites):
+    return current_assets / current_liabilites
+
+
+def roe(net_income, common_equity):
+    return net_income / common_equity
+
+
+def roic(ebit, tax_provision, invested_capital):
+    return (ebit - tax_provision) / invested_capital
+
+
+def get_yf_data():
     """
     Returns the training data set required for the model development.
     """
 
     df = pd.read_csv('../Polarity_Analysis/aggregated_polarities.csv', index_col=0)
-    new_columns = ['payoutRatio', 'beta', 'regularMarketVolume', 'profitMargins', '52WeekChange',
-                   'forwardEps', 'bookValue', 'sharesShort', 'sharesPercentSharesOut', 'trailingEps',
-                   'heldPercentInstitutions', 'heldPercentInsiders', 'mostRecentQuarter', 'nextFiscalYearEnd',
-                   'shortRatio', 'enterpriseValue', 'earningsQuarterlyGrowth', 'sharesShortPriorMonth',
-                   'shortPercentOfFloat', 'pegRatio']
+    # new_columns = ['payoutRatio', 'beta', 'regularMarketVolume', 'profitMargins', '52WeekChange',
+    #                'forwardEps', 'bookValue', 'sharesShort', 'sharesPercentSharesOut', 'trailingEps',
+    #                'heldPercentInstitutions', 'heldPercentInsiders', 'mostRecentQuarter', 'nextFiscalYearEnd',
+    #                'shortRatio', 'enterpriseValue', 'earningsQuarterlyGrowth', 'sharesShortPriorMonth',
+    #                'shortPercentOfFloat', 'pegRatio']
+
+    df = df[df.Ticker != 'PLTR']
+
+    new_columns = ['liquidityRatio', 'ROE', 'shortRatio']
 
     df = df.reindex(columns=df.columns.tolist() + new_columns)
 
@@ -33,10 +50,33 @@ def get_data():
 
     for index, row in df.iterrows():
         ticker = yf.Ticker(row['Ticker'])
-        for col in new_columns:
-            df.at[index, col] = ticker.info[col]
+        print("Determining Liquidity ratio, ROE, and Short Ratio for:", row['Ticker'])
+        balance_sheet = ticker.quarterly_balance_sheet.reset_index()
+        financials = ticker.quarterly_financials.reset_index()
+        ticker_info = ticker.get_info()
 
-    df.to_csv('training_data.csv')
+        current_assets_index = balance_sheet.index[balance_sheet['index'] == 'Total Current Assets'].tolist()[0]
+        current_liabilities_index = balance_sheet.index[balance_sheet['index'] == 'Total Current Liabilities'].tolist()[
+            0]
+        common_equity_index = balance_sheet.index[balance_sheet['index'] == 'Total Stockholder Equity'].tolist()[0]
+
+        current_assets = balance_sheet.iloc[current_assets_index, 1]
+        current_liabilities = balance_sheet.iloc[current_liabilities_index, 1]
+        common_equity = balance_sheet.iloc[common_equity_index, 1]
+
+        net_income_index = financials.index[financials['index'] == 'Net Income'].tolist()[0]
+        net_income = financials.iloc[net_income_index, 1]
+
+        liq = liquidity(current_assets, current_liabilities)
+        ret_on_equity = roe(net_income, common_equity)
+
+        df.at[index, 'liquidityRatio'] = liq
+        df.at[index, 'ROE'] = ret_on_equity
+        df.at[index, 'shortRatio'] = ticker_info['shortRatio']
+
+    print("\n\n", df)
+
+    df.to_csv('training_data_v2.csv')
 
 
 def organize_analyst_ratings():
@@ -105,8 +145,9 @@ def normalize_ratings(df):
 
 
 def main():
-    get_data()
-    # organize_analyst_ratings()
+    get_yf_data()
+    print("\n\nAnalyst Ratings for each company:")
+    pprint.pprint(organize_analyst_ratings())
 
 
 if __name__ == "__main__":
