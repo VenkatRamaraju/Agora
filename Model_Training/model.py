@@ -40,7 +40,6 @@ def get_yf_data():
     #                'shortPercentOfFloat', 'pegRatio']
 
     df = df[df.Ticker != 'PLTR']
-
     new_columns = ['liquidityRatio', 'ROE', 'shortRatio']
 
     df = df.reindex(columns=df.columns.tolist() + new_columns)
@@ -56,8 +55,8 @@ def get_yf_data():
         ticker_info = ticker.get_info()
 
         current_assets_index = balance_sheet.index[balance_sheet['index'] == 'Total Current Assets'].tolist()[0]
-        current_liabilities_index = balance_sheet.index[balance_sheet['index'] == 'Total Current Liabilities'].tolist()[
-            0]
+        current_liabilities_index = balance_sheet.index[balance_sheet['index'] ==
+                                                        'Total Current Liabilities'].tolist()[0]
         common_equity_index = balance_sheet.index[balance_sheet['index'] == 'Total Stockholder Equity'].tolist()[0]
 
         current_assets = balance_sheet.iloc[current_assets_index, 1]
