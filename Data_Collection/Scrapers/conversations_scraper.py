@@ -46,7 +46,7 @@ def get_yahoo_conversations(stock):
     driver.quit()
 
     return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')), \
-        create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
+           create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
 
 
 def get_all_conversations(stock):
@@ -69,9 +69,14 @@ def main():
     stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
               "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
 
+    # Failed mining - Adobe, Coca-Cola, MCD, Pepsico, HD, UHD, V
+
     for stock in stocks:
-        overall_conversations, dates = get_all_conversations(stock)
-        output(overall_conversations, stock, "conversations")
+        try:
+            overall_conversations, dates = get_all_conversations(stock)
+            output(overall_conversations, stock, "conversations")
+        except:
+            continue
 
 
 if __name__ == "__main__":

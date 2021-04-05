@@ -205,10 +205,13 @@ def main():
     companies = list(stocks.values())
 
     for i in range(0, len(tickers)):
-        total_headlines = get_all_headlines(tickers[i], companies[i])
+        try:
+            total_headlines = get_all_headlines(tickers[i], companies[i])
 
-        # Combining data and output to CSV
-        output(total_headlines, tickers[i], "headlines")
+            # Combining data and output to CSV
+            output(total_headlines, tickers[i], "headlines")
+        except:
+            continue
 
 
 if __name__ == "__main__":
