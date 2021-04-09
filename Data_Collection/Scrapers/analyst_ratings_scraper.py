@@ -28,8 +28,24 @@ def get_analyst_ratings():
         print("\n\n")
 
 
+def analyst_ratings_scraper(stock):
+    analyst_ratings = pd.read_html('https://www.benzinga.com/stock/' + stock.lower() + '/ratings')
+    return analyst_ratings[0]['Current'].value_counts().idxmax()
+
+
+def build_analyst_csv():
+    stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
+              "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
+
+    df = pd.DataFrame(columns=['Ticker', 'Rating'])
+    for stock in stocks:
+        df = df.append({'Ticker': stock, 'Rating': analyst_ratings_scraper(stock)}, ignore_index=True)
+
+    df.to_csv('Final_Analyst_Rating.csv')
+
+
 def main():
-    get_analyst_ratings()
+    build_analyst_csv()
 
 
 if __name__ == "__main__":
