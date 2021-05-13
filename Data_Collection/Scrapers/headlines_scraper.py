@@ -74,7 +74,7 @@ def output(overall_data, stock, category):
     # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
     overall_data = list(set(overall_data))
     file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_' + \
-        category.lower() + '_results.csv'
+                category.lower() + '_results.csv'
 
     if len(overall_data) > 0:
         # Formatting current dataframe, merging with previously existing (if it exists)
@@ -211,7 +211,7 @@ def main():
             # Combining data and output to CSV
             output(total_headlines, tickers[i], "headlines")
         except:
-            continue
+            print()
 
 
 if __name__ == "__main__":

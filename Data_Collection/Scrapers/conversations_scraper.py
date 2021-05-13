@@ -69,8 +69,6 @@ def main():
     stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
               "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
 
-    # Failed mining - Adobe, Coca-Cola, MCD, Pepsico, HD, UHD, V
-
     for stock in stocks:
         try:
             overall_conversations, dates = get_all_conversations(stock)
