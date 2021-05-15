@@ -210,8 +210,8 @@ def main():
 
             # Combining data and output to CSV
             output(total_headlines, tickers[i], "headlines")
-        except:
-            print()
+        except RuntimeError as e:
+            print(e, "was handled")
 
 
 if __name__ == "__main__":

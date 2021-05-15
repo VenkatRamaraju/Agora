@@ -73,8 +73,8 @@ def main():
         try:
             overall_conversations, dates = get_all_conversations(stock)
             output(overall_conversations, stock, "conversations")
-        except:
-            continue
+        except RuntimeError as e:
+            print(e, "was handled")
 
 
 if __name__ == "__main__":
