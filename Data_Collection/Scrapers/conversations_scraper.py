@@ -8,6 +8,8 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
+import os
+import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -27,19 +29,20 @@ def get_yahoo_conversations(stock):
     option = webdriver.ChromeOptions()
     option.add_argument('headless')  # Runs without opening browser
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
-    driver.get(url)
 
-    ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
+    try:
+        driver.get(url)
+        ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
+        i = 0
+        while i < 500:
+            WebDriverWait(driver, 5, ignored_exceptions).until(
+                EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
-    i = 0
-    while i < 500:
-        WebDriverWait(driver, 5, ignored_exceptions).until(
-            EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
-
-        element = driver.find_element_by_xpath('//*[@id="canvass-0-CanvassApplet"]/div/button')
-        driver.execute_script("arguments[0].click();", element)
-
-        i += 1
+            element = driver.find_element_by_xpath('//*[@id="canvass-0-CanvassApplet"]/div/button')
+            driver.execute_script("arguments[0].click();", element)
+            i += 1
+    except Exception as e:
+        pass
 
     # Retrieving soup after load more button is clicked
     soup = BeautifulSoup(driver.page_source, 'lxml')
@@ -56,7 +59,6 @@ def get_all_conversations(stock):
     :param stock: Name of stock ticker.
     :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
     """
-    print("\nGetting convos for:", stock)
     yahoo_conversations, yahoo_dates = get_yahoo_conversations(stock)
     yahoo_conversations = np.array(yahoo_conversations)
     yahoo_dates = np.array(yahoo_dates)
@@ -66,10 +68,22 @@ def get_all_conversations(stock):
 
 def main():
     # Tickers and companies
-    stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
-              "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
+    # stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
+    #           "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
 
-    for stock in stocks:
+    stocks_df = pd.read_csv("../companies.csv")
+
+    stocks_dict = {}
+
+    for index, row in stocks_df.iterrows():
+        stocks_dict.update(
+            {row["Symbol"]: row["Company"]}
+        )
+
+    tickers = list(stocks_dict.keys())
+
+    for stock in tickers:
+        print("Getting conversations for:", stock)
         try:
             overall_conversations, dates = get_all_conversations(stock)
             output(overall_conversations, stock, "conversations")
