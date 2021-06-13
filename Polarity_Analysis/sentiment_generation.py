@@ -52,10 +52,12 @@ def get_sentiments():
             avg += row["Polarity"]
             rows += 1
 
-        file_name = csv.split(".")[0] + "_+_polarity"
+        csv = csv[:-3] # Remove the .csv for ease of parsing
+
+        file_name = csv + "_+_polarity"
         csv_df.to_csv(f"../Polarity_Analysis/csvs_with_polarity/{file_name}.csv")
-        ticker = csv.split(".")[0].split("_")[0]
-        category = csv.split(".")[0].split("_")[1]
+        ticker = csv.split("_")[0]
+        category = csv.split("_")[1]
         polarity = round(avg/rows, 3)
 
         if category == "headlines":

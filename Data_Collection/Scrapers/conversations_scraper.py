@@ -68,9 +68,6 @@ def get_all_conversations(stock):
 
 def main():
     # Tickers and companies
-    # stocks = ["QCOM", "GE", "PLTR", "AAPL", "COST", "CSCO", "DIS", "FB", "GE", "GOOGL", "INTC", "JNJ", "MSFT",
-    #           "NFLX", "NKE", "NVDA", "PLTR", "PYPL", "QCOM", "T", "TSLA", "TWTR", "VZ"]
-
     stocks_df = pd.read_csv("../companies.csv")
 
     stocks_dict = {}

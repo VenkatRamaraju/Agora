@@ -15,8 +15,8 @@ from collections import Counter
 ####################################################################
 
 
-def liquidity(current_assets, current_liabilites):
-    return current_assets / current_liabilites
+def liquidity(current_assets, current_liabilities):
+    return current_assets / current_liabilities
 
 
 def roe(net_income, common_equity):
@@ -33,11 +33,6 @@ def get_yf_data():
     """
 
     df = pd.read_csv('../Polarity_Analysis/aggregated_polarities.csv', index_col=0)
-    # new_columns = ['payoutRatio', 'beta', 'regularMarketVolume', 'profitMargins', '52WeekChange',
-    #                'forwardEps', 'bookValue', 'sharesShort', 'sharesPercentSharesOut', 'trailingEps',
-    #                'heldPercentInstitutions', 'heldPercentInsiders', 'mostRecentQuarter', 'nextFiscalYearEnd',
-    #                'shortRatio', 'enterpriseValue', 'earningsQuarterlyGrowth', 'sharesShortPriorMonth',
-    #                'shortPercentOfFloat', 'pegRatio']
 
     df = df[df.Ticker != 'PLTR']
     new_columns = ['liquidityRatio', 'ROE', 'shortRatio']

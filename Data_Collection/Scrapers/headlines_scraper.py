@@ -180,39 +180,12 @@ def main():
     # Tickers and companies
 
     stocks_df = pd.read_csv("../companies.csv")
-    # print(stocks_df)
-
     stocks_dict = {}
 
     for index, row in stocks_df.iterrows():
         stocks_dict.update(
             {row["Symbol"]: row["Company"]}
         )
-
-    # print(stocks_dict)
-
-    # stocks = {
-    #     "QCOM": "qualcomm",
-    #     "GE": "general electric company",
-    #     "PLTR": "palantir",
-    #     "AAPL": "apple",
-    #     "COST": "costco",
-    #     "CSCO": "cisco",
-    #     "DIS": "disney",
-    #     "FB": "facebook",
-    #     "GOOGL": "alphabet",
-    #     "INTC": "intel",
-    #     "JNJ": "johnson & johnson",
-    #     "MSFT": "microsoft",
-    #     "NFLX": "netflix",
-    #     "NKE": "nike",
-    #     "NVDA": "nvidia",
-    #     "PYPL": "paypal",
-    #     "T": "at&t",
-    #     "TSLA": "tesla",
-    #     "TWTR": "twitter",
-    #     "VZ": "verizon"
-    # }
 
     tickers = list(stocks_dict.keys())
     companies = list(stocks_dict.values())
