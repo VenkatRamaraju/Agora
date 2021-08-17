@@ -8,7 +8,6 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
-import os
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -23,6 +22,9 @@ import numpy as np
 
 
 def get_yahoo_conversations(stock):
+    """
+    Parses yahoo finance conversations page to get conversations related to the stock.
+    """
     url = "https://finance.yahoo.com/quote/" + stock + "/community?p=" + stock
 
     # Selenium Web Driver to click load more button and continue to retrieve conversation
@@ -30,6 +32,7 @@ def get_yahoo_conversations(stock):
     option.add_argument('headless')  # Runs without opening browser
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
 
+    # Attempt to scroll as much as possible
     try:
         driver.get(url)
         ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
@@ -42,14 +45,14 @@ def get_yahoo_conversations(stock):
             driver.execute_script("arguments[0].click();", element)
             i += 1
     except Exception as e:
-        pass
+        print(e)
 
     # Retrieving soup after load more button is clicked
     soup = BeautifulSoup(driver.page_source, 'lxml')
     driver.quit()
 
     return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')), \
-           create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
+        create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
 
 
 def get_all_conversations(stock):

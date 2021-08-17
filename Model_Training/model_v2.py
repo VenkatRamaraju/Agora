@@ -1,5 +1,14 @@
+#!/usr/bin/env python3
+
+"""
+Authors: Venkat Ramaraju, Jayanth Rao
+Functionality implemented:
+- Prepares data for model training
+"""
+
 import pandas as pd
 import yfinance as yf
+
 
 def get_data():
     """

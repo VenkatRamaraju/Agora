@@ -8,12 +8,12 @@ Functionality implemented:
 
 # Libraries and Dependencies
 import pandas as pd
-from pathlib import Path
-import os
+
 
 def analyst_ratings_scraper(stock):
     analyst_ratings = pd.read_html('https://www.benzinga.com/stock/' + stock.lower() + '/ratings')
     return analyst_ratings[0]['Current'].value_counts().idxmax()
+
 
 def build_analyst_csv():
     stocks_df = pd.read_csv("../companies.csv")
