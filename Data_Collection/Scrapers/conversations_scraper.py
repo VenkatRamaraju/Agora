@@ -72,7 +72,6 @@ def get_all_conversations(stock):
 def main():
     # Tickers and companies
     stocks_df = pd.read_csv("../companies.csv")
-
     stocks_dict = {}
 
     for index, row in stocks_df.iterrows():

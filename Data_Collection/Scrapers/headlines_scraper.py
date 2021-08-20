@@ -15,6 +15,8 @@ import pandas as pd
 import numpy as np
 from os import path
 from pathlib import Path
+import yfinance as yf
+import re
 
 
 def get_soup(request, element, class_value):
@@ -44,19 +46,53 @@ def create_array(data_list):
     return result_array
 
 
-def cleanup_array(overall_array, stock, company):
+def contains_company_name(headline, name):
     """
-    Cleans up the array of headlines/conversations by removing headlines that do not contain the stock ticker or
-    company name in it.
+    Returns whether or not the headline contains the name of the company. This function is used to determine
+    if a headline is relevant to the company.
+    :param name: Name of the company for which the headlines have been scraped.
+    :param headline: Headline from the internet. The company name will be searched in this headline.
+    :return: True if the company name is in the headline, false otherwise.
+    """
+    # Remove punctuations and format into array
+    company = re.sub(r'[^\w\s]', '', name).lower().strip()
+    company_words = company.split(' ')
+
+    # Words to remove for comparison
+    words_to_remove = ['a', 'and', 'the', 'company', 'incorporated', 'corporation', 'group', 'inc']
+
+    # Removing words
+    for word in words_to_remove:
+        if word in company_words:
+            company_words.remove(word)
+
+    # Removing empty words and formatting headline into array
+    company_words = list(filter(None, company_words))
+    headline_words = headline.split(' ')
+
+    for word in company_words:
+        if word in headline_words:  # Headline contains company name in it
+            return True
+
+    return False
+
+
+def cleanup_array(overall_array, stock):
+    """
+    Cleans up the array of headlines by removing headlines that do not contain the stock ticker or company name in it.
     :param overall_array: Array of headlines/conversations from which data points need to be removed.
     :param stock: Ticker of the company for which the headlines have been scraped.
-    :param company: Name of the company for which the headlines have been scraped.
     :return: An array with data points that contain the company or stock in it.
     """
 
+    if len(overall_array) < 15:
+        return overall_array
+
     cleaned_array = []
+    ticker = yf.Ticker(stock)
+    name = ticker.info['longName']
     for entry in overall_array:
-        if stock.lower() in str(entry).lower() or company.lower() in str(entry).lower():
+        if stock.lower() in str(entry).lower() or contains_company_name(str(entry).lower(), name):
             cleaned_array.append(entry)
 
     return cleaned_array
@@ -73,8 +109,8 @@ def output(overall_data, stock, category):
 
     # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
     overall_data = list(set(overall_data))
-    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_' + \
-                category.lower() + '_results.csv'
+    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_' + category.lower() + \
+        '_results.csv'
 
     if len(overall_data) > 0:
         # Formatting current dataframe, merging with previously existing (if it exists)
@@ -147,12 +183,11 @@ def get_cnbc_headlines(stock):
     return list_of_headlines
 
 
-def get_all_headlines(stock, company):
+def get_all_headlines(stock):
     """
     Gets headlines from various sources, concatenates the arrays of headlines, cleans up the text and returns the
     overall array.
     :param stock: Name of stock ticker.
-    :param company: Name of company.
     :return: Overall array of headlines from various sources after cleaning (Removal of punctuations).
     """
 
@@ -172,7 +207,7 @@ def get_all_headlines(stock, company):
     total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
                                            source_8), axis=None))
 
-    return cleanup_array(total_headlines, stock, company)
+    return cleanup_array(total_headlines, stock)
 
 
 def main():
@@ -187,11 +222,10 @@ def main():
         )
 
     tickers = list(stocks_dict.keys())
-    companies = list(stocks_dict.values())
 
     for i in range(0, len(tickers)):
         try:
-            total_headlines = get_all_headlines(tickers[i], companies[i])
+            total_headlines = get_all_headlines(tickers[i])
 
             # Combining data and output to CSV
             output(total_headlines, tickers[i], "headlines")
