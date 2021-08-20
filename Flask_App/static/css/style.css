@@ -1,0 +1,54 @@
+h1 {
+    font-family: "Metropolis", sans-serif;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 48px;
+}
+
+/*p {*/
+/*    font-family: "Metropolis", sans-serif;*/
+/*    text-align: left;*/
+/*}*/
+
+hr {
+    width: 20%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border: 0 none;
+    margin-top: -30px;
+    margin-bottom: 100px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    font-family: "Metropolis", sans-serif;
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fafafa;
+    border:0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+    display: block;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+input[type=submit] {
+    font-family: "Metropolis", sans-serif;
+    width: 10%;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+
+}
+
+
