@@ -1,17 +1,27 @@
+#!/usr/bin/env python3
+
+"""
+Authors: Venkat Ramaraju, Jayanth Rao
+Functionality implemented:
+- Generates and aggregates polarities across headlines and conversations
+"""
+
+# Libraries and Dependencies
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pandas as pd
-import os
 from nltk.stem import WordNetLemmatizer
 
 # Global Variables
 sia = SentimentIntensityAnalyzer()
 lemmatizer = WordNetLemmatizer()
+conversations_map = {}
+headlines_map = {}
 
 
 def update_stock_terminology():
     """
     Creates dictionary with updated terminologies for SentimentIntensityAnalyzer. Includes positive and negative words,
-    along with polarized words with weights. Used to improve VADER accuracy
+    along with polarized words with weights. Used to improve VADER accuracy.
     """
     stock_lexicon = {}
     csv_df = pd.read_csv('setup_csvs/new_stock_lex.csv')
@@ -30,45 +40,30 @@ def update_stock_terminology():
 
 def get_sentiments():
     """
-    Analyze polarities of the given stock tickers, based on  terminologies inserted in SentimentIntensityAnalyzer.
+    Analyze polarities of the given stock tickers, based on terminologies inserted in SentimentIntensityAnalyzer.
     Prints out the aggregated results to CSV.
     """
-    file_path = "../Data_Collection/CSV_Results/"
-    conversations_map = {}
-    headlines_map = {}
-    all_csv_results = [f for f in os.listdir("../Data_Collection/CSV_Results/") if f.endswith("csv")]
+    headlines_csv = pd.read_csv("../Data_Collection/CSV_Results/Headlines/Headlines.csv")
+    sum_of_polarities = {}
+    count_of_headlines = {}
 
-    for csv in all_csv_results:
-        csv_df = pd.read_csv(file_path + csv)
-        csv_df["Polarity"] = ""
-        avg = 0.0
-        rows = 0
+    for index, row in headlines_csv.iterrows():
+        lemma_text = lemmatizer.lemmatize(row['Headline'])
+        scores = sia.polarity_scores(lemma_text)
+        row["Polarity"] = scores["compound"]
 
-        for index, row in csv_df.iterrows():
-            lemma_text = lemmatizer.lemmatize(row[csv_df.columns[0]])
-            scores = sia.polarity_scores(lemma_text)
-            row["Polarity"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
-
-            avg += row["Polarity"]
-            rows += 1
-
-        csv = csv[:-3] # Remove the .csv for ease of parsing
-
-        file_name = csv + "_+_polarity"
-        csv_df.to_csv(f"../Polarity_Analysis/csvs_with_polarity/{file_name}.csv")
-        ticker = csv.split("_")[0]
-        category = csv.split("_")[1]
-        polarity = round(avg/rows, 3)
-
-        if category == "headlines":
-            headlines_map[ticker] = polarity
+        if row['Ticker'] not in sum_of_polarities:
+            sum_of_polarities[row['Ticker']] = scores["compound"]
+            count_of_headlines[row['Ticker']] = 1
         else:
-            conversations_map[ticker] = polarity
+            sum_of_polarities[row['Ticker']] = sum_of_polarities[row['Ticker']] + scores["compound"]
+            count_of_headlines[row['Ticker']] = count_of_headlines[row['Ticker']] + 1
 
-    return headlines_map, conversations_map
+    for ticker in sum_of_polarities:
+        headlines_map[ticker] = sum_of_polarities[ticker]/count_of_headlines[ticker]
 
 
-def generate_aggregated_csv(headlines_map, conversations_map):
+def generate_aggregated_csv():
     """
     Generates a CSV with the aggregated polarities of headlines and conversations for the group of stocks that are
     being analyzed.
@@ -76,7 +71,7 @@ def generate_aggregated_csv(headlines_map, conversations_map):
     aggregated_df = pd.DataFrame(columns=["Ticker", "Conversations", "Headlines"])
 
     for ticker, headlines_polarity in headlines_map.items():
-        row = {"Ticker": ticker, "Conversations": conversations_map[ticker], "Headlines": headlines_polarity}
+        row = {"Ticker": ticker, "Headlines": headlines_polarity}
         aggregated_df = aggregated_df.append(row, ignore_index=True)
 
     aggregated_df.to_csv("aggregated_polarities.csv")
@@ -84,8 +79,8 @@ def generate_aggregated_csv(headlines_map, conversations_map):
 
 def main():
     update_stock_terminology()
-    headlines_map, conversations_map = get_sentiments()
-    generate_aggregated_csv(headlines_map, conversations_map)
+    get_sentiments()
+    generate_aggregated_csv()
 
 
 if __name__ == "__main__":

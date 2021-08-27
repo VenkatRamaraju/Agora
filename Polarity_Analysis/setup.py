@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+
+"""
+Authors: Venkat Ramaraju, Jayanth Rao
+Functionality implemented:
+- Sets up the dictionary that NLTK will use to judge polarities.
+"""
+
+# Libraries and Dependencies
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import nltk
 import pandas as pd
