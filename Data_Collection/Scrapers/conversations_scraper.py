@@ -8,6 +8,7 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
+import demoji
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -17,7 +18,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
-from headlines_scraper import create_array, output
+from headlines_scraper import create_array
+from os import path
+from pathlib import Path
 import numpy as np
 
 
@@ -52,7 +55,7 @@ def get_yahoo_conversations(stock):
     driver.quit()
 
     return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')), \
-        create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
+           create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
 
 
 def get_all_conversations(stock):
@@ -67,6 +70,36 @@ def get_all_conversations(stock):
     yahoo_dates = np.array(yahoo_dates)
 
     return list(np.concatenate(yahoo_conversations, axis=None)), list(np.concatenate(yahoo_dates, axis=None))
+
+
+def output(overall_data, stock):
+    """
+    Prints out the pandas dataframe after removing duplicates.
+    :param overall_data: Array of headlines/conversations after retrieving from respective web sources, in text form.
+    :param stock: Name of the stock for which all the above data is being retrieved.
+    :return None.
+    """
+
+    # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
+    overall_data = list(set(overall_data))
+    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_conversations' + \
+        '_results.csv'
+
+    if len(overall_data) > 0:
+        # Formatting current dataframe, merging with previously existing (if it exists)
+        title = 'Recent headlines and conversations for ' + stock
+        overall_dataframe = pd.DataFrame(overall_data, columns=[title])
+        overall_dataframe[title] = overall_dataframe[title].apply(demoji.replace)
+        current_dataframe = pd.DataFrame(columns=[title])
+        if path.exists(file_path):
+            current_dataframe = pd.read_csv(file_path)
+
+        # Appending to CSV, or creating new one for stock
+        overall_dataframe = pd.concat([overall_dataframe, current_dataframe], ignore_index=True)
+        overall_dataframe.drop_duplicates(subset=title, inplace=True)
+        overall_dataframe.to_csv(file_path, index=False)
+    else:
+        print("Invalid ticker/company or no headlines/conversations available.")
 
 
 def main():
@@ -85,7 +118,7 @@ def main():
         print("Getting conversations for:", stock)
         try:
             overall_conversations, dates = get_all_conversations(stock)
-            output(overall_conversations, stock, "conversations")
+            output(overall_conversations, stock)
         except RuntimeError as e:
             print(e, "was handled")
 

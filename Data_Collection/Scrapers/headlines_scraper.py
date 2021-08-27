@@ -8,15 +8,16 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
-import demoji
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
-from os import path
 from pathlib import Path
 import yfinance as yf
 import re
+
+# Global Variables
+overall_headlines_df = pd.DataFrame(columns=['Ticker', 'Headline'])
 
 
 def get_soup(request, element, class_value):
@@ -98,33 +99,19 @@ def cleanup_array(overall_array, stock):
     return cleaned_array
 
 
-def output(overall_data, stock, category):
+def output(overall_data, stock):
     """
-    Prints out the pandas dataframe after removing duplicates.
+    Appends to overall dataframe to create the list of headlines.
     :param overall_data: Array of headlines/conversations after retrieving from respective web sources, in text form.
     :param stock: Name of the stock for which all the above data is being retrieved.
-    :param category: Headlines or Conversations
     :return None.
     """
 
-    # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
-    overall_data = list(set(overall_data))
-    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_' + category.lower() + \
-        '_results.csv'
-
+    global overall_headlines_df
     if len(overall_data) > 0:
-        # Formatting current dataframe, merging with previously existing (if it exists)
-        title = 'Recent headlines and conversations for ' + stock
-        overall_dataframe = pd.DataFrame(overall_data, columns=[title])
-        overall_dataframe[title] = overall_dataframe[title].apply(demoji.replace)
-        current_dataframe = pd.DataFrame(columns=[title])
-        if path.exists(file_path):
-            current_dataframe = pd.read_csv(file_path)
-
-        # Appending to CSV, or creating new one for stock
-        overall_dataframe = pd.concat([overall_dataframe, current_dataframe], ignore_index=True)
-        overall_dataframe.drop_duplicates(subset=title, inplace=True)
-        overall_dataframe.to_csv(file_path, index=False)
+        for headline in overall_data:
+            row = {'Ticker': stock, 'Headline': headline}
+            overall_headlines_df = overall_headlines_df.append(row, ignore_index=True)
     else:
         print("Invalid ticker/company or no headlines/conversations available.")
 
@@ -228,9 +215,12 @@ def main():
             total_headlines = get_all_headlines(tickers[i])
 
             # Combining data and output to CSV
-            output(total_headlines, tickers[i], "headlines")
+            output(total_headlines, tickers[i])
         except RuntimeError as e:
             print(e, "was handled")
+
+    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/Headlines/Headlines.csv'
+    overall_headlines_df.to_csv(file_path, index=False)
 
 
 if __name__ == "__main__":
