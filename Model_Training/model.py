@@ -14,7 +14,6 @@ def get_data():
     """
     Returns the training data set required for the model development.
     """
-
     df = pd.read_csv('../Polarity_Analysis/aggregated_polarities.csv', index_col=0)
     new_columns = ['payoutRatio', 'beta', 'regularMarketVolume', 'profitMargins', '52WeekChange',
                    'forwardEps', 'bookValue', 'sharesShort', 'sharesPercentSharesOut', 'trailingEps',

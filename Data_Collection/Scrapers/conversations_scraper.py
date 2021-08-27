@@ -55,7 +55,7 @@ def get_yahoo_conversations(stock):
     driver.quit()
 
     return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')), \
-           create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
+        create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
 
 
 def get_all_conversations(stock):
