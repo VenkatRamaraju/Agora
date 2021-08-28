@@ -21,6 +21,10 @@ jobs:
         run: |
           cd Data_Collection/Scrapers && python headlines_scraper.py
 
+      - name: Scrape headlines
+        run: |
+          cd ../.. && cd Polarity_Analysis && python sentiment_generation.py
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
