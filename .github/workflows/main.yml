@@ -19,7 +19,7 @@ jobs:
 
       - name: Scrape headlines
         run: |
-          (cd Data_Collection/Scrapers) && (python headlines_scraper.py)
+          cd Data_Collection/Scrapers && python headlines_scraper.py
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7

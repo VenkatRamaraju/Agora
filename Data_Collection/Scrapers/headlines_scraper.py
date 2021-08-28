@@ -219,8 +219,7 @@ def main():
         except RuntimeError as e:
             print(e, "was handled")
 
-    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/Headlines/Headlines.csv'
-    overall_headlines_df.to_csv(file_path, index=False)
+    overall_headlines_df.to_csv('../Headlines.csv', index=False)
 
 
 if __name__ == "__main__":
