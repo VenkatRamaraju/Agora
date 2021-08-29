@@ -40,7 +40,7 @@ def get_yahoo_conversations(stock):
         driver.get(url)
         ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
         i = 0
-        while i < 500:
+        while i < 5:
             WebDriverWait(driver, 5, ignored_exceptions).until(
                 EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
@@ -82,21 +82,13 @@ def output(overall_data, stock):
 
     # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
     overall_data = list(set(overall_data))
-    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_conversations' + \
-        '_results.csv'
+    file_path = str(Path(__file__).resolve().parents[1]) + '/Conversations/' + stock.upper() + '_conversations.csv'
 
     if len(overall_data) > 0:
         # Formatting current dataframe, merging with previously existing (if it exists)
-        title = 'Recent headlines and conversations for ' + stock
+        title = 'Conversation'
         overall_dataframe = pd.DataFrame(overall_data, columns=[title])
         overall_dataframe[title] = overall_dataframe[title].apply(demoji.replace)
-        current_dataframe = pd.DataFrame(columns=[title])
-        if path.exists(file_path):
-            current_dataframe = pd.read_csv(file_path)
-
-        # Appending to CSV, or creating new one for stock
-        overall_dataframe = pd.concat([overall_dataframe, current_dataframe], ignore_index=True)
-        overall_dataframe.drop_duplicates(subset=title, inplace=True)
         overall_dataframe.to_csv(file_path, index=False)
     else:
         print("Invalid ticker/company or no headlines/conversations available.")

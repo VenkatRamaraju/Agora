@@ -7,6 +7,7 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
+import os
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pandas as pd
 from nltk.stem import WordNetLemmatizer
@@ -38,7 +39,7 @@ def update_stock_terminology():
     sia.lexicon = resulting_lex
 
 
-def get_sentiments():
+def get_headline_sentiments():
     """
     Analyze polarities of the given stock tickers, based on terminologies inserted in SentimentIntensityAnalyzer.
     Prints out the aggregated results to CSV.
@@ -71,15 +72,39 @@ def generate_aggregated_csv():
     aggregated_df = pd.DataFrame(columns=["Ticker", "Conversations", "Headlines"])
 
     for ticker, headlines_polarity in headlines_map.items():
-        row = {"Ticker": ticker, "Headlines": headlines_polarity}
+        row = {"Ticker": ticker, "Conversations": conversations_map[ticker], "Headlines": headlines_polarity}
         aggregated_df = aggregated_df.append(row, ignore_index=True)
 
     aggregated_df.to_csv("aggregated_polarities.csv")
 
 
+def get_conversation_sentiments():
+    list_of_csv = [f for f in os.listdir('../Data_Collection/Conversations') if f.endswith('.csv')]
+    sum_of_polarities = {}
+    count_of_conversations = {}
+
+    for ticker_csv in list_of_csv:
+        conversations_csv = pd.read_csv('../Data_Collection/Conversations/' + str(ticker_csv))
+        ticker = ticker_csv.split("_")[0].upper()
+        for index, row in conversations_csv.iterrows():
+            lemma_text = lemmatizer.lemmatize(row['Conversation'])
+            scores = sia.polarity_scores(lemma_text)
+            row["Polarity"] = scores["compound"]
+
+            if ticker not in sum_of_polarities:
+                sum_of_polarities[ticker] = scores["compound"]
+                count_of_conversations[ticker] = 1
+            else:
+                sum_of_polarities[ticker] = sum_of_polarities[ticker] + scores["compound"]
+                count_of_conversations[ticker] = count_of_conversations[ticker] + 1
+
+        conversations_map[ticker] = sum_of_polarities[ticker]/count_of_conversations[ticker]
+
+
 def main():
     update_stock_terminology()
-    get_sentiments()
+    get_headline_sentiments()
+    get_conversation_sentiments()
     generate_aggregated_csv()
 
 
