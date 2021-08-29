@@ -29,6 +29,10 @@ jobs:
         run: |
           cd Polarity_Analysis && python sentiment_generation.py
 
+      - name: Update Training Dataset
+        run: |
+          cd Model_Training && python model.py
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
