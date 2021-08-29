@@ -12,7 +12,6 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
-from pathlib import Path
 import yfinance as yf
 import re
 
@@ -93,7 +92,7 @@ def cleanup_array(overall_array, stock):
     ticker = yf.Ticker(stock)
     name = ticker.info['longName']
     for entry in overall_array:
-        if stock.lower() in str(entry).lower() or contains_company_name(str(entry).lower(), name):
+        if stock in str(entry) or contains_company_name(str(entry).lower(), name.lower()):
             cleaned_array.append(entry)
 
     return cleaned_array
@@ -219,6 +218,7 @@ def main():
         except RuntimeError as e:
             print(e, "was handled")
 
+    overall_headlines_df.drop_duplicates(subset=None, keep='first', inplace=True)
     overall_headlines_df.to_csv('../Headlines.csv', index=False)
 
 

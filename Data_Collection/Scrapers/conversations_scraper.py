@@ -25,6 +25,7 @@ import numpy as np
 # Setup
 demoji.download_codes()
 
+
 def get_yahoo_conversations(stock):
     """
     Parses yahoo finance conversations page to get conversations related to the stock.
