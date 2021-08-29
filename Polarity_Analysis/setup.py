@@ -12,6 +12,7 @@ import nltk
 import pandas as pd
 nltk.download('vader_lexicon')
 nltk.download('punkt')
+nltk.download('wordnet')
 
 words = pd.DataFrame(columns=['Text', 'Polarity'])
 csv_df = pd.read_csv('setup_csvs/stock_lex.csv')
