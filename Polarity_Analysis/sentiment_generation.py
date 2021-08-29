@@ -43,7 +43,7 @@ def get_sentiments():
     Analyze polarities of the given stock tickers, based on terminologies inserted in SentimentIntensityAnalyzer.
     Prints out the aggregated results to CSV.
     """
-    headlines_csv = pd.read_csv("../Data_Collection/CSV_Results/Headlines/Headlines.csv")
+    headlines_csv = pd.read_csv("../Data_Collection/CSV_Results/Headlines.csv")
     sum_of_polarities = {}
     count_of_headlines = {}
 

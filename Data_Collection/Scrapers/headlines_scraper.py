@@ -219,7 +219,7 @@ def main():
         except RuntimeError as e:
             print(e, "was handled")
 
-    overall_headlines_df.to_csv('../CSV_Results/Headlines/Headlines.csv', index=False)
+    overall_headlines_df.to_csv('../Headlines.csv', index=False)
 
 
 if __name__ == "__main__":
