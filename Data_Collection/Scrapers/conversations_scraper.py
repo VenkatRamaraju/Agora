@@ -19,10 +19,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from headlines_scraper import create_array
-from os import path
 from pathlib import Path
 import numpy as np
 
+# Setup
+demoji.download_codes()
 
 def get_yahoo_conversations(stock):
     """
