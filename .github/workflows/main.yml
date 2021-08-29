@@ -21,6 +21,10 @@ jobs:
         run: |
           cd Data_Collection/Scrapers && python headlines_scraper.py
 
+      - name: Scrape conversations
+        run: |
+          cd Data_Collection/Scrapers && python conversations_scraper.py
+
       - name: Setup NLTK
         run: |
           cd Polarity_Analysis && python setup.py
