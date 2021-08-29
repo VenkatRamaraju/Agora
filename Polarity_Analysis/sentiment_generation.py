@@ -79,11 +79,11 @@ def generate_aggregated_csv():
 
 
 def get_conversation_sentiments():
-    list_of_csv = [f for f in os.listdir('../Data_Collection/Conversations') if f.endswith('.csv')]
+    list_of_conversations = [f for f in os.listdir('../Data_Collection/Conversations/') if f.endswith('.csv')]
     sum_of_polarities = {}
     count_of_conversations = {}
 
-    for ticker_csv in list_of_csv:
+    for ticker_csv in list_of_conversations:
         conversations_csv = pd.read_csv('../Data_Collection/Conversations/' + str(ticker_csv))
         ticker = ticker_csv.split("_")[0].upper()
         for index, row in conversations_csv.iterrows():
