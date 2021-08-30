@@ -1,4 +1,4 @@
-Index,Symbol,Company
+,Tickers,Company Names
 0,AAPL,Apple Inc.
 1,AMC,"AMC Entertainment Holdings, Inc."
 2,TSLA,"Tesla, Inc."
@@ -122,23 +122,24 @@ Index,Symbol,Company
 120,MVIS,"MicroVision, Inc."
 121,BNTX,BioNTech SE
 122,AA,Alcoa Corporation
-123,RIG,Transocean Ltd.
-124,ADI,"Analog Devices, Inc."
-125,CAT,Caterpillar Inc.
-126,BP,BP p.l.c.
-127,TTD,"The Trade Desk, Inc."
-128,JNJ,Johnson & Johnson
-129,SENS,"Senseonics Holdings, Inc."
-130,MMM,3M Company
-131,MO,"Altria Group, Inc."
-132,ACN,Accenture plc
-133,BRK.B,
-134,GLW,Corning Incorporated
-135,CL,Colgate-Palmolive Company
-136,FDX,FedEx Corporation
-137,HD,"The Home Depot, Inc."
-138,IBM,International Business Machines Corporation
-139,HON,Honeywell International Inc.
-140,MCD,McDonald's Corporation
-141,RTX,Raytheon Technologies Corporation
-142,UPS,"United Parcel Service, Inc."
+123,ALCOA,
+124,RIG,Transocean Ltd.
+125,ADI,"Analog Devices, Inc."
+126,CAT,Caterpillar Inc.
+127,BP,BP p.l.c.
+128,TTD,"The Trade Desk, Inc."
+129,JNJ,Johnson & Johnson
+130,SENS,"Senseonics Holdings, Inc."
+131,MMM,3M Company
+132,MO,"Altria Group, Inc."
+133,ACN,Accenture plc
+134,BRK.B,
+135,GLW,Corning Incorporated
+136,CL,Colgate-Palmolive Company
+137,FDX,FedEx Corporation
+138,HD,"The Home Depot, Inc."
+139,IBM,International Business Machines Corporation
+140,HON,Honeywell International Inc.
+141,MCD,McDonald's Corporation
+142,RTX,Raytheon Technologies Corporation
+143,UPS,"United Parcel Service, Inc."
