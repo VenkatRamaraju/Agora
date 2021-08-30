@@ -72,8 +72,11 @@ def generate_aggregated_csv():
     aggregated_df = pd.DataFrame(columns=["Ticker", "Conversations", "Headlines"])
 
     for ticker, headlines_polarity in headlines_map.items():
-        row = {"Ticker": ticker, "Conversations": conversations_map[ticker], "Headlines": headlines_polarity}
-        aggregated_df = aggregated_df.append(row, ignore_index=True)
+        try:
+            row = {"Ticker": ticker, "Conversations": conversations_map[ticker], "Headlines": headlines_polarity}
+            aggregated_df = aggregated_df.append(row, ignore_index=True)
+        except RuntimeError as e:
+            print(e, "was handled")
 
     aggregated_df.to_csv("aggregated_polarities.csv")
 
