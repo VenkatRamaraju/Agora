@@ -17,7 +17,7 @@ import re
 
 # Global Variables
 overall_headlines_df = pd.DataFrame(columns=['Ticker', 'Headline'])
-
+stocks_dict = {}
 
 def get_soup(request, element, class_value):
     """
@@ -90,7 +90,7 @@ def cleanup_array(overall_array, stock):
 
     cleaned_array = []
     ticker = yf.Ticker(stock)
-    name = ticker.info['longName']
+    name = stocks_dict[stock]
     for entry in overall_array:
         if stock in str(entry) or contains_company_name(str(entry).lower(), name.lower()):
             cleaned_array.append(entry)
@@ -200,7 +200,7 @@ def main():
     # Tickers and companies
 
     stocks_df = pd.read_csv("../companies.csv")
-    stocks_dict = {}
+    global stocks_dict
 
     for index, row in stocks_df.iterrows():
         stocks_dict.update(
