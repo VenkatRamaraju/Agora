@@ -6,10 +6,10 @@ h1 {
     font-size: 48px;
 }
 
-/*p {*/
-/*    font-family: "Metropolis", sans-serif;*/
-/*    text-align: left;*/
-/*}*/
+p {
+    font-family: "Metropolis", sans-serif;
+    text-align: left;
+}
 
 hr {
     width: 20%;

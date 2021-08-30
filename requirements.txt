@@ -7,3 +7,4 @@ bs4~=0.0.1
 selenium~=3.141.0
 beautifulsoup4==4.9.3
 nltk==3.6.1
+Flask==2.0.1
