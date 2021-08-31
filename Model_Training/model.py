@@ -29,9 +29,9 @@ def get_data():
     for index, row in df.iterrows():
         ticker = yf.Ticker(row['Ticker'])
         for col in new_columns:
-            try:
+            if col in ticker.info:
                 df.at[index, col] = ticker.info[col]
-            except RuntimeError as e:
+            else:
                 df.at[index, col] = None
 
     df.to_csv('training_data.csv')
