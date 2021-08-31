@@ -43,7 +43,7 @@ def get_yahoo_conversations(stock):
         driver.get(url)
         ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
         i = 0
-        while i < 5:
+        while i < 500:
             WebDriverWait(driver, 5, ignored_exceptions).until(
                 EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
