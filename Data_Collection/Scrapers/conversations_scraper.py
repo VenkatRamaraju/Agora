@@ -30,6 +30,7 @@ def get_yahoo_conversations(stock):
     """
     Parses yahoo finance conversations page to get conversations related to the stock.
     """
+    stock = stock.replace('.', '-')     # In case a stock contains ".", EX: BRK.B
     url = "https://finance.yahoo.com/quote/" + stock + "/community?p=" + stock
 
     # Selenium Web Driver to click load more button and continue to retrieve conversation
