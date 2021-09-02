@@ -39,7 +39,7 @@ jobs:
 
       - name: Update Analyst Ratings
         run: |
-          cd Data_Collection/Scrapers && python analyst_ratings_scraper.csv
+          cd Data_Collection/Scrapers && python analyst_ratings_scraper.py
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
