@@ -1,7 +1,8 @@
 name: Weekly Report
 on:
-  schedule:
-    - cron: '0 12 * * FRI'
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,6 +36,10 @@ jobs:
       - name: Update Training Dataset
         run: |
           cd Model_Training && python model.py
+
+      - name: Update Analyst Ratings
+        run: |
+          cd Data_Collection/Scrapers && python analyst_ratings_scraper.csv
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
