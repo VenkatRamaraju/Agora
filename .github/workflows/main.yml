@@ -1,7 +1,8 @@
 name: Weekly Report
 on:
-  schedule:
-    - cron: '0 12 * * FRI'
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
