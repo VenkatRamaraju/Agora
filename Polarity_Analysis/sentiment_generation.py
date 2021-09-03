@@ -66,8 +66,7 @@ def get_headline_sentiments():
 
 def generate_aggregated_csv():
     """
-    Generates a CSV with the aggregated polarities of headlines and conversations for the group of stocks that are
-    being analyzed.
+    Generates a CSV with the aggregated polarities of headlines for the group of stocks that are being analyzed.
     """
     aggregated_df = pd.DataFrame(columns=["Ticker", "Conversations", "Headlines"])
 
@@ -82,6 +81,9 @@ def generate_aggregated_csv():
 
 
 def get_conversation_sentiments():
+    """
+    Generates a CSV with the aggregated polarities of conversations for the group of stocks that are being analyzed.
+    """
     list_of_conversations = [f for f in os.listdir('../Data_Collection/Conversations/') if f.endswith('.csv')]
     sum_of_polarities = {}
     count_of_conversations = {}
