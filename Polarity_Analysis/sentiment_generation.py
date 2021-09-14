@@ -49,16 +49,19 @@ def get_headline_sentiments():
     count_of_headlines = {}
 
     for index, row in headlines_csv.iterrows():
-        lemma_text = lemmatizer.lemmatize(row['Headline'])
-        scores = sia.polarity_scores(lemma_text)
-        row["Polarity"] = scores["compound"]
+        try:
+            lemma_text = lemmatizer.lemmatize(row['Headline'])
+            scores = sia.polarity_scores(lemma_text)
+            row["Polarity"] = scores["compound"]
 
-        if row['Ticker'] not in sum_of_polarities:
-            sum_of_polarities[row['Ticker']] = scores["compound"]
-            count_of_headlines[row['Ticker']] = 1
-        else:
-            sum_of_polarities[row['Ticker']] = sum_of_polarities[row['Ticker']] + scores["compound"]
-            count_of_headlines[row['Ticker']] = count_of_headlines[row['Ticker']] + 1
+            if row['Ticker'] not in sum_of_polarities:
+                sum_of_polarities[row['Ticker']] = scores["compound"]
+                count_of_headlines[row['Ticker']] = 1
+            else:
+                sum_of_polarities[row['Ticker']] = sum_of_polarities[row['Ticker']] + scores["compound"]
+                count_of_headlines[row['Ticker']] = count_of_headlines[row['Ticker']] + 1
+        except RuntimeError as e:
+            print(e, "was handled")
 
     for ticker in sum_of_polarities:
         headlines_map[ticker] = sum_of_polarities[ticker]/count_of_headlines[ticker]
