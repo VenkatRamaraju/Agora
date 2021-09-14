@@ -50,7 +50,7 @@ def get_headline_sentiments():
 
     for index, row in headlines_csv.iterrows():
         try:
-            lemma_text = lemmatizer.lemmatize(row['Headline'])
+            lemma_text = lemmatizer.lemmatize(str(row['Headline']))
             scores = sia.polarity_scores(lemma_text)
             row["Polarity"] = scores["compound"]
 
@@ -96,7 +96,7 @@ def get_conversation_sentiments():
         ticker = ticker_csv.split("_")[0].upper()
         for index, row in conversations_csv.iterrows():
             try:
-                lemma_text = lemmatizer.lemmatize(row['Conversation'])
+                lemma_text = lemmatizer.lemmatize(str(row['Conversation']))
                 scores = sia.polarity_scores(lemma_text)
                 row["Polarity"] = scores["compound"]
 
