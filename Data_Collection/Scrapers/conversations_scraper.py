@@ -72,6 +72,9 @@ def get_all_conversations(stock):
     yahoo_conversations = np.array(yahoo_conversations)
     yahoo_dates = np.array(yahoo_dates)
 
+    if len(yahoo_conversations) == 0:
+        return [], []
+
     return list(np.concatenate(yahoo_conversations, axis=None)), list(np.concatenate(yahoo_dates, axis=None))
 
 

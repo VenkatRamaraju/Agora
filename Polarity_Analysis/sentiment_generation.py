@@ -95,18 +95,24 @@ def get_conversation_sentiments():
         conversations_csv = pd.read_csv('../Data_Collection/Conversations/' + str(ticker_csv))
         ticker = ticker_csv.split("_")[0].upper()
         for index, row in conversations_csv.iterrows():
-            lemma_text = lemmatizer.lemmatize(row['Conversation'])
-            scores = sia.polarity_scores(lemma_text)
-            row["Polarity"] = scores["compound"]
+            try:
+                lemma_text = lemmatizer.lemmatize(row['Conversation'])
+                scores = sia.polarity_scores(lemma_text)
+                row["Polarity"] = scores["compound"]
 
-            if ticker not in sum_of_polarities:
-                sum_of_polarities[ticker] = scores["compound"]
-                count_of_conversations[ticker] = 1
-            else:
-                sum_of_polarities[ticker] = sum_of_polarities[ticker] + scores["compound"]
-                count_of_conversations[ticker] = count_of_conversations[ticker] + 1
+                if ticker not in sum_of_polarities:
+                    sum_of_polarities[ticker] = scores["compound"]
+                    count_of_conversations[ticker] = 1
+                else:
+                    sum_of_polarities[ticker] = sum_of_polarities[ticker] + scores["compound"]
+                    count_of_conversations[ticker] = count_of_conversations[ticker] + 1
+            except RuntimeError as e:
+                print(e, "was handled")
 
-        conversations_map[ticker] = sum_of_polarities[ticker]/count_of_conversations[ticker]
+        if count_of_conversations[ticker] > 0:
+            conversations_map[ticker] = sum_of_polarities[ticker]/count_of_conversations[ticker]
+        else:
+            conversations_map[ticker] = 0.0
 
 
 def main():
