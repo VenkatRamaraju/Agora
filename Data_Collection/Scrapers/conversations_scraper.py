@@ -39,26 +39,25 @@ def get_yahoo_conversations(stock):
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
 
     # Attempt to scroll as much as possible
-    try:
-        driver.get(url)
-        ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
-        i = 0
-        while i < 50:
+    driver.get(url)
+    ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
+    i = 0
+    while i < 50:
+        try:
             WebDriverWait(driver, 5, ignored_exceptions).until(
-                EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
             element = driver.find_element_by_xpath('//*[@id="canvass-0-CanvassApplet"]/div/button')
             driver.execute_script("arguments[0].click();", element)
-            i += 1
-    except Exception as e:
-        print(e)
+        except Exception as e:
+            print(e)
+        i += 1
 
     # Retrieving soup after load more button is clicked
     soup = BeautifulSoup(driver.page_source, 'lxml')
     driver.quit()
 
-    return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)')), \
-        create_array(soup.find_all('span', class_='Fz(12px) C(#828c93)'))
+    return create_array(soup.find_all('div', class_='C($c-fuji-grey-l) Mb(2px) Fz(14px) Lh(20px) Pend(8px)'))
 
 
 def get_all_conversations(stock):
@@ -68,14 +67,13 @@ def get_all_conversations(stock):
     :param stock: Name of stock ticker.
     :return: Overall array of conversations from various sources after cleaning (Removal of punctuations).
     """
-    yahoo_conversations, yahoo_dates = get_yahoo_conversations(stock)
+    yahoo_conversations = get_yahoo_conversations(stock)
     yahoo_conversations = np.array(yahoo_conversations)
-    yahoo_dates = np.array(yahoo_dates)
 
     if len(yahoo_conversations) == 0:
-        return [], []
+        return []
 
-    return list(np.concatenate(yahoo_conversations, axis=None)), list(np.concatenate(yahoo_dates, axis=None))
+    return list(np.concatenate(yahoo_conversations, axis=None))
 
 
 def output(overall_data, stock):
@@ -85,7 +83,6 @@ def output(overall_data, stock):
     :param stock: Name of the stock for which all the above data is being retrieved.
     :return None.
     """
-
     # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
     overall_data = list(set(overall_data))
     file_path = str(Path(__file__).resolve().parents[1]) + '/Conversations/' + stock.upper() + '_conversations.csv'
@@ -115,7 +112,7 @@ def main():
     for stock in tickers:
         print("Getting conversations for:", stock)
         try:
-            overall_conversations, dates = get_all_conversations(stock)
+            overall_conversations = get_all_conversations(stock)
             output(overall_conversations, stock)
         except RuntimeError as e:
             print(e, "was handled")
