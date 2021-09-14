@@ -1,2118 +1,421 @@
-Symbol,Company
-AMCX,AMC Networks Inc. Class A Common Stock
-CLOV,Clover Health Investments Corp. Class A Common Stock
-FIZZ,National Beverage Corp. Common Stock
-INVA,Innoviva Inc. Common Stock
-MVST,Microvast Holdings Inc. Common Stock
-PAHC,Phibro Animal Health Corporation Class A Common Stock
-AAON,AAON Inc. Common Stock
-ABTX,Allegiance Bancshares Inc. Common Stock
-ADMP,Adamis Pharmaceuticals Corporation Common Stock
-ADP,Automatic Data Processing Inc. Common Stock
-AESE,Allied Esports Entertainment Inc. Common Stock
-ALOT,AstroNova Inc. Common Stock
-ALRS,Alerus Financial Corporation Common Stock
-ALTA,Altabancorp Common Stock
-ALTM,Altus Midstream Company Class A Common Stock
-APPF,AppFolio Inc. Class A Common Stock
-APRE,Aprea Therapeutics Inc. Common stock
-AROW,Arrow Financial Corporation Common Stock
-ASLE,AerSale Corporation Common Stock
-ATXI,Avenue Therapeutics Inc. Common Stock
-AXDX,Accelerate Diagnostics Inc. Common Stock
-BANF,BancFirst Corporation Common Stock
-BBBY,Bed Bath & Beyond Inc. Common Stock
-BCBP,BCB Bancorp Inc. (NJ) Common Stock
-BFC,Bank First Corporation Common Stock
-BHF,Brighthouse Financial Inc. Common Stock
-BKCC,BlackRock Capital Investment Corporation Common Stock
-BKEP,Blueknight Energy Partners L.P. Common Units
-BLBD,Blue Bird Corporation Common Stock
-BLCM,Bellicum Pharmaceuticals Inc. Common Stock
-BOCH,Bank of Commerce Holdings (CA) Common Stock
-BSBK,Bogota Financial Corp. Common Stock
-CACC,Credit Acceptance Corporation Common Stock
-CBFV,CB Financial Services Inc. Common Stock
-CBRL,Cracker Barrel Old Country Store Inc Common Stock
-CBSH,Commerce Bancshares Inc. Common Stock
-CBTX,CBTX Inc. Common Stock
-CCBG,Capital City Bank Group Common Stock
-CFBK,CF Bankshares Inc. Common Stock
-CFFN,Capitol Federal Financial Inc. Common Stock
-CHCO,City Holding Company Common Stock
-CLBK,Columbia Financial Inc. Common Stock
-CLNE,Clean Energy Fuels Corp. Common Stock
-CLVS,Clovis Oncology Inc. Common Stock
-CNDT,Conduent Incorporated Common Stock
-CNFR,Conifer Holdings Inc. Common Stock
-CNXN,PC Connection Inc. Common Stock
-COHR,Coherent Inc. Common Stock
-COLB,Columbia Banking System Inc. Common Stock
-CRWS,Crown Crafts Inc Common Stock
-DFFN,Diffusion Pharmaceuticals Inc. Common Stock
-DFH,Dream Finders Homes Inc. Class A Common Stock
-DHC,Diversified Healthcare Trust Common Shares of Beneficial Interest
-DISCK,Discovery Inc. Series C Common Stock
-DSPG,DSP Group Inc. Common Stock
-EBSB,Meridian Bancorp Inc. Common Stock
-EGBN,Eagle Bancorp Inc. Common Stock
-ESSA,ESSA Bancorp Inc. Common Stock
-ESXB,Community Bankers Trust Corporation Common Stock (VA)
-EXPD,Expeditors International of Washington Inc. Common Stock
-EZPW,EZCORP Inc. Class A Non Voting Common Stock
-FARO,FARO Technologies Inc. Common Stock
-FBRX,Forte Biosciences Inc. Common Stock
-FCEL,FuelCell Energy Inc. Common Stock
-FCRD,First Eagle Alternative Capital BDC Inc. Common Stock
-FFBC,First Financial Bancorp. Common Stock
-FFIN,First Financial Bankshares Inc. Common Stock
-FHB,First Hawaiian Inc. Common Stock
-FLNT,Fluent Inc. Common Stock
-FMAO,Farmers & Merchants Bancorp Inc. Common Stock
-FNWB,First Northwest Bancorp Common Stock
-FRBK,Republic First Bancorp Inc. Common Stock
-FTEK,Fuel Tech Inc. Common Stock
-FULT,Fulton Financial Corporation Common Stock
-GABC,German American Bancorp Inc. Common Stock
-GAIN,Gladstone Investment Corporation Business Development Company
-GBDC,Golub Capital BDC Inc. Common Stock
-GECC,Great Elm Capital Corp. Common Stock
-GLAD,Gladstone Capital Corporation Common Stock
-GRPN,Groupon Inc. Common Stock
-HA,Hawaiian Holdings Inc. Common Stock
-HMHC,Houghton Mifflin Harcourt Company Common Stock
-HOPE,Hope Bancorp Inc. Common Stock
-HRZN,Horizon Technology Finance Corporation Common Stock
-HTBI,HomeTrust Bancshares Inc. Common Stock
-ICMB,Investcorp Credit Management BDC Inc. Common Stock
-IDRA,Idera Pharmaceuticals Inc. Common Stock
-INFN,Infinera Corporation Common Stock
-INGN,Inogen Inc Common Stock
-INOV,Inovalon Holdings Inc. Class A Common Stock
-INTC,Intel Corporation Common Stock
-INTZ,Intrusion Inc. Common Stock
-IRBT,iRobot Corporation Common Stock
-JAKK,JAKKS Pacific Inc. Common Stock
-KLXE,KLX Energy Services Holdings Inc. Common Stock
-KRMD,Repro Med Systems Inc. Common Stock
-LAZY,Lazydays Holdings Inc. Common Stock
-LGIH,LGI Homes Inc. Common Stock
-LHDX,Lucira Health Inc. Common Stock
-LILA,Liberty Latin America Ltd. Class A Common Stock
-LILAK,Liberty Latin America Ltd. Class C Common Stock
-LJPC,La Jolla Pharmaceutical Company Common Stock
-LKFN,Lakeland Financial Corporation Common Stock
-LMRK,Landmark Infrastructure Partners LP Common Units
-LSTR,Landstar System Inc. Common Stock
-MCBS,MetroCity Bankshares Inc. Common Stock
-MGEE,MGE Energy Inc
-MGI,Moneygram International Inc. Common Stock
-MGLN,Magellan Health Inc. Common Stock
-MGPI,MGP Ingredients Inc.
-MILE,Metromile Inc. Common Stock
-MLVF,Malvern Bancorp Inc. Common Stock
-MMLP,Martin Midstream Partners L.P. Limited Partnership
-MNRO,Monro Inc. Common Stock
-MSON,MISONIX Inc. Common Stock (DE)
-MVBF,MVB Financial Corp. Common Stock
-MVIS,MicroVision Inc. Common Stock
-MYGN,Myriad Genetics Inc. Common Stock
-NATI,National Instruments Corporation Common Stock
-NEWT,Newtek Business Services Corp. Common Stock (Maryland)
-NOVT,Novanta Inc. Common Stock
-NRIM,Northrim BanCorp Inc Common Stock
-NTCT,NetScout Systems Inc. Common Stock
-NTUS,Natus Medical Incorporated Common Stock
-NWBI,Northwest Bancshares Inc. Common Stock
-ODP,The ODP Corporation Common Stock
-ODT,Odonate Therapeutics Inc. Common Stock
-OMP,Oasis Midstream Partners LP Common Units Representing Limited Partner Interests
-OPI,Office Properties Income Trust Common Shares of Beneficial Interest
-OXSQ,Oxford Square Capital Corp. Common Stock
-PBCT,People's United Financial Inc. Common Stock
-PBIP,Prudential Bancorp Inc. Common Stock
-PBPB,Potbelly Corporation Common Stock
-PBYI,Puma Biotechnology Inc Common Stock
-PETS,PetMed Express Inc. Common Stock
-PFX,PhenixFIN Corporation Common Stock
-PROG,Progenity Inc. Common Stock
-PROV,Provident Financial Holdings Inc. Common Stock
-QADA,QAD Inc. Class A Common Stock
-QLYS,Qualys Inc. Common Stock
-RAIL,FreightCar America Inc. Common Stock
-RAVN,Raven Industries Inc. Common Stock
-RDI,Reading International Inc Class A Common Stock
-RDUS,Radius Health Inc. Common Stock
-RIDE,Lordstown Motors Corp. Class A Common Stock
-RNST,Renasant Corporation Common Stock
-SABR,Sabre Corporation Common Stock
-SAFM,Sanderson Farms Inc. Common Stock
-SBSI,Southside Bancshares Inc. Common Stock
-SCWX,SecureWorks Corp. Class A Common Stock
-SDC,SmileDirectClub Inc. Class A Common Stock
-SEAC,SeaChange International Inc. Common Stock
-SFNC,Simmons First National Corporation Class A Common Stock
-SIGI,Selective Insurance Group Inc. Common Stock
-SND,Smart Sand Inc. Common Stock
-SOLY,Soliton Inc. Common Stock
-SPTN,SpartanNash Company Common Stock
-SPWH,Sportsman's Warehouse Holdings Inc. Common Stock
-SPWR,SunPower Corporation Common Stock
-STKS,The ONE Group Hospitality Inc. Common Stock
-STMP,Stamps.com Inc.  Common Stock ($0.001 Par Value)
-SUNW,Sunworks Inc. Common Stock
-TBNK,Territorial Bancorp Inc. Common Stock
-TCDA,Tricida Inc. Common Stock
-THFF,First Financial Corporation Indiana Common Stock
-THRM,Gentherm Inc Common Stock
-TRMK,Trustmark Corporation Common Stock
-TROW,T. Rowe Price Group Inc. Common Stock
-TRST,TrustCo Bank Corp NY Common Stock
-UIHC,United Insurance Holdings Corp. Common Stock
-USAP,Universal Stainless & Alloy Products Inc. Common Stock
-USWS,U.S. Well Services Inc. Class A Common Stock
-VCNX,Vaccinex Inc. Common Stock
-WAFD,Washington Federal Inc. Common Stock
-WDFC,WD-40 Company Common Stock
-WRLD,World Acceptance Corporation Common Stock
-WSBF,Waterstone Financial Inc. Common Stock (MD)
-WTBA,West Bancorporation Common Stock
-XENT,Intersect ENT Inc. Common Stock
-XONE,The ExOne Company Common Stock
-Z,Zillow Group Inc. Class C Capital Stock
-ZEUS,Olympic Steel Inc. Common Stock
-ZY,Zymergen Inc. Common Stock
-AAL,American Airlines Group Inc. Common Stock
-AAOI,Applied Optoelectronics Inc. Common Stock
-ABSI,Absci Corporation Common Stock
-ACAD,ACADIA Pharmaceuticals Inc. Common Stock
-ACBI,Atlantic Capital Bancshares Inc. Common Stock
-ACER,Acer Therapeutics Inc. Common Stock (DE)
-ACHC,Acadia Healthcare Company Inc. Common Stock
-ADV,Advantage Solutions Inc. Class A Common Stock
-ADVM,Adverum Biotechnologies Inc. Common Stock
-AEIS,Advanced Energy Industries Inc. Common Stock
-AFIB,Acutus Medical Inc. Common Stock
-AFIN,American Finance Trust Inc. Class A Common Stock
-AFRM,Affirm Holdings Inc. Class A Common Stock
-AINV,Apollo Investment Corporation Common Stock
-AKBA,Akebia Therapeutics Inc. Common Stock
-AMAL,Amalgamated Financial Corp. Common Stock (DE)
-AMEH,Apollo Medical Holdings Inc. Common Stock
-AMGN,Amgen Inc. Common Stock
-AMNB,American National Bankshares Inc. Common Stock
-AMPH,Amphastar Pharmaceuticals Inc. Common Stock
-AMTB,Amerant Bancorp Inc. Class A Common Stock
-ANAB,AnaptysBio Inc. Common Stock
-ANDE,Andersons Inc. (The) Common Stock
-ANGO,AngioDynamics Inc. Common Stock
-ANIK,Anika Therapeutics Inc. Common Stock
-ANIP,ANI Pharmaceuticals Inc.
-ANSS,ANSYS Inc. Common Stock
-APOG,Apogee Enterprises Inc. Common Stock
-APPN,Appian Corporation Class A Common Stock
-AQB,AquaBounty Technologies Inc. Common Stock
-ARDX,Ardelyx Inc. Common Stock
-ARRY,Array Technologies Inc. Common Stock
-ASMB,Assembly Biosciences Inc. Common Stock
-ATNX,Athenex Inc. Common Stock
-ATRO,Astronics Corporation Common Stock
-AUB,Atlantic Union Bankshares Corporation Common Stock
-AVAV,AeroVironment Inc. Common Stock
-AVT,Avnet Inc. Common Stock
-AXTI,AXT Inc Common Stock
-AZPN,Aspen Technology Inc. Common Stock
-BANR,Banner Corporation Common Stock
-BATRK,Liberty Media Corporation Series C Liberty Braves Common Stock
-BCLI,Brainstorm Cell Therapeutics Inc. Common Stock
-BCPC,Balchem Corporation Common Stock
-BECN,Beacon Roofing Supply Inc. Common Stock
-BEEM,Beam Global Common Stock
-BFIN,BankFinancial Corporation Common Stock
-BGCP,BGC Partners Inc Class A Common Stock
-BGRY,Berkshire Grey Inc. Class A Common Stock
-BIGC,BigCommerce Holdings Inc. Series 1 Common Stock
-BIIB,Biogen Inc. Common Stock
-BKNG,Booking Holdings Inc. Common Stock
-BLIN,Bridgeline Digital Inc. Common Stock
-BLKB,Blackbaud Inc. Common Stock
-BLNK,Blink Charging Co. Common Stock
-BLUE,bluebird bio Inc. Common Stock
-BMBL,Bumble Inc. Class A Common Stock
-BMRA,Biomerica Inc. Common Stock
-BMRC,Bank of Marin Bancorp Common Stock
-BMTC,Bryn Mawr Bank Corporation Common Stock
-BNFT,Benefitfocus Inc. Common Stock
-BOKF,BOK Financial Corporation Common Stock
-BRKL,Brookline Bancorp Inc. Common Stock
-BRKR,Bruker Corporation Common Stock
-BRP,BRP Group Inc. (Insurance Company) Class A Common Stock
-BRY,Berry Corporation (bry) Common Stock
-BSRR,Sierra Bancorp Common Stock
-BSVN,Bank7 Corp. Common stock
-BUSE,First Busey Corporation Class A Common Stock
-BWEN,Broadwind Inc. Common Stock
-BYND,Beyond Meat Inc. Common Stock
-CAC,Camden National Corporation Common Stock
-CAKE,Cheesecake Factory Incorporated (The) Common Stock
-CALM,Cal-Maine Foods Inc. Common Stock
-CAR,Avis Budget Group Inc. Common Stock
-CASA,Casa Systems Inc. Common Stock
-CASY,Casey's General Stores Inc. Common Stock
-CATY,Cathay General Bancorp Common Stock
-CCAP,Crescent Capital BDC Inc. Common stock
-CCMP,CMC Materials Inc. Common Stock
-CCOI,Cogent Communications Holdings Inc.
-CCRN,Cross Country Healthcare Inc. Common Stock $0.0001 Par Value
-CCXI,ChemoCentryx Inc. Common Stock
-CDEV,Centennial Resource Development Inc. Class A Common Stock
-CDLX,Cardlytics Inc. Common Stock
-CDW,CDW Corporation Common Stock
-CEMI,Chembio Diagnostics Inc. Common Stock
-CFB,CrossFirst Bankshares Inc. Common Stock
-CFLT,Confluent Inc. Class A Common Stock
-CFMS,Conformis Inc. Common Stock
-CGNX,Cognex Corporation Common Stock
-CHMG,Chemung Financial Corp Common Stock
-CHNG,Change Healthcare Inc. Common Stock
-CHRW,C.H. Robinson Worldwide Inc. Common Stock
-CHUY,Chuy's Holdings Inc. Common Stock
-CINF,Cincinnati Financial Corporation Common Stock
-CLMT,Calumet Specialty Products Partners L.P. Common Units
-CLSN,Celsion Corporation Common Stock
-CLVR,Clever Leaves Holdings Inc. Common Shares
-CMAX,CareMax Inc. Class A Common Stock
-CME,CME Group Inc. Class A Common Stock
-CMPI,Checkmate Pharmaceuticals Inc. Common Stock
-CNSL,Consolidated Communications Holdings Inc. Common Stock
-CODX,Co-Diagnostics Inc. Common Stock
-CONN,Conn's Inc. Common Stock
-COOP,Mr. Cooper Group Inc. Common Stock
-CORT,Corcept Therapeutics Incorporated Common Stock
-COUP,Coupa Software Incorporated Common Stock
-CPSI,Computer Programs and Systems Inc. Common Stock
-CRAI,CRA International Inc. Common Stock
-CRBP,Corbus Pharmaceuticals Holdings Inc. Common Stock
-CRCT,Cricut Inc. Class A Common Stock
-CREE,Cree Inc. Common Stock
-CRMT,America's Car-Mart Inc Common Stock
-CRTX,Cortexyme Inc. Common Stock
-CSGS,CSG Systems International Inc. Common Stock
-CSII,Cardiovascular Systems Inc. Common Stock
-CSOD,Cornerstone OnDemand Inc. Common Stock
-CTBI,Community Trust Bancorp Inc. Common Stock
-CTKB,Cytek Biosciences Inc. Common Stock
-CTXS,Citrix Systems Inc. Common Stock
-CVBF,CVB Financial Corporation Common Stock
-CVCO,Cavco Industries Inc. Common Stock When Issued
-CVGW,Calavo Growers Inc. Common Stock
-CYBE,CyberOptics Corporation Common Stock
-CZWI,Citizens Community Bancorp Inc. Common Stock
-DGICA,Donegal Group Inc. Class A Common Stock
-DISCA,Discovery Inc. Series A Common Stock
-DISH,DISH Network Corporation Class A Common Stock
-DLTR,Dollar Tree Inc. Common Stock
-DORM,Dorman Products Inc. Common Stock
-DSP,Viant Technology Inc. Class A Common Stock
-DUOL,Duolingo Inc. Class A Common Stock
-EBAY,eBay Inc. Common Stock
-ECOL,US Ecology Inc Common Stock
-EDIT,Editas Medicine Inc. Common Stock
-EGAN,eGain Corporation Common Stock
-EGRX,Eagle Pharmaceuticals Inc. Common Stock
-EHTH,eHealth Inc. Common Stock
-ENTA,Enanta Pharmaceuticals Inc. Common Stock
-ENTG,Entegris Inc. Common Stock
-EPAY,Bottomline Technologies Inc. Common Stock
-ERIE,Erie Indemnity Company Class A Common Stock
-ERII,Energy Recovery Inc. Common Stock
-ESPR,Esperion Therapeutics Inc. Common Stock
-EVOP,EVO Payments Inc. Class A Common Stock
-EXC,Exelon Corporation Common Stock
-EXLS,ExlService Holdings Inc. Common Stock
-EXPE,Expedia Group Inc. Common Stock
-EXPO,Exponent Inc. Common Stock
-EXTR,Extreme Networks Inc. Common Stock
-EYE,National Vision Holdings Inc. Common Stock
-FAST,Fastenal Company Common Stock
-FCCO,First Community Corporation Common Stock
-FCFS,FirstCash Inc. Common Stock
-FELE,Franklin Electric Co. Inc. Common Stock
-FEYE,FireEye Inc. Common Stock
-FFIC,Flushing Financial Corporation Common Stock
-FGBI,First Guaranty Bancshares Inc. Common Stock
-FGEN,FibroGen Inc Common Stock
-FIBK,First Interstate BancSystem Inc. Class A Common Stock
-FIVN,Five9 Inc. Common Stock
-FLGT,Fulgent Genetics Inc. Common Stock
-FLIC,First of Long Island Corporation (The) Common Stock
-FMBI,First Midwest Bancorp Inc. Common Stock
-FNHC,FedNat Holding Company Common Stock
-FOLD,Amicus Therapeutics Inc. Common Stock
-FORR,Forrester Research Inc. Common Stock
-FOXF,Fox Factory Holding Corp. Common Stock
-FREQ,Frequency Therapeutics Inc. Common Stock
-FROG,JFrog Ltd. Ordinary Shares
-FRTA,Forterra Inc. Common Stock
-FSBW,FS Bancorp Inc. Common Stock
-FSLR,First Solar Inc. Common Stock
-FTNT,Fortinet Inc. Common Stock
-FUNC,First United Corporation Common Stock
-FUV,Arcimoto Inc. Common Stock
-FWONA,Liberty Media Corporation Series A Liberty Formula One Common Stock
-FWRD,Forward Air Corporation Common Stock
-GBCI,Glacier Bancorp Inc. Common Stock
-GFED,Guaranty Federal Bancshares Inc. Common Stock
-GIII,G-III Apparel Group LTD. Common Stock
-GNOG,Golden Nugget Online Gaming Inc. Class A Common Stock
-GNTY,Guaranty Bancshares Inc. Common Stock
-GO,Grocery Outlet Holding Corp. Common Stock
-GOEV,Canoo Inc. Class A Common Stock
-GOGO,Gogo Inc. Common Stock
-GPRO,GoPro Inc. Class A Common Stock
-GRAY,Graybug Vision Inc. Common Stock
-GSBC,Great Southern Bancorp Inc. Common Stock
-GSHD,Goosehead Insurance Inc. Class A Common Stock
-GSKY,GreenSky Inc. Class A Common Stock
-GT,The Goodyear Tire & Rubber Company Common Stock
-HAFC,Hanmi Financial Corporation Common Stock
-HALL,Hallmark Financial Services Inc. Common Stock
-HAYN,Haynes International Inc. Common Stock
-HBCP,Home Bancorp Inc. Common Stock
-HBMD,Howard Bancorp Inc. Common Stock
-HBT,HBT Financial Inc. Common Stock
-HCSG,Healthcare Services Group Inc. Common Stock
-HDSN,Hudson Technologies Inc. Common Stock
-HFWA,Heritage Financial Corporation Common Stock
-HLBZ,Helbiz Inc. Class A Common stock
-HLIO,Helios Technologies Inc. Common Stock
-HLIT,Harmonic Inc. Common Stock
-HLNE,Hamilton Lane Incorporated Class A Common Stock
-HMPT,Home Point Capital Inc Common Stock
-HMST,HomeStreet Inc. Common Stock
-HONE,HarborOne Bancorp Inc. Common Stock
-HOOD,Robinhood Markets Inc. Class A Common Stock
-HSIC,Henry Schein Inc. Common Stock
-HSII,Heidrick & Struggles International Inc. Common Stock
-HST,Host Hotels & Resorts Inc. Common Stock
-HSTM,HealthStream Inc. Common Stock
-HTLD,Heartland Express Inc. Common Stock
-HTLF,Heartland Financial USA Inc. Common Stock
-HWKN,Hawkins Inc. Common Stock
-IART,Integra LifeSciences Holdings Corporation Common Stock
-IBCP,Independent Bank Corporation Common Stock
-ICBK,County Bancorp Inc. Common Stock
-ICPT,Intercept Pharmaceuticals Inc. Common Stock
-ILMN,Illumina Inc. Common Stock
-ILPT,Industrial Logistics Properties Trust Common Shares of Beneficial Interest
-IMAC,IMAC Holdings Inc. Common Stock
-IMGN,ImmunoGen Inc. Common Stock
-IMMR,Immersion Corporation Common Stock
-IMRA,IMARA Inc. Common Stock
-INCY,Incyte Corp. Common Stock
-INDP,Indaptus Therapeutics Inc. Common Stock
-INO,Inovio Pharmaceuticals Inc. Common Stock
-INSG,Inseego Corp. Common Stock
-IONS,Ionis Pharmaceuticals Inc. Common Stock
-IOSP,Innospec Inc. Common Stock
-IPAR,Inter Parfums Inc. Common Stock
-IRDM,Iridium Communications Inc Common Stock
-IRTC,iRhythm Technologies Inc. Common Stock
-IRWD,Ironwood Pharmaceuticals Inc. Class A Common Stock
-ISBC,Investors Bancorp Inc. Common Stock
-ISRG,Intuitive Surgical Inc. Common Stock
-JBHT,J.B. Hunt Transport Services Inc. Common Stock
-JJSF,J & J Snack Foods Corp. Common Stock
-JKHY,Jack Henry & Associates Inc. Common Stock
-JNCE,Jounce Therapeutics Inc. Common Stock
-KALU,Kaiser Aluminum Corporation Common Stock
-KFRC,Kforce Inc. Common Stock
-KHC,The Kraft Heinz Company Common Stock
-KLAC,KLA Corporation Common Stock
-KLDO,Kaleido Biosciences Inc. Common Stock
-KMPH,KemPharm Inc. Common Stock
-KNSL,Kinsale Capital Group Inc. Common Stock
-KOD,Kodiak Sciences Inc Common Stock
-KOPN,Kopin Corporation Common Stock
-KPTI,Karyopharm Therapeutics Inc. Common Stock
-KTOS,Kratos Defense & Security Solutions Inc. Common Stock
-KVHI,KVH Industries Inc. Common Stock
-LAMR,Lamar Advertising Company Class A Common Stock
-LANC,Lancaster Colony Corporation Common Stock
-LAND,Gladstone Land Corporation Common Stock
-LAWS,Lawson Products Inc. Common Stock
-LAZR,Luminar Technologies Inc.  Class A Common Stock
-LE,Lands' End Inc. Common Stock
-LECO,Lincoln Electric Holdings Inc. Common Shares
-LEVL,Level One Bancorp Inc. Common Stock
-LLNW,Limelight Networks Inc. Common Stock
-LMAT,LeMaitre Vascular Inc. Common Stock
-LMST,Limestone Bancorp Inc. Common Stock
-LNT,Alliant Energy Corporation Common Stock
-LOB,Live Oak Bancshares Inc. Common Stock
-LOCO,El Pollo Loco Holdings Inc. Common Stock
-LOGI,Logitech International S.A. Ordinary Shares
-LOTZ,CarLotz Inc. Class A Common Stock
-LQDT,Liquidity Services Inc. Common Stock
-LSEA,Landsea Homes Corporation Common Stock
-LTRN,Lantern Pharma Inc. Common Stock
-LUNA,Luna Innovations Incorporated Common Stock
-LXRX,Lexicon Pharmaceuticals Inc. Common Stock
-LZ,LegalZoom.com Inc. Common Stock
-MANT,ManTech International Corporation Common Stock $0.01 Par Value
-MAR,Marriott International Class A Common Stock
-MBII,Marrone Bio Innovations Inc. Common Stock
-MBWM,Mercantile Bank Corporation Common Stock
-MCFE,McAfee Corp. Class A Common Stock
-MCFT,MasterCraft Boat Holdings Inc. Common Stock
-MDRX,Allscripts Healthcare Solutions Inc. Common Stock
-MDWT,Midwest Holding Inc. Common Stock
-MEDP,Medpace Holdings Inc. Common Stock
-METC,Ramaco Resources Inc. Common Stock
-MKTX,MarketAxess Holdings Inc. Common Stock
-MLAB,Mesa Laboratories Inc. Common Stock
-MMMB,MamaMancini's Holdings Inc. Common Stock
-MOFG,MidWestOne Financial Gp Common Stock
-MRAC,Marquee Raine Acquisition Corp. Class A Ordinary Shares
-MRCC,Monroe Capital Corporation Common Stock
-MRCY,Mercury Systems Inc Common Stock
-MRNA,Moderna Inc. Common Stock
-MRTN,Marten Transport Ltd. Common Stock
-MRTX,Mirati Therapeutics Inc. Common Stock
-MSBI,Midland States Bancorp Inc. Common Stock
-MSEX,Middlesex Water Company Common Stock
-MSTR,MicroStrategy Incorporated Common Stock Class A
-MYRG,MYR Group Inc. Common Stock
-NBTB,NBT Bancorp Inc. Common Stock
-NCMI,National CineMedia Inc. Common Stock
-NDSN,Nordson Corporation Common Stock
-NEOG,Neogen Corporation Common Stock
-NERV,Minerva Neurosciences Inc Common Stock
-NEXT,NextDecade Corporation Common Stock
-NFE,New Fortress Energy Inc. Class A Common Stock
-NKLA,Nikola Corporation Common Stock
-NKTR,Nektar Therapeutics  Common Stock
-NNBR,NN Inc. Common Stock
-NOTV,Inotiv Inc. Common Stock
-NTGR,NETGEAR Inc. Common Stock
-NTRS,Northern Trust Corporation Common Stock
-NUAN,Nuance Communications Inc. Common Stock
-NUVA,NuVasive Inc. Common Stock
-NWL,Newell Brands Inc. Common Stock
-NXGN,NextGen Healthcare Inc. Common Stock
-NXTC,NextCure Inc. Common Stock
-NYMT,New York Mortgage Trust Inc. Common Stock
-OCGN,Ocugen Inc. Common Stock
-ODFL,Old Dominion Freight Line Inc. Common Stock
-OFS,OFS Capital Corporation Common Stock
-OLLI,Ollie's Bargain Outlet Holdings Inc. Common Stock
-OMQS,OMNIQ Corp. Common Stock
-ONB,Old National Bancorp Common Stock
-ONTX,Onconova Therapeutics Inc. Common Stock
-ORGN,Origin Materials Inc. Common Stock
-ORRF,Orrstown Financial Services Inc Common Stock
-OSUR,OraSure Technologies Inc. Common Stock
-OTRK,Ontrak Inc. Common Stock
-OVID,Ovid Therapeutics Inc. Common Stock
-OZK,Bank OZK Common Stock
-PACB,Pacific Biosciences of California Inc. Common Stock
-PAE,PAE Incorporated Class A Common Stock
-PAYX,Paychex Inc. Common Stock
-PCAR,PACCAR Inc. Common Stock
-PCH,PotlatchDeltic Corporation Common Stock
-PDCO,Patterson Companies Inc. Common Stock
-PEBO,Peoples Bancorp Inc. Common Stock
-PENN,Penn National Gaming Inc. Common Stock
-PEP,PepsiCo Inc. Common Stock
-PFBC,Preferred Bank Common Stock
-PFC,Premier Financial Corp. Common Stock
-PFG,Principal Financial Group Inc Common Stock
-PFHD,Professional Holding Corp. Class A Common stock
-PFIE,Profire Energy Inc. Common Stock
-PFLT,PennantPark Floating Rate Capital Ltd. Common Stock
-PFSW,PFSweb Inc. Common Stock
-PINC,Premier Inc. Class A Common Stock
-PKOH,Park-Ohio Holdings Corp. Common Stock
-PLAY,Dave & Buster's Entertainment Inc. Common Stock
-PLUG,Plug Power Inc. Common Stock
-PLXP,PLx Pharma Inc. Common Stock
-PLXS,Plexus Corp. Common Stock
-PMBC,Pacific Mercantile Bancorp Common Stock
-PNNT,PennantPark Investment Corporation Common Stock
-PNTG,The Pennant Group Inc. Common Stock
-PODD,Insulet Corporation Common Stock
-PPD,PPD Inc. Common Stock
-PRAA,PRA Group Inc. Common Stock
-PTCT,PTC Therapeutics Inc. Common Stock
-PTEN,Patterson-UTI Energy Inc. Common Stock
-PTVE,Pactiv Evergreen Inc. Common stock
-PXLW,Pixelworks Inc.  Common Stock
-QDEL,Quidel Corporation Common Stock
-QRTEA,Qurate Retail Inc. Series A Common Stock
-QUMU,Qumu Corporation Common Stock
-RBB,RBB Bancorp Common Stock
-RCMT,RCM Technologies Inc. Common Stock
-RDFN,Redfin Corporation Common Stock
-REAL,The RealReal Inc. Common Stock
-REG,Regency Centers Corporation Common Stock
-RGLD,Royal Gold Inc. Common Stock
-RMR,The RMR Group Inc. Class A Common Stock
-ROIC,Retail Opportunity Investments Corp. Common Stock (MD)
-ROLL,RBC Bearings Incorporated Common Stock
-ROOT,Root Inc. Class A Common Stock
-RRGB,Red Robin Gourmet Burgers Inc. Common Stock
-RTLR,Rattler Midstream LP Common Units
-RUBY,Rubius Therapeutics Inc. Common Stock
-RUTH,Ruth's Hospitality Group Inc. Common Stock
-RVSB,Riverview Bancorp Inc Common Stock
-RYTM,Rhythm Pharmaceuticals Inc. Common Stock
-SAGE,Sage Therapeutics Inc. Common Stock
-SAIA,Saia Inc. Common Stock
-SANM,Sanmina Corporation Common Stock
-SATS,EchoStar  Corporation Common Stock
-SBBP,Strongbridge Biopharma plc Ordinary Shares
-SBCF,Seacoast Banking Corporation of Florida Common Stock
-SBGI,Sinclair Broadcast Group Inc. Class A Common Stock
-SBRA,Sabra Health Care REIT Inc. Common Stock
-SBT,Sterling Bancorp Inc. Common Stock
-SCHN,Schnitzer Steel Industries Inc. Class A Common Stock
-SCOR,comScore Inc. Common Stock
-SCPL,SciPlay Corporation Class A Common Stock
-SEER,Seer Inc. Class A Common Stock
-SEIC,SEI Investments Company Common Stock
-SESN,Sesen Bio Inc. Common Stock
-SFIX,Stitch Fix Inc. Class A Common Stock
-SFM,Sprouts Farmers Market Inc. Common Stock
-SGEN,Seagen Inc. Common Stock
-SHBI,Shore Bancshares Inc Common Stock
-SHEN,Shenandoah Telecommunications Co Common Stock
-SHOO,Steven Madden Ltd. Common Stock
-SIC,Select Interior Concepts Inc. Class A Common Stock
-SILK,Silk Road Medical Inc. Common Stock
-SIVB,SVB Financial Group Common Stock
-SLAB,Silicon Laboratories Inc. Common Stock
-SLDB,Solid Biosciences Inc. Common Stock
-SLP,Simulations Plus Inc. Common Stock
-SMMF,Summit Financial Group Inc. Common Stock
-SMPL,The Simply Good Foods Company Common Stock
-SNBR,Sleep Number Corporation Common Stock
-SNSE,Sensei Biotherapeutics Inc. Common Stock
-SOHO,Sotherly Hotels Inc. Common Stock
-SONM,Sonim Technologies Inc. Common Stock
-SOTK,Sono-Tek Corporation Common Stock
-SQFT,Presidio Property Trust Inc. Class A Common Stock
-SRCE,1st Source Corporation Common Stock
-SRCL,Stericycle Inc. Common Stock
-SRPT,Sarepta Therapeutics Inc. Common Stock (DE)
-SSB,SouthState Corporation Common Stock
-SSNC,SS&C Technologies Holdings Inc. Common Stock
-SSYS,Stratasys Ltd. Ordinary Shares (Israel)
-STBA,S&T Bancorp Inc. Common Stock
-STEP,StepStone Group Inc. Class A Common Stock
-STFC,State Auto Financial Corporation Common Stock
-STRA,Strategic Education Inc. Common Stock
-SUMO,Sumo Logic Inc. Common Stock
-SVC,Service Properties Trust Common Stock
-SWBI,Smith & Wesson Brands Inc. Common Stock
-SYBT,Stock Yards Bancorp Inc. Common Stock
-TBIO,Translate Bio Inc. Common Stock
-TBK,Triumph Bancorp Inc. Common Stock
-TCBI,Texas Capital Bancshares Inc. Common Stock
-TCBK,TriCo Bancshares Common Stock
-TELL,Tellurian Inc. Common Stock
-TIG,Trean Insurance Group Inc. Common Stock
-TILE,Interface Inc. Common Stock
-TLIS,Talis Biomedical Corporation Common Stock
-TMDX,TransMedics Group Inc. Common Stock
-TNDM,Tandem Diabetes Care Inc. Common Stock
-TOWN,TowneBank Common Stock
-TRHC,Tabula Rasa HealthCare Inc. Common Stock
-TRIP,TripAdvisor Inc. Common Stock
-TRMB,Trimble Inc. Common Stock
-TRS,TriMas Corporation Common Stock
-TRUE,TrueCar Inc. Common Stock
-TRUP,Trupanion Inc. Common Stock
-TSC,TriState Capital Holdings Inc. Common Stock
-TSLA,Tesla Inc. Common Stock
-TTCF,Tattooed Chef Inc Class A Common Stock
-TUEM,Tuesday Morning Corp. Common Stock
-TVTY,Tivity Health Inc. Common Stock
-TW,Tradeweb Markets Inc. Class A Common Stock
-TWIN,Twin Disc Incorporated Common Stock
-TWST,Twist Bioscience Corporation Common Stock
-TXRH,Texas Roadhouse Inc. Common Stock
-UAL,United Airlines Holdings Inc. Common Stock
-UBSI,United Bankshares Inc. Common Stock
-UFCS,United Fire Group Inc. Common Stock
-UMBF,UMB Financial Corporation Common Stock
-UNIT,Uniti Group Inc. Common Stock
-URBN,Urban Outfitters Inc. Common Stock
-USAK,USA Truck Inc. Common Stock
-UVSP,Univest Financial Corporation Common Stock
-VC,Visteon Corporation Common Stock
-VCTR,Victory Capital Holdings Inc. Class A Common Stock
-VCYT,Veracyte Inc. Common Stock
-VG,Vonage Holdings Corp. Common Stock
-VIAC,ViacomCBS Inc. Class B Common Stock
-VIAV,Viavi Solutions Inc. Common Stock
-VICR,Vicor Corporation Common Stock
-VIEW,View Inc. Class A Common Stock
-VLDR,Velodyne Lidar Inc. Common Stock
-VLY,Valley National Bancorp Common Stock
-VRA,Vera Bradley Inc. Common Stock
-VREX,Varex Imaging Corporation Common Stock
-VTRS,Viatris Inc. Common Stock
-VTSI,VirTra Inc. Common Stock
-VUZI,Vuzix Corporation Common Stock
-VYGR,Voyager Therapeutics Inc. Common Stock
-WABC,Westamerica Bancorporation Common Stock
-WASH,Washington Trust Bancorp Inc. Common Stock
-WBA,Walgreens Boots Alliance Inc. Common Stock
-WERN,Werner Enterprises Inc. Common Stock
-WETF,WisdomTree Investments Inc. Common Stock
-WHF,WhiteHorse Finance Inc. Common Stock
-WIRE,Encore Wire Corporation Common Stock
-WISH,ContextLogic Inc. Class A Common Stock
-WKHS,Workhorse Group Inc. Common Stock
-WOOF,Petco Health and Wellness Company Inc. Class A Common Stock
-WSBC,WesBanco Inc. Common Stock
-WSFS,WSFS Financial Corporation Common Stock
-WTRH,Waitr Holdings Inc. Common Stock
-WW,WW International Inc. Common Stock
-WWD,Woodward Inc. Common Stock
-XEL,Xcel Energy Inc. Common Stock
-XLNX,Xilinx Inc. Common Stock
-XOG,Extraction Oil & Gas Inc. Common Stock
-XOMA,XOMA Corporation Common Stock
-YELL,Yellow Corporation Common Stock
-YORW,York Water Company (The) Common Stock
-ZBRA,Zebra Technologies Corporation Class A Common Stock
-ZION,Zions Bancorporation N.A. Common Stock
-ZIOP,ZIOPHARM Oncology Inc Common Stock
-ZM,Zoom Video Communications Inc. Class A Common Stock
-ZUMZ,Zumiez Inc. Common Stock
-AADI,Aadi Bioscience Inc. Common Stock
-AAPL,Apple Inc. Common Stock
-AAWW,Atlas Air Worldwide Holdings NEW Common Stock
-ABCB,Ameris Bancorp Common Stock
-ABEO,Abeona Therapeutics Inc. Common Stock
-ABMD,ABIOMED Inc. Common Stock
-ABNB,Airbnb Inc. Class A Common Stock
-ABOS,Acumen Pharmaceuticals Inc. Common Stock
-ACCD,Accolade Inc. Common Stock
-ACET,Adicet Bio Inc. Common Stock
-ACHV,Achieve Life Sciences Inc. Common Shares
-ACIW,ACI Worldwide Inc. Common Stock
-ACLS,Axcelis Technologies Inc. Common Stock
-ACMR,ACM Research Inc. Class A Common Stock
-ACOR,Acorda Therapeutics Inc. Common Stock
-ACRS,Aclaris Therapeutics Inc. Common Stock
-ACRX,AcelRx Pharmaceuticals Inc. Common Stock
-ACVA,ACV Auctions Inc. Class A Common Stock
-ADBE,Adobe Inc. Common Stock
-ADGI,Adagio Therapeutics Inc. Common Stock
-ADI,Analog Devices Inc. Common Stock
-ADIL,Adial Pharmaceuticals Inc Common Stock
-ADMA,ADMA Biologics Inc Common Stock
-ADMS,Adamas Pharmaceuticals Inc. Common Stock
-ADN,Advent Technologies Holdings Inc. Class A Common Stock
-ADPT,Adaptive Biotechnologies Corporation Common Stock
-ADSK,Autodesk Inc. Common Stock
-ADTN,ADTRAN Inc. Common Stock
-ADTX,Aditxt Inc. Common Stock
-ADUS,Addus HomeCare Corporation Common Stock
-AEMD,Aethlon Medical Inc. Common Stock
-AEP,American Electric Power Company Inc. Common Stock
-AERI,Aerie Pharmaceuticals Inc. Common Stock
-AEYE,AudioEye Inc. Common Stock
-AFCG,AFC Gamma Inc. Common Stock
-AGEN,Agenus Inc. Common Stock
-AGFS,AgroFresh Solutions Inc. Common Stock
-AGFY,Agrify Corporation Common Stock
-AGIO,Agios Pharmaceuticals Inc. Common Stock
-AGLE,Aeglea BioTherapeutics Inc. Common Stock
-AGNC,AGNC Investment Corp. Common Stock
-AGRX,Agile Therapeutics Inc. Common Stock
-AGTC,Applied Genetic Technologies Corporation Common Stock
-AGYS,Agilysys Inc. Common Stock
-AHCO,AdaptHealth Corp. Common Stock
-AIMC,Altra Industrial Motion Corp. Common Stock
-AIRG,Airgain Inc. Common Stock
-AKAM,Akamai Technologies Inc. Common Stock
-AKRO,Akero Therapeutics Inc. Common Stock
-AKTS,Akoustis Technologies Inc. Common Stock
-AKUS,Akouos Inc. Common Stock
-AKYA,Akoya BioSciences Inc. Common Stock
-ALBO,Albireo Pharma Inc. Common Stock
-ALCO,Alico Inc. Common Stock
-ALDX,Aldeyra Therapeutics Inc. Common Stock
-ALEC,Alector Inc. Common Stock
-ALGM,Allegro MicroSystems Inc. Common Stock
-ALGN,Align Technology Inc. Common Stock
-ALGS,Aligos Therapeutics Inc. Common Stock
-ALGT,Allegiant Travel Company Common Stock
-ALHC,Alignment Healthcare Inc. Common Stock
-ALIM,Alimera Sciences Inc. Common Stock
-ALKT,Alkami Technology Inc. Common Stock
-ALLK,Allakos Inc. Common Stock
-ALLO,Allogene Therapeutics Inc. Common Stock
-ALNA,Allena Pharmaceuticals Inc. Common Stock
-ALNY,Alnylam Pharmaceuticals Inc. Common Stock
-ALPN,Alpine Immune Sciences Inc. Common Stock
-ALRM,Alarm.com Holdings Inc. Common Stock
-ALRN,Aileron Therapeutics Inc. Common Stock
-ALT,Altimmune Inc. Common Stock
-ALTO,Alto Ingredients Inc. Common Stock
-ALTR,Altair Engineering Inc. Class A Common Stock
-ALVR,AlloVir Inc. Common Stock
-ALXO,ALX Oncology Holdings Inc. Common Stock
-AMAT,Applied Materials Inc. Common Stock
-AMBA,Ambarella Inc. Ordinary Shares
-AMD,Advanced Micro Devices Inc. Common Stock
-AMED,Amedisys Inc Common Stock
-AMOT,Allied Motion Technologies Inc.
-AMPG,Amplitech Group Inc. Common Stock
-AMRK,A-Mark Precious Metals Inc. Common Stock
-AMRS,Amyris Inc. Common Stock
-AMSC,American Superconductor Corporation Common Stock
-AMSF,AMERISAFE Inc. Common Stock
-AMST,Amesite Inc. Common Stock
-AMSWA,American Software Inc. Class A Common Stock
-AMTI,Applied Molecular Transport Inc. Common Stock
-AMTX,Aemetis Inc. Common Stock
-AMWD,American Woodmark Corporation Common Stock
-AMZN,Amazon.com Inc. Common Stock
-ANEB,Anebulo Pharmaceuticals Inc. Common Stock
-ANGI,Angi Inc. Class A Common Stock
-ANGN,Angion Biomedica Corp. Common Stock
-ANIX,Anixa Biosciences Inc. Common Stock
-ANNX,Annexon Inc. Common Stock
-AOUT,American Outdoor Brands Inc. Common Stock
-APA,APA Corporation Common Stock
-APDN,Applied DNA Sciences Inc. Common Stock
-APEI,American Public Education Inc. Common Stock
-APEN,Apollo Endosurgery Inc. Common Stock
-APLS,Apellis Pharmaceuticals Inc. Common Stock
-APLT,Applied Therapeutics Inc. Common Stock
-APP,Applovin Corporation Class A Common Stock
-APPH,AppHarvest Inc. Common Stock
-APPS,Digital Turbine Inc. Common Stock
-APR,Apria Inc. Common Stock
-APTX,Aptinyx Inc. Common Stock
-APVO,Aptevo Therapeutics Inc. Common Stock
-APYX,Apyx Medical Corporation Common Stock
-AQMS,Aqua Metals Inc. Common Stock
-AQST,Aquestive Therapeutics Inc. Common Stock
-ARAV,Aravive Inc. Common Stock
-ARAY,Accuray Incorporated Common Stock
-ARCB,ArcBest Corporation Common Stock
-ARCC,Ares Capital Corporation Common Stock
-ARDS,Aridis Pharmaceuticals Inc. Common Stock
-AREC,American Resources Corporation Class A Common Stock
-ARKO,ARKO Corp. Common Stock
-ARLP,Alliance Resource Partners L.P. Common Units representing Limited Partners Interests
-ARNA,Arena Pharmaceuticals Inc. Common Stock
-ARQT,Arcutis Biotherapeutics Inc. Common Stock
-ARTL,Artelo Biosciences Inc. Common Stock
-ARTNA,Artesian Resources Corporation Class A Common Stock
-ARVN,Arvinas Inc. Common Stock
-ARWR,Arrowhead Pharmaceuticals Inc. Common Stock
-ASO,Academy Sports and Outdoors Inc. Common Stock
-ASPU,Aspen Group Inc. Common Stock
-ASRT,Assertio Holdings Inc. Common Stock
-ASTE,Astec Industries Inc. Common Stock
-ASTR,Astra Space Inc. Class A Common Stock
-ASTS,AST SpaceMobile Inc. Class A Common Stock
-ASUR,Asure Software Inc Common Stock
-ASYS,Amtech Systems Inc. Common Stock
-ATCX,Atlas Technical Consultants Inc. Class A Common Stock
-ATEC,Alphatec Holdings Inc. Common Stock
-ATER,Aterian Inc. Common Stock
-ATEX,Anterix Inc. Common Stock
-ATHA,Athira Pharma Inc. Common Stock
-ATHX,Athersys Inc. Common Stock
-ATLC,Atlanticus Holdings Corporation Common Stock
-ATNI,ATN International Inc. Common Stock
-ATOM,Atomera Incorporated Common Stock
-ATOS,Atossa Therapeutics Inc. Common Stock
-ATRA,Atara Biotherapeutics Inc. Common Stock
-ATRC,AtriCure Inc. Common Stock
-ATRS,Antares Pharma Inc. Common Stock
-ATSG,Air Transport Services Group Inc
-ATVI,Activision Blizzard Inc. Common Stock
-ATXS,Astria Therapeutics Inc. Common Stock
-AUTO,AutoWeb Inc. Common Stock
-AUVI,Applied UV Inc. Common Stock
-AVAH,Aveanna Healthcare Holdings Inc. Common Stock
-AVEO,AVEO Pharmaceuticals Inc. Common Stock
-AVGO,Broadcom Inc. Common Stock
-AVGR,Avinger Inc. Common Stock
-AVID,Avid Technology Inc. Common Stock
-AVIR,Atea Pharmaceuticals Inc. Common Stock
-AVNW,Aviat Networks Inc. Common Stock
-AVO,Mission Produce Inc. Common Stock
-AVPT,AvePoint Inc. Class A Common Stock
-AVRO,AVROBIO Inc. Common Stock
-AVTE,Aerovate Therapeutics Inc. Common Stock
-AVTX,Avalo Therapeutics Inc. Common Stock
-AVXL,Anavex Life Sciences Corp. Common Stock
-AWH,Aspira Women's Health Inc. Common Stock
-AXGN,Axogen Inc. Common Stock
-AXLA,Axcella Health Inc. Common Stock
-AXNX,Axonics Inc. Common Stock
-AXON,Axon Enterprise Inc. Common Stock
-AXSM,Axsome Therapeutics Inc. Common Stock
-AYTU,Aytu BioPharma Inc.  Common Stock
-AZRX,AzurRx BioPharma Inc. Common Stock
-AZYO,Aziyo Biologics Inc. Class A Common Stock
-BAND,Bandwidth Inc. Class A Common Stock
-BASE,Couchbase Inc. Common Stock
-BATRA,Liberty Media Corporation Series A Liberty Braves Common Stock
-BBCP,Concrete Pumping Holdings Inc. Common Stock
-BBI,Brickell Biotech Inc. Common Stock
-BBIO,BridgeBio Pharma Inc. Common Stock
-BBQ,BBQ Holdings Inc. Common Stock
-BBSI,Barrett Business Services Inc. Common Stock
-BCAB,BioAtla Inc. Common Stock
-BCDA,BioCardia Inc. Common Stock
-BCEL,Atreca Inc. Class A Common Stock
-BCML,BayCom Corp Common Stock
-BCOR,Blucora Inc. Common Stock
-BCOV,Brightcove Inc. Common Stock
-BCRX,BioCryst Pharmaceuticals Inc. Common Stock
-BDSI,BioDelivery Sciences International Inc. Common Stock
-BDSX,Biodesix Inc. Common Stock
-BDTX,Black Diamond Therapeutics Inc. Common Stock
-BEAM,Beam Therapeutics Inc. Common Stock
-BFST,Business First Bancshares Inc. Common Stock
-BGFV,Big 5 Sporting Goods Corporation Common Stock
-BHTG,BioHiTech Global Inc. Common Stock
-BIOC,Biocept Inc. Common Stock
-BIOL,Biolase Inc. Common Stock
-BIVI,BioVie Inc. Class A Common Stock
-BJRI,BJ's Restaurants Inc. Common Stock
-BKYI,BIO-key International Inc. Common Stock
-BL,BlackLine Inc. Common Stock
-BLDE,Blade Air Mobility Inc. Class A Common Stock
-BLFS,BioLife Solutions Inc. Common Stock
-BLI,Berkeley Lights Inc. Common Stock
-BLMN,Bloomin' Brands Inc. Common Stock
-BLPH,Bellerophon Therapeutics Inc. Common Stock
-BMEA,Biomea Fusion Inc. Common Stock
-BMRN,BioMarin Pharmaceutical Inc. Common Stock
-BNGO,Bionano Genomics Inc. Common Stock
-BOLT,Bolt Biotherapeutics Inc. Common Stock
-BOMN,Boston Omaha Corporation Class A Common Stock
-BOOM,DMC Global Inc. Common Stock
-BOXL,Boxlight Corporation Class A Common Stock
-BPMC,Blueprint Medicines Corporation Common Stock
-BPOP,Popular Inc. Common Stock
-BPRN,The Bank of Princeton Common Stock
-BPTH,Bio-Path Holdings Inc. Common Stock
-BRKS,Brooks Automation Inc.
-BSET,Bassett Furniture Industries Incorporated Common Stock
-BSY,Bentley Systems Incorporated Class B Common Stock
-BTAI,BioXcel Therapeutics Inc. Common Stock
-BTCY,Biotricity Inc. Common Stock
-BTRS,BTRS Holdings Inc. Class 1 Common Stock
-BVS,Bioventus Inc. Class A Common Stock
-BWB,Bridgewater Bancshares Inc. Common Stock
-BWFG,Bankwell Financial Group Inc. Common Stock
-BWMN,Bowman Consulting Group Ltd. Common Stock
-BXRX,Baudax Bio Inc. Common Stock
-BYRN,Byrna Technologies Inc. Common Stock
-BYSI,BeyondSpring Inc. Ordinary Shares
-CABA,Cabaletta Bio Inc. Common Stock
-CADL,Candel Therapeutics Inc. Common Stock
-CAHC,CA Healthcare Acquisition Corp. Class A Common Stock
-CALA,Calithera Biosciences Inc. Common Stock
-CAMP,CalAmp Corp. Common Stock
-CAPR,Capricor Therapeutics Inc. Common Stock
-CARA,Cara Therapeutics Inc. Common Stock
-CARE,Carter Bankshares Inc. Common Stock
-CARG,CarGurus Inc. Class A Common Stock
-CASH,Meta Financial Group Inc. Common Stock
-CASI,CASI Pharmaceuticals Inc. Common Stock
-CATC,Cambridge Bancorp Common Stock
-CBAN,Colony Bankcorp Inc. Common Stock
-CBAY,CymaBay Therapeutics Inc. Common Stock
-CBIO,Catalyst Biosciences Inc. Common Stock
-CBNK,Capital Bancorp Inc. Common Stock
-CCB,Coastal Financial Corporation Common Stock
-CCCC,C4 Therapeutics Inc. Common Stock
-CCNE,CNB Financial Corporation Common Stock
-CDAK,Codiak BioSciences Inc. Common Stock
-CDK,CDK Global Inc. Common Stock
-CDMO,Avid Bioservices Inc. Common Stock
-CDNA,CareDx Inc. Common Stock
-CDNS,Cadence Design Systems Inc. Common Stock
-CDTX,Cidara Therapeutics Inc. Common Stock
-CDXC,ChromaDex Corporation Common Stock
-CDXS,Codexis Inc. Common Stock
-CDZI,CADIZ Inc. Common Stock
-CECE,CECO Environmental Corp. Common Stock
-CELC,Celcuity Inc. Common Stock
-CELH,Celsius Holdings Inc. Common Stock
-CELU,Celularity Inc. Class A Common Stock
-CENT,Central Garden & Pet Company Common Stock
-CENTA,Central Garden & Pet Company Class A Common Stock Nonvoting
-CENX,Century Aluminum Company Common Stock
-CERE,Cerevel Therapeutics Holdings Inc. Common Stock
-CERN,Cerner Corporation Common Stock
-CERS,Cerus Corporation Common Stock
-CERT,Certara Inc. Common Stock
-CETX,Cemtrex Inc. Common Stock
-CEVA,CEVA Inc. Common Stock
-CFRX,ContraFect Corporation Common Stock
-CG,The Carlyle Group Inc. Common Stock
-CGBD,TCG BDC Inc. Common Stock
-CGEM,Cullinan Oncology Inc. Common Stock
-CGRN,Capstone Green Energy Corporation Common Stock
-CHDN,Churchill Downs Incorporated Common Stock
-CHEF,The Chefs' Warehouse Inc. Common Stock
-CHK,Chesapeake Energy Corporation Common Stock
-CHRS,Coherus BioSciences Inc. Common Stock
-CHTR,Charter Communications Inc. Class A Common Stock New
-CHX,ChampionX Corporation Common Stock
-CIDM,Cinedigm Corp. Class A Common Stock
-CIVB,Civista Bancshares Inc. Common Stock
-CKPT,Checkpoint Therapeutics Inc. Common Stock
-CLAR,Clarus Corporation Common Stock
-CLBS,Caladrius Biosciences Inc. Common Stock
-CLDX,Celldex Therapeutics Inc.
-CLFD,Clearfield Inc. Common Stock
-CLIR,ClearSign Technologies Corporation Common Stock
-CLNN,Clene Inc. Common Stock
-CLPT,ClearPoint Neuro Inc. Common Stock
-CLRB,Cellectar Biosciences Inc.  Common Stock
-CLSD,Clearside Biomedical Inc. Common Stock
-CLSK,CleanSpark Inc. Common Stock
-CLXT,Calyxt Inc. Common Stock
-CMCO,Columbus McKinnon Corporation Common Stock
-CMCSA,Comcast Corporation Class A Common Stock
-CMLS,Cumulus Media Inc. Class A Common Stock
-CMRX,Chimerix Inc. Common Stock
-CMTL,Comtech Telecommunications Corp. Common Stock
-CNCE,Concert Pharmaceuticals Inc. Common Stock
-CNOB,ConnectOne Bancorp Inc. Common Stock
-CNSP,CNS Pharmaceuticals Inc. Common Stock
-CNTY,Century Casinos Inc. Common Stock
-CNXC,Concentrix Corporation Common Stock
-COCP,Cocrystal Pharma Inc. Common Stock
-COGT,Cogent Biosciences Inc. Common Stock
-COHU,Cohu Inc. Common Stock
-COIN,Coinbase Global Inc. Class A Common Stock
-COLL,Collegium Pharmaceutical Inc. Common Stock
-COLM,Columbia Sportswear Company Common Stock
-COMM,CommScope Holding Company Inc. Common Stock
-CONE,CyrusOne Inc Common Stock
-COST,Costco Wholesale Corporation Common Stock
-COWN,Cowen Inc. Class A Common Stock
-CPRT,Copart Inc. (DE) Common Stock
-CPRX,Catalyst Pharmaceuticals Inc. Common Stock
-CPSS,Consumer Portfolio Services Inc. Common Stock
-CRBU,Caribou Biosciences Inc. Common Stock
-CRDF,Cardiff Oncology Inc. Common Stock
-CRIS,Curis Inc. Common Stock
-CRKN,Crown Electrokinetics Corp. Common Stock
-CRMD,CorMedix Inc. Common Stock
-CRNC,Cerence Inc. Common Stock
-CRNX,Crinetics Pharmaceuticals Inc. Common Stock
-CROX,Crocs Inc. Common Stock
-CRSR,Corsair Gaming Inc. Common Stock
-CRUS,Cirrus Logic Inc. Common Stock
-CRVS,Corvus Pharmaceuticals Inc. Common Stock
-CRWD,CrowdStrike Holdings Inc. Class A Common Stock
-CSBR,Champions Oncology Inc. Common Stock
-CSCO,Cisco Systems Inc. Common Stock (DE)
-CSGP,CoStar Group Inc. Common Stock
-CSSE,Chicken Soup for the Soul Entertainment Inc. Class A Common Stock
-CSTL,Castle Biosciences Inc. Common Stock
-CSTR,CapStar Financial Holdings Inc. Common Stock
-CSWC,Capital Southwest Corporation Common Stock
-CSWI,CSW Industrials Inc. Common Stock
-CSX,CSX Corporation Common Stock
-CTAS,Cintas Corporation Common Stock
-CTHR,Charles & Colvard Ltd Common Stock
-CTIC,CTI BioPharma Corp. (DE) Common Stock
-CTLP,Cantaloupe Inc. Common Stock
-CTMX,CytomX Therapeutics Inc. Common Stock
-CTRE,CareTrust REIT Inc. Common Stock
-CTRN,Citi Trends Inc. Common Stock
-CTSH,Cognizant Technology Solutions Corporation Class A Common Stock
-CTSO,Cytosorbents Corporation Common Stock
-CTXR,Citius Pharmaceuticals Inc. Common Stock
-CUE,Cue Biopharma Inc. Common Stock
-CURI,CuriosityStream Inc. Class A Common Stock
-CUTR,Cutera Inc. Common Stock
-CVCY,Central Valley Community Bancorp Common Stock
-CVET,Covetrus Inc. Common Stock
-CVGI,Commercial Vehicle Group Inc. Common Stock
-CVLG,Covenant Logistics Group Inc. Class A Common Stock
-CVLT,Commvault Systems Inc. Common Stock
-CVRX,CVRx Inc. Common Stock
-CWBR,CohBar Inc. Common Stock
-CWST,Casella Waste Systems Inc. Class A Common Stock
-CXDO,Crexendo Inc. Common Stock
-CYCC,Cyclacel Pharmaceuticals Inc. Common Stock
-CYRX,CryoPort Inc. Common Stock
-CYT,Cyteir Therapeutics Inc. Common Stock
-CYTH,Cyclo Therapeutics Inc. Common Stock
-CYTK,Cytokinetics Incorporated Common Stock
-CZNC,Citizens & Northern Corp Common Stock
-CZR,Caesars Entertainment Inc. Common Stock
-DARE,Dare Bioscience Inc. Common Stock
-DAWN,Day One Biopharmaceuticals Inc. Common Stock
-DBTX,Decibel Therapeutics Inc. Common Stock
-DBX,Dropbox Inc. Class A Common Stock
-DCOM,Dime Community Bancshares Inc. Common Stock
-DCPH,Deciphera Pharmaceuticals Inc. Common Stock
-DCT,Duck Creek Technologies Inc. Common Stock
-DCTH,Delcath Systems Inc. Common Stock
-DDOG,Datadog Inc. Class A Common Stock
-DENN,Denny's Corporation Common Stock
-DGII,Digi International Inc. Common Stock
-DIBS,1stdibs.com Inc. Common Stock
-DIOD,Diodes Incorporated Common Stock
-DKNG,DraftKings Inc. Class A Common Stock
-DLHC,DLH Holdings Corp.
-DLPN,Dolphin Entertainment Inc. Common Stock
-DLTH,Duluth Holdings Inc. Class B Common Stock
-DMAC,DiaMedica Therapeutics Inc. Common Stock
-DMTK,DermTech Inc. Common Stock
-DNAY,Codex DNA Inc. Common Stock
-DNLI,Denali Therapeutics Inc. Common Stock
-DNUT,Krispy Kreme Inc. Common Stock
-DOCU,DocuSign Inc. Common Stock
-DOMO,Domo Inc. Class B Common Stock
-DRNA,Dicerna Pharmaceuticals Inc. Common Stock
-DRRX,DURECT Corporation Common Stock
-DRVN,Driven Brands Holdings Inc. Common Stock
-DSEY,Diversey Holdings Ltd. Ordinary Shares
-DSGN,Design Therapeutics Inc. Common Stock
-DSKE,Daseke Inc. Common Stock
-DTIL,Precision BioSciences Inc. Common Stock
-DVAX,Dynavax Technologies Corporation Common Stock
-DXCM,DexCom Inc. Common Stock
-DXLG,Destination XL Group Inc. Common Stock
-DXPE,DXP Enterprises Inc. Common Stock
-DYN,Dyne Therapeutics Inc. Common Stock
-DYNT,Dynatronics Corporation Common Stock
-DZSI,DZS Inc. Common Stock
-EA,Electronic Arts Inc. Common Stock
-EAR,Eargo Inc. Common Stock
-EBC,Eastern Bankshares Inc. Common Stock
-EBMT,Eagle Bancorp Montana Inc. Common Stock
-ECHO,Echo Global Logistics Inc. Common Stock
-ECOR,electroCore Inc. Common Stock
-ECPG,Encore Capital Group Inc Common Stock
-EDSA,Edesa Biotech Inc. Common Shares
-EEFT,Euronet Worldwide Inc. Common Stock
-EFOI,Energy Focus Inc. Common Stock
-EFSC,Enterprise Financial Services Corporation Common Stock
-EGLE,Eagle Bulk Shipping Inc. Common Stock
-EIGR,Eiger BioPharmaceuticals Inc. Common Stock
-EKSO,Ekso Bionics Holdings Inc. Common Stock
-ELDN,Eledon Pharmaceuticals Inc. Common Stock
-ELEV,Elevation Oncology Inc. Common stock
-ELMS,Electric Last Mile Solutions Inc. Class A Common stock
-ELOX,Eloxx Pharmaceuticals Inc. Common Stock
-ELYM,Eliem Therapeutics Inc Common Stock
-EMKR,EMCORE Corporation Common Stock
-ENPH,Enphase Energy Inc. Common Stock
-ENSG,The Ensign Group Inc. Common Stock
-ENVB,Enveric Biosciences Inc. Common Stock
-ENVX,Enovix Corporation Common Stock
-EOLS,Evolus Inc. Common Stock
-EOSE,Eos Energy Enterprises Inc. Class A Common Stock
-EPZM,Epizyme Inc. Common Stock
-EQ,Equillium Inc. Common Stock
-EQBK,Equity Bancshares Inc. Class A Common Stock
-EQIX,Equinix Inc. Common Stock REIT
-ERAS,Erasca Inc. Common Stock
-ESCA,Escalade Incorporated Common Stock
-ESQ,Esquire Financial Holdings Inc. Common Stock
-ETNB,89bio Inc. Common Stock
-ETON,Eton Pharmaceuticals Inc. Common Stock
-ETSY,Etsy Inc. Common Stock
-ETTX,Entasis Therapeutics Holdings Inc. Common Stock
-EVBG,Everbridge Inc. Common Stock
-EVCM,EverCommerce Inc. Common Stock
-EVER,EverQuote Inc. Class A Common Stock
-EVFM,Evofem Biosciences Inc. Common Stock
-EVGO,EVgo Inc. Class A Common Stock
-EVLO,Evelo Biosciences Inc. Common Stock
-EVLV,Evolv Technologies Holdings Inc. Class A Common Stock
-EWBC,East West Bancorp Inc. Common Stock
-EWCZ,European Wax Center Inc. Class A Common Stock
-EWTX,Edgewise Therapeutics Inc. Common Stock
-EXAS,Exact Sciences Corporation Common Stock
-EXEL,Exelixis Inc. Common Stock
-EXPI,eXp World Holdings Inc. Common Stock
-EYEG,Eyegate Pharmaceuticals Inc. Common Stock
-EYEN,Eyenovia Inc. Common Stock
-EYPT,EyePoint Pharmaceuticals Inc. Common Stock
-FA,First Advantage Corporation Common Stock
-FANG,Diamondback Energy Inc. Commmon Stock
-FARM,Farmer Brothers Company Common Stock
-FAT,FAT Brands Inc. Class A Common Stock
-FATE,Fate Therapeutics Inc. Common Stock
-FB,Facebook Inc. Class A Common Stock
-FBIO,Fortress Biotech Inc. Common Stock
-FBIZ,First Business Financial Services Inc. Common Stock
-FBMS,First Bancshares Inc.
-FBNC,First Bancorp Common Stock
-FCBC,First Community Bankshares Inc. (VA) Common Stock
-FCCY,1st Constitution Bancorp (NJ) Common Stock
-FCNCA,First Citizens BancShares Inc. Class A Common Stock
-FDMT,4D Molecular Therapeutics Inc. Common Stock
-FDUS,Fidus Investment Corporation Common Stock
-FEMY,Femasys Inc. Common Stock
-FENC,Fennec Pharmaceuticals Inc. Common Stock
-FFIE,Faraday Future Intelligent Electric Inc. Common Stock
-FFIV,F5 Networks Inc. Common Stock
-FFNW,First Financial Northwest Inc. Common Stock
-FFWM,First Foundation Inc. Common Stock
-FHTX,Foghorn Therapeutics Inc. Common Stock
-FISI,Financial Institutions Inc. Common Stock
-FISV,Fiserv Inc. Common Stock
-FITB,Fifth Third Bancorp Common Stock
-FIVE,Five Below Inc. Common Stock
-FIXX,Homology Medicines Inc. Common Stock
-FLMN,Falcon Minerals Corporation Class A Common Stock
-FLUX,Flux Power Holdings Inc. Common Stock
-FLWS,1-800-FLOWERS.COM Inc. Common Stock
-FLXN,Flexion Therapeutics Inc. Common Stock
-FLYW,Flywire Corporation Voting Common Stock
-FMBH,First Mid Bancshares Inc. Common Stock
-FMNB,Farmers National Banc Corp. Common Stock
-FMTX,Forma Therapeutics Holdings Inc. Common Stock
-FNCH,Finch Therapeutics Group Inc. Common Stock
-FNKO,Funko Inc. Class A Common Stock
-FOCS,Focus Financial Partners Inc. Class A Common Stock
-FORM,FormFactor Inc. FormFactor Inc. Common Stock
-FOX,Fox Corporation Class B Common Stock
-FOXA,Fox Corporation Class A Common Stock
-FPAY,FlexShopper Inc. Common Stock
-FRBA,First Bank Common Stock
-FREE,Whole Earth Brands Inc. Class A Common Stock
-FRG,Franchise Group Inc. Common Stock
-FRGI,Fiesta Restaurant Group Inc. Common Stock
-FRME,First Merchants Corporation Common Stock
-FRPT,Freshpet Inc. Common Stock
-FRST,Primis Financial Corp. Common Stock
-FSBC,Five Star Bancorp Common Stock
-FSFG,First Savings Financial Group Inc. Common Stock
-FSTR,L.B. Foster Company Common Stock
-FSTX,F-star Therapeutics Inc. Common Stock
-FTCI,FTC Solar Inc. Common Stock
-FTDR,Frontdoor Inc. Common Stock
-FTHM,Fathom Holdings Inc. Common Stock
-FULC,Fulcrum Therapeutics Inc. Common Stock
-FVCB,FVCBankcorp Inc. Common Stock
-FVE,Five Star Senior Living Inc. Common Stock
-FWONK,Liberty Media Corporation Series C Liberty Formula One Common Stock
-FYBR,Frontier Communications Parent Inc. Common Stock
-GAIA,Gaia Inc. Class A Common Stock
-GALT,Galectin Therapeutics Inc. Common Stock
-GANX,Gain Therapeutics Inc. Common Stock
-GBIO,Generation Bio Co. Common Stock
-GBT,Global Blood Therapeutics Inc. Common Stock
-GCMG,GCM Grosvenor Inc. Class A Common Stock
-GDEN,Golden Entertainment Inc. Common Stock
-GDRX,GoodRx Holdings Inc. Class A Common Stock
-GDYN,Grid Dynamics Holdings Inc. Class A Common Stock
-GERN,Geron Corporation Common Stock
-GEVO,Gevo Inc. Common Stock
-GH,Guardant Health Inc. Common Stock
-GILD,Gilead Sciences Inc. Common Stock
-GLDD,Great Lakes Dredge & Dock Corporation Common Stock
-GLPI,Gaming and Leisure Properties Inc. Common Stock
-GLSI,Greenwich LifeSciences Inc. Common Stock
-GLUE,Monte Rosa Therapeutics Inc. Common Stock
-GLYC,GlycoMimetics Inc. Common Stock
-GMTX,Gemini Therapeutics Inc. Common Stock
-GNCA,Genocea Biosciences Inc. Common Stock
-GNLN,Greenlane Holdings Inc. Class A Common Stock
-GNPX,Genprex Inc. Common Stock
-GNSS,Genasys Inc. Common Stock
-GNTX,Gentex Corporation Common Stock
-GOCO,GoHealth Inc. Class A Common Stock
-GOOD,Gladstone Commercial Corporation Real Estate Investment Trust
-GOOG,Alphabet Inc. Class C Capital Stock
-GOOGL,Alphabet Inc. Class A Common Stock
-GOSS,Gossamer Bio Inc. Common Stock
-GOVX,GeoVax Labs Inc. Common Stock
-GPP,Green Plains Partners LP Common Units
-GPRE,Green Plains Inc. Common Stock
-GRBK,Green Brick Partners Inc. Common Stock
-GRPH,Graphite Bio Inc. Common Stock
-GRTS,Gritstone bio Inc. Common Stock
-GRTX,Galera Therapeutics Inc. Common Stock
-GRWG,GrowGeneration Corp. Common Stock
-GTBP,GT Biopharma Inc. Common Stock
-GTHX,G1 Therapeutics Inc. Common Stock
-GTYH,GTY Technology Holdings Inc. Common Stock
-GWRS,Global Water Resources Inc. Common Stock
-HAIN,Hain Celestial Group Inc. (The) Common Stock
-HALO,Halozyme Therapeutics Inc. Common Stock
-HARP,Harpoon Therapeutics Inc. Common Stock
-HAS,Hasbro Inc. Common Stock
-HBAN,Huntington Bancshares Incorporated Common Stock
-HBIO,Harvard Bioscience Inc. Common Stock
-HBNC,Horizon Bancorp Inc. Common Stock
-HCAT,Health Catalyst Inc Common Stock
-HCCI,Heritage-Crystal Clean Inc. Common Stock
-HCKT,Hackett Group Inc (The). Common Stock
-HEAR,Turtle Beach Corporation Common Stock
-HEES,H&E Equipment Services Inc. Common Stock
-HEPA,Hepion Pharmaceuticals Inc. Common Stock
-HGBL,Heritage Global Inc. Common Stock
-HGEN,Humanigen Inc. Common Stock
-HIBB,Hibbett Inc. Common Stock
-HLMN,Hillman Solutions Corp. Common Stock
-HNRG,Hallador Energy Company Common Stock
-HNST,The Honest Company Inc. Common Stock
-HOFV,Hall of Fame Resort & Entertainment Company Common Stock
-HOLX,Hologic Inc. Common Stock
-HOMB,Home BancShares Inc. Common Stock
-HON,Honeywell International Inc. Common Stock
-HOOK,HOOKIPA Pharma Inc. Common Stock
-HOTH,Hoth Therapeutics Inc. Common Stock
-HOWL,Werewolf Therapeutics Inc. Common Stock
-HPK,HighPeak Energy Inc. Common Stock
-HQY,HealthEquity Inc. Common Stock
-HRMY,Harmony Biosciences Holdings Inc. Common Stock
-HROW,Harrow Health Inc. Common Stock
-HRTX,Heron Therapeutics Inc. Common Stock
-HSDT,Helius Medical Technologies Inc. Class A Common Stock (DE)
-HSKA,Heska Corporation Common Stock
-HSTO,Histogen Inc. Common Stock
-HTBK,Heritage Commerce Corp Common Stock
-HTBX,Heat Biologics Inc. Common Stock
-HTGM,HTG Molecular Diagnostics Inc. Common Stock
-HUBG,Hub Group Inc. Class A Common Stock
-HUMA,Humacyte Inc. Common Stock
-HURN,Huron Consulting Group Inc. Common Stock
-HWC,Hancock Whitney Corporation Common Stock
-HYFM,Hydrofarm Holdings Group Inc. Common Stock
-HYMC,Hycroft Mining Holding Corporation Class A Common Stock
-HYRE,HyreCar Inc. Common Stock
-HYZN,Hyzon Motors Inc. Class A Common Stock
-IAC,IAC/InterActiveCorp Common Stock
-IAS,Integral Ad Science Holding Corp. Common Stock
-IBKR,Interactive Brokers Group Inc. Class A Common Stock
-IBTX,Independent Bank Group Inc Common Stock
-ICAD,iCAD Inc. Common Stock
-ICCC,ImmuCell Corporation Common Stock
-ICFI,ICF International Inc. Common Stock
-ICHR,Ichor Holdings Ordinary Shares
-ICUI,ICU Medical Inc. Common Stock
-ICVX,Icosavax Inc. Common Stock
-IDCC,InterDigital Inc. Common Stock
-IDEX,Ideanomics Inc. Common Stock
-IDN,Intellicheck Inc. Common Stock
-IDXX,IDEXX Laboratories Inc. Common Stock
-IDYA,IDEAYA Biosciences Inc. Common Stock
-IEA,Infrastructure and Energy Alternatives Inc. Common Stock
-IEP,Icahn Enterprises L.P. Common Stock
-IGMS,IGM Biosciences Inc. Common Stock
-IHRT,iHeartMedia Inc. Class A Common Stock
-III,Information Services Group Inc. Information Services Group Inc. Common Stock
-IIIV,i3 Verticals Inc. Class A Common Stock
-IIN,Intricon Corporation Common Stock
-IIVI,II-VI Incorporated Common Stock
-IKNA,Ikena Oncology Inc. Common Stock
-IMBI,iMedia Brands Inc. Class A Common Stock
-IMGO,Imago BioSciences Inc. Common stock
-IMNM,Immunome Inc. Common Stock
-IMPL,Impel NeuroPharma Inc. Common Stock
-IMRX,Immuneering Corporation Class A Common Stock
-IMUX,Immunic Inc. Common Stock
-IMVT,Immunovant Inc. Common Stock
-IMXI,International Money Express Inc. Common Stock
-INAB,IN8bio Inc. Common Stock
-INBK,First Internet Bancorp Common Stock
-INBX,Inhibrx Inc. Common Stock
-INDB,Independent Bank Corp. Common Stock
-INDI,indie Semiconductor Inc. Class A Common Stock
-INDT,INDUS Realty Trust Inc. (MD) Common Stock
-INFI,Infinity Pharmaceuticals Inc. Common Stock
-INMB,INmune Bio Inc. Common stock
-INNV,InnovAge Holding Corp. Common Stock
-INSE,Inspired Entertainment Inc. Common Stock
-INSM,Insmed Inc. Common Stock
-INTA,Intapp Inc. Common Stock
-INTU,Intuit Inc. Common Stock
-INVE,Identiv Inc. Common Stock
-INVO,INVO BioScience Inc. Common Stock
-INZY,Inozyme Pharma Inc. Common Stock
-IOVA,Iovance Biotherapeutics Inc. Common Stock
-IPGP,IPG Photonics Corporation Common Stock
-IPSC,Century Therapeutics Inc. Common Stock
-IPW,iPower Inc. Common Stock
-IPWR,Ideal Power Inc. Common Stock
-IRIX,IRIDEX Corporation Common Stock
-IRMD,iRadimed Corporation Common Stock
-ISEE,IVERIC bio Inc. Common Stock
-ISTR,Investar Holding Corporation Common Stock
-ISUN,iSun Inc. Common Stock
-ITCI,Intra-Cellular Therapies Inc. Common Stock
-ITI,Iteris Inc. Common Stock
-ITOS,iTeos Therapeutics Inc. Common Stock
-ITRI,Itron Inc. Common Stock
-IVAC,Intevac Inc. Common Stock
-IZEA,IZEA Worldwide Inc. Common Stock
-JACK,Jack In The Box Inc. Common Stock
-JAGX,Jaguar Health Inc. Common Stock
-JAMF,Jamf Holding Corp. Common Stock
-JANX,Janux Therapeutics Inc. Common Stock
-JBLU,JetBlue Airways Corporation Common Stock
-JCOM,j2 Global Inc. Common Stock
-JOAN,JOANN Inc. Common Stock
-JRSH,Jerash Holdings (US) Inc. Common Stock
-JYNT,The Joint Corp. Common Stock
-KALA,Kala Pharmaceuticals Inc. Common Stock
-KBNT,Kubient Inc. Common Stock
-KDMN,Kadmon Holdings Inc. Common Stock
-KDNY,Chinook Therapeutics Inc. Common Stock
-KDP,Keurig Dr Pepper Inc. Common Stock
-KE,Kimball Electronics Inc. Common Stock
-KELYA,Kelly Services Inc. Class A Common Stock
-KERN,Akerna Corp. Common Stock
-KIDS,OrthoPediatrics Corp. Common Stock
-KINS,Kingstone Companies Inc. Common Stock
-KIRK,Kirkland's Inc. COMMONSTOCK
-KLTR,Kaltura Inc. Common Stock
-KNBE,KnowBe4 Inc. Class A Common Stock
-KNSA,Kiniksa Pharmaceuticals Ltd. Class A Common Stock
-KNTE,Kinnate Biopharma Inc. Common Stock
-KPLT,Katapult Holdings Inc. Common Stock
-KRNY,Kearny Financial Corp Common Stock
-KRON,Kronos Bio Inc. Common Stock
-KROS,Keros Therapeutics Inc. Common Stock
-KRT,Karat Packaging Inc. Common Stock
-KRTX,Karuna Therapeutics Inc. Common Stock
-KRUS,Kura Sushi USA Inc. Class A Common Stock
-KRYS,Krystal Biotech Inc. Common Stock
-KSPN,Kaspien Holdings Inc. Common Stock
-KTRA,Kintara Therapeutics Inc. Common Stock
-KURA,Kura Oncology Inc. Common Stock
-KYMR,Kymera Therapeutics Inc. Common Stock
-KZR,Kezar Life Sciences Inc. Common Stock
-LABP,Landos Biopharma Inc. Common Stock
-LAKE,Lakeland Industries Inc. Common Stock
-LASR,nLIGHT Inc. Common Stock
-LAUR,Laureate Education Inc. Class A Common Stock
-LBAI,Lakeland Bancorp Inc. Common Stock
-LBC,Luther Burbank Corporation Common Stock
-LBPH,Longboard Pharmaceuticals Inc. Common Stock
-LBRDA,Liberty Broadband Corporation Class A Common Stock
-LBRDK,Liberty Broadband Corporation Class C Common Stock
-LCID,Lucid Group Inc. Common Stock
-LCNB,LCNB Corporation Common Stock
-LCUT,Lifetime Brands Inc. Common Stock
-LEGH,Legacy Housing Corporation Common Stock (TX)
-LEGN,Legend Biotech Corporation American Depositary Shares
-LESL,Leslie's Inc. Common Stock
-LFMD,LifeMD Inc. Common Stock
-LFST,LifeStance Health Group Inc. Common Stock
-LFUS,Littelfuse Inc. Common Stock
-LGND,Ligand Pharmaceuticals Incorporated Common Stock
-LHCG,LHC Group Common Stock
-LIFE,aTyr Pharma Inc. Common Stock
-LINC,Lincoln Educational Services Corporation Common Stock
-LIND,Lindblad Expeditions Holdings Inc. Common Stock
-LITE,Lumentum Holdings Inc. Common Stock
-LIVX,LiveXLive Media Inc. Common Stock
-LKQ,LKQ Corporation Common Stock
-LMB,Limbach Holdings Inc. Common Stock
-LMNR,Limoneira Co Common Stock
-LNDC,Landec Corporation Common Stock (DE)
-LNSR,LENSAR Inc. Common Stock
-LNTH,Lantheus Holdings Inc. Common Stock
-LOAN,Manhattan Bridge Capital Inc
-LOGC,LogicBio Therapeutics Inc. Common Stock
-LOPE,Grand Canyon Education Inc. Common Stock
-LOVE,The Lovesac Company Common Stock
-LPCN,Lipocine Inc. Common Stock
-LPLA,LPL Financial Holdings Inc. Common Stock
-LPRO,Open Lending Corporation Class A Common Stock
-LPSN,LivePerson Inc. Common Stock
-LPTH,LightPath Technologies Inc. Class A Common Stock
-LPTX,Leap Therapeutics Inc. Common Stock
-LQDA,Liquidia Corporation Common Stock
-LRCX,Lam Research Corporation Common Stock
-LRFC,Logan Ridge Finance Corporation Common Stock
-LRMR,Larimar Therapeutics Inc. Common Stock
-LSCC,Lattice Semiconductor Corporation Common Stock
-LSXMA,Liberty Media Corporation Series A Liberty SiriusXM Common Stock
-LSXMK,Liberty Media Corporation Series C Liberty SiriusXM Common Stock
-LTCH,Latch Inc. Common Stock
-LTRX,Lantronix Inc. Common Stock
-LUMO,Lumos Pharma Inc. Common Stock
-LUNG,Pulmonx Corporation Common Stock
-LVOX,LiveVox Holding Inc. Class A Common Stock
-LYEL,Lyell Immunopharma Inc. Common Stock
-LYFT,Lyft Inc. Class A Common Stock
-LYRA,Lyra Therapeutics Inc. Common Stock
-LYTS,LSI Industries Inc. Common Stock
-MANH,Manhattan Associates Inc. Common Stock
-MAPS,WM Technology Inc. Class A Common Stock
-MARA,Marathon Digital Holdings Inc. Common Stock
-MASI,Masimo Corporation Common Stock
-MASS,908 Devices Inc. Common Stock
-MAT,Mattel Inc. Common Stock
-MATW,Matthews International Corporation Class A Common Stock
-MBCN,Middlefield Banc Corp. Common Stock
-MBIN,Merchants Bancorp Common Stock
-MBIO,Mustang Bio Inc. Common Stock
-MBRX,Moleculin Biotech Inc. Common Stock
-MBUU,Malibu Boats Inc. Class A Common Stock
-MCAD,Mountain Crest Acquisition Corp. II Common Stock
-MCHP,Microchip Technology Incorporated Common Stock
-MCHX,Marchex Inc. Class B Common Stock
-MCRB,Seres Therapeutics Inc. Common Stock
-MCRI,Monarch Casino & Resort Inc. Common Stock
-MDB,MongoDB Inc. Class A Common Stock
-MDGL,Madrigal Pharmaceuticals Inc. Common Stock
-MDLZ,Mondelez International Inc. Class A Common Stock
-MDRR,Medalist Diversified REIT Inc. Common Stock
-MDVL,MedAvail Holdings Inc. Common Stock
-MDXG,MiMedx Group Inc Common Stock
-MEDS,TRxADE HEALTH Inc. Common Stock
-MEIP,MEI Pharma Inc. Common Stock
-MESA,Mesa Air Group Inc. Common Stock
-MFIN,Medallion Financial Corp. Common Stock
-MGNI,Magnite Inc. Common Stock
-MGNX,MacroGenics Inc. Common Stock
-MGRC,McGrath RentCorp Common Stock
-MGTA,Magenta Therapeutics Inc. Common Stock
-MGTX,MeiraGTx Holdings plc Ordinary Shares
-MICT,MICT Inc. Common Stock
-MIDD,Middleby Corporation (The) Common Stock
-MINM,Minim Inc. Common Stock
-MIRM,Mirum Pharmaceuticals Inc. Common Stock
-MIRO,Miromatrix Medical Inc. Common Stock
-MITK,Mitek Systems Inc. Common Stock
-MITO,Stealth BioTherapeutics Corp. ADS
-MKSI,MKS Instruments Inc. Common Stock
-MKTW,MarketWise Inc. Class A Common Stock
-MLHR,Herman Miller Inc. Common Stock
-MMSI,Merit Medical Systems Inc. Common Stock
-MNKD,MannKind Corporation Common Stock
-MNOV,Medicinova Inc Common Stock
-MNPR,Monopar Therapeutics Inc. Common Stock
-MNSB,MainStreet Bancshares Inc. Common Stock
-MNST,Monster Beverage Corporation
-MNTK,Montauk Renewables Inc. Common Stock
-MNTV,Momentive Global Inc. Common Stock
-MNTX,Manitex International Inc. Common Stock
-MODV,ModivCare Inc. Common Stock
-MORF,Morphic Holding Inc. Common Stock
-MOSY,MoSys Inc. Common Stock
-MPAA,Motorcar Parts  of America Inc. Common Stock
-MPB,Mid Penn Bancorp Common Stock
-MPWR,Monolithic Power Systems Inc. Common Stock
-MQ,Marqeta Inc. Class A Common Stock
-MRBK,Meridian Corporation Common Stock
-MRKR,Marker Therapeutics Inc. Common Stock
-MRNS,Marinus Pharmaceuticals Inc. Common Stock
-MRSN,Mersana Therapeutics Inc. Common Stock
-MRVI,Maravai LifeSciences Holdings Inc. Class A Common Stock
-MSFT,Microsoft Corporation Common Stock
-MSGM,Motorsport Games Inc. Class A Common Stock
-MTBC,CareCloud Inc. Common Stock
-MTCH,Match Group Inc. Common Stock
-MTCR,Metacrine Inc. Common Stock
-MTEM,Molecular Templates Inc. Common Stock
-MTRX,Matrix Service Company Common Stock
-MTSI,MACOM Technology Solutions Holdings Inc. Common Stock
-MTTR,Matterport Inc. Class A Common Stock
-MU,Micron Technology Inc. Common Stock
-MXCT,MaxCyte Inc. Common Stock
-MYFW,First Western Financial Inc. Common Stock
-MYPS,PLAYSTUDIOS Inc.  Class A Common Stock
-NARI,Inari Medical Inc. Common Stock
-NAUT,Nautilus Biotechnolgy Inc. Common Stock
-NAVI,Navient Corporation Common Stock
-NBEV,NewAge Inc. Common Stock (Delaware)
-NBIX,Neurocrine Biosciences Inc. Common Stock
-NBN,Northeast Bank Common Stock
-NBSE,NeuBase Therapeutics Inc.  Common Stock
-NCBS,Nicolet Bankshares Inc. Common Stock
-NCNO,nCino Inc. Common Stock
-NDAQ,Nasdaq Inc. Common Stock
-NDLS,Noodles & Company Class A Common Stock
-NDRA,ENDRA Life Sciences Inc. Common Stock
-NEO,NeoGenomics Inc. Common Stock
-NEPH,Nephros Inc. Common Stock
-NESR,National Energy Services Reunited Corp. Ordinary Shares
-NEXI,NexImmune Inc. Common Stock
-NFBK,Northfield Bancorp Inc. Common Stock (Delaware)
-NFLX,Netflix Inc. Common Stock
-NGM,NGM Biopharmaceuticals Inc. Common Stock
-NH,NantHealth Inc. Common Stock
-NKSH,National Bankshares Inc. Common Stock
-NKTX,Nkarta Inc. Common Stock
-NLOK,NortonLifeLock Inc. Common Stock
-NMFC,New Mountain Finance Corporation Common Stock
-NMIH,NMI Holdings Inc. Class A Common Stock
-NMRK,Newmark Group Inc. Class A Common Stock
-NMTR,9 Meters Biopharma Inc. Common Stock
-NOVN,Novan Inc. Common Stock
-NPCE,Neuropace Inc. Common Stock
-NRBO,NeuroBo Pharmaceuticals Inc. Common Stock
-NRIX,Nurix Therapeutics Inc. Common stock
-NSIT,Insight Enterprises Inc. Common Stock
-NSSC,NAPCO Security Technologies Inc. Common Stock
-NSTG,NanoString Technologies Inc. Common Stock
-NTAP,NetApp Inc. Common Stock
-NTIC,Northern Technologies International Corporation Common Stock
-NTLA,Intellia Therapeutics Inc. Common Stock
-NTNX,Nutanix Inc. Class A Common Stock
-NTRA,Natera Inc. Common Stock
-NUVL,Nuvalent Inc. Class A Common Stock
-NUWE,Nuwellis Inc. Common Stock
-NVAX,Novavax Inc. Common Stock
-NVDA,NVIDIA Corporation Common Stock
-NVEE,NV5 Global Inc. Common Stock
-NWE,NorthWestern Corporation Common Stock
-NWPX,Northwest Pipe Company Common Stock
-NWSA,News Corporation Class A Common Stock
-NXST,Nexstar Media Group Inc. Class A Common Stock
-NXTP,NextPlay Technologies Inc. Common Stock
-OAS,Oasis Petroleum Inc. Common Stock
-OB,Outbrain Inc. Common Stock
-OBLG,Oblong Inc. Common Stock
-OBNK,Origin Bancorp Inc. Common Stock
-OBT,Orange County Bancorp Inc. Common Stock
-OCCI,OFS Credit Company Inc. Common Stock
-OCDX,Ortho Clinical Diagnostics Holdings plc Ordinary Shares
-OCFC,OceanFirst Financial Corp. Common Stock
-OCSL,Oaktree Specialty Lending Corporation Common Stock
-OCUL,Ocular Therapeutix Inc. Common Stock
-OCUP,Ocuphire Pharma Inc. Common Stock
-OCX,Oncocyte Corporation Common Stock
-OEG,Orbital Energy Group Inc. Common Stock
-OESX,Orion Energy Systems Inc. Common Stock
-OKTA,Okta Inc. Class A Common Stock
-OLED,Universal Display Corporation Common Stock
-OLMA,Olema Pharmaceuticals Inc. Common Stock
-OM,Outset Medical Inc. Common Stock
-OMCL,Omnicell Inc. Common Stock ($0.001 par value)
-OMER,Omeros Corporation Common Stock
-OMGA,Omega Therapeutics Inc. Common Stock
-OMIC,Singular Genomics Systems Inc. Common Stock
-ON,ON Semiconductor Corporation Common Stock
-ONCR,Oncorus Inc. Common Stock
-ONCS,OncoSec Medical Incorporated Common Stock
-ONCT,Oncternal Therapeutics Inc. Common Stock
-ONDS,Ondas Holdings Inc. Common Stock
-ONEM,1Life Healthcare Inc. Common Stock
-ONEW,OneWater Marine Inc. Class A Common Stock
-OPBK,OP Bancorp Common Stock
-OPCH,Option Care Health Inc. Common Stock
-OPEN,Opendoor Technologies Inc Common Stock
-OPGN,OpGen Inc. Common Stock
-OPK,OPKO Health Inc. Common Stock
-OPNT,Opiant Pharmaceuticals Inc. Common Stock
-OPRT,Oportun Financial Corporation Common Stock
-OPRX,OptimizeRx Corporation Common Stock
-OPTN,OptiNose Inc. Common Stock
-ORGO,Organogenesis Holdings Inc. Class A Common Stock
-ORGS,Orgenesis Inc. Common Stock
-ORIC,Oric Pharmaceuticals Inc. Common Stock
-ORLY,O'Reilly Automotive Inc. Common Stock
-OSBC,Old Second Bancorp Inc. Common Stock
-OSIS,OSI Systems Inc. Common Stock (DE)
-OSMT,Osmotica Pharmaceuticals plc Ordinary Shares
-OSPN,OneSpan Inc. Common Stock
-OSS,One Stop Systems Inc. Common Stock
-OSTK,Overstock.com Inc. Common Stock
-OTIC,Otonomy Inc. Common Stock
-OTLK,Outlook Therapeutics Inc. Common Stock
-OTTR,Otter Tail Corporation Common Stock
-OXLC,Oxford Lane Capital Corp. Common Stock
-OYST,Oyster Point Pharma Inc. Common Stock
-PAA,Plains All American Pipeline L.P. Common Units representing Limited Partner Interests
-PACW,PacWest Bancorp Common Stock
-PAGP,Plains GP Holdings L.P. Class A Units representing Limited Partner Interests
-PALI,Palisade Bio Inc. Common Stock
-PANL,Pangaea Logistics Solutions Ltd. Common Shares
-PASG,Passage Bio Inc. Common Stock
-PATK,Patrick Industries Inc. Common Stock
-PAVM,PAVmed Inc. Common Stock
-PAYA,Paya Holdings Inc. Class A Common Stock
-PAYO,Payoneer Global Inc. Common Stock
-PAYS,Paysign Inc. Common Stock
-PBLA,Panbela Therapeutics Inc. Common Stock
-PCB,PCB Bancorp Common Stock
-PCRX,Pacira BioSciences Inc. Common Stock
-PCSA,Processa Pharmaceuticals Inc. Common Stock
-PCSB,PCSB Financial Corporation Common Stock
-PCT,PureCycle Technologies Inc. Common stock
-PCTY,Paylocity Holding Corporation Common Stock
-PCVX,Vaxcyte Inc. Common Stock
-PCYG,Park City Group Inc. Common Stock
-PDCE,PDC Energy Inc. Common Stock (Delaware)
-PDFS,PDF Solutions Inc. Common Stock
-PDSB,PDS Biotechnology Corporation Common Stock
-PECO,Phillips Edison & Company Inc. Common Stock
-PEGA,Pegasystems Inc. Common Stock
-PETQ,PetIQ Inc. Class A Common Stock
-PFMT,Performant Financial Corporation Common Stock
-PGC,Peapack-Gladstone Financial Corporation Common Stock
-PGEN,Precigen Inc. Common Stock
-PGNY,Progyny Inc. Common Stock
-PHAS,PhaseBio Pharmaceuticals Inc. Common Stock
-PHAT,Phathom Pharmaceuticals Inc. Common Stock
-PHIO,Phio Pharmaceuticals Corp. Common Stock
-PI,Impinj Inc. Common Stock
-PLAB,Photronics Inc. Common Stock
-PLBY,PLBY Group Inc. Common Stock
-PLCE,Children's Place Inc. (The) Common Stock
-PLL,Piedmont Lithium Inc. Common Stock
-PLMR,Palomar Holdings Inc. Common stock
-PLRX,Pliant Therapeutics Inc. Common Stock
-PLSE,Pulse Biosciences Inc Common Stock (DE)
-PLUS,ePlus inc. Common Stock
-PMVP,PMV Pharmaceuticals Inc. Common Stock
-PNFP,Pinnacle Financial Partners Inc. Common Stock
-PNT,POINT Biopharma Global Inc. Common Stock
-POAI,Predictive Oncology Inc. Common Stock
-POOL,Pool Corporation Common Stock
-POSH,Poshmark Inc. Class A Common Stock
-POWI,Power Integrations Inc. Common Stock
-POWW,AMMO Inc. Common Stock
-PPBI,Pacific Premier Bancorp Inc
-PPC,Pilgrim's Pride Corporation Common Stock
-PRAX,Praxis Precision Medicines Inc. Common Stock
-PRCH,Porch Group Inc. Common Stock
-PRDO,Perdoceo Education Corporation Common Stock
-PRFT,Perficient Inc. Common Stock
-PRGS,Progress Software Corporation Common Stock (DE)
-PRIM,Primoris Services Corporation Common Stock
-PRLD,Prelude Therapeutics Incorporated Common Stock
-PRPH,ProPhase Labs Inc. Common Stock (DE)
-PRPL,Purple Innovation Inc. Common Stock
-PRPO,Precipio Inc.  Common Stock
-PRTA,Prothena Corporation plc Ordinary Shares
-PRTH,Priority Technology Holdings Inc. Common Stock
-PRTK,Paratek Pharmaceuticals Inc. Common Stock
-PRTS,CarParts.com Inc. Common Stock
-PRVA,Privia Health Group Inc. Common Stock
-PRVB,Provention Bio Inc. Common Stock
-PSNL,Personalis Inc. Common Stock
-PSTV,PLUS THERAPEUTICS Inc. Common Stock
-PSTX,Poseida Therapeutics Inc. Common Stock
-PTC,PTC Inc. Common Stock
-PTE,PolarityTE Inc. Common Stock
-PTGX,Protagonist Therapeutics Inc. Common Stock
-PTMN,Portman Ridge Finance Corporation Common Stock
-PTON,Peloton Interactive Inc. Class A Common Stock
-PTRA,Proterra Inc. Common Stock
-PUBM,PubMatic Inc. Class A Common Stock
-PULM,Pulmatrix Inc. Common Stock
-PVAC,Penn Virginia Corporation Common Stock
-PVBC,Provident Bancorp Inc. (MD) Common Stock
-PWFL,PowerFleet Inc. Common Stock
-PWP,Perella Weinberg Partners Class A Common Stock
-PYCR,Paycor HCM Inc. Common Stock
-PYPL,PayPal Holdings Inc. Common Stock
-PZZA,Papa John's International Inc. Common Stock
-QCOM,QUALCOMM Incorporated Common Stock
-QCRH,QCR Holdings Inc. Common Stock
-QIPT,Quipt Home Medical Corp. Common Shares
-QMCO,Quantum Corporation Common Stock
-QNST,QuinStreet Inc. Common Stock
-QRHC,Quest Resource Holding Corporation Common Stock
-QRVO,Qorvo Inc. Common Stock
-QTRX,Quanterix Corporation Common Stock
-QUIK,QuickLogic Corporation Common Stock
-RADI,Radius Global Infrastructure Inc. Class A Common Stock
-RAIN,Rain Therapeutics Inc. Common Stock
-RANI,Rani Therapeutics Holdings Inc. Class A Common Stock
-RAPT,RAPT Therapeutics Inc. Common Stock
-RARE,Ultragenyx Pharmaceutical Inc. Common Stock
-RBBN,Ribbon Communications Inc. Common Stock
-RBCAA,Republic Bancorp Inc. Class A Common Stock
-RBNC,Reliant Bancorp Inc. Common Stock
-RCEL,Avita Therapeutics Inc. Common Stock
-RCII,Rent-A-Center Inc. Common Stock
-RCKT,Rocket Pharmaceuticals Inc. Common Stock
-RCKY,Rocky Brands Inc. Common Stock
-RCM,R1 RCM Inc. Common Stock
-RDNT,RadNet Inc. Common Stock
-REED,Reeds Inc. Common Stock
-REGI,Renewable Energy Group Inc. Common Stock
-REGN,Regeneron Pharmaceuticals Inc. Common Stock
-REKR,Rekor Systems Inc. Common Stock
-REPH,Recro Pharma Inc. Common Stock
-REPL,Replimune Group Inc. Common Stock
-RESN,Resonant Inc. Common Stock
-RETA,Reata Pharmaceuticals Inc. Class A Common Stock
-REYN,Reynolds Consumer Products Inc. Common Stock
-RFIL,RF Industries Ltd. Common Stock
-RGCO,RGC Resources Inc. Common Stock
-RGEN,Repligen Corporation Common Stock
-RGLS,Regulus Therapeutics Inc. Common Stock
-RGNX,REGENXBIO Inc. Common Stock
-RIGL,Rigel Pharmaceuticals Inc. Common Stock
-RIOT,Riot Blockchain Inc.  Common Stock
-RKDA,Arcadia Biosciences Inc. Common Stock
-RKLB,Rocket Lab USA Inc. Common Stock
-RLAY,Relay Therapeutics Inc. Common Stock
-RLMD,Relmada Therapeutics Inc. Common Stock
-RLYB,Rallybio Corporation Common Stock
-RMBL,RumbleOn Inc. Class B Common Stock
-RMBS,Rambus Inc. Common Stock
-RMNI,Rimini Street Inc. (DE) Common Stock
-RMTI,Rockwell Medical Inc. (DE) Common Stock
-RNA,Avidity Biosciences Inc. Common Stock
-RNWK,RealNetworks Inc. Common Stock
-ROAD,Construction Partners Inc. Class A Common Stock
-ROCK,Gibraltar Industries Inc. Common Stock
-ROKU,Roku Inc. Class A Common Stock
-ROST,Ross Stores Inc. Common Stock
-ROVR,Rover Group Inc. Class A Common Stock
-RPAY,Repay Holdings Corporation Class A Common Stock
-RPD,Rapid7 Inc. Common Stock
-RPHM,Reneo Pharmaceuticals Inc. Common Stock
-RPID,Rapid Micro Biosystems Inc. Class A Common Stock
-RPRX,Royalty Pharma plc Class A Ordinary Shares
-RRBI,Red River Bancshares Inc. Common Stock
-RRR,Red Rock Resorts Inc. Class A Common Stock
-RSSS,Research Solutions Inc Common Stock
-RSVR,Reservoir Media Inc. Common Stock
-RUN,Sunrun Inc. Common Stock
-RUSHA,Rush Enterprises Inc. Common Stock Cl A
-RVMD,Revolution Medicines Inc. Common Stock
-RVNC,Revance Therapeutics Inc. Common Stock
-RVPH,Reviva Pharmaceuticals Holdings Inc. Common Stock
-RXDX,Prometheus Biosciences Inc. Common Stock
-RXRX,Recursion Pharmaceuticals Inc. Class A Common Stock
-RXST,RxSight Inc. Common Stock
-RXT,Rackspace Technology Inc. Common Stock
-RZLT,Rezolute Inc. Common Stock (NV)
-SAL,Salisbury Bancorp Inc. Common Stock
-SALM,Salem Media Group Inc. Class A Common Stock
-SAMG,Silvercrest Asset Management Group Inc. Class A Common Stock
-SANA,Sana Biotechnology Inc. Common Stock
-SANW,S&W Seed Company Common Stock (NV)
-SASR,Sandy Spring Bancorp Inc. Common Stock
-SAVA,Cassava Sciences Inc. Common Stock
-SBAC,SBA Communications Corporation Class A Common Stock
-SBFG,SB Financial Group Inc. Common Stock
-SBNY,Signature Bank Common Stock
-SBTX,Silverback Therapeutics Inc. Common Stock
-SBUX,Starbucks Corporation Common Stock
-SCPH,scPharmaceuticals Inc. Common Stock
-SCPS,Scopus BioPharma Inc. Common Stock
-SCSC,ScanSource Inc. Common Stock
-SCVL,Shoe Carnival Inc. Common Stock
-SCYX,SCYNEXIS Inc. Common Stock
-SDGR,Schrodinger Inc. Common Stock
-SEEL,Seelos Therapeutics Inc. Common Stock
-SELB,Selecta Biosciences Inc. Common Stock
-SERA,Sera Prognostics Inc. Class A Common Stock
-SFST,Southern First Bancshares Inc. Common Stock
-SFT,Shift Technologies Inc. Class A Common Stock
-SGC,Superior Group of Companies Inc. Common Stock
-SGH,SMART Global Holdings Inc. Ordinary Shares
-SGHT,Sight Sciences Inc. Common Stock
-SGLB,Sigma Labs Inc. Common Stock
-SGMO,Sangamo Therapeutics Inc. Common Stock
-SGMS,Scientific Games Corp Common Stock
-SGRY,Surgery Partners Inc. Common Stock
-SGTX,Sigilon Therapeutics Inc. Common Stock
-SHC,Sotera Health Company Common Stock
-SHCR,Sharecare Inc. Class A Common Stock
-SHLS,Shoals Technologies Group Inc. Class A Common Stock
-SHYF,The Shyft Group Inc. Common Stock
-SIBN,SI-BONE Inc. Common Stock
-SIEN,Sientra Inc. Common Stock
-SINT,SiNtx Technologies Inc. Common Stock
-SIRI,Sirius XM Holdings Inc. Common Stock
-SITM,SiTime Corporation Common Stock
-SKIN,The Beauty Health Company Class A Common Stock
-SKYT,SkyWater Technology Inc. Common Stock
-SKYW,SkyWest Inc. Common Stock
-SLCT,Select Bancorp Inc. Common Stock
-SLGG,Super League Gaming Inc. Common Stock
-SLGN,Silgan Holdings Inc. Common Stock
-SLM,SLM Corporation Common Stock
-SLNO,Soleno Therapeutics Inc. Common Stock
-SLRC,SLR Investment Corp. Common Stock
-SLRX,Salarius Pharmaceuticals Inc. Common Stock
-SLS,SELLAS Life Sciences Group Inc. Common Stock
-SMBC,Southern Missouri Bancorp Inc. Common Stock
-SMBK,SmartFinancial Inc. Common Stock
-SMCI,Super Micro Computer Inc. Common Stock
-SMED,Sharps Compliance Corp. Common Stock
-SMSI,Smith Micro Software Inc. Common Stock
-SMTC,Semtech Corporation Common Stock
-SMTI,Sanara MedTech Inc. Common Stock
-SNAX,Stryve Foods Inc. Class A Common Stock
-SNCR,Synchronoss Technologies Inc. Common Stock
-SNCY,Sun Country Airlines Holdings Inc. Common Stock
-SNDX,Syndax Pharmaceuticals Inc. Common Stock
-SNES,SenesTech Inc. Common Stock
-SNEX,StoneX Group Inc. Common Stock
-SNPO,Snap One Holdings Corp. Common Stock
-SNPS,Synopsys Inc. Common Stock
-SOFI,SoFi Technologies Inc. Common Stock
-SONO,Sonos Inc. Common Stock
-SP,SP Plus Corporation Common Stock
-SPFI,South Plains Financial Inc. Common Stock
-SPLK,Splunk Inc. Common Stock
-SPNE,SeaSpine Holdings Corporation Common Stock
-SPPI,Spectrum Pharmaceuticals Inc.Common Stock
-SPRB,Spruce Biosciences Inc. Common Stock
-SPRO,Spero Therapeutics Inc. Common Stock
-SPSC,SPS Commerce Inc. Common Stock
-SPT,Sprout Social Inc Class A Common Stock
-SRAX,SRAX Inc. Class A Common Stock
-SRDX,Surmodics Inc. Common Stock
-SRGA,Surgalign Holdings Inc. Common Stock
-SRNE,Sorrento Therapeutics Inc.  Common Stock
-SRRK,Scholar Rock Holding Corporation Common Stock
-SRTS,Sensus Healthcare Inc. Common Stock
-SRZN,Surrozen Inc. Common Stock
-SSBK,Southern States Bancshares Inc. Common Stock
-SSKN,Strata Skin Sciences Inc. Common Stock
-SSP,E.W. Scripps Company (The) Class A Common Stock
-SSSS,SuRo Capital Corp. Common Stock
-SSTI,ShotSpotter Inc. Common Stock
-STAA,STAAR Surgical Company Common Stock
-STAF,Staffing 360 Solutions Inc. Common Stock (DE)
-STIM,Neuronetics Inc. Common Stock
-STLD,Steel Dynamics Inc.
-STOK,Stoke Therapeutics Inc. Common Stock
-STRL,Sterling Construction Company Inc Common Stock
-STRO,Sutro Biopharma Inc. Common Stock
-STRR,Star Equity Holdings Inc. Common Stock
-STSA,Satsuma Pharmaceuticals Inc. Common Stock
-STTK,Shattuck Labs Inc. Common Stock
-STXB,Spirit of Texas Bancshares Inc. Common Stock
-SUNS,SLR Senior Investment Corp. Common Stock
-SUPN,Supernus Pharmaceuticals Inc. Common Stock
-SURF,Surface Oncology Inc. Common Stock
-SV,Spring Valley Acquisition Corp. Class A Ordinary Share
-SVRA,Savara Inc. Common Stock
-SWAV,ShockWave Medical Inc. Common Stock
-SWIM,Latham Group Inc. Common Stock
-SWKH,SWK Holdings Corporation Common Stock
-SWKS,Skyworks Solutions Inc. Common Stock
-SWTX,SpringWorks Therapeutics Inc. Common Stock
-SYBX,Synlogic Inc. Common Stock
-SYNA,Synaptics Incorporated Common Stock $0.001 Par Value
-SYNH,Syneos Health Inc. Class A Common Stock
-SYRS,Syros Pharmaceuticals Inc. Common Stock
-TA,TravelCenters of America Inc. Common Stock
-TACO,Del Taco Restaurants Inc. Common Stock
-TACT,TransAct Technologies Incorporated Common Stock
-TALK,Talkspace Inc. Common Stock
-TALS,Talaris Therapeutics Inc. Common Stock
-TARA,Protara Therapeutics Inc.  Common Stock
-TARS,Tarsus Pharmaceuticals Inc. Common Stock
-TASK,TaskUs Inc. Class A Common Stock
-TAST,Carrols Restaurant Group Inc. Common Stock
-TBBK,The Bancorp Inc Common Stock
-TBLT,ToughBuilt Industries Inc. Common Stock
-TCFC,The Community Financial Corporation Common Stock
-TCMD,Tactile Systems Technology Inc. Common Stock
-TCON,TRACON Pharmaceuticals Inc. Common Stock
-TCPC,BlackRock TCP Capital Corp. Common Stock
-TCRR,TCR2 Therapeutics Inc. Common Stock
-TCRX,TScan Therapeutics Inc. Common Stock
-TDUP,ThredUp Inc. Class A Common Stock
-TECH,Bio-Techne Corp Common Stock
-TELA,TELA Bio Inc. Common Stock
-TENB,Tenable Holdings Inc. Common Stock
-TENX,Tenax Therapeutics Inc. Common Stock
-TER,Teradyne Inc. Common Stock
-TERN,Terns Pharmaceuticals Inc. Common Stock
-TESS,TESSCO Technologies Incorporated Common Stock
-TFFP,TFF Pharmaceuticals Inc. Common Stock
-TFSL,TFS Financial Corporation Common Stock
-TGTX,TG Therapeutics Inc. Common Stock
-TH,Target Hospitality Corp. Common Stock
-THMO,ThermoGenesis Holdings Inc. Common Stock
-THRY,Thryv Holdings Inc. Common Stock
-TIL,Instil Bio Inc. Common Stock
-TITN,Titan Machinery Inc. Common Stock
-TKNO,Alpha Teknova Inc. Common Stock
-TLMD,SOC Telemed Inc. Class A Common Stock
-TLS,Telos Corporation Common Stock
-TMCI,Treace Medical Concepts Inc. Common Stock
-TMUS,T-Mobile US Inc. Common Stock
-TNGX,Tango Therapeutics Inc.
-TNYA,Tenaya Therapeutics Inc. Common Stock
-TPIC,TPI Composites Inc. Common Stock
-TPST,Tempest Therapeutics Inc. Common Stock
-TPTX,Turning Point Therapeutics Inc. Common Stock
-TREE,LendingTree Inc. Common Stock
-TRIL,Trillium Therapeutics Inc. Common Shares
-TRIN,Trinity Capital Inc. Common Stock
-TRNS,Transcat Inc. Common Stock
-TRVI,Trevi Therapeutics Inc. Common Stock
-TRVN,Trevena Inc. Common Stock
-TSCO,Tractor Supply Company Common Stock
-TSHA,Taysha Gene Therapies Inc. Common Stock
-TSP,TuSimple Holdings Inc. Class A Common Stock
-TTD,The Trade Desk Inc. Class A Common Stock
-TTEC,TTEC Holdings Inc. Common Stock
-TTEK,Tetra Tech Inc. Common Stock
-TTGT,TechTarget Inc. Common Stock
-TTMI,TTM Technologies Inc. Common Stock
-TTNP,Titan Pharmaceuticals Inc. Common Stock
-TTOO,T2 Biosystems Inc. Common Stock
-TTWO,Take-Two Interactive Software Inc. Common Stock
-TVTX,Travere Therapeutics Inc. Common Stock
-TWNK,Hostess Brands Inc. Class A Common Stock
-TWOU,2U Inc. Common Stock
-TXG,10x Genomics Inc. Class A Common Stock
-TXMD,TherapeuticsMD Inc. Common Stock
-TXN,Texas Instruments Incorporated Common Stock
-TZOO,Travelzoo Common Stock
-UBX,Unity Biotechnology Inc. Common Stock
-UCBI,United Community Banks Inc. Common Stock
-UCTT,Ultra Clean Holdings Inc. Common Stock
-UEIC,Universal Electronics Inc. Common Stock
-UFPI,UFP Industries Inc. Common Stock
-ULBI,Ultralife Corporation Common Stock
-ULCC,Frontier Group Holdings Inc. Common Stock
-ULH,Universal Logistics Holdings Inc. Common Stock
-ULTA,Ulta Beauty Inc. Common Stock
-UMPQ,Umpqua Holdings Corporation Common Stock
-UNCY,Unicycive Therapeutics Inc. Common Stock
-UNTY,Unity Bancorp Inc. Common Stock
-UPLD,Upland Software Inc. Common Stock
-UPST,Upstart Holdings Inc. Common stock
-UPWK,Upwork Inc. Common Stock
-USAU,U.S. Gold Corp. Common Stock
-USCB,U.S. Century Bank Class A Common Stock
-USIO,Usio Inc. Common Stock
-UTHR,United Therapeutics Corporation Common Stock
-VBIV,VBI Vaccines Inc. New Common Stock (Canada)
-VBTX,Veritex Holdings Inc. Common Stock
-VCEL,Vericel Corporation Common Stock
-VECO,Veeco Instruments Inc. Common Stock
-VERA,Vera Therapeutics Inc. Class A Common Stock
-VERB,Verb Technology Company Inc. Common Stock
-VERI,Veritone Inc. Common Stock
-VERO,Venus Concept Inc. Common Stock
-VERU,Veru Inc. Common Stock
-VERV,Verve Therapeutics Inc. Common Stock
-VERX,Vertex Inc. Class A Common Stock
-VINC,Vincerx Pharma Inc. Common Stock
-VIR,Vir Biotechnology Inc. Common Stock
-VIRC,Virco Manufacturing Corporation Common Stock
-VIRT,Virtu Financial Inc. Class A Common Stock
-VIRX,Viracta Therapeutics Inc. Common Stock
-VITL,Vital Farms Inc. Common Stock
-VIVE,Viveve Medical Inc. Common Stock
-VIVO,Meridian Bioscience Inc. Common Stock
-VKTX,Viking Therapeutics Inc. Common Stock
-VMD,Viemed Healthcare Inc. Common Shares
-VMEO,Vimeo Inc. Common Stock
-VNDA,Vanda Pharmaceuticals Inc. Common Stock
-VNOM,Viper Energy Partners LP Common Unit
-VOR,Vor Biopharma Inc. Common Stock
-VOXX,VOXX International Corporation Class A Common Stock
-VRAY,ViewRay Inc. Common Stock
-VRCA,Verrica Pharmaceuticals Inc. Common Stock
-VRDN,Viridian Therapeutics Inc. Common Stock
-VRM,Vroom Inc. Common Stock
-VRME,VerifyMe Inc. Common Stock
-VRNS,Varonis Systems Inc. Common Stock
-VRNT,Verint Systems Inc. Common Stock
-VRRM,Verra Mobility Corporation Class A Common Stock
-VRSK,Verisk Analytics Inc. Common Stock
-VRSN,VeriSign Inc. Common Stock
-VRTS,Virtus Investment Partners Inc. Common Stock
-VRTX,Vertex Pharmaceuticals Incorporated Common Stock
-VSAT,ViaSat Inc. Common Stock
-VSEC,VSE Corporation Common Stock
-VSTM,Verastem Inc. Common Stock
-VTGN,VistaGen Therapeutics Inc. Common Stock
-VTNR,Vertex Energy Inc Common Stock
-VTVT,vTv Therapeutics Inc. Class A Common Stock
-VVOS,Vivos Therapeutics Inc. Common Stock
-VWE,Vintage Wine Estates Inc. Common Stock
-VXRT,Vaxart Inc Common Stock
-VYNE,VYNE Therapeutics Inc. Common Stock
-WATT,Energous Corporation Common Stock
-WDAY,Workday Inc. Class A Common Stock
-WDC,Western Digital Corporation Common Stock
-WEN,Wendy's Company (The) Common Stock
-WFRD,Weatherford International plc Ordinary Shares
-WING,Wingstop Inc. Common Stock
-WINT,Windtree Therapeutics Inc. Common Stock
-WISA,Summit Wireless Technologies Inc. Common Stock
-WLDN,Willdan Group Inc. Common Stock
-WMG,Warner Music Group Corp. Class A Common Stock
-WNEB,Western New England Bancorp Inc. Common Stock
-WRAP,Wrap Technologies Inc. Common Stock
-WSC,WillScot Mobile Mini Holdings Corp. Class A Common Stock
-WTFC,Wintrust Financial Corporation Common Stock
-WYNN,Wynn Resorts Limited Common stock
-XAIR,Beyond Air Inc. Common Stock
-XBIO,Xenetic Biosciences Inc. Common Stock
-XCUR,Exicure Inc. Common Stock
-XELA,Exela Technologies Inc. Common Stock
-XERS,Xeris Pharmaceuticals Inc. Common Stock
-XFOR,X4 Pharmaceuticals Inc. Common Stock
-XGN,Exagen Inc. Common Stock
-XLRN,Acceleron Pharma Inc. Common Stock
-XM,Qualtrics International Inc. Class A Common Stock
-XMTR,Xometry Inc. Class A Common Stock
-XNCR,Xencor Inc. Common Stock
-XOS,Xos Inc. Common Stock
-XPEL,XPEL Inc. Common Stock
-XPER,Xperi Holding Corporation Common Stock
-XRAY,DENTSPLY SIRONA Inc. Common Stock
-XSPA,XpresSpa Group Inc. Common Stock
-XXII,22nd Century Group Inc. Common Stock
-YMAB,Y-mAbs Therapeutics Inc. Common Stock
-YMTX,Yumanity Therapeutics Inc. Common Stock
-YTEN,Yield10 Bioscience Inc. Common Stock
-ZG,Zillow Group Inc. Class A Common Stock
-ZGNX,Zogenix Inc. Common Stock
-ZI,ZoomInfo Technologies Inc. Class A Common Stock
-ZIXI,Zix Corporation Common Stock
-ZNGA,Zynga Inc. Class A Common Stock
-ZNTL,Zentalis Pharmaceuticals Inc. Common Stock
-ZS,Zscaler Inc. Common Stock
-ZSAN,Zosano Pharma Corporation Common Stock
-ZVO,Zovio Inc. Common Stock
-ZYNE,Zynerba Pharmaceuticals Inc. Common Stock
-ZYXI,Zynex Inc. Common Stock
-BANX,StoneCastle Financial Corp Common Stock
-BELFB,Bel Fuse Inc. Class B Common Stock
-CCLP,CSI Compressco LP Common Units
-CPIX,Cumberland Pharmaceuticals Inc. Common Stock
-DYAI,Dyadic International Inc. Common Stock
-EBIX,Ebix Inc. Common Stock
-EVOK,Evoke Pharma Inc. Common Stock
-FCAP,First Capital Inc. Common Stock
-FLDM,Fluidigm Corporation Common Stock
-HJLI,Hancock Jaffe Laboratories Inc. Common Stock
-IBRX,ImmunityBio Inc. Common Stock
-JBSS,John B. Sanfilippo & Son Inc. Common Stock
-JCS,Communications Systems Inc. Common Stock
-JOUT,Johnson Outdoors Inc. Class A Common Stock
-MARK,Remark Holdings Inc. Common Stock
-MMAT,Meta Materials Inc. Common Stock
-NCSM,NCS Multistage Holdings Inc. Common Stock
-NWS,News Corporation Class B Common Stock
-POWL,Powell Industries Inc. Common Stock
-PSEC,Prospect Capital Corporation Common Stock
-RGP,Resources Connection Inc. Common Stock
-SNGX,Soligenix Inc. Common Stock
-TLGT,Teligent Inc. Common Stock
-TRMT,Tremont Mortgage Trust Common Shares of Beneficial Interest
-TYME,Tyme Technologies Inc. Common Stock
-UFPT,UFP Technologies Inc. Common Stock
-WTER,The Alkaline Water Company Inc. Common Stock
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,IPO Year,Volume,Sector,Industry
+AAL,American Airlines Group Inc. Common Stock,$19.31,0.36,1.90%,12502410717.00,United States,,42796633,Transportation,Air Freight/Delivery Services
+AAOI,Applied Optoelectronics Inc. Common Stock,$7.45,0.02,0.269%,202203192.00,United States,2013,372945,Technology,Semiconductors
+ABSI,Absci Corporation Common Stock,$14.22,0.18,1.282%,1316163853.00,United States,2021,176613,Health Care,Biotechnology: Pharmaceutical Preparations
+ACAD,ACADIA Pharmaceuticals Inc. Common Stock,$16.26,0.17,1.057%,2612059798.00,United States,1985,1241557,Health Care,Biotechnology: Pharmaceutical Preparations
+ACBI,Atlantic Capital Bancshares Inc. Common Stock,$23.54,0.23,0.987%,477931631.00,United States,,99716,Finance,Major Banks
+ACER,Acer Therapeutics Inc. Common Stock (DE),$2.64,-0.04,-1.493%,37779044.00,United States,,77487,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+ACHC,Acadia Healthcare Company Inc. Common Stock,$65.02,0.36,0.557%,5842916903.00,United States,,197464,Health Care,Hospital/Nursing Management
+ADV,Advantage Solutions Inc. Class A Common Stock,$8.50,0.11,1.311%,2707875277.00,United States,2019,458910,Technology,Advertising
+ADVM,Adverum Biotechnologies Inc. Common Stock,$2.27,0.03,1.339%,222745716.00,United States,2014,3082934,Health Care,Biotechnology: Pharmaceutical Preparations
+AEIS,Advanced Energy Industries Inc. Common Stock,$88.08,1.06,1.218%,3379900358.00,United States,1995,168331,Consumer Durables,Electrical Products
+AFIB,Acutus Medical Inc. Common Stock,$10.79,-0.47,-4.174%,301491504.00,United States,2020,262991,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
+AFIN,American Finance Trust Inc. Class A Common Stock,$8.60,0.30,3.614%,1013250615.00,United States,,1299732,Consumer Services,Real Estate Investment Trusts
+AFRM,Affirm Holdings Inc. Class A Common Stock,$109.30,-14.40,-11.641%,29440840767.00,United States,2021,44862980,Miscellaneous,Business Services
+AINV,Apollo Investment Corporation Common Stock,$13.63,-0.04,-0.293%,886893005.00,United States,2004,307518,Finance,Finance/Investors Services
+AKBA,Akebia Therapeutics Inc. Common Stock,$2.92,0.04,1.389%,509649377.00,United States,2014,1886013,Health Care,Biotechnology: Pharmaceutical Preparations
+AMAL,Amalgamated Financial Corp. Common Stock (DE),$14.70,0.00,0.00%,457105438.00,United States,2018,64869,Finance,Commercial Banks
+AMEH,Apollo Medical Holdings Inc. Common Stock,$89.60,-5.28,-5.565%,3983110925.00,United States,,897095,Health Care,Managed Health Care
+AMGN,Amgen Inc. Common Stock,$216.72,2.97,1.389%,5907124080144.00,United States,1983,2553406,Health Care,Biotechnology: Pharmaceutical Preparations
+AMNB,American National Bankshares Inc. Common Stock,$31.90,0.23,0.726%,346935532.00,United States,,12481,Finance,Major Banks
+AMPH,Amphastar Pharmaceuticals Inc. Common Stock,$18.45,0.62,3.477%,886184275.00,United States,2014,183860,Health Care,Biotechnology: Pharmaceutical Preparations
+AMTB,Amerant Bancorp Inc. Class A Common Stock,$26.44,0.93,3.646%,991009300.00,United States,,195180,Finance,Major Banks
+ANAB,AnaptysBio Inc. Common Stock,$25.98,0.17,0.659%,712718667.00,United States,2017,149497,Health Care,Biotechnology: Pharmaceutical Preparations
+ANDE,Andersons Inc. (The) Common Stock,$29.73,0.17,0.575%,989496128.00,United States,,99141,Consumer Non-Durables,Tobacco
+ANGO,AngioDynamics Inc. Common Stock,$27.10,0.00,0.00%,1041834460.00,United States,2004,290943,Health Care,Medical/Dental Instruments
+ANIK,Anika Therapeutics Inc. Common Stock,$39.65,0.05,0.126%,571873060.00,United States,,64542,Health Care,Medical/Dental Instruments
+ANIP,ANI Pharmaceuticals Inc.,$28.22,0.78,2.843%,359847669.00,United States,,35042,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+ANSS,ANSYS Inc. Common Stock,$366.38,-7.23,-1.935%,31967579377.00,United States,1996,276050,Technology,Computer Software: Prepackaged Software
+APOG,Apogee Enterprises Inc. Common Stock,$41.60,0.79,1.936%,1061915462.00,United States,,96830,,
+APPN,Appian Corporation Class A Common Stock,$102.34,0.97,0.957%,7274579263.00,United States,2017,552986,Technology,EDP Services
+AQB,AquaBounty Technologies Inc. Common Stock,$4.32,-0.04,-0.917%,306831188.00,United States,,502494,,
+ARDX,Ardelyx Inc. Common Stock,$1.34,-0.02,-1.471%,138179473.00,United States,2014,2323866,Health Care,Biotechnology: Pharmaceutical Preparations
+ARRY,Array Technologies Inc. Common Stock,$19.00,1.37,7.771%,2547771408.00,United States,2020,2793912,Technology,Semiconductors
+ASMB,Assembly Biosciences Inc. Common Stock,$3.30,0.07,2.167%,148406310.00,United States,,1021178,Health Care,Biotechnology: Pharmaceutical Preparations
+ATNX,Athenex Inc. Common Stock,$3.36,0.02,0.599%,367274006.00,United States,2017,1804899,Health Care,Biotechnology: Pharmaceutical Preparations
+ATRO,Astronics Corporation Common Stock,$13.52,0.33,2.502%,418127794.00,United States,,92906,Capital Goods,Military/Government/Technical
+AUB,Atlantic Union Bankshares Corporation Common Stock,$34.56,0.06,0.174%,2657835521.00,United States,,276531,Finance,Major Banks
+AVAV,AeroVironment Inc. Common Stock,$91.01,-2.84,-3.026%,2258089518.00,United States,2007,397812,Capital Goods,Aerospace
+AVT,Avnet Inc. Common Stock,$38.47,-0.29,-0.748%,3827905146.00,United States,,818109,Technology,Electronic Components
+AXTI,AXT Inc Common Stock,$7.68,-1.55,-16.793%,326450803.00,United States,1998,5036645,Technology,Semiconductors
+AZPN,Aspen Technology Inc. Common Stock,$126.50,0.01,0.008%,8485226838.00,United States,1994,292201,Technology,EDP Services
+BANR,Banner Corporation Common Stock,$52.88,1.06,2.046%,1827094848.00,United States,,167486,Finance,Major Banks
+BATRK,Liberty Media Corporation Series C Liberty Braves Common Stock,$26.72,1.26,4.949%,1396591768.00,United States,,113933,Consumer Services,Movies/Entertainment
+BCLI,Brainstorm Cell Therapeutics Inc. Common Stock,$3.24,-0.04,-1.22%,117672138.00,United States,,96506,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+BCPC,Balchem Corporation Common Stock,$139.47,0.71,0.512%,4514718516.00,United States,,98334,Basic Industries,Industrial Specialties
+BECN,Beacon Roofing Supply Inc. Common Stock,$52.47,1.24,2.42%,3674721863.00,United States,2004,289160,Capital Goods,Wholesale Distributors
+BEEM,Beam Global Common Stock,$28.21,0.96,3.523%,251960464.00,United States,,146040,Technology,Semiconductors
+BFIN,BankFinancial Corporation Common Stock,$11.40,0.28,2.518%,157645151.00,United States,,40894,Finance,Major Banks
+BGCP,BGC Partners Inc Class A Common Stock,$5.03,-0.06,-1.179%,1939478471.00,United States,,2144735,Finance,Investment Bankers/Brokers/Service
+BGRY,Berkshire Grey Inc. Class A Common Stock,$6.99,-0.16,-2.238%,1596148417.00,United States,2021,793104,Capital Goods,Office Equipment/Supplies/Services
+BIGC,BigCommerce Holdings Inc. Series 1 Common Stock,$55.84,1.00,1.823%,3970786309.00,United States,2020,1551051,Technology,Computer Software: Prepackaged Software
+BIIB,Biogen Inc. Common Stock,$301.94,2.13,0.71%,44999157779.00,United States,,797529,Health Care,Biotechnology: Pharmaceutical Preparations
+BKNG,Booking Holdings Inc. Common Stock,$2322.12,17.32,0.751%,95345877983.00,United States,,232303,Transportation,Other Consumer Services
+BLIN,Bridgeline Digital Inc. Common Stock,$4.60,0.22,5.023%,38610601.00,United States,,394424,Technology,EDP Services
+BLKB,Blackbaud Inc. Common Stock,$68.18,1.07,1.594%,3332850781.00,United States,2004,223273,Technology,Computer Software: Prepackaged Software
+BLNK,Blink Charging Co. Common Stock,$29.79,-0.86,-2.806%,1255922628.00,United States,,3422083,Miscellaneous,Business Services
+BLUE,bluebird bio Inc. Common Stock,$18.29,0.41,2.293%,1236011661.00,United States,2013,817806,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+BMBL,Bumble Inc. Class A Common Stock,$54.65,-3.55,-6.10%,6547018410.00,United States,2021,3617268,Technology,Computer Software: Prepackaged Software
+BMRA,Biomerica Inc. Common Stock,$4.58,0.04,0.881%,57296762.00,United States,,95571,Health Care,Medical/Dental Instruments
+BMRC,Bank of Marin Bancorp Common Stock,$35.54,-0.04,-0.112%,583620146.00,United States,,54565,Finance,Major Banks
+BMTC,Bryn Mawr Bank Corporation Common Stock,$39.62,0.80,2.061%,787571946.00,United States,,81629,Finance,Major Banks
+BNFT,Benefitfocus Inc. Common Stock,$11.47,0.01,0.087%,382481923.00,United States,2013,102191,Technology,Computer Software: Prepackaged Software
+BOKF,BOK Financial Corporation Common Stock,$85.27,2.42,2.921%,5890320114.00,United States,,252433,Finance,Major Banks
+BRKL,Brookline Bancorp Inc. Common Stock,$14.56,0.25,1.747%,1138484096.00,United States,,295870,Finance,Savings Institutions
+BRKR,Bruker Corporation Common Stock,$86.04,-3.74,-4.166%,12993760628.00,United States,,897949,Capital Goods,Biotechnology: Laboratory Analytical Instruments
+BRP,BRP Group Inc. (Insurance Company) Class A Common Stock,$37.64,0.18,0.481%,3752365325.00,United States,2019,190576,Finance,Specialty Insurers
+BRY,Berry Corporation (bry) Common Stock,$6.30,0.46,7.877%,506967439.00,United States,2018,234557,Energy,Oil & Gas Production
+BSRR,Sierra Bancorp Common Stock,$23.55,0.09,0.384%,362951729.00,United States,,18724,Finance,Major Banks
+BSVN,Bank7 Corp. Common stock,$20.62,0.14,0.684%,186623496.00,United States,2018,2893,Finance,Major Banks
+BUSE,First Busey Corporation Class A Common Stock,$23.05,0.11,0.48%,1296972214.00,United States,,118489,Finance,Major Banks
+BWEN,Broadwind Inc. Common Stock,$3.07,0.11,3.716%,59512137.00,United States,,292775,Capital Goods,Industrial Machinery/Components
+BYND,Beyond Meat Inc. Common Stock,$112.94,0.04,0.035%,7143957357.00,United States,2019,1781367,Consumer Non-Durables,Specialty Foods
+CAC,Camden National Corporation Common Stock,$45.72,0.22,0.484%,683568864.00,United States,,24071,Finance,Major Banks
+CAKE,Cheesecake Factory Incorporated (The) Common Stock,$45.78,1.36,3.062%,2388735530.00,United States,1992,852793,Consumer Services,Restaurants
+CALM,Cal-Maine Foods Inc. Common Stock,$35.31,0.06,0.17%,1725152287.00,United States,1996,350652,,Farming/Seeds/Milling
+CAR,Avis Budget Group Inc. Common Stock,$90.30,3.67,4.236%,6008790549.00,United States,,1619409,Miscellaneous,Rental/Leasing Companies
+CASA,Casa Systems Inc. Common Stock,$6.90,0.11,1.62%,584893439.00,United States,2017,148519,Technology,Radio And Television Broadcasting And Communications Equipment
+CASY,Casey's General Stores Inc. Common Stock,$194.60,4.22,2.217%,7220097072.00,United States,1983,268989,Consumer Services,Food Chains
+CATY,Cathay General Bancorp Common Stock,$40.28,0.07,0.174%,3136222511.00,United States,,296879,Finance,Major Banks
+CCAP,Crescent Capital BDC Inc. Common stock,$19.14,0.41,2.189%,539123270.00,United States,,70917,,
+CCMP,CMC Materials Inc. Common Stock,$130.95,0.22,0.168%,3826667387.00,United States,2000,203708,Technology,Semiconductors
+CCOI,Cogent Communications Holdings Inc.,$72.63,0.68,0.945%,3461954780.00,United States,,113884,Consumer Services,Telecommunications Equipment
+CCRN,Cross Country Healthcare Inc. Common Stock $0.0001 Par Value,$20.93,0.09,0.432%,773607104.00,United States,2001,242640,Technology,Professional Services
+CCXI,ChemoCentryx Inc. Common Stock,$15.91,0.49,3.178%,1112164765.00,United States,2012,1366176,Health Care,Biotechnology: Pharmaceutical Preparations
+CDEV,Centennial Resource Development Inc. Class A Common Stock,$5.51,0.27,5.153%,1539446212.00,United States,2016,9387120,Energy,Oil & Gas Production
+CDLX,Cardlytics Inc. Common Stock,$92.81,1.62,1.777%,3066452795.00,United States,2018,171583,Technology,EDP Services
+CDW,CDW Corporation Common Stock,$196.77,-1.22,-0.616%,27054982451.00,United States,2013,603680,Technology,EDP Services
+CEMI,Chembio Diagnostics Inc. Common Stock,$2.66,-0.04,-1.481%,76136656.00,United States,,1806570,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
+CFB,CrossFirst Bankshares Inc. Common Stock,$12.34,-0.08,-0.644%,629191587.00,United States,2019,53832,Finance,Commercial Banks
+CFLT,Confluent Inc. Class A Common Stock,$65.15,-0.36,-0.55%,16965713845.00,United States,2021,913315,Technology,EDP Services
+CFMS,Conformis Inc. Common Stock,$1.76,0.21,13.548%,327291680.00,United States,2015,8380524,Health Care,Medical/Dental Instruments
+CGNX,Cognex Corporation Common Stock,$87.87,0.50,0.572%,15527258501.00,United States,1989,563260,Capital Goods,Industrial Machinery/Components
+CHMG,Chemung Financial Corp Common Stock,$45.31,-0.69,-1.50%,211254703.00,United States,,3219,Finance,Major Banks
+CHNG,Change Healthcare Inc. Common Stock,$21.74,-0.03,-0.138%,6758135228.00,United States,2019,995152,Health Care,Managed Health Care
+CHRW,C.H. Robinson Worldwide Inc. Common Stock,$89.13,0.73,0.826%,11739467921.00,United States,1997,1536493,Transportation,Oil Refining/Marketing
+CHUY,Chuy's Holdings Inc. Common Stock,$30.93,0.48,1.576%,618511014.00,United States,2012,97934,Consumer Services,Restaurants
+CINF,Cincinnati Financial Corporation Common Stock,$118.49,1.11,0.946%,19098559333.00,United States,,362039,Finance,Property-Casualty Insurers
+CLMT,Calumet Specialty Products Partners L.P. Common Units,$6.14,-1.54,-20.052%,483072249.00,United States,2006,581898,Energy,Oil & Gas Production
+CLSN,Celsion Corporation Common Stock,$1.08,0.01,0.935%,93482355.00,United States,,1036435,Health Care,Biotechnology: Pharmaceutical Preparations
+CLVR,Clever Leaves Holdings Inc. Common Shares,$8.59,-0.21,-2.386%,225056729.00,United States,,101672,,
+CMAX,CareMax Inc. Class A Common Stock,$10.32,0.91,9.671%,865579525.00,United States,2020,1070507,Technology,Computer Software: Prepackaged Software
+CME,CME Group Inc. Class A Common Stock,$189.23,0.02,0.011%,67959734832.00,United States,2002,1597630,Finance,Investment Bankers/Brokers/Service
+CMPI,Checkmate Pharmaceuticals Inc. Common Stock,$4.90,-0.47,-8.752%,105966866.00,United States,2020,60683,Consumer Durables,Specialty Chemicals
+CNSL,Consolidated Communications Holdings Inc. Common Stock,$9.32,0.29,3.212%,920389004.00,United States,2005,318121,Public Utilities,Telecommunications Equipment
+CODX,Co-Diagnostics Inc. Common Stock,$10.02,-0.56,-5.293%,289476698.00,United States,2017,806389,Health Care,Medical/Dental Instruments
+CONN,Conn's Inc. Common Stock,$23.33,0.31,1.347%,687841656.00,United States,2003,355767,Consumer Services,Consumer Electronics/Video Chains
+COOP,Mr. Cooper Group Inc. Common Stock,$41.29,0.00,0.00%,3557074331.00,United States,,1466394,Finance,Finance: Consumer Services
+CORT,Corcept Therapeutics Incorporated Common Stock,$20.86,-0.24,-1.137%,2418229481.00,United States,2004,434636,Health Care,Biotechnology: Pharmaceutical Preparations
+COUP,Coupa Software Incorporated Common Stock,$244.80,-2.84,-1.147%,18129746261.00,United States,2016,1093873,Technology,Computer Software: Prepackaged Software
+CPSI,Computer Programs and Systems Inc. Common Stock,$36.48,0.13,0.358%,534375164.00,United States,2002,132440,Technology,EDP Services
+CRAI,CRA International Inc. Common Stock,$90.20,-0.65,-0.715%,665836646.00,United States,1998,32201,Miscellaneous,Other Consumer Services
+CRBP,Corbus Pharmaceuticals Holdings Inc. Common Stock,$1.15,-0.04,-3.361%,144015513.00,United States,,878111,Health Care,Biotechnology: Pharmaceutical Preparations
+CRCT,Cricut Inc. Class A Common Stock,$34.63,-0.31,-0.887%,7695890385.00,United States,2021,455094,Capital Goods,Wholesale Distributors
+CREE,Cree Inc. Common Stock,$88.84,2.22,2.563%,10295226243.00,United States,1993,1070325,Technology,Semiconductors
+CRMT,America's Car-Mart Inc Common Stock,$122.02,2.46,2.058%,797642056.00,United States,,36376,Consumer Services,Other Specialty Stores
+CRTX,Cortexyme Inc. Common Stock,$87.19,-3.89,-4.271%,2588303681.00,United States,2019,217181,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+CSGS,CSG Systems International Inc. Common Stock,$47.42,0.23,0.487%,1552652859.00,United States,1996,109952,Technology,EDP Services
+CSII,Cardiovascular Systems Inc. Common Stock,$35.06,-0.19,-0.539%,1409695250.00,United States,1981,119043,Health Care,Medical/Dental Instruments
+CSOD,Cornerstone OnDemand Inc. Common Stock,$57.21,0.01,0.017%,3819000860.00,United States,2011,1551517,Technology,Computer Software: Prepackaged Software
+CTBI,Community Trust Bancorp Inc. Common Stock,$40.61,0.39,0.97%,724373281.00,United States,,46629,Finance,Major Banks
+CTKB,Cytek Biosciences Inc. Common Stock,$26.11,-0.32,-1.211%,3490768408.00,United States,2021,346151,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
+CTXS,Citrix Systems Inc. Common Stock,$108.82,1.25,1.162%,13518935163.00,United States,1995,1421178,Technology,Computer Software: Prepackaged Software
+CVBF,CVB Financial Corporation Common Stock,$19.15,-0.14,-0.726%,2602400529.00,United States,,513327,Finance,Major Banks
+CVCO,Cavco Industries Inc. Common Stock When Issued,$248.88,-0.13,-0.052%,2286468026.00,United States,,51607,Basic Industries,Homebuilding
+CVGW,Calavo Growers Inc. Common Stock,$35.39,-3.59,-9.21%,625812306.00,United States,,964428,,Farming/Seeds/Milling
+CYBE,CyberOptics Corporation Common Stock,$40.05,-0.83,-2.03%,292981009.00,United States,1987,23513,Capital Goods,Electronic Components
+CZWI,Citizens Community Bancorp Inc. Common Stock,$13.72,0.02,0.146%,146563996.00,United States,,14636,Finance,Savings Institutions
+DGICA,Donegal Group Inc. Class A Common Stock,$14.90,-0.02,-0.134%,465554612.00,United States,,21123,Finance,Property-Casualty Insurers
+DISCA,Discovery Inc. Series A Common Stock,$27.06,0.91,3.48%,13685476152.00,United States,,5439153,Consumer Services,Television Services
+DISH,DISH Network Corporation Class A Common Stock,$44.26,1.51,3.532%,23364377984.00,United States,1995,1679333,Consumer Services,Television Services
+DLTR,Dollar Tree Inc. Common Stock,$89.26,-0.95,-1.053%,20075633338.00,United States,1995,4483319,Consumer Services,Department/Specialty Retail Stores
+DORM,Dorman Products Inc. Common Stock,$91.87,-0.42,-0.455%,2924153657.00,United States,,75613,Capital Goods,Auto Parts:O.E.M.
+DSP,Viant Technology Inc. Class A Common Stock,$12.76,-0.96,-6.997%,768855331.00,United States,2021,647261,Technology,EDP Services
+DUOL,Duolingo Inc. Class A Common Stock,$158.71,-14.66,-8.456%,5938669027.00,United States,2021,279673,Technology,Computer Software: Prepackaged Software
+EBAY,eBay Inc. Common Stock,$72.67,0.11,0.152%,47239555349.00,United States,1998,5768568,Consumer Services,Catalog/Specialty Distribution
+ECOL,US Ecology Inc Common Stock,$35.84,0.35,0.986%,1129401692.00,United States,,101690,Public Utilities,Environmental Services
+EDIT,Editas Medicine Inc. Common Stock,$62.96,-3.14,-4.75%,4297728615.00,United States,2016,1599407,Health Care,Biotechnology: Pharmaceutical Preparations
+EGAN,eGain Corporation Common Stock,$11.20,-0.16,-1.408%,349911565.00,United States,1999,101182,Technology,Computer Software: Prepackaged Software
+EGRX,Eagle Pharmaceuticals Inc. Common Stock,$52.35,0.65,1.257%,685633866.00,United States,2014,105457,Health Care,Biotechnology: Pharmaceutical Preparations
+EHTH,eHealth Inc. Common Stock,$38.84,1.14,3.024%,1017053209.00,United States,2006,423522,Finance,Specialty Insurers
+ENTA,Enanta Pharmaceuticals Inc. Common Stock,$57.28,1.21,2.158%,1157906608.00,United States,2013,117879,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
+ENTG,Entegris Inc. Common Stock,$124.07,3.43,2.843%,16823575746.00,United States,2000,592570,Technology,Semiconductors
+EPAY,Bottomline Technologies Inc. Common Stock,$42.43,0.71,1.702%,1936506515.00,United States,1999,355637,Technology,EDP Services
+ERIE,Erie Indemnity Company Class A Common Stock,$178.90,2.40,1.36%,9354657385.00,United States,,102132,Finance,Specialty Insurers
+ERII,Energy Recovery Inc. Common Stock,$21.47,-0.10,-0.464%,1227059881.00,United States,2008,224858,Technology,Industrial Machinery/Components
+ESPR,Esperion Therapeutics Inc. Common Stock,$11.38,-0.43,-3.641%,321797870.00,United States,2013,1336988,Health Care,Biotechnology: Pharmaceutical Preparations
+EVOP,EVO Payments Inc. Class A Common Stock,$24.84,-0.32,-1.272%,1030220941.00,United States,2018,96580,Technology,EDP Services
+EXC,Exelon Corporation Common Stock,$50.56,0.65,1.302%,49439219290.00,United States,,6463490,Public Utilities,Power Generation
+EXLS,ExlService Holdings Inc. Common Stock,$122.48,0.60,0.492%,4101243657.00,United States,2006,104342,Technology,Retail: Computer Software & Peripheral Equipment
+EXPE,Expedia Group Inc. Common Stock,$148.79,3.40,2.339%,22440478340.00,United States,,2382009,Transportation,Other Consumer Services
+EXPO,Exponent Inc. Common Stock,$115.10,0.38,0.331%,5991961895.00,United States,,145061,Consumer Services,Professional Services
+EXTR,Extreme Networks Inc. Common Stock,$10.24,0.16,1.587%,1326209249.00,United States,1999,592061,Capital Goods,Telecommunications Equipment
+EYE,National Vision Holdings Inc. Common Stock,$59.24,0.62,1.058%,4850282287.00,United States,2017,531255,Health Care,Ophthalmic Goods
+FAST,Fastenal Company Common Stock,$53.38,-0.20,-0.373%,30679588798.00,United States,1987,2265347,,
+FCCO,First Community Corporation Common Stock,$19.55,0.325,1.691%,147398926.00,United States,,24575,Finance,Major Banks
+FCFS,FirstCash Inc. Common Stock,$88.05,0.43,0.491%,3561795606.00,United States,1991,115982,Miscellaneous,Diversified Commercial Services
+FELE,Franklin Electric Co. Inc. Common Stock,$80.66,-2.45,-2.948%,3745241256.00,United States,,226903,Consumer Durables,Metal Fabrications
+FEYE,FireEye Inc. Common Stock,$18.41,0.24,1.321%,4403521738.00,United States,2013,3192043,Technology,Computer Software: Prepackaged Software
+FFIC,Flushing Financial Corporation Common Stock,$22.23,0.13,0.588%,687718484.00,United States,,144753,Finance,Major Banks
+FGBI,First Guaranty Bancshares Inc. Common Stock,$18.90,-0.15,-0.787%,184109682.00,United States,,3354,Finance,Major Banks
+FGEN,FibroGen Inc Common Stock,$11.73,0.39,3.439%,1086455368.00,United States,2014,1188302,Health Care,Biotechnology: Pharmaceutical Preparations
+FIBK,First Interstate BancSystem Inc. Class A Common Stock,$41.99,0.72,1.745%,2613467300.00,United States,2010,183683,Finance,Major Banks
+FIVN,Five9 Inc. Common Stock,$170.39,-3.12,-1.798%,11535348646.00,United States,2014,1978360,Technology,EDP Services
+FLGT,Fulgent Genetics Inc. Common Stock,$87.47,-6.22,-6.639%,2582224525.00,United States,2016,793335,Health Care,Medical Specialities
+FLIC,First of Long Island Corporation (The) Common Stock,$19.95,0.20,1.013%,472929713.00,United States,,33525,Finance,Major Banks
+FMBI,First Midwest Bancorp Inc. Common Stock,$18.03,0.08,0.446%,2060809113.00,United States,,465792,Finance,Major Banks
+FNHC,FedNat Holding Company Common Stock,$2.30,0.11,5.023%,40118544.00,United States,,49403,Finance,Property-Casualty Insurers
+FOLD,Amicus Therapeutics Inc. Common Stock,$11.27,0.34,3.111%,3004077938.00,United States,2007,1831816,Health Care,Biotechnology: Pharmaceutical Preparations
+FORR,Forrester Research Inc. Common Stock,$46.62,-0.88,-1.853%,893612160.00,United States,1996,56498,Consumer Services,EDP Services
+FOXF,Fox Factory Holding Corp. Common Stock,$149.96,-1.45,-0.958%,6313823315.00,United States,2013,86095,Consumer Non-Durables,Motor Vehicles
+FREQ,Frequency Therapeutics Inc. Common Stock,$7.04,-0.24,-3.297%,242295624.00,United States,2019,186890,Health Care,Biotechnology: Pharmaceutical Preparations
+FROG,JFrog Ltd. Ordinary Shares,$36.70,0.13,0.355%,3519070993.00,United States,2020,523795,Technology,Computer Software: Prepackaged Software
+FRTA,Forterra Inc. Common Stock,$23.67,-0.07,-0.295%,1584015525.00,United States,2016,92724,,
+FSBW,FS Bancorp Inc. Common Stock,$32.78,-0.27,-0.817%,269790709.00,United States,2012,12554,Finance,Banks
+FSLR,First Solar Inc. Common Stock,$106.17,6.76,6.80%,11287920293.00,United States,2006,3644216,Technology,Semiconductors
+FTNT,Fortinet Inc. Common Stock,$296.92,-13.57,-4.371%,48493033784.00,United States,2009,1777069,Miscellaneous,Diversified Manufacture
+FUNC,First United Corporation Common Stock,$18.10,0.15,0.836%,119724332.00,United States,,6114,Finance,Major Banks
+FUV,Arcimoto Inc. Common Stock,$12.02,0.14,1.178%,449455831.00,United States,2017,671688,Consumer Non-Durables,Motor Vehicles
+FWONA,Liberty Media Corporation Series A Liberty Formula One Common Stock,$45.41,-0.02,-0.044%,10529646460.00,United States,,132590,Consumer Services,Broadcasting
+FWRD,Forward Air Corporation Common Stock,$84.20,0.03,0.036%,2281852754.00,United States,,91344,Transportation,Oil Refining/Marketing
+GBCI,Glacier Bancorp Inc. Common Stock,$50.83,0.29,0.574%,4854649529.00,United States,,332046,Finance,Major Banks
+GFED,Guaranty Federal Bancshares Inc. Common Stock,$23.87,-0.2261,-0.938%,104670690.00,United States,,1050,Finance,Major Banks
+GIII,G-III Apparel Group LTD. Common Stock,$29.11,-0.17,-0.581%,1413759375.00,United States,1989,316428,Consumer Services,Department/Specialty Retail Stores
+GNOG,Golden Nugget Online Gaming Inc. Class A Common Stock,$21.65,-0.75,-3.348%,1008249073.00,United States,2019,934982,Consumer Services,Services-Misc. Amusement & Recreation
+GNTY,Guaranty Bancshares Inc. Common Stock,$33.44,0.23,0.693%,403217413.00,United States,2017,12299,Finance,Major Banks
+GO,Grocery Outlet Holding Corp. Common Stock,$25.05,0.04,0.16%,2402807874.00,United States,2019,982572,Consumer Non-Durables,Specialty Foods
+GOEV,Canoo Inc. Class A Common Stock,$7.00,0.14,2.041%,1662438323.00,United States,2019,1702386,,
+GOGO,Gogo Inc. Common Stock,$12.56,-0.14,-1.102%,1377886636.00,United States,2013,639685,Consumer Services,Telecommunications Equipment
+GPRO,GoPro Inc. Class A Common Stock,$9.51,0.19,2.039%,1465249379.00,United States,2014,2712191,Miscellaneous,Industrial Machinery/Components
+GRAY,Graybug Vision Inc. Common Stock,$3.84,-0.08,-2.041%,81733156.00,United States,2020,78556,Health Care,Biotechnology: Pharmaceutical Preparations
+GSBC,Great Southern Bancorp Inc. Common Stock,$52.80,0.45,0.86%,717153677.00,United States,1989,40150,Finance,Major Banks
+GSHD,Goosehead Insurance Inc. Class A Common Stock,$147.84,-5.87,-3.819%,5439691340.00,United States,2018,99469,Finance,Specialty Insurers
+GSKY,GreenSky Inc. Class A Common Stock,$8.85,0.51,6.115%,1629981504.00,United States,2018,4122280,Technology,EDP Services
+GT,The Goodyear Tire & Rubber Company Common Stock,$16.32,0.58,3.685%,4589068503.00,United States,,3177931,Consumer Durables,Automotive Aftermarket
+HAFC,Hanmi Financial Corporation Common Stock,$18.19,0.15,0.831%,558370172.00,United States,,111459,Finance,Major Banks
+HALL,Hallmark Financial Services Inc. Common Stock,$3.79,0.04,1.067%,68868211.00,United States,,60435,Finance,Property-Casualty Insurers
+HAYN,Haynes International Inc. Common Stock,$38.45,1.47,3.975%,487881669.00,United States,2007,32939,,
+HBCP,Home Bancorp Inc. Common Stock,$36.90,0.15,0.408%,319034596.00,United States,,19400,Finance,Banks
+HBMD,Howard Bancorp Inc. Common Stock,$19.21,0.25,1.319%,361351357.00,United States,,102668,Finance,Major Banks
+HBT,HBT Financial Inc. Common Stock,$15.28,0.02,0.131%,417719353.00,United States,2019,6191,Finance,Commercial Banks
+HCSG,Healthcare Services Group Inc. Common Stock,$26.26,-0.13,-0.493%,1960519080.00,United States,1983,926430,Health Care,Assisted Living Services
+HDSN,Hudson Technologies Inc. Common Stock,$3.24,0.01,0.31%,142134857.00,United States,,261215,Basic Industries,Specialty Chemicals
+HFWA,Heritage Financial Corporation Common Stock,$23.98,0.05,0.209%,862576427.00,United States,,149537,Finance,Banks
+HLBZ,Helbiz Inc. Class A Common stock,$9.18,-1.82,-16.545%,270407934.00,United States,2019,452022,Miscellaneous,Business Services
+HLIO,Helios Technologies Inc. Common Stock,$85.40,0.65,0.767%,2766119152.00,United States,,126203,Capital Goods,Fluid Controls
+HLIT,Harmonic Inc. Common Stock,$9.20,0.32,3.604%,936612394.00,United States,1995,1067643,Technology,Radio And Television Broadcasting And Communications Equipment
+HLNE,Hamilton Lane Incorporated Class A Common Stock,$87.93,0.48,0.549%,4677925329.00,United States,2017,177296,Finance,Investment Managers
+HMPT,Home Point Capital Inc Common Stock,$4.08,0.06,1.493%,569125871.00,United States,2021,34167,Finance,Finance: Consumer Services
+HMST,HomeStreet Inc. Common Stock,$37.82,0.09,0.239%,786454268.00,United States,2012,87224,Finance,Banks
+HONE,HarborOne Bancorp Inc. Common Stock,$13.49,0.19,1.429%,743974431.00,United States,2016,209598,Finance,Major Banks
+HOOD,Robinhood Markets Inc. Class A Common Stock,$40.60,-0.57,-1.385%,34730999929.00,United States,2021,4302977,Technology,Computer Software: Prepackaged Software
+BANX,StoneCastle Financial Corp Common Stock,$21.354,0.054,0.254%,150914462.00,United States,,8342,Finance,Trusts Except Educational Religious and Charitable
+BELFB,Bel Fuse Inc. Class B Common Stock,$13.05,0.23,1.794%,162012670.00,United States,,78698,Capital Goods,Electrical Products
+CCLP,CSI Compressco LP Common Units,$1.41,0.0601,4.452%,67639448.00,United States,2011,59425,Energy,Oilfield Services/Equipment
+CPIX,Cumberland Pharmaceuticals Inc. Common Stock,$3.05,0.26,9.319%,45382777.00,United States,2009,78686,Health Care,Biotechnology: Pharmaceutical Preparations
+DYAI,Dyadic International Inc. Common Stock,$5.76,0.03,0.524%,161735944.00,United States,,457634,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+EBIX,Ebix Inc. Common Stock,$27.37,0.58,2.165%,846921925.00,United States,,103120,Technology,EDP Services
+EVOK,Evoke Pharma Inc. Common Stock,$1.12,-0.01,-0.885%,36332106.00,United States,2013,86457,Health Care,Biotechnology: Pharmaceutical Preparations
+FCAP,First Capital Inc. Common Stock,$43.63,1.63,3.881%,147202035.00,United States,,1392,Finance,Savings Institutions
+FLDM,Fluidigm Corporation Common Stock,$6.87,0.07,1.029%,523267139.00,United States,2011,763232,Capital Goods,Biotechnology: Laboratory Analytical Instruments
+HJLI,Hancock Jaffe Laboratories Inc. Common Stock,$8.54,-0.12,-1.386%,72706673.00,United States,2018,115973,Health Care,Medical/Dental Instruments
+IBRX,ImmunityBio Inc. Common Stock,$9.77,-0.12,-1.213%,3821599132.00,United States,2015,1425176,Health Care,Biotechnology: Commercial Physical & Biological Resarch
+JBSS,John B. Sanfilippo & Son Inc. Common Stock,$82.94,-0.71,-0.849%,951240104.00,United States,1991,40543,Consumer Non-Durables,Specialty Foods
+JCS,Communications Systems Inc. Common Stock,$6.79,0.08,1.192%,65983950.00,United States,,133183,Public Utilities,Telecommunications Equipment
+JOUT,Johnson Outdoors Inc. Class A Common Stock,$110.83,-0.07,-0.063%,1122397576.00,United States,,25958,Consumer Non-Durables,Recreational Products/Toys
+MARK,Remark Holdings Inc. Common Stock,$1.24,-0.04,-3.125%,124986338.00,United States,,920352,Consumer Services,Telecommunications Equipment
+MMAT,Meta Materials Inc. Common Stock,$5.34,0.11,2.103%,1491826839.00,United States,,11434297,Technology,Semiconductors
+NCSM,NCS Multistage Holdings Inc. Common Stock,$28.98,3.01,11.59%,68982630.00,United States,2017,1647,Energy,Oilfield Services/Equipment
+NWS,News Corporation Class B Common Stock,$21.43,-0.01,-0.047%,12661750210.00,United States,,538241,Consumer Services,Broadcasting
+POWL,Powell Industries Inc. Common Stock,$25.14,0.13,0.52%,293928659.00,United States,,50288,Consumer Durables,Electrical Products
+PSEC,Prospect Capital Corporation Common Stock,$7.70,-0.06,-0.773%,2996266589.00,United States,2004,1966271,Finance,Finance/Investors Services
+RGP,Resources Connection Inc. Common Stock,$15.39,-0.19,-1.22%,510743929.00,United States,,126295,Miscellaneous,Business Services
+SNGX,Soligenix Inc. Common Stock,$1.08,-0.08,-6.897%,43312061.00,United States,,2359942,Health Care,Biotechnology: Pharmaceutical Preparations
+TLGT,Teligent Inc. Common Stock,$0.4446,-0.0068,-1.506%,41266657.00,United States,,6599979,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+TRMT,Tremont Mortgage Trust Common Shares of Beneficial Interest,$5.72,0.03,0.527%,47546482.00,United States,2017,25759,Consumer Services,Real Estate Investment Trusts
+TYME,Tyme Technologies Inc. Common Stock,$1.05,-0.02,-1.869%,180817239.00,United States,,591145,Health Care,Biotechnology: Pharmaceutical Preparations
+UFPT,UFP Technologies Inc. Common Stock,$65.55,-0.95,-1.429%,493683532.00,United States,1993,24432,Capital Goods,Containers/Packaging
+WTER,The Alkaline Water Company Inc. Common Stock,$1.69,0.02,1.198%,160084408.00,United States,,2627464,Consumer Non-Durables,Beverages (Production/Distribution)
+AMCX,AMC Networks Inc. Class A Common Stock,$46.98,1.12,2.442%,1983292787.00,United States,,414474,Consumer Services,Broadcasting
+CLOV,Clover Health Investments Corp. Class A Common Stock,$8.37,-0.22,-2.561%,3688659000.00,United States,,17941255,Health Care,Medical Specialities
+FIZZ,National Beverage Corp. Common Stock,$52.29,-0.26,-0.495%,4879720892.00,United States,,701268,Consumer Non-Durables,Beverages (Production/Distribution)
+INVA,Innoviva Inc. Common Stock,$15.22,-0.31,-1.996%,1057707538.00,United States,,458441,Health Care,Biotechnology: Pharmaceutical Preparations
+MVST,Microvast Holdings Inc. Common Stock,$9.98,-1.68,-14.408%,2999152135.00,United States,2019,2912768,Capital Goods,Industrial Machinery/Components
+PAHC,Phibro Animal Health Corporation Class A Common Stock,$22.46,-0.14,-0.619%,909711036.00,United States,2014,69541,,
+AAON,AAON Inc. Common Stock,$65.02,-0.05,-0.077%,3407290720.00,United States,,295501,Capital Goods,Industrial Machinery/Components
+ABTX,Allegiance Bancshares Inc. Common Stock,$35.57,0.37,1.051%,719038693.00,United States,2015,49882,Finance,Major Banks
+ADMP,Adamis Pharmaceuticals Corporation Common Stock,$1.10,0.03,2.804%,163774755.00,United States,,2175391,Health Care,Biotechnology: Pharmaceutical Preparations
+ADP,Automatic Data Processing Inc. Common Stock,$200.00,-0.83,-0.413%,84616111200.00,United States,,1894750,Miscellaneous,Business Services
+AESE,Allied Esports Entertainment Inc. Common Stock,$1.89,0.05,2.717%,73978204.00,United States,2017,128491,Consumer Services,Television Services
+ALOT,AstroNova Inc. Common Stock,$15.56,0.345,2.267%,112515418.00,United States,1983,8197,Technology,Computer peripheral equipment
+ALRS,Alerus Financial Corporation Common Stock,$27.85,-0.01,-0.036%,479099735.00,United States,2019,16406,Finance,Commercial Banks
+ALTA,Altabancorp Common Stock,$40.35,0.26,0.649%,762108608.00,United States,2015,69256,Finance,Major Banks
+ALTM,Altus Midstream Company Class A Common Stock,$66.99,3.02,4.721%,1088350355.00,United States,2017,57486,Energy,Oil & Gas Production
+APPF,AppFolio Inc. Class A Common Stock,$124.44,2.22,1.816%,4307115911.00,United States,2015,93658,Technology,EDP Services
+APRE,Aprea Therapeutics Inc. Common stock,$4.40,-0.19,-4.139%,93222039.00,United States,2019,349480,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+AROW,Arrow Financial Corporation Common Stock,$35.75,0.67,1.91%,556821801.00,United States,,20935,Finance,Major Banks
+ASLE,AerSale Corporation Common Stock,$13.06,0.05,0.384%,560917349.00,United States,2019,12732,Transportation,Aerospace
+ATXI,Avenue Therapeutics Inc. Common Stock,$1.75,0.00,0.00%,29309119.00,United States,2017,47324,Consumer Durables,Specialty Chemicals
+AXDX,Accelerate Diagnostics Inc. Common Stock,$5.97,-0.07,-1.159%,367147209.00,United States,,102131,Capital Goods,Biotechnology: Laboratory Analytical Instruments
+BANF,BancFirst Corporation Common Stock,$55.08,1.11,2.057%,1805770976.00,United States,1993,207265,Finance,Major Banks
+BBBY,Bed Bath & Beyond Inc. Common Stock,$24.21,-0.23,-0.941%,2530272828.00,United States,1992,2451403,Consumer Services,Other Specialty Stores
+BCBP,BCB Bancorp Inc. (NJ) Common Stock,$14.58,0.06,0.413%,247899862.00,United States,2005,18795,Finance,Savings Institutions
+BFC,Bank First Corporation Common Stock,$68.23,0.03,0.044%,523032826.00,United States,,8348,Finance,Major Banks
+BHF,Brighthouse Financial Inc. Common Stock,$46.46,0.70,1.53%,3861300635.00,United States,,770076,Finance,Life Insurance
+BKCC,BlackRock Capital Investment Corporation Common Stock,$4.09,-0.02,-0.487%,303076117.00,United States,2007,505429,Finance,Investment Managers
+BKEP,Blueknight Energy Partners L.P. Common Units,$3.11,-0.07,-2.201%,129105688.00,United States,2011,179243,Energy,Oil & Gas Production
+BLBD,Blue Bird Corporation Common Stock,$19.46,0.21,1.091%,529398305.00,United States,2014,43223,Capital Goods,Construction/Ag Equipment/Trucks
+BLCM,Bellicum Pharmaceuticals Inc. Common Stock,$3.02,0.02,0.667%,25361365.00,United States,2014,124176,Health Care,Biotechnology: Pharmaceutical Preparations
+BOCH,Bank of Commerce Holdings (CA) Common Stock,$13.31,-0.04,-0.30%,224864344.00,United States,,34433,Finance,Major Banks
+BSBK,Bogota Financial Corp. Common Stock,$10.40,0.08,0.775%,136838260.00,United States,2020,9673,,
+CACC,Credit Acceptance Corporation Common Stock,$613.19,11.90,1.979%,9610104382.00,United States,1992,139404,Finance,Finance: Consumer Services
+CBFV,CB Financial Services Inc. Common Stock,$23.05,0.00,0.00%,124012803.00,United States,,7148,Finance,Major Banks
+CBRL,Cracker Barrel Old Country Store Inc Common Stock,$138.21,2.46,1.812%,3279221874.00,United States,1981,170668,Consumer Services,Restaurants
+CBSH,Commerce Bancshares Inc. Common Stock,$67.87,-0.07,-0.103%,7927501801.00,United States,,295555,Finance,Major Banks
+CBTX,CBTX Inc. Common Stock,$25.81,0.07,0.272%,631064747.00,United States,2017,36615,Finance,Major Banks
+CCBG,Capital City Bank Group Common Stock,$22.65,-0.01,-0.044%,382202419.00,United States,,21291,Finance,Major Banks
+CFBK,CF Bankshares Inc. Common Stock,$20.45,0.78,3.965%,135328223.00,United States,,5504,Finance,Savings Institutions
+CFFN,Capitol Federal Financial Inc. Common Stock,$11.13,0.12,1.09%,1545213338.00,United States,,284332,Finance,Savings Institutions
+CHCO,City Holding Company Common Stock,$74.43,0.35,0.472%,1145006484.00,United States,,47008,Finance,Major Banks
+CLBK,Columbia Financial Inc. Common Stock,$17.71,0.10,0.568%,1891236697.00,United States,2018,200802,Finance,Commercial Banks
+CLNE,Clean Energy Fuels Corp. Common Stock,$8.32,0.48,6.122%,1855294547.00,United States,2007,6211630,Public Utilities,Natural Gas Distribution
+CLVS,Clovis Oncology Inc. Common Stock,$4.33,-0.03,-0.688%,512714347.00,United States,2011,3310364,Health Care,Biotechnology: Pharmaceutical Preparations
+CNDT,Conduent Incorporated Common Stock ,$6.90,0.185,2.755%,1467292211.00,United States,,1462578,Technology,Retail: Computer Software & Peripheral Equipment
+CNFR,Conifer Holdings Inc. Common Stock,$3.165,-0.005,-0.158%,30667017.00,United States,2015,13358,Finance,Property-Casualty Insurers
+CNXN,PC Connection Inc. Common Stock,$45.76,0.17,0.373%,1198533244.00,United States,,26137,Technology,Retail: Computer Software & Peripheral Equipment
+COHR,Coherent Inc. Common Stock,$253.76,1.79,0.71%,18678158579.00,United States,,187892,Capital Goods,Biotechnology: Laboratory Analytical Instruments
+COLB,Columbia Banking System Inc. Common Stock,$34.15,0.49,1.456%,2450850802.00,United States,1992,317046,Finance,Major Banks
+CRWS,Crown Crafts Inc Common Stock,$7.17,-0.09,-1.24%,71935943.00,United States,,6597,Basic Industries,Textiles
+DFFN,Diffusion Pharmaceuticals Inc. Common Stock,$0.5371,-0.0129,-2.345%,54732627.00,United States,,793576,Health Care,Biotechnology: Pharmaceutical Preparations
+DFH,Dream Finders Homes Inc. Class A Common Stock,$18.985,-1.895,-9.076%,1756520336.00,United States,2021,594907,,
+DHC,Diversified Healthcare Trust Common Shares of Beneficial Interest,$3.52,0.04,1.149%,839078493.00,United States,,978825,Consumer Services,Real Estate Investment Trusts
+DISCK,Discovery Inc. Series C Common Stock,$26.03,0.87,3.458%,13164558176.00,United States,,3434203,Consumer Services,Television Services
+DSPG,DSP Group Inc. Common Stock,$21.81,0.01,0.046%,527305779.00,United States,1994,624086,Technology,Semiconductors
+EBSB,Meridian Bancorp Inc. Common Stock,$19.47,0.14,0.724%,1024373903.00,United States,,120537,Finance,Major Banks
+EGBN,Eagle Bancorp Inc. Common Stock,$55.00,0.70,1.289%,1757837565.00,United States,,102189,Finance,Major Banks
+ESSA,ESSA Bancorp Inc. Common Stock,$16.68,-0.15,-0.891%,175019604.00,United States,,6822,Finance,Banks
+ESXB,Community Bankers Trust Corporation Common Stock (VA),$10.58,0.09,0.858%,237536479.00,United States,,23185,Finance,Major Banks
+EXPD,Expeditors International of Washington Inc. Common Stock,$127.35,1.59,1.264%,21635638971.00,United States,,1293549,Transportation,Oil Refining/Marketing
+EZPW,EZCORP Inc. Class A Non Voting Common Stock,$6.86,0.21,3.158%,384548338.00,United States,1991,235171,Miscellaneous,Diversified Commercial Services
+FARO,FARO Technologies Inc. Common Stock,$66.01,-0.66,-0.99%,1199723367.00,United States,1997,64072,Capital Goods,Industrial Machinery/Components
+FBRX,Forte Biosciences Inc. Common Stock,$4.14,0.03,0.73%,58287296.00,United States,2017,4654834,Health Care,Biotechnology: Pharmaceutical Preparations
+FCEL,FuelCell Energy Inc. Common Stock,$5.62,0.04,0.717%,1812423979.00,United States,,21992221,Public Utilities,Electric Utilities: Central
+FCRD,First Eagle Alternative Capital BDC Inc. Common Stock,$4.57,-0.03,-0.652%,137599885.00,United States,,33424,Finance,Finance/Investors Services
+FFBC,First Financial Bancorp. Common Stock,$22.68,0.41,1.841%,2170528935.00,United States,,355772,Finance,Major Banks
+FFIN,First Financial Bankshares Inc. Common Stock,$44.42,0.74,1.694%,6281927261.00,United States,,598770,Finance,Major Banks
+FHB,First Hawaiian Inc. Common Stock,$26.77,0.15,0.563%,3469001265.00,United States,2016,797428,Finance,Major Banks
+FLNT,Fluent Inc. Common Stock,$2.53,0.01,0.397%,198317759.00,United States,,151137,Consumer Services,EDP Services
+FMAO,Farmers & Merchants Bancorp Inc. Common Stock,$23.15,0.15,0.652%,259026554.00,United States,,7763,Finance,Savings Institutions
+FNWB,First Northwest Bancorp Common Stock,$18.01,0.27,1.522%,182796781.00,United States,2015,24357,Finance,Banks
+FRBK,Republic First Bancorp Inc. Common Stock,$3.14,-0.01,-0.317%,184902520.00,United States,,85348,Finance,Major Banks
+FTEK,Fuel Tech Inc. Common Stock,$1.78,-0.05,-2.732%,53869548.00,United States,,219700,Capital Goods,Pollution Control Equipment
+FULT,Fulton Financial Corporation Common Stock,$15.38,0.20,1.318%,2508093500.00,United States,,960125,Finance,Major Banks
+GABC,German American Bancorp Inc. Common Stock,$35.79,0.14,0.393%,950070746.00,United States,,31956,Finance,Major Banks
+GAIN,Gladstone Investment Corporation Business Development Company,$14.34,-0.06,-0.417%,476160030.00,United States,2005,144505,Finance,Finance/Investors Services
+GBDC,Golub Capital BDC Inc. Common Stock,$15.25,0.00,0.00%,2579565819.00,United States,2010,333226,Finance,Investment Managers
+GECC,Great Elm Capital Corp. Common Stock,$3.59,-0.01,-0.278%,84394553.00,United States,,192080,Finance,Finance/Investors Services
+GLAD,Gladstone Capital Corporation Common Stock,$11.37,0.12,1.067%,390040698.00,United States,2001,104310,Finance,Finance/Investors Services
+GRPN,Groupon Inc. Common Stock,$22.21,0.27,1.231%,655740566.00,United States,2011,1097973,Technology,Advertising
+HA,Hawaiian Holdings Inc. Common Stock,$20.35,0.95,4.897%,1042088661.00,United States,,1456086,Transportation,Air Freight/Delivery Services
+HMHC,Houghton Mifflin Harcourt Company Common Stock,$13.24,0.06,0.455%,1690313331.00,United States,2013,598778,Miscellaneous,Service to the Health Industry
+HOPE,Hope Bancorp Inc. Common Stock,$13.48,0.16,1.201%,1656667332.00,United States,,1012547,Finance,Major Banks
+HRZN,Horizon Technology Finance Corporation Common Stock,$16.74,0.09,0.541%,340593614.00,United States,2010,76996,Finance,Finance/Investors Services
+HTBI,HomeTrust Bancshares Inc. Common Stock,$27.62,0.02,0.072%,459499660.00,United States,2012,45564,Finance,Savings Institutions
+ICMB,Investcorp Credit Management BDC Inc. Common Stock,$5.525,0.025,0.455%,79426030.00,United States,2014,44094,Finance,Finance/Investors Services
+IDRA,Idera Pharmaceuticals Inc. Common Stock,$1.06,-0.01,-0.935%,55927771.00,United States,,334642,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+INFN,Infinera Corporation Common Stock,$8.54,0.19,2.275%,1781379899.00,United States,2007,1914020,Public Utilities,Telecommunications Equipment
+INGN,Inogen Inc Common Stock,$48.64,-0.91,-1.837%,1099795587.00,United States,2014,252430,Health Care,Industrial Specialties
+INOV,Inovalon Holdings Inc. Class A Common Stock,$40.47,0.02,0.049%,6106302838.00,United States,2015,1036725,Technology,EDP Services
+INTC,Intel Corporation Common Stock,$54.99,1.15,2.136%,223094430000.00,United States,,22629128,Technology,Semiconductors
+INTZ,Intrusion Inc. Common Stock,$4.06,-0.20,-4.695%,71555494.00,United States,,417259,Miscellaneous,Diversified Manufacture
+IRBT,iRobot Corporation Common Stock,$83.14,-0.28,-0.336%,2332162219.00,United States,2005,311614,,
+JAKK,JAKKS Pacific Inc. Common Stock,$13.00,0.12,0.932%,128390600.00,United States,1996,70437,Consumer Non-Durables,Recreational Products/Toys
+KLXE,KLX Energy Services Holdings Inc. Common Stock,$5.56,-0.43,-7.179%,49100399.00,United States,,201446,Energy,Oilfield Services/Equipment
+KRMD,Repro Med Systems Inc. Common Stock,$2.97,0.02,0.678%,132198151.00,United States,,81101,Health Care,Medical/Dental Instruments
+LAZY,Lazydays Holdings Inc. Common Stock,$24.08,0.08,0.333%,272820260.00,United States,,49771,Consumer Services,Other Specialty Stores
+LGIH,LGI Homes Inc. Common Stock,$152.39,-0.66,-0.431%,3751457625.00,United States,2013,261824,Capital Goods,Homebuilding
+LHDX,Lucira Health Inc. Common Stock,$9.74,0.41,4.394%,376926205.00,United States,2021,347149,Health Care,Precision Instruments
+LILA,Liberty Latin America Ltd. Class A Common Stock,$13.62,0.32,2.406%,3174323399.00,United States,,218765,Consumer Services,Television Services
+LILAK,Liberty Latin America Ltd. Class C Common Stock,$13.73,0.30,2.234%,3199960372.00,United States,,620548,Consumer Services,Television Services
+LJPC,La Jolla Pharmaceutical Company Common Stock,$4.00,-0.08,-1.961%,109952548.00,United States,1994,68064,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+LKFN,Lakeland Financial Corporation Common Stock,$64.90,-0.89,-1.353%,1641976490.00,United States,,125144,Finance,Major Banks
+LMRK,Landmark Infrastructure Partners LP Common Units,$16.50,0.01,0.061%,420568368.00,United States,2014,300959,Consumer Services,Real Estate
+LSTR,Landstar System Inc. Common Stock,$161.31,-0.29,-0.179%,6174269137.00,United States,1993,213286,Transportation,Trucking Freight/Courier Services
+MCBS,MetroCity Bankshares Inc. Common Stock,$19.94,0.04,0.201%,508460967.00,United States,2019,19350,Finance,Major Banks
+MGEE,MGE Energy Inc,$78.91,-0.60,-0.755%,2853651527.00,United States,,55698,,
+MGI,Moneygram International Inc. Common Stock,$8.90,0.35,4.094%,814402946.00,United States,,1434874,Miscellaneous,Business Services
+MGLN,Magellan Health Inc. Common Stock,$94.61,-0.07,-0.074%,2484924554.00,United States,,242440,Health Care,Hospital/Nursing Management
+MGPI,MGP Ingredients Inc.,$63.77,-0.17,-0.266%,1400527645.00,United States,,69534,,
+MILE,Metromile Inc. Common Stock,$4.17,0.04,0.969%,528452149.00,United States,2020,5951988,Finance,Property-Casualty Insurers
+MLVF,Malvern Bancorp Inc. Common Stock,$17.16,0.21,1.239%,130798943.00,United States,,4352,Finance,Banks
+MMLP,Martin Midstream Partners L.P. Limited Partnership,$3.14,0.12,3.974%,121840635.00,United States,2002,146329,Energy,Oil Refining/Marketing
+MNRO,Monro Inc. Common Stock,$55.71,1.32,2.427%,1866593466.00,United States,1991,188847,,
+MSON,MISONIX Inc. Common Stock (DE),$25.36,-0.27,-1.053%,441518741.00,United States,1992,158486,Health Care,Industrial Specialties
+MVBF,MVB Financial Corp. Common Stock,$39.06,0.06,0.154%,465612347.00,United States,,33012,Finance,Savings Institutions
+MVIS,MicroVision Inc. Common Stock,$13.54,0.19,1.423%,2220012185.00,United States,1996,4507285,Capital Goods,Industrial Machinery/Components
+MYGN,Myriad Genetics Inc. Common Stock,$32.70,-0.53,-1.595%,2552410436.00,United States,1995,393024,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
+NATI,National Instruments Corporation Common Stock,$42.36,0.13,0.308%,5633072280.00,United States,1995,279824,Technology,Computer Software: Prepackaged Software
+NEWT,Newtek Business Services Corp. Common Stock (Maryland),$29.55,0.23,0.784%,666274133.00,United States,,353475,Finance,Finance/Investors Services
+NOVT,Novanta Inc. Common Stock,$152.28,0.25,0.164%,5404268270.00,United States,,62612,,
+NRIM,Northrim BanCorp Inc Common Stock,$40.32,0.29,0.724%,250262732.00,United States,,16771,Finance,Savings Institutions
+NTCT,NetScout Systems Inc. Common Stock,$27.05,0.21,0.782%,2004014993.00,United States,1999,261510,Technology,EDP Services
+NTUS,Natus Medical Incorporated Common Stock,$24.63,-0.04,-0.162%,840638796.00,United States,,119104,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
+NWBI,Northwest Bancshares Inc. Common Stock,$12.78,0.15,1.188%,1621627119.00,United States,2009,647409,Finance,Major Banks
+ODP,The ODP Corporation Common Stock,$42.47,-0.24,-0.562%,2264849418.00,United States,,613231,Miscellaneous,Diversified Commercial Services
+ODT,Odonate Therapeutics Inc. Common Stock,$3.22,0.00,0.00%,123968499.00,United States,2017,177876,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+OMP,Oasis Midstream Partners LP Common Units Representing Limited Partner Interests,$20.80,0.29,1.414%,1011455744.00,United States,,290398,Energy,Oil & Gas Production
+OPI,Office Properties Income Trust Common Shares of Beneficial Interest,$25.82,0.42,1.654%,1247993098.00,United States,,188272,Consumer Services,Real Estate Investment Trusts
+OXSQ,Oxford Square Capital Corp. Common Stock,$4.40,0.00,0.00%,218347457.00,United States,,121515,Finance,Investment Bankers/Brokers/Service
+PBCT,People's United Financial Inc. Common Stock,$16.14,0.15,0.938%,6907190069.00,United States,,3559249,Finance,Savings Institutions
+PBIP,Prudential Bancorp Inc. Common Stock,$14.65,0.22,1.525%,114186715.00,United States,,27070,Finance,Banks
+PBPB,Potbelly Corporation Common Stock,$7.00,0.23,3.397%,197799350.00,United States,2013,51677,Consumer Services,Restaurants
+PBYI,Puma Biotechnology Inc Common Stock,$7.10,-0.04,-0.56%,289531113.00,United States,,299737,Health Care,Biotechnology: Pharmaceutical Preparations
+PETS,PetMed Express Inc. Common Stock,$27.67,-0.69,-2.433%,563059016.00,United States,,269753,Health Care,Medical/Nursing Services
+PFX,PhenixFIN Corporation Common Stock,$42.6127,0.0281,0.066%,113303803.00,United States,,498,Finance,Investment Managers
+PROG,Progenity Inc. Common Stock,$0.9401,-0.0799,-7.833%,112253879.00,United States,1995,9032975,Consumer Durables,Specialty Chemicals
+PROV,Provident Financial Holdings Inc. Common Stock,$17.09,0.29,1.726%,128444937.00,United States,,8425,Finance,Savings Institutions
+QADA,QAD Inc. Class A Common Stock,$87.42,0.16,0.183%,1836463411.00,United States,,76792,Technology,Computer Software: Prepackaged Software
+QLYS,Qualys Inc. Common Stock,$119.21,4.35,3.787%,4642625225.00,United States,2012,332131,Technology,EDP Services
+RAIL,FreightCar America Inc. Common Stock,$5.07,0.08,1.603%,79725355.00,United States,2005,478236,Capital Goods,Railroads
+RAVN,Raven Industries Inc. Common Stock,$57.86,-0.08,-0.138%,2078194477.00,United States,,293280,Capital Goods,Office Equipment/Supplies/Services
+RDI,Reading International Inc Class A Common Stock,$4.77,0.01,0.21%,104030862.00,United States,,26912,Consumer Services,Movies/Entertainment
+RDUS,Radius Health Inc. Common Stock,$12.73,-0.05,-0.391%,601698039.00,United States,2014,344331,Health Care,Biotechnology: Pharmaceutical Preparations
+RIDE,Lordstown Motors Corp. Class A Common Stock,$6.45,0.27,4.369%,1141506629.00,United States,2019,8206615,Capital Goods,Construction/Ag Equipment/Trucks
+RNST,Renasant Corporation Common Stock,$33.48,0.23,0.692%,1886666701.00,United States,,220789,Finance,Major Banks
+SABR,Sabre Corporation Common Stock,$11.32,0.46,4.236%,3652480817.00,United States,2014,4886853,Technology,EDP Services
+SAFM,Sanderson Farms Inc. Common Stock,$186.15,-1.00,-0.534%,4156503328.00,United States,1987,323543,,
+SBSI,Southside Bancshares Inc. Common Stock,$37.21,0.20,0.54%,1215049982.00,United States,,85492,Finance,Major Banks
+SCWX,SecureWorks Corp. Class A Common Stock,$20.55,0.99,5.061%,1753926081.00,United States,2016,171365,Technology,EDP Services
+SDC,SmileDirectClub Inc. Class A Common Stock,$5.98,0.83,16.117%,2320916679.00,United States,2019,49208368,Health Care,Medical/Dental Instruments
+SEAC,SeaChange International Inc. Common Stock,$1.09,-0.02,-1.802%,52762190.00,United States,1996,929089,Technology,Radio And Television Broadcasting And Communications Equipment
+SFNC,Simmons First National Corporation Class A Common Stock,$28.27,0.81,2.95%,3061193486.00,United States,,500104,Finance,Major Banks
+SIGI,Selective Insurance Group Inc. Common Stock,$80.23,-0.12,-0.149%,4822426731.00,United States,,110208,Finance,Property-Casualty Insurers
+SND,Smart Sand Inc. Common Stock,$2.35,0.03,1.293%,101745210.00,United States,2016,76385,Energy,Metal Fabrications
+SOLY,Soliton Inc. Common Stock,$21.33,0.15,0.708%,460654284.00,United States,2019,64416,Health Care,Medical/Dental Instruments
+SPTN,SpartanNash Company Common Stock,$21.03,0.03,0.143%,755781376.00,United States,,202985,Consumer Non-Durables,Food Distributors
+SPWH,Sportsman's Warehouse Holdings Inc. Common Stock,$17.65,-0.03,-0.17%,774345477.00,United States,2014,461480,Consumer Services,Other Specialty Stores
+SPWR,SunPower Corporation Common Stock,$22.21,0.95,4.468%,3839115636.00,United States,2005,3225110,Technology,Semiconductors
+STKS,The ONE Group Hospitality Inc. Common Stock,$10.30,0.14,1.378%,328217483.00,United States,,115049,Consumer Services,Restaurants
+STMP,Stamps.com Inc.  Common Stock ($0.001 Par Value),$328.39,-0.19,-0.058%,6100059345.00,United States,1999,376444,Technology,EDP Services
+SUNW,Sunworks Inc. Common Stock,$6.92,0.15,2.216%,115072625.00,United States,,1456793,Technology,Semiconductors
+TBNK,Territorial Bancorp Inc. Common Stock,$25.33,0.06,0.237%,237366012.00,United States,2009,19372,Finance,Savings Institutions
+TCDA,Tricida Inc. Common Stock,$4.43,0.14,3.263%,223399292.00,United States,2018,181563,Health Care,Biotechnology: Pharmaceutical Preparations
+THFF,First Financial Corporation Indiana Common Stock,$39.76,0.11,0.277%,518797585.00,United States,,60211,Finance,Major Banks
+THRM,Gentherm Inc Common Stock,$81.96,0.83,1.023%,2717351262.00,United States,,105827,Capital Goods,Auto Parts:O.E.M.
+TRMK,Trustmark Corporation Common Stock,$30.13,0.16,0.534%,1881768156.00,United States,,356104,Finance,Major Banks
+TROW,T. Rowe Price Group Inc. Common Stock,$216.73,0.13,0.06%,49184031303.00,United States,1986,821767,Finance,Investment Managers
+TRST,TrustCo Bank Corp NY Common Stock,$31.33,-0.24,-0.76%,603570602.00,United States,,116303,Finance,Major Banks
+UIHC,United Insurance Holdings Corp. Common Stock,$3.06,-0.08,-2.548%,132212866.00,United States,,431072,Finance,Property-Casualty Insurers
+USAP,Universal Stainless & Alloy Products Inc. Common Stock,$10.81,0.06,0.558%,96402045.00,United States,1994,8538,Basic Industries,Steel/Iron Ore
+USWS,U.S. Well Services Inc. Class A Common Stock,$0.7089,-0.0497,-6.552%,66195321.00,United States,2017,3131361,Energy,Oil & Gas Production
+VCNX,Vaccinex Inc. Common Stock,$2.32,-0.01,-0.429%,71458575.00,United States,2018,43801,Health Care,Biotechnology: Pharmaceutical Preparations
+WAFD,Washington Federal Inc. Common Stock,$33.17,0.53,1.624%,2253780463.00,United States,,497765,Finance,Major Banks
+WDFC,WD-40 Company Common Stock,$231.46,-0.03,-0.013%,3172799750.00,United States,1973,33951,Basic Industries,Industrial Specialties
+WRLD,World Acceptance Corporation Common Stock,$206.10,10.07,5.137%,1379405453.00,United States,1991,43181,Finance,Finance: Consumer Services
+WSBF,Waterstone Financial Inc. Common Stock (MD),$20.08,0.09,0.45%,504795297.00,United States,,60793,Finance,Savings Institutions
+WTBA,West Bancorporation Common Stock,$29.38,-0.03,-0.102%,486381375.00,United States,,44052,Finance,Major Banks
+XENT,Intersect ENT Inc. Common Stock,$27.09,0.03,0.111%,903348070.00,United States,2014,165397,Health Care,Medical/Dental Instruments
+XONE,The ExOne Company Common Stock,$23.48,-0.28,-1.178%,521681974.00,United States,2013,370282,Capital Goods,Industrial Machinery/Components
+Z,Zillow Group Inc. Class C Capital Stock,$94.49,2.66,2.897%,23958521842.00,United States,,4961014,Miscellaneous,Business Services
+ZEUS,Olympic Steel Inc. Common Stock,$25.32,0.75,3.053%,280477793.00,United States,1994,71506,Basic Industries,Steel/Iron Ore
+ZY,Zymergen Inc. Common Stock,$13.19,0.41,3.208%,1350521963.00,United States,2021,461379,Basic Industries,Industrial Specialties

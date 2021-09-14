@@ -19,6 +19,7 @@ import re
 overall_headlines_df = pd.DataFrame(columns=['Ticker', 'Headline'])
 stocks_dict = {}
 
+
 def get_soup(request, element, class_value):
     """
     Uses the BeautifulSoup library to retrieve the HTML text for a given webpage request.
@@ -180,14 +181,62 @@ def get_all_headlines(stock):
     print("\nParsing headlines for:", stock)
 
     # List of sources
-    source_1 = np.array(get_cnbc_headlines(stock))
-    source_2 = np.array(get_reuters_headlines(stock))
-    source_3 = np.array(get_morningstar_headlines(stock))
-    source_4 = np.array(get_usa_today_headlines(stock))
-    source_5 = np.array(get_google_finance_headlines(stock))
-    source_6 = np.array(get_business_insider_headlines(stock))
-    source_7 = np.array(get_cnn_headlines(stock))
-    source_8 = np.array(get_yahoo_headlines(stock))
+    source_1 = np.array([])
+    source_2 = np.array([])
+    source_3 = np.array([])
+    source_4 = np.array([])
+    source_5 = np.array([])
+    source_6 = np.array([])
+    source_7 = np.array([])
+    source_8 = np.array([])
+
+    try:
+        source_1 = np.array(get_cnbc_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_2 = np.array(get_reuters_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_3 = np.array(get_morningstar_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_4 = np.array(get_usa_today_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_5 = np.array(get_google_finance_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_6 = np.array(get_business_insider_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_7 = np.array(get_cnn_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_8 = np.array(get_yahoo_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    # source_2 = np.array(get_reuters_headlines(stock))
+    # source_3 = np.array(get_morningstar_headlines(stock))
+    # source_4 = np.array(get_usa_today_headlines(stock))
+    # source_5 = np.array(get_google_finance_headlines(stock))
+    # source_6 = np.array(get_business_insider_headlines(stock))
+    # source_7 = np.array(get_cnn_headlines(stock))
+    # source_8 = np.array(get_yahoo_headlines(stock))
 
     # Combine all sources, clean up the array
     total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
