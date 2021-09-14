@@ -42,7 +42,7 @@ def create_array(data_list):
     result_array = []
     for li in data_list:
         if li.text != "":
-            result_array.append(' '.join(li.text.split()))  # Removes tabs, newlines, and gets text from HTML
+            result_array.append(str(' '.join(li.text.split())))  # Removes tabs, newlines, and gets text from HTML
 
     return result_array
 
