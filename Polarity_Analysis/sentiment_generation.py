@@ -75,7 +75,10 @@ def generate_aggregated_csv():
 
     for ticker, headlines_polarity in headlines_map.items():
         try:
-            row = {"Ticker": ticker, "Conversations": conversations_map[ticker], "Headlines": headlines_polarity}
+            polarity = 0.0
+            if ticker in conversations_map:
+                polarity = conversations_map[ticker]
+            row = {"Ticker": ticker, "Conversations": polarity, "Headlines": headlines_polarity}
             aggregated_df = aggregated_df.append(row, ignore_index=True)
         except RuntimeError as e:
             print(e, "was handled")
