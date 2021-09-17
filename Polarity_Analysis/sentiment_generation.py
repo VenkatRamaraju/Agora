@@ -25,13 +25,13 @@ def update_stock_terminology():
     along with polarized words with weights. Used to improve VADER accuracy.
     """
     stock_lexicon = {}
-    csv_df = pd.read_csv('setup_csvs/new_stock_lex.csv')
-    for index, row in csv_df.iterrows():
-        stock_lexicon[row['Item']] = row['Polarity']
+    # csv_df = pd.read_csv('setup_csvs/new_stock_lex.csv')
+    # for index, row in csv_df.iterrows():
+    #     stock_lexicon[row['Item']] = row['Polarity']
 
-    csv_df = pd.read_csv('setup_csvs/modified_stock_lex.csv')
+    csv_df = pd.read_csv('setup_csvs/polarized_stock_lex.csv')
     for index, row in csv_df.iterrows():
-        stock_lexicon[row['Word']] = row['Polarity']
+        stock_lexicon[row['word']] = row['polarity']
 
     resulting_lex = {}
     resulting_lex.update(stock_lexicon)

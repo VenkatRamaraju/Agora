@@ -32,7 +32,7 @@ def get_data():
     training_df['Buy'] = -1
 
     for index, row in training_df.iterrows():
-        training_df.at[index, 'Buy' ] = master_dict[row['Ticker']]
+        training_df.at[index, 'Buy'] = master_dict[row['Ticker']]
 
     training_df.to_csv('recent_training_data.csv')
 
