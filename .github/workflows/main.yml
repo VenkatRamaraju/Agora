@@ -21,6 +21,11 @@ jobs:
         run: |
           cd Data_Collection/Scrapers && python headlines_scraper.py
 
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+
       - name: Scrape conversations
         run: |
           cd Data_Collection/Scrapers && python conversations_scraper.py

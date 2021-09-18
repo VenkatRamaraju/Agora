@@ -1,421 +1,1412 @@
-Symbol,Company,Last Sale,Net Change,% Change,Market Cap,Country,IPO Year,Volume,Sector,Industry
-AAL,American Airlines Group Inc. Common Stock,$19.31,0.36,1.90%,12502410717.00,United States,,42796633,Transportation,Air Freight/Delivery Services
-AAOI,Applied Optoelectronics Inc. Common Stock,$7.45,0.02,0.269%,202203192.00,United States,2013,372945,Technology,Semiconductors
-ABSI,Absci Corporation Common Stock,$14.22,0.18,1.282%,1316163853.00,United States,2021,176613,Health Care,Biotechnology: Pharmaceutical Preparations
-ACAD,ACADIA Pharmaceuticals Inc. Common Stock,$16.26,0.17,1.057%,2612059798.00,United States,1985,1241557,Health Care,Biotechnology: Pharmaceutical Preparations
-ACBI,Atlantic Capital Bancshares Inc. Common Stock,$23.54,0.23,0.987%,477931631.00,United States,,99716,Finance,Major Banks
-ACER,Acer Therapeutics Inc. Common Stock (DE),$2.64,-0.04,-1.493%,37779044.00,United States,,77487,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-ACHC,Acadia Healthcare Company Inc. Common Stock,$65.02,0.36,0.557%,5842916903.00,United States,,197464,Health Care,Hospital/Nursing Management
-ADV,Advantage Solutions Inc. Class A Common Stock,$8.50,0.11,1.311%,2707875277.00,United States,2019,458910,Technology,Advertising
-ADVM,Adverum Biotechnologies Inc. Common Stock,$2.27,0.03,1.339%,222745716.00,United States,2014,3082934,Health Care,Biotechnology: Pharmaceutical Preparations
-AEIS,Advanced Energy Industries Inc. Common Stock,$88.08,1.06,1.218%,3379900358.00,United States,1995,168331,Consumer Durables,Electrical Products
-AFIB,Acutus Medical Inc. Common Stock,$10.79,-0.47,-4.174%,301491504.00,United States,2020,262991,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
-AFIN,American Finance Trust Inc. Class A Common Stock,$8.60,0.30,3.614%,1013250615.00,United States,,1299732,Consumer Services,Real Estate Investment Trusts
-AFRM,Affirm Holdings Inc. Class A Common Stock,$109.30,-14.40,-11.641%,29440840767.00,United States,2021,44862980,Miscellaneous,Business Services
-AINV,Apollo Investment Corporation Common Stock,$13.63,-0.04,-0.293%,886893005.00,United States,2004,307518,Finance,Finance/Investors Services
-AKBA,Akebia Therapeutics Inc. Common Stock,$2.92,0.04,1.389%,509649377.00,United States,2014,1886013,Health Care,Biotechnology: Pharmaceutical Preparations
-AMAL,Amalgamated Financial Corp. Common Stock (DE),$14.70,0.00,0.00%,457105438.00,United States,2018,64869,Finance,Commercial Banks
-AMEH,Apollo Medical Holdings Inc. Common Stock,$89.60,-5.28,-5.565%,3983110925.00,United States,,897095,Health Care,Managed Health Care
-AMGN,Amgen Inc. Common Stock,$216.72,2.97,1.389%,5907124080144.00,United States,1983,2553406,Health Care,Biotechnology: Pharmaceutical Preparations
-AMNB,American National Bankshares Inc. Common Stock,$31.90,0.23,0.726%,346935532.00,United States,,12481,Finance,Major Banks
-AMPH,Amphastar Pharmaceuticals Inc. Common Stock,$18.45,0.62,3.477%,886184275.00,United States,2014,183860,Health Care,Biotechnology: Pharmaceutical Preparations
-AMTB,Amerant Bancorp Inc. Class A Common Stock,$26.44,0.93,3.646%,991009300.00,United States,,195180,Finance,Major Banks
-ANAB,AnaptysBio Inc. Common Stock,$25.98,0.17,0.659%,712718667.00,United States,2017,149497,Health Care,Biotechnology: Pharmaceutical Preparations
-ANDE,Andersons Inc. (The) Common Stock,$29.73,0.17,0.575%,989496128.00,United States,,99141,Consumer Non-Durables,Tobacco
-ANGO,AngioDynamics Inc. Common Stock,$27.10,0.00,0.00%,1041834460.00,United States,2004,290943,Health Care,Medical/Dental Instruments
-ANIK,Anika Therapeutics Inc. Common Stock,$39.65,0.05,0.126%,571873060.00,United States,,64542,Health Care,Medical/Dental Instruments
-ANIP,ANI Pharmaceuticals Inc.,$28.22,0.78,2.843%,359847669.00,United States,,35042,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-ANSS,ANSYS Inc. Common Stock,$366.38,-7.23,-1.935%,31967579377.00,United States,1996,276050,Technology,Computer Software: Prepackaged Software
-APOG,Apogee Enterprises Inc. Common Stock,$41.60,0.79,1.936%,1061915462.00,United States,,96830,,
-APPN,Appian Corporation Class A Common Stock,$102.34,0.97,0.957%,7274579263.00,United States,2017,552986,Technology,EDP Services
-AQB,AquaBounty Technologies Inc. Common Stock,$4.32,-0.04,-0.917%,306831188.00,United States,,502494,,
-ARDX,Ardelyx Inc. Common Stock,$1.34,-0.02,-1.471%,138179473.00,United States,2014,2323866,Health Care,Biotechnology: Pharmaceutical Preparations
-ARRY,Array Technologies Inc. Common Stock,$19.00,1.37,7.771%,2547771408.00,United States,2020,2793912,Technology,Semiconductors
-ASMB,Assembly Biosciences Inc. Common Stock,$3.30,0.07,2.167%,148406310.00,United States,,1021178,Health Care,Biotechnology: Pharmaceutical Preparations
-ATNX,Athenex Inc. Common Stock,$3.36,0.02,0.599%,367274006.00,United States,2017,1804899,Health Care,Biotechnology: Pharmaceutical Preparations
-ATRO,Astronics Corporation Common Stock,$13.52,0.33,2.502%,418127794.00,United States,,92906,Capital Goods,Military/Government/Technical
-AUB,Atlantic Union Bankshares Corporation Common Stock,$34.56,0.06,0.174%,2657835521.00,United States,,276531,Finance,Major Banks
-AVAV,AeroVironment Inc. Common Stock,$91.01,-2.84,-3.026%,2258089518.00,United States,2007,397812,Capital Goods,Aerospace
-AVT,Avnet Inc. Common Stock,$38.47,-0.29,-0.748%,3827905146.00,United States,,818109,Technology,Electronic Components
-AXTI,AXT Inc Common Stock,$7.68,-1.55,-16.793%,326450803.00,United States,1998,5036645,Technology,Semiconductors
-AZPN,Aspen Technology Inc. Common Stock,$126.50,0.01,0.008%,8485226838.00,United States,1994,292201,Technology,EDP Services
-BANR,Banner Corporation Common Stock,$52.88,1.06,2.046%,1827094848.00,United States,,167486,Finance,Major Banks
-BATRK,Liberty Media Corporation Series C Liberty Braves Common Stock,$26.72,1.26,4.949%,1396591768.00,United States,,113933,Consumer Services,Movies/Entertainment
-BCLI,Brainstorm Cell Therapeutics Inc. Common Stock,$3.24,-0.04,-1.22%,117672138.00,United States,,96506,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-BCPC,Balchem Corporation Common Stock,$139.47,0.71,0.512%,4514718516.00,United States,,98334,Basic Industries,Industrial Specialties
-BECN,Beacon Roofing Supply Inc. Common Stock,$52.47,1.24,2.42%,3674721863.00,United States,2004,289160,Capital Goods,Wholesale Distributors
-BEEM,Beam Global Common Stock,$28.21,0.96,3.523%,251960464.00,United States,,146040,Technology,Semiconductors
-BFIN,BankFinancial Corporation Common Stock,$11.40,0.28,2.518%,157645151.00,United States,,40894,Finance,Major Banks
-BGCP,BGC Partners Inc Class A Common Stock,$5.03,-0.06,-1.179%,1939478471.00,United States,,2144735,Finance,Investment Bankers/Brokers/Service
-BGRY,Berkshire Grey Inc. Class A Common Stock,$6.99,-0.16,-2.238%,1596148417.00,United States,2021,793104,Capital Goods,Office Equipment/Supplies/Services
-BIGC,BigCommerce Holdings Inc. Series 1 Common Stock,$55.84,1.00,1.823%,3970786309.00,United States,2020,1551051,Technology,Computer Software: Prepackaged Software
-BIIB,Biogen Inc. Common Stock,$301.94,2.13,0.71%,44999157779.00,United States,,797529,Health Care,Biotechnology: Pharmaceutical Preparations
-BKNG,Booking Holdings Inc. Common Stock,$2322.12,17.32,0.751%,95345877983.00,United States,,232303,Transportation,Other Consumer Services
-BLIN,Bridgeline Digital Inc. Common Stock,$4.60,0.22,5.023%,38610601.00,United States,,394424,Technology,EDP Services
-BLKB,Blackbaud Inc. Common Stock,$68.18,1.07,1.594%,3332850781.00,United States,2004,223273,Technology,Computer Software: Prepackaged Software
-BLNK,Blink Charging Co. Common Stock,$29.79,-0.86,-2.806%,1255922628.00,United States,,3422083,Miscellaneous,Business Services
-BLUE,bluebird bio Inc. Common Stock,$18.29,0.41,2.293%,1236011661.00,United States,2013,817806,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-BMBL,Bumble Inc. Class A Common Stock,$54.65,-3.55,-6.10%,6547018410.00,United States,2021,3617268,Technology,Computer Software: Prepackaged Software
-BMRA,Biomerica Inc. Common Stock,$4.58,0.04,0.881%,57296762.00,United States,,95571,Health Care,Medical/Dental Instruments
-BMRC,Bank of Marin Bancorp Common Stock,$35.54,-0.04,-0.112%,583620146.00,United States,,54565,Finance,Major Banks
-BMTC,Bryn Mawr Bank Corporation Common Stock,$39.62,0.80,2.061%,787571946.00,United States,,81629,Finance,Major Banks
-BNFT,Benefitfocus Inc. Common Stock,$11.47,0.01,0.087%,382481923.00,United States,2013,102191,Technology,Computer Software: Prepackaged Software
-BOKF,BOK Financial Corporation Common Stock,$85.27,2.42,2.921%,5890320114.00,United States,,252433,Finance,Major Banks
-BRKL,Brookline Bancorp Inc. Common Stock,$14.56,0.25,1.747%,1138484096.00,United States,,295870,Finance,Savings Institutions
-BRKR,Bruker Corporation Common Stock,$86.04,-3.74,-4.166%,12993760628.00,United States,,897949,Capital Goods,Biotechnology: Laboratory Analytical Instruments
-BRP,BRP Group Inc. (Insurance Company) Class A Common Stock,$37.64,0.18,0.481%,3752365325.00,United States,2019,190576,Finance,Specialty Insurers
-BRY,Berry Corporation (bry) Common Stock,$6.30,0.46,7.877%,506967439.00,United States,2018,234557,Energy,Oil & Gas Production
-BSRR,Sierra Bancorp Common Stock,$23.55,0.09,0.384%,362951729.00,United States,,18724,Finance,Major Banks
-BSVN,Bank7 Corp. Common stock,$20.62,0.14,0.684%,186623496.00,United States,2018,2893,Finance,Major Banks
-BUSE,First Busey Corporation Class A Common Stock,$23.05,0.11,0.48%,1296972214.00,United States,,118489,Finance,Major Banks
-BWEN,Broadwind Inc. Common Stock,$3.07,0.11,3.716%,59512137.00,United States,,292775,Capital Goods,Industrial Machinery/Components
-BYND,Beyond Meat Inc. Common Stock,$112.94,0.04,0.035%,7143957357.00,United States,2019,1781367,Consumer Non-Durables,Specialty Foods
-CAC,Camden National Corporation Common Stock,$45.72,0.22,0.484%,683568864.00,United States,,24071,Finance,Major Banks
-CAKE,Cheesecake Factory Incorporated (The) Common Stock,$45.78,1.36,3.062%,2388735530.00,United States,1992,852793,Consumer Services,Restaurants
-CALM,Cal-Maine Foods Inc. Common Stock,$35.31,0.06,0.17%,1725152287.00,United States,1996,350652,,Farming/Seeds/Milling
-CAR,Avis Budget Group Inc. Common Stock,$90.30,3.67,4.236%,6008790549.00,United States,,1619409,Miscellaneous,Rental/Leasing Companies
-CASA,Casa Systems Inc. Common Stock,$6.90,0.11,1.62%,584893439.00,United States,2017,148519,Technology,Radio And Television Broadcasting And Communications Equipment
-CASY,Casey's General Stores Inc. Common Stock,$194.60,4.22,2.217%,7220097072.00,United States,1983,268989,Consumer Services,Food Chains
-CATY,Cathay General Bancorp Common Stock,$40.28,0.07,0.174%,3136222511.00,United States,,296879,Finance,Major Banks
-CCAP,Crescent Capital BDC Inc. Common stock,$19.14,0.41,2.189%,539123270.00,United States,,70917,,
-CCMP,CMC Materials Inc. Common Stock,$130.95,0.22,0.168%,3826667387.00,United States,2000,203708,Technology,Semiconductors
-CCOI,Cogent Communications Holdings Inc.,$72.63,0.68,0.945%,3461954780.00,United States,,113884,Consumer Services,Telecommunications Equipment
-CCRN,Cross Country Healthcare Inc. Common Stock $0.0001 Par Value,$20.93,0.09,0.432%,773607104.00,United States,2001,242640,Technology,Professional Services
-CCXI,ChemoCentryx Inc. Common Stock,$15.91,0.49,3.178%,1112164765.00,United States,2012,1366176,Health Care,Biotechnology: Pharmaceutical Preparations
-CDEV,Centennial Resource Development Inc. Class A Common Stock,$5.51,0.27,5.153%,1539446212.00,United States,2016,9387120,Energy,Oil & Gas Production
-CDLX,Cardlytics Inc. Common Stock,$92.81,1.62,1.777%,3066452795.00,United States,2018,171583,Technology,EDP Services
-CDW,CDW Corporation Common Stock,$196.77,-1.22,-0.616%,27054982451.00,United States,2013,603680,Technology,EDP Services
-CEMI,Chembio Diagnostics Inc. Common Stock,$2.66,-0.04,-1.481%,76136656.00,United States,,1806570,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
-CFB,CrossFirst Bankshares Inc. Common Stock,$12.34,-0.08,-0.644%,629191587.00,United States,2019,53832,Finance,Commercial Banks
-CFLT,Confluent Inc. Class A Common Stock,$65.15,-0.36,-0.55%,16965713845.00,United States,2021,913315,Technology,EDP Services
-CFMS,Conformis Inc. Common Stock,$1.76,0.21,13.548%,327291680.00,United States,2015,8380524,Health Care,Medical/Dental Instruments
-CGNX,Cognex Corporation Common Stock,$87.87,0.50,0.572%,15527258501.00,United States,1989,563260,Capital Goods,Industrial Machinery/Components
-CHMG,Chemung Financial Corp Common Stock,$45.31,-0.69,-1.50%,211254703.00,United States,,3219,Finance,Major Banks
-CHNG,Change Healthcare Inc. Common Stock,$21.74,-0.03,-0.138%,6758135228.00,United States,2019,995152,Health Care,Managed Health Care
-CHRW,C.H. Robinson Worldwide Inc. Common Stock,$89.13,0.73,0.826%,11739467921.00,United States,1997,1536493,Transportation,Oil Refining/Marketing
-CHUY,Chuy's Holdings Inc. Common Stock,$30.93,0.48,1.576%,618511014.00,United States,2012,97934,Consumer Services,Restaurants
-CINF,Cincinnati Financial Corporation Common Stock,$118.49,1.11,0.946%,19098559333.00,United States,,362039,Finance,Property-Casualty Insurers
-CLMT,Calumet Specialty Products Partners L.P. Common Units,$6.14,-1.54,-20.052%,483072249.00,United States,2006,581898,Energy,Oil & Gas Production
-CLSN,Celsion Corporation Common Stock,$1.08,0.01,0.935%,93482355.00,United States,,1036435,Health Care,Biotechnology: Pharmaceutical Preparations
-CLVR,Clever Leaves Holdings Inc. Common Shares,$8.59,-0.21,-2.386%,225056729.00,United States,,101672,,
-CMAX,CareMax Inc. Class A Common Stock,$10.32,0.91,9.671%,865579525.00,United States,2020,1070507,Technology,Computer Software: Prepackaged Software
-CME,CME Group Inc. Class A Common Stock,$189.23,0.02,0.011%,67959734832.00,United States,2002,1597630,Finance,Investment Bankers/Brokers/Service
-CMPI,Checkmate Pharmaceuticals Inc. Common Stock,$4.90,-0.47,-8.752%,105966866.00,United States,2020,60683,Consumer Durables,Specialty Chemicals
-CNSL,Consolidated Communications Holdings Inc. Common Stock,$9.32,0.29,3.212%,920389004.00,United States,2005,318121,Public Utilities,Telecommunications Equipment
-CODX,Co-Diagnostics Inc. Common Stock,$10.02,-0.56,-5.293%,289476698.00,United States,2017,806389,Health Care,Medical/Dental Instruments
-CONN,Conn's Inc. Common Stock,$23.33,0.31,1.347%,687841656.00,United States,2003,355767,Consumer Services,Consumer Electronics/Video Chains
-COOP,Mr. Cooper Group Inc. Common Stock,$41.29,0.00,0.00%,3557074331.00,United States,,1466394,Finance,Finance: Consumer Services
-CORT,Corcept Therapeutics Incorporated Common Stock,$20.86,-0.24,-1.137%,2418229481.00,United States,2004,434636,Health Care,Biotechnology: Pharmaceutical Preparations
-COUP,Coupa Software Incorporated Common Stock,$244.80,-2.84,-1.147%,18129746261.00,United States,2016,1093873,Technology,Computer Software: Prepackaged Software
-CPSI,Computer Programs and Systems Inc. Common Stock,$36.48,0.13,0.358%,534375164.00,United States,2002,132440,Technology,EDP Services
-CRAI,CRA International Inc. Common Stock,$90.20,-0.65,-0.715%,665836646.00,United States,1998,32201,Miscellaneous,Other Consumer Services
-CRBP,Corbus Pharmaceuticals Holdings Inc. Common Stock,$1.15,-0.04,-3.361%,144015513.00,United States,,878111,Health Care,Biotechnology: Pharmaceutical Preparations
-CRCT,Cricut Inc. Class A Common Stock,$34.63,-0.31,-0.887%,7695890385.00,United States,2021,455094,Capital Goods,Wholesale Distributors
-CREE,Cree Inc. Common Stock,$88.84,2.22,2.563%,10295226243.00,United States,1993,1070325,Technology,Semiconductors
-CRMT,America's Car-Mart Inc Common Stock,$122.02,2.46,2.058%,797642056.00,United States,,36376,Consumer Services,Other Specialty Stores
-CRTX,Cortexyme Inc. Common Stock,$87.19,-3.89,-4.271%,2588303681.00,United States,2019,217181,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-CSGS,CSG Systems International Inc. Common Stock,$47.42,0.23,0.487%,1552652859.00,United States,1996,109952,Technology,EDP Services
-CSII,Cardiovascular Systems Inc. Common Stock,$35.06,-0.19,-0.539%,1409695250.00,United States,1981,119043,Health Care,Medical/Dental Instruments
-CSOD,Cornerstone OnDemand Inc. Common Stock,$57.21,0.01,0.017%,3819000860.00,United States,2011,1551517,Technology,Computer Software: Prepackaged Software
-CTBI,Community Trust Bancorp Inc. Common Stock,$40.61,0.39,0.97%,724373281.00,United States,,46629,Finance,Major Banks
-CTKB,Cytek Biosciences Inc. Common Stock,$26.11,-0.32,-1.211%,3490768408.00,United States,2021,346151,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
-CTXS,Citrix Systems Inc. Common Stock,$108.82,1.25,1.162%,13518935163.00,United States,1995,1421178,Technology,Computer Software: Prepackaged Software
-CVBF,CVB Financial Corporation Common Stock,$19.15,-0.14,-0.726%,2602400529.00,United States,,513327,Finance,Major Banks
-CVCO,Cavco Industries Inc. Common Stock When Issued,$248.88,-0.13,-0.052%,2286468026.00,United States,,51607,Basic Industries,Homebuilding
-CVGW,Calavo Growers Inc. Common Stock,$35.39,-3.59,-9.21%,625812306.00,United States,,964428,,Farming/Seeds/Milling
-CYBE,CyberOptics Corporation Common Stock,$40.05,-0.83,-2.03%,292981009.00,United States,1987,23513,Capital Goods,Electronic Components
-CZWI,Citizens Community Bancorp Inc. Common Stock,$13.72,0.02,0.146%,146563996.00,United States,,14636,Finance,Savings Institutions
-DGICA,Donegal Group Inc. Class A Common Stock,$14.90,-0.02,-0.134%,465554612.00,United States,,21123,Finance,Property-Casualty Insurers
-DISCA,Discovery Inc. Series A Common Stock,$27.06,0.91,3.48%,13685476152.00,United States,,5439153,Consumer Services,Television Services
-DISH,DISH Network Corporation Class A Common Stock,$44.26,1.51,3.532%,23364377984.00,United States,1995,1679333,Consumer Services,Television Services
-DLTR,Dollar Tree Inc. Common Stock,$89.26,-0.95,-1.053%,20075633338.00,United States,1995,4483319,Consumer Services,Department/Specialty Retail Stores
-DORM,Dorman Products Inc. Common Stock,$91.87,-0.42,-0.455%,2924153657.00,United States,,75613,Capital Goods,Auto Parts:O.E.M.
-DSP,Viant Technology Inc. Class A Common Stock,$12.76,-0.96,-6.997%,768855331.00,United States,2021,647261,Technology,EDP Services
-DUOL,Duolingo Inc. Class A Common Stock,$158.71,-14.66,-8.456%,5938669027.00,United States,2021,279673,Technology,Computer Software: Prepackaged Software
-EBAY,eBay Inc. Common Stock,$72.67,0.11,0.152%,47239555349.00,United States,1998,5768568,Consumer Services,Catalog/Specialty Distribution
-ECOL,US Ecology Inc Common Stock,$35.84,0.35,0.986%,1129401692.00,United States,,101690,Public Utilities,Environmental Services
-EDIT,Editas Medicine Inc. Common Stock,$62.96,-3.14,-4.75%,4297728615.00,United States,2016,1599407,Health Care,Biotechnology: Pharmaceutical Preparations
-EGAN,eGain Corporation Common Stock,$11.20,-0.16,-1.408%,349911565.00,United States,1999,101182,Technology,Computer Software: Prepackaged Software
-EGRX,Eagle Pharmaceuticals Inc. Common Stock,$52.35,0.65,1.257%,685633866.00,United States,2014,105457,Health Care,Biotechnology: Pharmaceutical Preparations
-EHTH,eHealth Inc. Common Stock,$38.84,1.14,3.024%,1017053209.00,United States,2006,423522,Finance,Specialty Insurers
-ENTA,Enanta Pharmaceuticals Inc. Common Stock,$57.28,1.21,2.158%,1157906608.00,United States,2013,117879,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
-ENTG,Entegris Inc. Common Stock,$124.07,3.43,2.843%,16823575746.00,United States,2000,592570,Technology,Semiconductors
-EPAY,Bottomline Technologies Inc. Common Stock,$42.43,0.71,1.702%,1936506515.00,United States,1999,355637,Technology,EDP Services
-ERIE,Erie Indemnity Company Class A Common Stock,$178.90,2.40,1.36%,9354657385.00,United States,,102132,Finance,Specialty Insurers
-ERII,Energy Recovery Inc. Common Stock,$21.47,-0.10,-0.464%,1227059881.00,United States,2008,224858,Technology,Industrial Machinery/Components
-ESPR,Esperion Therapeutics Inc. Common Stock,$11.38,-0.43,-3.641%,321797870.00,United States,2013,1336988,Health Care,Biotechnology: Pharmaceutical Preparations
-EVOP,EVO Payments Inc. Class A Common Stock,$24.84,-0.32,-1.272%,1030220941.00,United States,2018,96580,Technology,EDP Services
-EXC,Exelon Corporation Common Stock,$50.56,0.65,1.302%,49439219290.00,United States,,6463490,Public Utilities,Power Generation
-EXLS,ExlService Holdings Inc. Common Stock,$122.48,0.60,0.492%,4101243657.00,United States,2006,104342,Technology,Retail: Computer Software & Peripheral Equipment
-EXPE,Expedia Group Inc. Common Stock,$148.79,3.40,2.339%,22440478340.00,United States,,2382009,Transportation,Other Consumer Services
-EXPO,Exponent Inc. Common Stock,$115.10,0.38,0.331%,5991961895.00,United States,,145061,Consumer Services,Professional Services
-EXTR,Extreme Networks Inc. Common Stock,$10.24,0.16,1.587%,1326209249.00,United States,1999,592061,Capital Goods,Telecommunications Equipment
-EYE,National Vision Holdings Inc. Common Stock,$59.24,0.62,1.058%,4850282287.00,United States,2017,531255,Health Care,Ophthalmic Goods
-FAST,Fastenal Company Common Stock,$53.38,-0.20,-0.373%,30679588798.00,United States,1987,2265347,,
-FCCO,First Community Corporation Common Stock,$19.55,0.325,1.691%,147398926.00,United States,,24575,Finance,Major Banks
-FCFS,FirstCash Inc. Common Stock,$88.05,0.43,0.491%,3561795606.00,United States,1991,115982,Miscellaneous,Diversified Commercial Services
-FELE,Franklin Electric Co. Inc. Common Stock,$80.66,-2.45,-2.948%,3745241256.00,United States,,226903,Consumer Durables,Metal Fabrications
-FEYE,FireEye Inc. Common Stock,$18.41,0.24,1.321%,4403521738.00,United States,2013,3192043,Technology,Computer Software: Prepackaged Software
-FFIC,Flushing Financial Corporation Common Stock,$22.23,0.13,0.588%,687718484.00,United States,,144753,Finance,Major Banks
-FGBI,First Guaranty Bancshares Inc. Common Stock,$18.90,-0.15,-0.787%,184109682.00,United States,,3354,Finance,Major Banks
-FGEN,FibroGen Inc Common Stock,$11.73,0.39,3.439%,1086455368.00,United States,2014,1188302,Health Care,Biotechnology: Pharmaceutical Preparations
-FIBK,First Interstate BancSystem Inc. Class A Common Stock,$41.99,0.72,1.745%,2613467300.00,United States,2010,183683,Finance,Major Banks
-FIVN,Five9 Inc. Common Stock,$170.39,-3.12,-1.798%,11535348646.00,United States,2014,1978360,Technology,EDP Services
-FLGT,Fulgent Genetics Inc. Common Stock,$87.47,-6.22,-6.639%,2582224525.00,United States,2016,793335,Health Care,Medical Specialities
-FLIC,First of Long Island Corporation (The) Common Stock,$19.95,0.20,1.013%,472929713.00,United States,,33525,Finance,Major Banks
-FMBI,First Midwest Bancorp Inc. Common Stock,$18.03,0.08,0.446%,2060809113.00,United States,,465792,Finance,Major Banks
-FNHC,FedNat Holding Company Common Stock,$2.30,0.11,5.023%,40118544.00,United States,,49403,Finance,Property-Casualty Insurers
-FOLD,Amicus Therapeutics Inc. Common Stock,$11.27,0.34,3.111%,3004077938.00,United States,2007,1831816,Health Care,Biotechnology: Pharmaceutical Preparations
-FORR,Forrester Research Inc. Common Stock,$46.62,-0.88,-1.853%,893612160.00,United States,1996,56498,Consumer Services,EDP Services
-FOXF,Fox Factory Holding Corp. Common Stock,$149.96,-1.45,-0.958%,6313823315.00,United States,2013,86095,Consumer Non-Durables,Motor Vehicles
-FREQ,Frequency Therapeutics Inc. Common Stock,$7.04,-0.24,-3.297%,242295624.00,United States,2019,186890,Health Care,Biotechnology: Pharmaceutical Preparations
-FROG,JFrog Ltd. Ordinary Shares,$36.70,0.13,0.355%,3519070993.00,United States,2020,523795,Technology,Computer Software: Prepackaged Software
-FRTA,Forterra Inc. Common Stock,$23.67,-0.07,-0.295%,1584015525.00,United States,2016,92724,,
-FSBW,FS Bancorp Inc. Common Stock,$32.78,-0.27,-0.817%,269790709.00,United States,2012,12554,Finance,Banks
-FSLR,First Solar Inc. Common Stock,$106.17,6.76,6.80%,11287920293.00,United States,2006,3644216,Technology,Semiconductors
-FTNT,Fortinet Inc. Common Stock,$296.92,-13.57,-4.371%,48493033784.00,United States,2009,1777069,Miscellaneous,Diversified Manufacture
-FUNC,First United Corporation Common Stock,$18.10,0.15,0.836%,119724332.00,United States,,6114,Finance,Major Banks
-FUV,Arcimoto Inc. Common Stock,$12.02,0.14,1.178%,449455831.00,United States,2017,671688,Consumer Non-Durables,Motor Vehicles
-FWONA,Liberty Media Corporation Series A Liberty Formula One Common Stock,$45.41,-0.02,-0.044%,10529646460.00,United States,,132590,Consumer Services,Broadcasting
-FWRD,Forward Air Corporation Common Stock,$84.20,0.03,0.036%,2281852754.00,United States,,91344,Transportation,Oil Refining/Marketing
-GBCI,Glacier Bancorp Inc. Common Stock,$50.83,0.29,0.574%,4854649529.00,United States,,332046,Finance,Major Banks
-GFED,Guaranty Federal Bancshares Inc. Common Stock,$23.87,-0.2261,-0.938%,104670690.00,United States,,1050,Finance,Major Banks
-GIII,G-III Apparel Group LTD. Common Stock,$29.11,-0.17,-0.581%,1413759375.00,United States,1989,316428,Consumer Services,Department/Specialty Retail Stores
-GNOG,Golden Nugget Online Gaming Inc. Class A Common Stock,$21.65,-0.75,-3.348%,1008249073.00,United States,2019,934982,Consumer Services,Services-Misc. Amusement & Recreation
-GNTY,Guaranty Bancshares Inc. Common Stock,$33.44,0.23,0.693%,403217413.00,United States,2017,12299,Finance,Major Banks
-GO,Grocery Outlet Holding Corp. Common Stock,$25.05,0.04,0.16%,2402807874.00,United States,2019,982572,Consumer Non-Durables,Specialty Foods
-GOEV,Canoo Inc. Class A Common Stock,$7.00,0.14,2.041%,1662438323.00,United States,2019,1702386,,
-GOGO,Gogo Inc. Common Stock,$12.56,-0.14,-1.102%,1377886636.00,United States,2013,639685,Consumer Services,Telecommunications Equipment
-GPRO,GoPro Inc. Class A Common Stock,$9.51,0.19,2.039%,1465249379.00,United States,2014,2712191,Miscellaneous,Industrial Machinery/Components
-GRAY,Graybug Vision Inc. Common Stock,$3.84,-0.08,-2.041%,81733156.00,United States,2020,78556,Health Care,Biotechnology: Pharmaceutical Preparations
-GSBC,Great Southern Bancorp Inc. Common Stock,$52.80,0.45,0.86%,717153677.00,United States,1989,40150,Finance,Major Banks
-GSHD,Goosehead Insurance Inc. Class A Common Stock,$147.84,-5.87,-3.819%,5439691340.00,United States,2018,99469,Finance,Specialty Insurers
-GSKY,GreenSky Inc. Class A Common Stock,$8.85,0.51,6.115%,1629981504.00,United States,2018,4122280,Technology,EDP Services
-GT,The Goodyear Tire & Rubber Company Common Stock,$16.32,0.58,3.685%,4589068503.00,United States,,3177931,Consumer Durables,Automotive Aftermarket
-HAFC,Hanmi Financial Corporation Common Stock,$18.19,0.15,0.831%,558370172.00,United States,,111459,Finance,Major Banks
-HALL,Hallmark Financial Services Inc. Common Stock,$3.79,0.04,1.067%,68868211.00,United States,,60435,Finance,Property-Casualty Insurers
-HAYN,Haynes International Inc. Common Stock,$38.45,1.47,3.975%,487881669.00,United States,2007,32939,,
-HBCP,Home Bancorp Inc. Common Stock,$36.90,0.15,0.408%,319034596.00,United States,,19400,Finance,Banks
-HBMD,Howard Bancorp Inc. Common Stock,$19.21,0.25,1.319%,361351357.00,United States,,102668,Finance,Major Banks
-HBT,HBT Financial Inc. Common Stock,$15.28,0.02,0.131%,417719353.00,United States,2019,6191,Finance,Commercial Banks
-HCSG,Healthcare Services Group Inc. Common Stock,$26.26,-0.13,-0.493%,1960519080.00,United States,1983,926430,Health Care,Assisted Living Services
-HDSN,Hudson Technologies Inc. Common Stock,$3.24,0.01,0.31%,142134857.00,United States,,261215,Basic Industries,Specialty Chemicals
-HFWA,Heritage Financial Corporation Common Stock,$23.98,0.05,0.209%,862576427.00,United States,,149537,Finance,Banks
-HLBZ,Helbiz Inc. Class A Common stock,$9.18,-1.82,-16.545%,270407934.00,United States,2019,452022,Miscellaneous,Business Services
-HLIO,Helios Technologies Inc. Common Stock,$85.40,0.65,0.767%,2766119152.00,United States,,126203,Capital Goods,Fluid Controls
-HLIT,Harmonic Inc. Common Stock,$9.20,0.32,3.604%,936612394.00,United States,1995,1067643,Technology,Radio And Television Broadcasting And Communications Equipment
-HLNE,Hamilton Lane Incorporated Class A Common Stock,$87.93,0.48,0.549%,4677925329.00,United States,2017,177296,Finance,Investment Managers
-HMPT,Home Point Capital Inc Common Stock,$4.08,0.06,1.493%,569125871.00,United States,2021,34167,Finance,Finance: Consumer Services
-HMST,HomeStreet Inc. Common Stock,$37.82,0.09,0.239%,786454268.00,United States,2012,87224,Finance,Banks
-HONE,HarborOne Bancorp Inc. Common Stock,$13.49,0.19,1.429%,743974431.00,United States,2016,209598,Finance,Major Banks
-HOOD,Robinhood Markets Inc. Class A Common Stock,$40.60,-0.57,-1.385%,34730999929.00,United States,2021,4302977,Technology,Computer Software: Prepackaged Software
-BANX,StoneCastle Financial Corp Common Stock,$21.354,0.054,0.254%,150914462.00,United States,,8342,Finance,Trusts Except Educational Religious and Charitable
-BELFB,Bel Fuse Inc. Class B Common Stock,$13.05,0.23,1.794%,162012670.00,United States,,78698,Capital Goods,Electrical Products
-CCLP,CSI Compressco LP Common Units,$1.41,0.0601,4.452%,67639448.00,United States,2011,59425,Energy,Oilfield Services/Equipment
-CPIX,Cumberland Pharmaceuticals Inc. Common Stock,$3.05,0.26,9.319%,45382777.00,United States,2009,78686,Health Care,Biotechnology: Pharmaceutical Preparations
-DYAI,Dyadic International Inc. Common Stock,$5.76,0.03,0.524%,161735944.00,United States,,457634,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-EBIX,Ebix Inc. Common Stock,$27.37,0.58,2.165%,846921925.00,United States,,103120,Technology,EDP Services
-EVOK,Evoke Pharma Inc. Common Stock,$1.12,-0.01,-0.885%,36332106.00,United States,2013,86457,Health Care,Biotechnology: Pharmaceutical Preparations
-FCAP,First Capital Inc. Common Stock,$43.63,1.63,3.881%,147202035.00,United States,,1392,Finance,Savings Institutions
-FLDM,Fluidigm Corporation Common Stock,$6.87,0.07,1.029%,523267139.00,United States,2011,763232,Capital Goods,Biotechnology: Laboratory Analytical Instruments
-HJLI,Hancock Jaffe Laboratories Inc. Common Stock,$8.54,-0.12,-1.386%,72706673.00,United States,2018,115973,Health Care,Medical/Dental Instruments
-IBRX,ImmunityBio Inc. Common Stock,$9.77,-0.12,-1.213%,3821599132.00,United States,2015,1425176,Health Care,Biotechnology: Commercial Physical & Biological Resarch
-JBSS,John B. Sanfilippo & Son Inc. Common Stock,$82.94,-0.71,-0.849%,951240104.00,United States,1991,40543,Consumer Non-Durables,Specialty Foods
-JCS,Communications Systems Inc. Common Stock,$6.79,0.08,1.192%,65983950.00,United States,,133183,Public Utilities,Telecommunications Equipment
-JOUT,Johnson Outdoors Inc. Class A Common Stock,$110.83,-0.07,-0.063%,1122397576.00,United States,,25958,Consumer Non-Durables,Recreational Products/Toys
-MARK,Remark Holdings Inc. Common Stock,$1.24,-0.04,-3.125%,124986338.00,United States,,920352,Consumer Services,Telecommunications Equipment
-MMAT,Meta Materials Inc. Common Stock,$5.34,0.11,2.103%,1491826839.00,United States,,11434297,Technology,Semiconductors
-NCSM,NCS Multistage Holdings Inc. Common Stock,$28.98,3.01,11.59%,68982630.00,United States,2017,1647,Energy,Oilfield Services/Equipment
-NWS,News Corporation Class B Common Stock,$21.43,-0.01,-0.047%,12661750210.00,United States,,538241,Consumer Services,Broadcasting
-POWL,Powell Industries Inc. Common Stock,$25.14,0.13,0.52%,293928659.00,United States,,50288,Consumer Durables,Electrical Products
-PSEC,Prospect Capital Corporation Common Stock,$7.70,-0.06,-0.773%,2996266589.00,United States,2004,1966271,Finance,Finance/Investors Services
-RGP,Resources Connection Inc. Common Stock,$15.39,-0.19,-1.22%,510743929.00,United States,,126295,Miscellaneous,Business Services
-SNGX,Soligenix Inc. Common Stock,$1.08,-0.08,-6.897%,43312061.00,United States,,2359942,Health Care,Biotechnology: Pharmaceutical Preparations
-TLGT,Teligent Inc. Common Stock,$0.4446,-0.0068,-1.506%,41266657.00,United States,,6599979,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-TRMT,Tremont Mortgage Trust Common Shares of Beneficial Interest,$5.72,0.03,0.527%,47546482.00,United States,2017,25759,Consumer Services,Real Estate Investment Trusts
-TYME,Tyme Technologies Inc. Common Stock,$1.05,-0.02,-1.869%,180817239.00,United States,,591145,Health Care,Biotechnology: Pharmaceutical Preparations
-UFPT,UFP Technologies Inc. Common Stock,$65.55,-0.95,-1.429%,493683532.00,United States,1993,24432,Capital Goods,Containers/Packaging
-WTER,The Alkaline Water Company Inc. Common Stock,$1.69,0.02,1.198%,160084408.00,United States,,2627464,Consumer Non-Durables,Beverages (Production/Distribution)
-AMCX,AMC Networks Inc. Class A Common Stock,$46.98,1.12,2.442%,1983292787.00,United States,,414474,Consumer Services,Broadcasting
-CLOV,Clover Health Investments Corp. Class A Common Stock,$8.37,-0.22,-2.561%,3688659000.00,United States,,17941255,Health Care,Medical Specialities
-FIZZ,National Beverage Corp. Common Stock,$52.29,-0.26,-0.495%,4879720892.00,United States,,701268,Consumer Non-Durables,Beverages (Production/Distribution)
-INVA,Innoviva Inc. Common Stock,$15.22,-0.31,-1.996%,1057707538.00,United States,,458441,Health Care,Biotechnology: Pharmaceutical Preparations
-MVST,Microvast Holdings Inc. Common Stock,$9.98,-1.68,-14.408%,2999152135.00,United States,2019,2912768,Capital Goods,Industrial Machinery/Components
-PAHC,Phibro Animal Health Corporation Class A Common Stock,$22.46,-0.14,-0.619%,909711036.00,United States,2014,69541,,
-AAON,AAON Inc. Common Stock,$65.02,-0.05,-0.077%,3407290720.00,United States,,295501,Capital Goods,Industrial Machinery/Components
-ABTX,Allegiance Bancshares Inc. Common Stock,$35.57,0.37,1.051%,719038693.00,United States,2015,49882,Finance,Major Banks
-ADMP,Adamis Pharmaceuticals Corporation Common Stock,$1.10,0.03,2.804%,163774755.00,United States,,2175391,Health Care,Biotechnology: Pharmaceutical Preparations
-ADP,Automatic Data Processing Inc. Common Stock,$200.00,-0.83,-0.413%,84616111200.00,United States,,1894750,Miscellaneous,Business Services
-AESE,Allied Esports Entertainment Inc. Common Stock,$1.89,0.05,2.717%,73978204.00,United States,2017,128491,Consumer Services,Television Services
-ALOT,AstroNova Inc. Common Stock,$15.56,0.345,2.267%,112515418.00,United States,1983,8197,Technology,Computer peripheral equipment
-ALRS,Alerus Financial Corporation Common Stock,$27.85,-0.01,-0.036%,479099735.00,United States,2019,16406,Finance,Commercial Banks
-ALTA,Altabancorp Common Stock,$40.35,0.26,0.649%,762108608.00,United States,2015,69256,Finance,Major Banks
-ALTM,Altus Midstream Company Class A Common Stock,$66.99,3.02,4.721%,1088350355.00,United States,2017,57486,Energy,Oil & Gas Production
-APPF,AppFolio Inc. Class A Common Stock,$124.44,2.22,1.816%,4307115911.00,United States,2015,93658,Technology,EDP Services
-APRE,Aprea Therapeutics Inc. Common stock,$4.40,-0.19,-4.139%,93222039.00,United States,2019,349480,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-AROW,Arrow Financial Corporation Common Stock,$35.75,0.67,1.91%,556821801.00,United States,,20935,Finance,Major Banks
-ASLE,AerSale Corporation Common Stock,$13.06,0.05,0.384%,560917349.00,United States,2019,12732,Transportation,Aerospace
-ATXI,Avenue Therapeutics Inc. Common Stock,$1.75,0.00,0.00%,29309119.00,United States,2017,47324,Consumer Durables,Specialty Chemicals
-AXDX,Accelerate Diagnostics Inc. Common Stock,$5.97,-0.07,-1.159%,367147209.00,United States,,102131,Capital Goods,Biotechnology: Laboratory Analytical Instruments
-BANF,BancFirst Corporation Common Stock,$55.08,1.11,2.057%,1805770976.00,United States,1993,207265,Finance,Major Banks
-BBBY,Bed Bath & Beyond Inc. Common Stock,$24.21,-0.23,-0.941%,2530272828.00,United States,1992,2451403,Consumer Services,Other Specialty Stores
-BCBP,BCB Bancorp Inc. (NJ) Common Stock,$14.58,0.06,0.413%,247899862.00,United States,2005,18795,Finance,Savings Institutions
-BFC,Bank First Corporation Common Stock,$68.23,0.03,0.044%,523032826.00,United States,,8348,Finance,Major Banks
-BHF,Brighthouse Financial Inc. Common Stock,$46.46,0.70,1.53%,3861300635.00,United States,,770076,Finance,Life Insurance
-BKCC,BlackRock Capital Investment Corporation Common Stock,$4.09,-0.02,-0.487%,303076117.00,United States,2007,505429,Finance,Investment Managers
-BKEP,Blueknight Energy Partners L.P. Common Units,$3.11,-0.07,-2.201%,129105688.00,United States,2011,179243,Energy,Oil & Gas Production
-BLBD,Blue Bird Corporation Common Stock,$19.46,0.21,1.091%,529398305.00,United States,2014,43223,Capital Goods,Construction/Ag Equipment/Trucks
-BLCM,Bellicum Pharmaceuticals Inc. Common Stock,$3.02,0.02,0.667%,25361365.00,United States,2014,124176,Health Care,Biotechnology: Pharmaceutical Preparations
-BOCH,Bank of Commerce Holdings (CA) Common Stock,$13.31,-0.04,-0.30%,224864344.00,United States,,34433,Finance,Major Banks
-BSBK,Bogota Financial Corp. Common Stock,$10.40,0.08,0.775%,136838260.00,United States,2020,9673,,
-CACC,Credit Acceptance Corporation Common Stock,$613.19,11.90,1.979%,9610104382.00,United States,1992,139404,Finance,Finance: Consumer Services
-CBFV,CB Financial Services Inc. Common Stock,$23.05,0.00,0.00%,124012803.00,United States,,7148,Finance,Major Banks
-CBRL,Cracker Barrel Old Country Store Inc Common Stock,$138.21,2.46,1.812%,3279221874.00,United States,1981,170668,Consumer Services,Restaurants
-CBSH,Commerce Bancshares Inc. Common Stock,$67.87,-0.07,-0.103%,7927501801.00,United States,,295555,Finance,Major Banks
-CBTX,CBTX Inc. Common Stock,$25.81,0.07,0.272%,631064747.00,United States,2017,36615,Finance,Major Banks
-CCBG,Capital City Bank Group Common Stock,$22.65,-0.01,-0.044%,382202419.00,United States,,21291,Finance,Major Banks
-CFBK,CF Bankshares Inc. Common Stock,$20.45,0.78,3.965%,135328223.00,United States,,5504,Finance,Savings Institutions
-CFFN,Capitol Federal Financial Inc. Common Stock,$11.13,0.12,1.09%,1545213338.00,United States,,284332,Finance,Savings Institutions
-CHCO,City Holding Company Common Stock,$74.43,0.35,0.472%,1145006484.00,United States,,47008,Finance,Major Banks
-CLBK,Columbia Financial Inc. Common Stock,$17.71,0.10,0.568%,1891236697.00,United States,2018,200802,Finance,Commercial Banks
-CLNE,Clean Energy Fuels Corp. Common Stock,$8.32,0.48,6.122%,1855294547.00,United States,2007,6211630,Public Utilities,Natural Gas Distribution
-CLVS,Clovis Oncology Inc. Common Stock,$4.33,-0.03,-0.688%,512714347.00,United States,2011,3310364,Health Care,Biotechnology: Pharmaceutical Preparations
-CNDT,Conduent Incorporated Common Stock ,$6.90,0.185,2.755%,1467292211.00,United States,,1462578,Technology,Retail: Computer Software & Peripheral Equipment
-CNFR,Conifer Holdings Inc. Common Stock,$3.165,-0.005,-0.158%,30667017.00,United States,2015,13358,Finance,Property-Casualty Insurers
-CNXN,PC Connection Inc. Common Stock,$45.76,0.17,0.373%,1198533244.00,United States,,26137,Technology,Retail: Computer Software & Peripheral Equipment
-COHR,Coherent Inc. Common Stock,$253.76,1.79,0.71%,18678158579.00,United States,,187892,Capital Goods,Biotechnology: Laboratory Analytical Instruments
-COLB,Columbia Banking System Inc. Common Stock,$34.15,0.49,1.456%,2450850802.00,United States,1992,317046,Finance,Major Banks
-CRWS,Crown Crafts Inc Common Stock,$7.17,-0.09,-1.24%,71935943.00,United States,,6597,Basic Industries,Textiles
-DFFN,Diffusion Pharmaceuticals Inc. Common Stock,$0.5371,-0.0129,-2.345%,54732627.00,United States,,793576,Health Care,Biotechnology: Pharmaceutical Preparations
-DFH,Dream Finders Homes Inc. Class A Common Stock,$18.985,-1.895,-9.076%,1756520336.00,United States,2021,594907,,
-DHC,Diversified Healthcare Trust Common Shares of Beneficial Interest,$3.52,0.04,1.149%,839078493.00,United States,,978825,Consumer Services,Real Estate Investment Trusts
-DISCK,Discovery Inc. Series C Common Stock,$26.03,0.87,3.458%,13164558176.00,United States,,3434203,Consumer Services,Television Services
-DSPG,DSP Group Inc. Common Stock,$21.81,0.01,0.046%,527305779.00,United States,1994,624086,Technology,Semiconductors
-EBSB,Meridian Bancorp Inc. Common Stock,$19.47,0.14,0.724%,1024373903.00,United States,,120537,Finance,Major Banks
-EGBN,Eagle Bancorp Inc. Common Stock,$55.00,0.70,1.289%,1757837565.00,United States,,102189,Finance,Major Banks
-ESSA,ESSA Bancorp Inc. Common Stock,$16.68,-0.15,-0.891%,175019604.00,United States,,6822,Finance,Banks
-ESXB,Community Bankers Trust Corporation Common Stock (VA),$10.58,0.09,0.858%,237536479.00,United States,,23185,Finance,Major Banks
-EXPD,Expeditors International of Washington Inc. Common Stock,$127.35,1.59,1.264%,21635638971.00,United States,,1293549,Transportation,Oil Refining/Marketing
-EZPW,EZCORP Inc. Class A Non Voting Common Stock,$6.86,0.21,3.158%,384548338.00,United States,1991,235171,Miscellaneous,Diversified Commercial Services
-FARO,FARO Technologies Inc. Common Stock,$66.01,-0.66,-0.99%,1199723367.00,United States,1997,64072,Capital Goods,Industrial Machinery/Components
-FBRX,Forte Biosciences Inc. Common Stock,$4.14,0.03,0.73%,58287296.00,United States,2017,4654834,Health Care,Biotechnology: Pharmaceutical Preparations
-FCEL,FuelCell Energy Inc. Common Stock,$5.62,0.04,0.717%,1812423979.00,United States,,21992221,Public Utilities,Electric Utilities: Central
-FCRD,First Eagle Alternative Capital BDC Inc. Common Stock,$4.57,-0.03,-0.652%,137599885.00,United States,,33424,Finance,Finance/Investors Services
-FFBC,First Financial Bancorp. Common Stock,$22.68,0.41,1.841%,2170528935.00,United States,,355772,Finance,Major Banks
-FFIN,First Financial Bankshares Inc. Common Stock,$44.42,0.74,1.694%,6281927261.00,United States,,598770,Finance,Major Banks
-FHB,First Hawaiian Inc. Common Stock,$26.77,0.15,0.563%,3469001265.00,United States,2016,797428,Finance,Major Banks
-FLNT,Fluent Inc. Common Stock,$2.53,0.01,0.397%,198317759.00,United States,,151137,Consumer Services,EDP Services
-FMAO,Farmers & Merchants Bancorp Inc. Common Stock,$23.15,0.15,0.652%,259026554.00,United States,,7763,Finance,Savings Institutions
-FNWB,First Northwest Bancorp Common Stock,$18.01,0.27,1.522%,182796781.00,United States,2015,24357,Finance,Banks
-FRBK,Republic First Bancorp Inc. Common Stock,$3.14,-0.01,-0.317%,184902520.00,United States,,85348,Finance,Major Banks
-FTEK,Fuel Tech Inc. Common Stock,$1.78,-0.05,-2.732%,53869548.00,United States,,219700,Capital Goods,Pollution Control Equipment
-FULT,Fulton Financial Corporation Common Stock,$15.38,0.20,1.318%,2508093500.00,United States,,960125,Finance,Major Banks
-GABC,German American Bancorp Inc. Common Stock,$35.79,0.14,0.393%,950070746.00,United States,,31956,Finance,Major Banks
-GAIN,Gladstone Investment Corporation Business Development Company,$14.34,-0.06,-0.417%,476160030.00,United States,2005,144505,Finance,Finance/Investors Services
-GBDC,Golub Capital BDC Inc. Common Stock,$15.25,0.00,0.00%,2579565819.00,United States,2010,333226,Finance,Investment Managers
-GECC,Great Elm Capital Corp. Common Stock,$3.59,-0.01,-0.278%,84394553.00,United States,,192080,Finance,Finance/Investors Services
-GLAD,Gladstone Capital Corporation Common Stock,$11.37,0.12,1.067%,390040698.00,United States,2001,104310,Finance,Finance/Investors Services
-GRPN,Groupon Inc. Common Stock,$22.21,0.27,1.231%,655740566.00,United States,2011,1097973,Technology,Advertising
-HA,Hawaiian Holdings Inc. Common Stock,$20.35,0.95,4.897%,1042088661.00,United States,,1456086,Transportation,Air Freight/Delivery Services
-HMHC,Houghton Mifflin Harcourt Company Common Stock,$13.24,0.06,0.455%,1690313331.00,United States,2013,598778,Miscellaneous,Service to the Health Industry
-HOPE,Hope Bancorp Inc. Common Stock,$13.48,0.16,1.201%,1656667332.00,United States,,1012547,Finance,Major Banks
-HRZN,Horizon Technology Finance Corporation Common Stock,$16.74,0.09,0.541%,340593614.00,United States,2010,76996,Finance,Finance/Investors Services
-HTBI,HomeTrust Bancshares Inc. Common Stock,$27.62,0.02,0.072%,459499660.00,United States,2012,45564,Finance,Savings Institutions
-ICMB,Investcorp Credit Management BDC Inc. Common Stock,$5.525,0.025,0.455%,79426030.00,United States,2014,44094,Finance,Finance/Investors Services
-IDRA,Idera Pharmaceuticals Inc. Common Stock,$1.06,-0.01,-0.935%,55927771.00,United States,,334642,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-INFN,Infinera Corporation Common Stock,$8.54,0.19,2.275%,1781379899.00,United States,2007,1914020,Public Utilities,Telecommunications Equipment
-INGN,Inogen Inc Common Stock,$48.64,-0.91,-1.837%,1099795587.00,United States,2014,252430,Health Care,Industrial Specialties
-INOV,Inovalon Holdings Inc. Class A Common Stock,$40.47,0.02,0.049%,6106302838.00,United States,2015,1036725,Technology,EDP Services
-INTC,Intel Corporation Common Stock,$54.99,1.15,2.136%,223094430000.00,United States,,22629128,Technology,Semiconductors
-INTZ,Intrusion Inc. Common Stock,$4.06,-0.20,-4.695%,71555494.00,United States,,417259,Miscellaneous,Diversified Manufacture
-IRBT,iRobot Corporation Common Stock,$83.14,-0.28,-0.336%,2332162219.00,United States,2005,311614,,
-JAKK,JAKKS Pacific Inc. Common Stock,$13.00,0.12,0.932%,128390600.00,United States,1996,70437,Consumer Non-Durables,Recreational Products/Toys
-KLXE,KLX Energy Services Holdings Inc. Common Stock,$5.56,-0.43,-7.179%,49100399.00,United States,,201446,Energy,Oilfield Services/Equipment
-KRMD,Repro Med Systems Inc. Common Stock,$2.97,0.02,0.678%,132198151.00,United States,,81101,Health Care,Medical/Dental Instruments
-LAZY,Lazydays Holdings Inc. Common Stock,$24.08,0.08,0.333%,272820260.00,United States,,49771,Consumer Services,Other Specialty Stores
-LGIH,LGI Homes Inc. Common Stock,$152.39,-0.66,-0.431%,3751457625.00,United States,2013,261824,Capital Goods,Homebuilding
-LHDX,Lucira Health Inc. Common Stock,$9.74,0.41,4.394%,376926205.00,United States,2021,347149,Health Care,Precision Instruments
-LILA,Liberty Latin America Ltd. Class A Common Stock,$13.62,0.32,2.406%,3174323399.00,United States,,218765,Consumer Services,Television Services
-LILAK,Liberty Latin America Ltd. Class C Common Stock,$13.73,0.30,2.234%,3199960372.00,United States,,620548,Consumer Services,Television Services
-LJPC,La Jolla Pharmaceutical Company Common Stock,$4.00,-0.08,-1.961%,109952548.00,United States,1994,68064,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-LKFN,Lakeland Financial Corporation Common Stock,$64.90,-0.89,-1.353%,1641976490.00,United States,,125144,Finance,Major Banks
-LMRK,Landmark Infrastructure Partners LP Common Units,$16.50,0.01,0.061%,420568368.00,United States,2014,300959,Consumer Services,Real Estate
-LSTR,Landstar System Inc. Common Stock,$161.31,-0.29,-0.179%,6174269137.00,United States,1993,213286,Transportation,Trucking Freight/Courier Services
-MCBS,MetroCity Bankshares Inc. Common Stock,$19.94,0.04,0.201%,508460967.00,United States,2019,19350,Finance,Major Banks
-MGEE,MGE Energy Inc,$78.91,-0.60,-0.755%,2853651527.00,United States,,55698,,
-MGI,Moneygram International Inc. Common Stock,$8.90,0.35,4.094%,814402946.00,United States,,1434874,Miscellaneous,Business Services
-MGLN,Magellan Health Inc. Common Stock,$94.61,-0.07,-0.074%,2484924554.00,United States,,242440,Health Care,Hospital/Nursing Management
-MGPI,MGP Ingredients Inc.,$63.77,-0.17,-0.266%,1400527645.00,United States,,69534,,
-MILE,Metromile Inc. Common Stock,$4.17,0.04,0.969%,528452149.00,United States,2020,5951988,Finance,Property-Casualty Insurers
-MLVF,Malvern Bancorp Inc. Common Stock,$17.16,0.21,1.239%,130798943.00,United States,,4352,Finance,Banks
-MMLP,Martin Midstream Partners L.P. Limited Partnership,$3.14,0.12,3.974%,121840635.00,United States,2002,146329,Energy,Oil Refining/Marketing
-MNRO,Monro Inc. Common Stock,$55.71,1.32,2.427%,1866593466.00,United States,1991,188847,,
-MSON,MISONIX Inc. Common Stock (DE),$25.36,-0.27,-1.053%,441518741.00,United States,1992,158486,Health Care,Industrial Specialties
-MVBF,MVB Financial Corp. Common Stock,$39.06,0.06,0.154%,465612347.00,United States,,33012,Finance,Savings Institutions
-MVIS,MicroVision Inc. Common Stock,$13.54,0.19,1.423%,2220012185.00,United States,1996,4507285,Capital Goods,Industrial Machinery/Components
-MYGN,Myriad Genetics Inc. Common Stock,$32.70,-0.53,-1.595%,2552410436.00,United States,1995,393024,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
-NATI,National Instruments Corporation Common Stock,$42.36,0.13,0.308%,5633072280.00,United States,1995,279824,Technology,Computer Software: Prepackaged Software
-NEWT,Newtek Business Services Corp. Common Stock (Maryland),$29.55,0.23,0.784%,666274133.00,United States,,353475,Finance,Finance/Investors Services
-NOVT,Novanta Inc. Common Stock,$152.28,0.25,0.164%,5404268270.00,United States,,62612,,
-NRIM,Northrim BanCorp Inc Common Stock,$40.32,0.29,0.724%,250262732.00,United States,,16771,Finance,Savings Institutions
-NTCT,NetScout Systems Inc. Common Stock,$27.05,0.21,0.782%,2004014993.00,United States,1999,261510,Technology,EDP Services
-NTUS,Natus Medical Incorporated Common Stock,$24.63,-0.04,-0.162%,840638796.00,United States,,119104,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
-NWBI,Northwest Bancshares Inc. Common Stock,$12.78,0.15,1.188%,1621627119.00,United States,2009,647409,Finance,Major Banks
-ODP,The ODP Corporation Common Stock,$42.47,-0.24,-0.562%,2264849418.00,United States,,613231,Miscellaneous,Diversified Commercial Services
-ODT,Odonate Therapeutics Inc. Common Stock,$3.22,0.00,0.00%,123968499.00,United States,2017,177876,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-OMP,Oasis Midstream Partners LP Common Units Representing Limited Partner Interests,$20.80,0.29,1.414%,1011455744.00,United States,,290398,Energy,Oil & Gas Production
-OPI,Office Properties Income Trust Common Shares of Beneficial Interest,$25.82,0.42,1.654%,1247993098.00,United States,,188272,Consumer Services,Real Estate Investment Trusts
-OXSQ,Oxford Square Capital Corp. Common Stock,$4.40,0.00,0.00%,218347457.00,United States,,121515,Finance,Investment Bankers/Brokers/Service
-PBCT,People's United Financial Inc. Common Stock,$16.14,0.15,0.938%,6907190069.00,United States,,3559249,Finance,Savings Institutions
-PBIP,Prudential Bancorp Inc. Common Stock,$14.65,0.22,1.525%,114186715.00,United States,,27070,Finance,Banks
-PBPB,Potbelly Corporation Common Stock,$7.00,0.23,3.397%,197799350.00,United States,2013,51677,Consumer Services,Restaurants
-PBYI,Puma Biotechnology Inc Common Stock,$7.10,-0.04,-0.56%,289531113.00,United States,,299737,Health Care,Biotechnology: Pharmaceutical Preparations
-PETS,PetMed Express Inc. Common Stock,$27.67,-0.69,-2.433%,563059016.00,United States,,269753,Health Care,Medical/Nursing Services
-PFX,PhenixFIN Corporation Common Stock,$42.6127,0.0281,0.066%,113303803.00,United States,,498,Finance,Investment Managers
-PROG,Progenity Inc. Common Stock,$0.9401,-0.0799,-7.833%,112253879.00,United States,1995,9032975,Consumer Durables,Specialty Chemicals
-PROV,Provident Financial Holdings Inc. Common Stock,$17.09,0.29,1.726%,128444937.00,United States,,8425,Finance,Savings Institutions
-QADA,QAD Inc. Class A Common Stock,$87.42,0.16,0.183%,1836463411.00,United States,,76792,Technology,Computer Software: Prepackaged Software
-QLYS,Qualys Inc. Common Stock,$119.21,4.35,3.787%,4642625225.00,United States,2012,332131,Technology,EDP Services
-RAIL,FreightCar America Inc. Common Stock,$5.07,0.08,1.603%,79725355.00,United States,2005,478236,Capital Goods,Railroads
-RAVN,Raven Industries Inc. Common Stock,$57.86,-0.08,-0.138%,2078194477.00,United States,,293280,Capital Goods,Office Equipment/Supplies/Services
-RDI,Reading International Inc Class A Common Stock,$4.77,0.01,0.21%,104030862.00,United States,,26912,Consumer Services,Movies/Entertainment
-RDUS,Radius Health Inc. Common Stock,$12.73,-0.05,-0.391%,601698039.00,United States,2014,344331,Health Care,Biotechnology: Pharmaceutical Preparations
-RIDE,Lordstown Motors Corp. Class A Common Stock,$6.45,0.27,4.369%,1141506629.00,United States,2019,8206615,Capital Goods,Construction/Ag Equipment/Trucks
-RNST,Renasant Corporation Common Stock,$33.48,0.23,0.692%,1886666701.00,United States,,220789,Finance,Major Banks
-SABR,Sabre Corporation Common Stock,$11.32,0.46,4.236%,3652480817.00,United States,2014,4886853,Technology,EDP Services
-SAFM,Sanderson Farms Inc. Common Stock,$186.15,-1.00,-0.534%,4156503328.00,United States,1987,323543,,
-SBSI,Southside Bancshares Inc. Common Stock,$37.21,0.20,0.54%,1215049982.00,United States,,85492,Finance,Major Banks
-SCWX,SecureWorks Corp. Class A Common Stock,$20.55,0.99,5.061%,1753926081.00,United States,2016,171365,Technology,EDP Services
-SDC,SmileDirectClub Inc. Class A Common Stock,$5.98,0.83,16.117%,2320916679.00,United States,2019,49208368,Health Care,Medical/Dental Instruments
-SEAC,SeaChange International Inc. Common Stock,$1.09,-0.02,-1.802%,52762190.00,United States,1996,929089,Technology,Radio And Television Broadcasting And Communications Equipment
-SFNC,Simmons First National Corporation Class A Common Stock,$28.27,0.81,2.95%,3061193486.00,United States,,500104,Finance,Major Banks
-SIGI,Selective Insurance Group Inc. Common Stock,$80.23,-0.12,-0.149%,4822426731.00,United States,,110208,Finance,Property-Casualty Insurers
-SND,Smart Sand Inc. Common Stock,$2.35,0.03,1.293%,101745210.00,United States,2016,76385,Energy,Metal Fabrications
-SOLY,Soliton Inc. Common Stock,$21.33,0.15,0.708%,460654284.00,United States,2019,64416,Health Care,Medical/Dental Instruments
-SPTN,SpartanNash Company Common Stock,$21.03,0.03,0.143%,755781376.00,United States,,202985,Consumer Non-Durables,Food Distributors
-SPWH,Sportsman's Warehouse Holdings Inc. Common Stock,$17.65,-0.03,-0.17%,774345477.00,United States,2014,461480,Consumer Services,Other Specialty Stores
-SPWR,SunPower Corporation Common Stock,$22.21,0.95,4.468%,3839115636.00,United States,2005,3225110,Technology,Semiconductors
-STKS,The ONE Group Hospitality Inc. Common Stock,$10.30,0.14,1.378%,328217483.00,United States,,115049,Consumer Services,Restaurants
-STMP,Stamps.com Inc.  Common Stock ($0.001 Par Value),$328.39,-0.19,-0.058%,6100059345.00,United States,1999,376444,Technology,EDP Services
-SUNW,Sunworks Inc. Common Stock,$6.92,0.15,2.216%,115072625.00,United States,,1456793,Technology,Semiconductors
-TBNK,Territorial Bancorp Inc. Common Stock,$25.33,0.06,0.237%,237366012.00,United States,2009,19372,Finance,Savings Institutions
-TCDA,Tricida Inc. Common Stock,$4.43,0.14,3.263%,223399292.00,United States,2018,181563,Health Care,Biotechnology: Pharmaceutical Preparations
-THFF,First Financial Corporation Indiana Common Stock,$39.76,0.11,0.277%,518797585.00,United States,,60211,Finance,Major Banks
-THRM,Gentherm Inc Common Stock,$81.96,0.83,1.023%,2717351262.00,United States,,105827,Capital Goods,Auto Parts:O.E.M.
-TRMK,Trustmark Corporation Common Stock,$30.13,0.16,0.534%,1881768156.00,United States,,356104,Finance,Major Banks
-TROW,T. Rowe Price Group Inc. Common Stock,$216.73,0.13,0.06%,49184031303.00,United States,1986,821767,Finance,Investment Managers
-TRST,TrustCo Bank Corp NY Common Stock,$31.33,-0.24,-0.76%,603570602.00,United States,,116303,Finance,Major Banks
-UIHC,United Insurance Holdings Corp. Common Stock,$3.06,-0.08,-2.548%,132212866.00,United States,,431072,Finance,Property-Casualty Insurers
-USAP,Universal Stainless & Alloy Products Inc. Common Stock,$10.81,0.06,0.558%,96402045.00,United States,1994,8538,Basic Industries,Steel/Iron Ore
-USWS,U.S. Well Services Inc. Class A Common Stock,$0.7089,-0.0497,-6.552%,66195321.00,United States,2017,3131361,Energy,Oil & Gas Production
-VCNX,Vaccinex Inc. Common Stock,$2.32,-0.01,-0.429%,71458575.00,United States,2018,43801,Health Care,Biotechnology: Pharmaceutical Preparations
-WAFD,Washington Federal Inc. Common Stock,$33.17,0.53,1.624%,2253780463.00,United States,,497765,Finance,Major Banks
-WDFC,WD-40 Company Common Stock,$231.46,-0.03,-0.013%,3172799750.00,United States,1973,33951,Basic Industries,Industrial Specialties
-WRLD,World Acceptance Corporation Common Stock,$206.10,10.07,5.137%,1379405453.00,United States,1991,43181,Finance,Finance: Consumer Services
-WSBF,Waterstone Financial Inc. Common Stock (MD),$20.08,0.09,0.45%,504795297.00,United States,,60793,Finance,Savings Institutions
-WTBA,West Bancorporation Common Stock,$29.38,-0.03,-0.102%,486381375.00,United States,,44052,Finance,Major Banks
-XENT,Intersect ENT Inc. Common Stock,$27.09,0.03,0.111%,903348070.00,United States,2014,165397,Health Care,Medical/Dental Instruments
-XONE,The ExOne Company Common Stock,$23.48,-0.28,-1.178%,521681974.00,United States,2013,370282,Capital Goods,Industrial Machinery/Components
-Z,Zillow Group Inc. Class C Capital Stock,$94.49,2.66,2.897%,23958521842.00,United States,,4961014,Miscellaneous,Business Services
-ZEUS,Olympic Steel Inc. Common Stock,$25.32,0.75,3.053%,280477793.00,United States,1994,71506,Basic Industries,Steel/Iron Ore
-ZY,Zymergen Inc. Common Stock,$13.19,0.41,3.208%,1350521963.00,United States,2021,461379,Basic Industries,Industrial Specialties
+,Symbol,Name,Buy,Analyst
+0,ACST,Acasti Pharma Inc. Class A Common Stock,0,Strong Sell
+1,AKTX,Akari Therapeutics plc ADR (0.01 USD),0,Strong Sell
+2,BELFB,Bel Fuse Inc. Class B Common Stock,0,Strong Sell
+3,CCLP,CSI Compressco LP Common Units,0,Strong Sell
+4,CPIX,Cumberland Pharmaceuticals Inc. Common Stock,0,Strong Sell
+5,DYAI,Dyadic International Inc. Common Stock,0,Strong Sell
+6,EBIX,Ebix Inc. Common Stock,0,Strong Sell
+7,EVOK,Evoke Pharma Inc. Common Stock,0,Strong Sell
+8,FCAP,First Capital Inc. Common Stock,0,Strong Sell
+9,FLDM,Fluidigm Corporation Common Stock,0,Strong Sell
+10,GTH,Genetron Holdings Limited ADS,0,Strong Sell
+11,HUGE,FSD Pharma Inc. Class B Subordinate Voting Shares,0,Strong Sell
+12,JBSS,John B. Sanfilippo & Son Inc. Common Stock,0,Strong Sell
+13,JCS,Communications Systems Inc. Common Stock,0,Strong Sell
+14,JOUT,Johnson Outdoors Inc. Class A Common Stock,0,Strong Sell
+15,MARK,Remark Holdings Inc. Common Stock,0,Strong Sell
+16,MMAT,Meta Materials Inc. Common Stock,0,Strong Sell
+17,NCSM,NCS Multistage Holdings Inc. Common Stock,0,Strong Sell
+18,NWS,News Corporation Class B Common Stock,0,Strong Sell
+19,PBTS,Powerbridge Technologies Co. Ltd. Ordinary Shares,0,Strong Sell
+20,POWL,Powell Industries Inc. Common Stock,0,Strong Sell
+21,PSEC,Prospect Capital Corporation Common Stock,0,Strong Sell
+22,REDU,RISE Education Cayman Ltd American Depositary Shares,0,Strong Sell
+23,RGP,Resources Connection Inc. Common Stock,0,Strong Sell
+24,SNGX,Soligenix Inc. Common Stock,0,Strong Sell
+25,TLGT,Teligent Inc. Common Stock,0,Strong Sell
+26,TOPS,TOP Ships Inc. Common Stock,0,Strong Sell
+27,TRMT,Tremont Mortgage Trust Common Shares of Beneficial Interest,0,Strong Sell
+28,TYME,Tyme Technologies Inc. Common Stock,0,Strong Sell
+29,UFPT,UFP Technologies Inc. Common Stock,0,Strong Sell
+30,WTER,The Alkaline Water Company Inc. Common Stock,0,Strong Sell
+31,ACB,Aurora Cannabis Inc. Common Shares,0,Sell
+32,AMCX,AMC Networks Inc. Class A Common Stock,0,Sell
+33,CLOV,Clover Health Investments Corp. Class A Common Stock,0,Sell
+34,FIZZ,National Beverage Corp. Common Stock,0,Sell
+35,GGAL,Grupo Financiero Galicia S.A. American Depositary Shares,0,Sell
+36,INVA,Innoviva Inc. Common Stock,0,Sell
+37,MVST,Microvast Holdings Inc. Common Stock,0,Sell
+38,ORPH,Orphazyme A/S American Depositary Shares,0,Sell
+39,PAHC,Phibro Animal Health Corporation Class A Common Stock,0,Sell
+40,QIWI,QIWI plc American Depositary Shares,0,Sell
+41,YQ,17 Education & Technology Group Inc. American Depositary Shares,0,Sell
+42,AAIC,Arlington Asset Investment Corp Class A (new),0,Hold
+43,ABEV,Ambev S.A. American Depositary Shares (Each representing 1 Common Share),0,Hold
+44,ADT,ADT Inc. Common Stock,0,Hold
+45,AEG,AEGON N.V. Common Stock,0,Hold
+46,AGM,Federal Agricultural Mortgage Corporation Common Stock,0,Hold
+47,AGR,Avangrid Inc. Common Stock,0,Hold
+48,AJRD,Aerojet Rocketdyne Holdings Inc. Common Stock,0,Hold
+49,ALE,Allete Inc.,0,Hold
+50,ALX,Alexander's Inc. Common Stock,0,Hold
+51,AM,Antero Midstream Corporation Common Stock,0,Hold
+52,AMC,AMC Entertainment Holdings Inc. Class A Common Stock,0,Hold
+53,AMR,Alpha Metallurgical Resources Inc. Common Stock,0,Hold
+54,APAM,Artisan Partners Asset Management Inc. Class A Common Stock,0,Hold
+55,ARI,Apollo Commercial Real Estate Finance Inc,0,Hold
+56,ARR,ARMOUR Residential REIT Inc.,0,Hold
+57,ARW,Arrow Electronics Inc. Common Stock,0,Hold
+58,ASB,Associated Banc-Corp Common Stock,0,Hold
+59,ATIP,ATI Physical Therapy Inc. Class A Common Stock,0,Hold
+60,AVAL,Grupo Aval Acciones y Valores S.A. ADR (Each representing 20 preferred shares),0,Hold
+61,AWI,Armstrong World Industries Inc Common Stock,0,Hold
+62,AZUL,Azul S.A. American Depositary Shares (each representing three preferred shares),0,Hold
+63,BAP,Credicorp Ltd. Common Stock,0,Hold
+64,BCSF,Bain Capital Specialty Finance Inc. Common Stock,0,Hold
+65,BEDU,Bright Scholar Education Holdings Limited American Depositary Shares each  representing one Class A Ordinary Share,0,Hold
+66,BEN,Franklin Resources Inc. Common Stock,0,Hold
+67,BGS,B&G Foods Inc. B&G Foods Inc. Common Stock,0,Hold
+68,BIG,Big Lots Inc. Common Stock,0,Hold
+69,BKE,Buckle Inc. (The) Common Stock,0,Hold
+70,BMI,Badger Meter Inc. Common Stock,0,Hold
+71,BOH,Bank of Hawaii Corporation Common Stock,0,Hold
+72,BPMP,BP Midstream Partners LP Common Units representing Limited Partner Interests,0,Hold
+73,BRFS,BRF S.A.,0,Hold
+74,BTU,Peabody Energy Corporation Common Stock ,0,Hold
+75,CAAP,Corporacion America Airports SA Common Shares,0,Hold
+76,CAI,CAI International Inc. Common Stock,0,Hold
+77,CAJ,Canon Inc. American Depositary Shares,0,Hold
+78,CANG,Cango Inc. American Depositary Shares  each representing two (2) Class A Ordinary Shares,0,Hold
+79,CBU,Community Bank System Inc. Common Stock,0,Hold
+80,CCO,Clear Channel Outdoor Holdings Inc. Common Stock,0,Hold
+81,CCU,Compania Cervecerias Unidas S.A. Common Stock,0,Hold
+82,CEPU,Central Puerto S.A. American Depositary Shares (each represents ten Common Shares),0,Hold
+83,CFR,Cullen/Frost Bankers Inc. Common Stock,0,Hold
+84,CHH,Choice Hotels International Inc. Common Stock,0,Hold
+85,CHS,Chico's FAS Inc. Common Stock,0,Hold
+86,CHT,Chunghwa Telecom Co. Ltd.,0,Hold
+87,CIG,Comp En De Mn Cemig ADS American Depositary Shares,0,Hold
+88,CIM,Chimera Investment Corporation Common Stock,0,Hold
+89,CL,Colgate-Palmolive Company Common Stock,0,Hold
+90,CLB,Core Laboratories N.V. Common Stock,0,Hold
+91,CLDR,Cloudera Inc. Common Stock,0,Hold
+92,CLI,Mack-Cali Realty Corporation Common Stock,0,Hold
+93,CLS,Celestica Inc. Common Stock,0,Hold
+94,CLX,Clorox Company (The) Common Stock,0,Hold
+95,CMC,Commercial Metals Company Common Stock,0,Hold
+96,CNA,CNA Financial Corporation Common Stock,0,Hold
+97,COR,CoreSite Realty Corporation Common Stock,0,Hold
+98,CORR,CorEnergy Infrastructure Trust Inc. Common Stock,0,Hold
+99,CPAC,Cementos Pacasmayo S.A.A. American Depositary Shares (Each representing five Common Shares),0,Hold
+100,CPB,Campbell Soup Company Common Stock,0,Hold
+101,CPLG,CorePoint Lodging Inc. Common Stock ,0,Hold
+102,CRS,Carpenter Technology Corporation Common Stock,0,Hold
+103,CTK,CooTek (Cayman) Inc. American Depositary Shares each representing 50 Class A Ordinary Shares,0,Hold
+104,CUK,Carnival Plc ADS ADS,0,Hold
+105,CVI,CVR Energy Inc. Common Stock,0,Hold
+106,CXP,Columbia Property Trust Inc. Common Stock,0,Hold
+107,DDD,3D Systems Corporation Common Stock,0,Hold
+108,DDS,Dillard's Inc. Common Stock,0,Hold
+109,DIDI,DiDi Global Inc. American Depositary Shares (each four representing one Class A Ordinary Share),0,Hold
+110,DK,Delek US Holdings Inc. Common Stock,0,Hold
+111,DKL,Delek Logistics Partners L.P. Common Units representing Limited Partner Interests,0,Hold
+112,DRQ,Dril-Quip Inc. Common Stock,0,Hold
+113,E,ENI S.p.A. Common Stock,0,Hold
+114,ELVT,Elevate Credit Inc. Common Stock,0,Hold
+115,ENBL,Enable Midstream Partners LP Common Units representing limited partner interests,0,Hold
+116,EPAC,Enerpac Tool Group Corp. Common Stock,0,Hold
+117,EQC,Equity Commonwealth Common Shares of Beneficial Interest,0,Hold
+118,ETRN,Equitrans Midstream Corporation Common Stock ,0,Hold
+119,EXPR,Express Inc. Common Stock,0,Hold
+120,FET,Forum Energy Technologies Inc. Common Stock,0,Hold
+121,FHI,Federated Hermes Inc. Common Stock,0,Hold
+122,FI,Frank's International N.V. Common Stock,0,Hold
+123,FIX,Comfort Systems USA Inc. Common Stock,0,Hold
+124,FLNG,FLEX LNG Ltd. Ordinary Shares,0,Hold
+125,FLO,Flowers Foods Inc. Common Stock,0,Hold
+126,FMS,Fresenius Medical Care AG Common Stock,0,Hold
+127,FSLY,Fastly Inc. Class A Common Stock,0,Hold
+128,GCP,GCP Applied Technologies Inc. Common Stock,0,Hold
+129,GKOS,Glaukos Corporation Common Stock,0,Hold
+130,GLOP,GasLog Partners LP Common Units representing limited partnership interests,0,Hold
+131,GOL,Gol Linhas Aereas Inteligentes S.A. Sponsored ADR representing 2 Pfd Shares,0,Hold
+132,GPX,GP Strategies Corporation Common Stock,0,Hold
+133,GRA,W.R. Grace & Co. Common Stock,0,Hold
+134,GSBD,Goldman Sachs BDC Inc. Common Stock,0,Hold
+135,H,Hyatt Hotels Corporation Class A Common Stock,0,Hold
+136,HBB,Hamilton Beach Brands Holding Company Class A Common Stock ,0,Hold
+137,HE,Hawaiian Electric Industries Inc. Common Stock,0,Hold
+138,HLI,Houlihan Lokey Inc. Class A Common Stock,0,Hold
+139,HMN,Horace Mann Educators Corporation Common Stock,0,Hold
+140,HMY,Harmony Gold Mining Company Limited,0,Hold
+141,HRL,Hormel Foods Corporation Common Stock,0,Hold
+142,HSBC,HSBC Holdings plc. Common Stock,0,Hold
+143,HT,Hersha Hospitality Trust Class A Common Shares of Beneficial Interest,0,Hold
+144,HXL,Hexcel Corporation Common Stock,0,Hold
+145,ICL,ICL Group Ltd. Ordinary Shares,0,Hold
+146,IHG,Intercontinental Hotels Group American Depositary Shares (Each representing one Ordinary Share),0,Hold
+147,INGR,Ingredion Incorporated Common Stock,0,Hold
+148,JHG,Janus Henderson Group plc Ordinary Shares,0,Hold
+149,JKS,JinkoSolar Holding Company Limited American Depositary Shares (each representing 4 Common Shares),0,Hold
+150,JMIA,Jumia Technologies AG American Depositary Shares each representing two Ordinary Shares,0,Hold
+151,JMP,JMP Group LLC Common Shares,0,Hold
+152,JWN,Nordstrom Inc. Common Stock,0,Hold
+153,KAMN,Kaman Corporation Common Stock,0,Hold
+154,KMB,Kimberly-Clark Corporation Common Stock,0,Hold
+155,KMI,Kinder Morgan Inc. Common Stock,0,Hold
+156,KNOP,KNOT Offshore Partners LP Common Units representing Limited Partner Interests,0,Hold
+157,KR,Kroger Company (The) Common Stock,0,Hold
+158,KRA,Kraton Corporation Common Stock,0,Hold
+159,LCI,Lannett Co Inc Common Stock,0,Hold
+160,LII,Lennox International Inc. Common Stock,0,Hold
+161,LL,Lumber Liquidators Holdings Inc Common Stock,0,Hold
+162,LOMA,Loma Negra Compania Industrial Argentina Sociedad Anonima ADS,0,Hold
+163,LPL,LG Display Co Ltd AMERICAN DEPOSITORY SHARES,0,Hold
+164,LTC,LTC Properties Inc. Common Stock,0,Hold
+165,LUMN,Lumen Technologies Inc. Common Stock,0,Hold
+166,MAC,Macerich Company (The) Common Stock,0,Hold
+167,MD,Mednax Inc. Common Stock,0,Hold
+168,MDLA,Medallia Inc. Common Stock,0,Hold
+169,MEI,Methode Electronics Inc. Common Stock,0,Hold
+170,MFG,Mizuho Financial Group Inc. Sponosred ADR (Japan),0,Hold
+171,MKC,McCormick & Company Incorporated Common Stock,0,Hold
+172,MOV,Movado Group Inc. Common Stock,0,Hold
+173,MTD,Mettler-Toledo International Inc. Common Stock,0,Hold
+174,NBR,Nabors Industries Ltd.,0,Hold
+175,NEXA,Nexa Resources S.A. Common Shares,0,Hold
+176,NGL,NGL ENERGY PARTNERS LP Common Units representing Limited Partner Interests,0,Hold
+177,NHI,National Health Investors Inc. Common Stock,0,Hold
+178,NINE,Nine Energy Service Inc. Common Stock,0,Hold
+179,NTCO,Natura &Co Holding S.A. American Depositary Shares ,0,Hold
+180,NYC,New York City REIT Inc. Class A Common Stock,0,Hold
+181,OLP,One Liberty Properties Inc. Common Stock,0,Hold
+182,PAM,Pampa Energia S.A. Pampa Energia S.A.,0,Hold
+183,PBF,PBF Energy Inc. Class A Common Stock,0,Hold
+184,PBFX,PBF Logistics LP Common Units representing limited partner interests,0,Hold
+185,PGRE,Paramount Group Inc. Common Stock,0,Hold
+186,PHI,PLDT Inc. Sponsored ADR,0,Hold
+187,PKG,Packaging Corporation of America Common Stock,0,Hold
+188,PLTR,Palantir Technologies Inc. Class A Common Stock,0,Hold
+189,PNM,PNM Resources Inc. (Holding Co.) Common Stock,0,Hold
+190,PNW,Pinnacle West Capital Corporation Common Stock,0,Hold
+191,PRTY,Party City Holdco Inc. Common Stock,0,Hold
+192,PRU,Prudential Financial Inc. Common Stock,0,Hold
+193,PSB,PS Business Parks Inc. (MD) Common Stock,0,Hold
+194,QS,QuantumScape Corporation Class A Common Stock,0,Hold
+195,RES,RPC Inc. Common Stock,0,Hold
+196,REV,Revlon Inc. New Common Stock,0,Hold
+197,RGR,Sturm Ruger & Company Inc. Common Stock,0,Hold
+198,RIG,Transocean Ltd (Switzerland) Common Stock,0,Hold
+199,RKT,Rocket Companies Inc. Class A Common Stock,0,Hold
+200,RNR,RenaissanceRe Holdings Ltd. Common Stock,0,Hold
+201,RPAI,Retail Properties of America Inc. Class A Common Stock,0,Hold
+202,RSF,RiverNorth Specialty Finance Corporation,0,Hold
+203,RYI,Ryerson Holding Corporation Common Stock,0,Hold
+204,RYN,Rayonier Inc. REIT Common Stock,0,Hold
+205,SCU,Sculptor Capital Management Inc. Class A Common Stock,0,Hold
+206,SFBS,ServisFirst Bancshares Inc. Common Stock,0,Hold
+207,SHO,Sunstone Hotel Investors Inc. Sunstone Hotel Investors Inc. Common Shares,0,Hold
+208,SII,Sprott Inc. Common Shares,0,Hold
+209,SJM,J.M. Smucker Company (The) New Common Stock,0,Hold
+210,SJW,SJW Group Common Stock (DE),0,Hold
+211,SKT,Tanger Factory Outlet Centers Inc. Common Stock,0,Hold
+212,SKY,Skyline Champion Corporation Common Stock,0,Hold
+213,SMLP,Summit Midstream Partners LP Common Units Representing Limited Partner Interests,0,Hold
+214,SNR,New Senior Investment Group Inc. Common Stock,0,Hold
+215,SON,Sonoco Products Company Common Stock,0,Hold
+216,SPNT,SiriusPoint Ltd. Common Shares,0,Hold
+217,SRLP,Sprague Resources LP Common Units representing Limited Partner Interests,0,Hold
+218,TAL,TAL Education Group American Depositary Shares,0,Hold
+219,TEVA,Teva Pharmaceutical Industries Limited American Depositary Shares,0,Hold
+220,TISI,Team Inc. Common Stock,0,Hold
+221,TTC,Toro Company (The) Common Stock,0,Hold
+222,TWI,Titan International Inc. (DE) Common Stock,0,Hold
+223,UE,Urban Edge Properties Common Shares of Beneficial Interest,0,Hold
+224,UL,Unilever PLC Common Stock,0,Hold
+225,UNF,Unifirst Corporation Common Stock,0,Hold
+226,UNFI,United Natural Foods Inc. Common Stock,0,Hold
+227,USAC,USA Compression Partners LP Common Units Representing Limited Partner Interests,0,Hold
+228,USNA,USANA Health Sciences Inc. Common Stock,0,Hold
+229,UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,0,Hold
+230,VER,VEREIT Inc. Common Stock,0,Hold
+231,VET,Vermilion Energy Inc. Common (Canada),0,Hold
+232,VIV,Telefonica Brasil S.A. American Depositary Shares (Each representing One Common Share),0,Hold
+233,VNE,Veoneer Inc. Common Stock ,0,Hold
+234,VNO,Vornado Realty Trust Common Stock,0,Hold
+235,WBT,Welbilt Inc. Common Stock,0,Hold
+236,WIT,Wipro Limited Common Stock,0,Hold
+237,WLKP,Westlake Chemical Partners LP Common Units representing limited partner interests,0,Hold
+238,WOR,Worthington Industries Inc. Common Stock,0,Hold
+239,WPG,Washington Prime Group Inc. Common Stock,0,Hold
+240,WRE,Washington Real Estate Investment Trust Common Stock,0,Hold
+241,WTM,White Mountains Insurance Group Ltd. Common Stock,0,Hold
+242,WTS,Watts Water Technologies Inc. Class A Common Stock,0,Hold
+243,XL,XL Fleet Corp. Class A Common Stock,0,Hold
+244,YELP,Yelp Inc. Common Stock,0,Hold
+245,YSG,Yatsen Holding Limited American Depositary Shares each representing four Class A ordinary shares,0,Hold
+246,AAON,AAON Inc. Common Stock,0,Hold
+247,ABTX,Allegiance Bancshares Inc. Common Stock,0,Hold
+248,ADMP,Adamis Pharmaceuticals Corporation Common Stock,0,Hold
+249,ADP,Automatic Data Processing Inc. Common Stock,0,Hold
+250,AESE,Allied Esports Entertainment Inc. Common Stock,0,Hold
+251,ALOT,AstroNova Inc. Common Stock,0,Hold
+252,ALRS,Alerus Financial Corporation Common Stock,0,Hold
+253,ALTA,Altabancorp Common Stock,0,Hold
+254,ALTM,Altus Midstream Company Class A Common Stock,0,Hold
+255,ALYA,Alithya Group inc. Class A Subordinate Voting Shares,0,Hold
+256,AOSL,Alpha and Omega Semiconductor Limited Common Shares,0,Hold
+257,APPF,AppFolio Inc. Class A Common Stock,0,Hold
+258,APRE,Aprea Therapeutics Inc. Common stock,0,Hold
+259,ARCT,Arcturus Therapeutics Holdings Inc. Common Stock,0,Hold
+260,AROW,Arrow Financial Corporation Common Stock,0,Hold
+261,ASLE,AerSale Corporation Common Stock,0,Hold
+262,ATXI,Avenue Therapeutics Inc. Common Stock,0,Hold
+263,AXDX,Accelerate Diagnostics Inc. Common Stock,0,Hold
+264,BANF,BancFirst Corporation Common Stock,0,Hold
+265,BBBY,Bed Bath & Beyond Inc. Common Stock,0,Hold
+266,BCBP,BCB Bancorp Inc. (NJ) Common Stock,0,Hold
+267,BFC,Bank First Corporation Common Stock,0,Hold
+268,BHF,Brighthouse Financial Inc. Common Stock,0,Hold
+269,BKCC,BlackRock Capital Investment Corporation Common Stock,0,Hold
+270,BKEP,Blueknight Energy Partners L.P. Common Units,0,Hold
+271,BLBD,Blue Bird Corporation Common Stock,0,Hold
+272,BLCM,Bellicum Pharmaceuticals Inc. Common Stock,0,Hold
+273,BLCT,BlueCity Holdings Limited American Depositary Shares,0,Hold
+274,BOCH,Bank of Commerce Holdings (CA) Common Stock,0,Hold
+275,BSBK,Bogota Financial Corp. Common Stock,0,Hold
+276,CACC,Credit Acceptance Corporation Common Stock,0,Hold
+277,CBFV,CB Financial Services Inc. Common Stock,0,Hold
+278,CBRL,Cracker Barrel Old Country Store Inc Common Stock,0,Hold
+279,CBSH,Commerce Bancshares Inc. Common Stock,0,Hold
+280,CBTX,CBTX Inc. Common Stock,0,Hold
+281,CCBG,Capital City Bank Group Common Stock,0,Hold
+282,CFBK,CF Bankshares Inc. Common Stock,0,Hold
+283,CFFN,Capitol Federal Financial Inc. Common Stock,0,Hold
+284,CHCO,City Holding Company Common Stock,0,Hold
+285,CLBK,Columbia Financial Inc. Common Stock,0,Hold
+286,CLNE,Clean Energy Fuels Corp. Common Stock,0,Hold
+287,CLVS,Clovis Oncology Inc. Common Stock,0,Hold
+288,CNDT,Conduent Incorporated Common Stock ,0,Hold
+289,CNFR,Conifer Holdings Inc. Common Stock,0,Hold
+290,CNXN,PC Connection Inc. Common Stock,0,Hold
+291,COHR,Coherent Inc. Common Stock,0,Hold
+292,COLB,Columbia Banking System Inc. Common Stock,0,Hold
+293,CRON,Cronos Group Inc. Common Share,0,Hold
+294,CRTX,Cortexyme Inc. Common Stock,0,Hold
+295,CRWS,Crown Crafts Inc Common Stock,0,Hold
+296,CVAC,CureVac N.V. Ordinary Shares,0,Hold
+297,DFFN,Diffusion Pharmaceuticals Inc. Common Stock,0,Hold
+298,DFH,Dream Finders Homes Inc. Class A Common Stock,0,Hold
+299,DHC,Diversified Healthcare Trust Common Shares of Beneficial Interest,0,Hold
+300,DISCK,Discovery Inc. Series C Common Stock,0,Hold
+301,DSPG,DSP Group Inc. Common Stock,0,Hold
+302,EBSB,Meridian Bancorp Inc. Common Stock,0,Hold
+303,EGBN,Eagle Bancorp Inc. Common Stock,0,Hold
+304,ENDP,Endo International plc Ordinary Shares,0,Hold
+305,ESGR,Enstar Group Limited Ordinary Shares,0,Hold
+306,ESLT,Elbit Systems Ltd. Ordinary Shares,0,Hold
+307,ESSA,ESSA Bancorp Inc. Common Stock,0,Hold
+308,ESXB,Community Bankers Trust Corporation Common Stock (VA),0,Hold
+309,EXPD,Expeditors International of Washington Inc. Common Stock,0,Hold
+310,FANH,Fanhua Inc. American Depositary Shares,0,Hold
+311,FARO,FARO Technologies Inc. Common Stock,0,Hold
+312,FBRX,Forte Biosciences Inc. Common Stock,0,Hold
+313,FCEL,FuelCell Energy Inc. Common Stock,0,Hold
+314,FCRD,First Eagle Alternative Capital BDC Inc. Common Stock,0,Hold
+315,FFBC,First Financial Bancorp. Common Stock,0,Hold
+316,FFIN,First Financial Bankshares Inc. Common Stock,0,Hold
+317,FHB,First Hawaiian Inc. Common Stock,0,Hold
+318,FLNT,Fluent Inc. Common Stock,0,Hold
+319,FMAO,Farmers & Merchants Bancorp Inc. Common Stock,0,Hold
+320,FNWB,First Northwest Bancorp Common Stock,0,Hold
+321,FRBK,Republic First Bancorp Inc. Common Stock,0,Hold
+322,FTEK,Fuel Tech Inc. Common Stock,0,Hold
+323,FULT,Fulton Financial Corporation Common Stock,0,Hold
+324,GABC,German American Bancorp Inc. Common Stock,0,Hold
+325,GAIN,Gladstone Investment Corporation Business Development Company,0,Hold
+326,GBDC,Golub Capital BDC Inc. Common Stock,0,Hold
+327,GBLI,Global Indemnity Group LLC Class A Common Stock (DE),0,Hold
+328,GECC,Great Elm Capital Corp. Common Stock,0,Hold
+329,GLAD,Gladstone Capital Corporation Common Stock,0,Hold
+330,GRPN,Groupon Inc. Common Stock,0,Hold
+331,GSKY,GreenSky Inc. Class A Common Stock,0,Hold
+332,HA,Hawaiian Holdings Inc. Common Stock,0,Hold
+333,HHR,HeadHunter Group PLC American Depositary Shares,0,Hold
+334,HMHC,Houghton Mifflin Harcourt Company Common Stock,0,Hold
+335,HOPE,Hope Bancorp Inc. Common Stock,0,Hold
+336,HRZN,Horizon Technology Finance Corporation Common Stock,0,Hold
+337,HTBI,HomeTrust Bancshares Inc. Common Stock,0,Hold
+338,ICMB,Investcorp Credit Management BDC Inc. Common Stock,0,Hold
+339,IDRA,Idera Pharmaceuticals Inc. Common Stock,0,Hold
+340,INFN,Infinera Corporation Common Stock,0,Hold
+341,INGN,Inogen Inc Common Stock,0,Hold
+342,INOV,Inovalon Holdings Inc. Class A Common Stock,0,Hold
+343,INTC,Intel Corporation Common Stock,0,Hold
+344,INTZ,Intrusion Inc. Common Stock,0,Hold
+345,IRBT,iRobot Corporation Common Stock,0,Hold
+346,ITRM,Iterum Therapeutics plc Ordinary Share,0,Hold
+347,ITRN,Ituran Location and Control Ltd. Ordinary Shares,0,Hold
+348,JAKK,JAKKS Pacific Inc. Common Stock,0,Hold
+349,JOBS,51job Inc. American Depositary Shares,0,Hold
+350,KLXE,KLX Energy Services Holdings Inc. Common Stock,0,Hold
+351,KRMD,Repro Med Systems Inc. Common Stock,0,Hold
+352,LAZY,Lazydays Holdings Inc. Common Stock,0,Hold
+353,LGIH,LGI Homes Inc. Common Stock,0,Hold
+354,LHDX,Lucira Health Inc. Common Stock,0,Hold
+355,LILA,Liberty Latin America Ltd. Class A Common Stock,0,Hold
+356,LILAK,Liberty Latin America Ltd. Class C Common Stock,0,Hold
+357,LJPC,La Jolla Pharmaceutical Company Common Stock,0,Hold
+358,LKFN,Lakeland Financial Corporation Common Stock,0,Hold
+359,LMNL,Liminal BioSciences Inc. Common Shares,0,Hold
+360,LMRK,Landmark Infrastructure Partners LP Common Units,0,Hold
+361,LSTR,Landstar System Inc. Common Stock,0,Hold
+362,MCBS,MetroCity Bankshares Inc. Common Stock,0,Hold
+363,MGEE,MGE Energy Inc,0,Hold
+364,MGI,Moneygram International Inc. Common Stock,0,Hold
+365,MGLN,Magellan Health Inc. Common Stock,0,Hold
+366,MGPI,MGP Ingredients Inc.,0,Hold
+367,MILE,Metromile Inc. Common Stock,0,Hold
+368,MLVF,Malvern Bancorp Inc. Common Stock,0,Hold
+369,MMLP,Martin Midstream Partners L.P. Limited Partnership,0,Hold
+370,MMYT,MakeMyTrip Limited Ordinary Shares,0,Hold
+371,MNRO,Monro Inc. Common Stock,0,Hold
+372,MSON,MISONIX Inc. Common Stock (DE),0,Hold
+373,MVBF,MVB Financial Corp. Common Stock,0,Hold
+374,MVIS,MicroVision Inc. Common Stock,0,Hold
+375,MYGN,Myriad Genetics Inc. Common Stock,0,Hold
+376,NATI,National Instruments Corporation Common Stock,0,Hold
+377,NEWT,Newtek Business Services Corp. Common Stock (Maryland),0,Hold
+378,NOVT,Novanta Inc. Common Stock,0,Hold
+379,NRIM,Northrim BanCorp Inc Common Stock,0,Hold
+380,NTCT,NetScout Systems Inc. Common Stock,0,Hold
+381,NTUS,Natus Medical Incorporated Common Stock,0,Hold
+382,NWBI,Northwest Bancshares Inc. Common Stock,0,Hold
+383,ODP,The ODP Corporation Common Stock,0,Hold
+384,ODT,Odonate Therapeutics Inc. Common Stock,0,Hold
+385,OMP,Oasis Midstream Partners LP Common Units Representing Limited Partner Interests,0,Hold
+386,OPI,Office Properties Income Trust Common Shares of Beneficial Interest,0,Hold
+387,OXSQ,Oxford Square Capital Corp. Common Stock,0,Hold
+388,OZON,Ozon Holdings PLC American Depositary Shares each ADS representing one ordinary share,0,Hold
+389,PBCT,People's United Financial Inc. Common Stock,0,Hold
+390,PBIP,Prudential Bancorp Inc. Common Stock,0,Hold
+391,PBPB,Potbelly Corporation Common Stock,0,Hold
+392,PBYI,Puma Biotechnology Inc Common Stock,0,Hold
+393,PETS,PetMed Express Inc. Common Stock,0,Hold
+394,PFX,PhenixFIN Corporation Common Stock,0,Hold
+395,PROG,Progenity Inc. Common Stock,0,Hold
+396,PROV,Provident Financial Holdings Inc. Common Stock,0,Hold
+397,PXS,Pyxis Tankers Inc. Common Stock,0,Hold
+398,QADA,QAD Inc. Class A Common Stock,0,Hold
+399,QLYS,Qualys Inc. Common Stock,0,Hold
+400,RAIL,FreightCar America Inc. Common Stock,0,Hold
+401,RAVN,Raven Industries Inc. Common Stock,0,Hold
+402,RDI,Reading International Inc Class A Common Stock,0,Hold
+403,RDUS,Radius Health Inc. Common Stock,0,Hold
+404,RIDE,Lordstown Motors Corp. Class A Common Stock,0,Hold
+405,RNST,Renasant Corporation Common Stock,0,Hold
+406,SABR,Sabre Corporation Common Stock,0,Hold
+407,SAFM,Sanderson Farms Inc. Common Stock,0,Hold
+408,SBSI,Southside Bancshares Inc. Common Stock,0,Hold
+409,SCR,Score Media and Gaming Inc. Class A Subordinate Voting Shares,0,Hold
+410,SCWX,SecureWorks Corp. Class A Common Stock,0,Hold
+411,SDC,SmileDirectClub Inc. Class A Common Stock,0,Hold
+412,SEAC,SeaChange International Inc. Common Stock,0,Hold
+413,SFNC,Simmons First National Corporation Class A Common Stock,0,Hold
+414,SIGI,Selective Insurance Group Inc. Common Stock,0,Hold
+415,SMMT,Summit Therapeutics Inc. Common Stock ,0,Hold
+416,SND,Smart Sand Inc. Common Stock,0,Hold
+417,SNDL,Sundial Growers Inc. Common Shares,0,Hold
+418,SOLY,Soliton Inc. Common Stock,0,Hold
+419,SPTN,SpartanNash Company Common Stock,0,Hold
+420,SPWH,Sportsman's Warehouse Holdings Inc. Common Stock,0,Hold
+421,SPWR,SunPower Corporation Common Stock,0,Hold
+422,STKS,The ONE Group Hospitality Inc. Common Stock,0,Hold
+423,STMP,Stamps.com Inc.  Common Stock ($0.001 Par Value),0,Hold
+424,SUNW,Sunworks Inc. Common Stock,0,Hold
+425,TBNK,Territorial Bancorp Inc. Common Stock,0,Hold
+426,TC,TuanChe Limited American Depositary Shares,0,Hold
+427,TCDA,Tricida Inc. Common Stock,0,Hold
+428,THFF,First Financial Corporation Indiana Common Stock,0,Hold
+429,THRM,Gentherm Inc Common Stock,0,Hold
+430,THTX,Theratechnologies Inc. Common Shares,0,Hold
+431,TIGO,Millicom International Cellular S.A. Common Stock,0,Hold
+432,TRMK,Trustmark Corporation Common Stock,0,Hold
+433,TROW,T. Rowe Price Group Inc. Common Stock,0,Hold
+434,TRST,TrustCo Bank Corp NY Common Stock,0,Hold
+435,TRVG,trivago N.V. American Depositary Shares,0,Hold
+436,UIHC,United Insurance Holdings Corp. Common Stock,0,Hold
+437,USAP,Universal Stainless & Alloy Products Inc. Common Stock,0,Hold
+438,USWS,U.S. Well Services Inc. Class A Common Stock,0,Hold
+439,VCNX,Vaccinex Inc. Common Stock,0,Hold
+440,VIOT,Viomi Technology Co. Ltd American Depositary Shares,0,Hold
+441,WAFD,Washington Federal Inc. Common Stock,0,Hold
+442,WDFC,WD-40 Company Common Stock,0,Hold
+443,WRLD,World Acceptance Corporation Common Stock,0,Hold
+444,WSBF,Waterstone Financial Inc. Common Stock (MD),0,Hold
+445,WTBA,West Bancorporation Common Stock,0,Hold
+446,XENT,Intersect ENT Inc. Common Stock,0,Hold
+447,XONE,The ExOne Company Common Stock,0,Hold
+448,YJ,Yunji Inc. American Depository Shares,0,Hold
+449,Z,Zillow Group Inc. Class C Capital Stock,0,Hold
+450,ZEUS,Olympic Steel Inc. Common Stock,0,Hold
+451,ZY,Zymergen Inc. Common Stock,0,Hold
+452,APRN,Blue Apron Holdings Inc. Class A Common Stock,0,Strong Sell
+453,BBAR,Banco BBVA Argentina S.A. ADS,0,Strong Sell
+454,BVN,Buenaventura Mining Company Inc.,0,Strong Sell
+455,CNS,Cohen & Steers Inc Common Stock,0,Strong Sell
+456,ENIA,Enel Americas S.A. American Depositary Shares,0,Strong Sell
+457,FPH,Five Point Holdings LLC Class A Common Shares,0,Strong Sell
+458,GCI,Gannett Co. Inc. Common Stock,0,Strong Sell
+459,KB,KB Financial Group Inc,0,Strong Sell
+460,LAIX,LAIX Inc. American Depositary Shares each  representing one Class A Ordinary Share,0,Strong Sell
+461,MMI,Marcus & Millichap Inc. Common Stock,0,Strong Sell
+462,NL,NL Industries Inc. Common Stock,0,Strong Sell
+463,NMM,Navios Maritime Partners LP Common Units Representing Limited Partner Interests,0,Strong Sell
+464,ONE,OneSmart International Education Group Limited ADS,0,Strong Sell
+465,PRT,PermRock Royalty Trust Trust Units,0,Strong Sell
+466,RYB,RYB Education Inc. American depositary shares each representing one Class A ordinary share,0,Strong Sell
+467,SHG,Shinhan Financial Group Co Ltd American Depositary Shares,0,Strong Sell
+468,SOGO,Sogou Inc. American Depositary Shares each representing one Class A Ordinary Share,0,Strong Sell
+469,TCS,Container Store (The) Common Stock,0,Strong Sell
+470,TEO,Telecom Argentina SA,0,Strong Sell
+471,TGS,Transportadora de Gas del Sur SA TGS Common Stock,0,Strong Sell
+472,WEI,Weidai Ltd. American depositary shares each  representing one (1) Class A ordinary share,0,Strong Sell
+473,WF,Woori Financial Group Inc. American Depositary Shares (each representing three (3) shares of Common Stock),0,Strong Sell
+474,YALA,Yalla Group Limited American Depositary Shares each representing one Class A Ordinary Share,0,Strong Sell
+475,ZME,Zhangmen Education Inc. American Depositary Shares each representing nine (9) Class A ordinary shares,0,Strong Sell
+476,AAPL,Apple Inc. Common Stock,1,Strong Buy
+477,MSFT,Microsoft Corporation Common Stock,1,Strong Buy
+478,GOOG,Alphabet Inc. Class C Capital Stock,1,Strong Buy
+479,GOOGL,Alphabet Inc. Class A Common Stock,1,Strong Buy
+480,AMZN,Amazon.com Inc. Common Stock,1,Strong Buy
+481,FB,Facebook Inc. Class A Common Stock,1,Strong Buy
+482,TSLA,Tesla Inc. Common Stock,1,Buy
+483,NVDA,NVIDIA Corporation Common Stock,1,Strong Buy
+484,V,Visa Inc.,1,Strong Buy
+485,JPM,JP Morgan Chase & Co. Common Stock,1,Strong Buy
+486,JNJ,Johnson & Johnson Common Stock,1,Strong Buy
+487,WMT,Walmart Inc. Common Stock,1,Strong Buy
+488,UNH,UnitedHealth Group Incorporated Common Stock (DE),1,Strong Buy
+489,PG,Procter & Gamble Company (The) Common Stock,1,Buy
+490,HD,Home Depot Inc. (The) Common Stock,1,Strong Buy
+491,BAC,Bank of America Corporation Common Stock,1,Strong Buy
+492,MA,Mastercard Incorporated Common Stock,1,Strong Buy
+493,DIS,Walt Disney Company (The) Common Stock,1,Strong Buy
+494,PYPL,PayPal Holdings Inc. Common Stock,1,Strong Buy
+495,ADBE,Adobe Inc. Common Stock,1,Strong Buy
+496,CMCSA,Comcast Corporation Class A Common Stock,1,Strong Buy
+497,NFLX,Netflix Inc. Common Stock,1,Strong Buy
+498,PFE,Pfizer Inc. Common Stock,1,Buy
+499,CRM,Salesforce.com Inc Common Stock,1,Strong Buy
+500,NKE,Nike Inc. Common Stock,1,Strong Buy
+501,CSCO,Cisco Systems Inc. Common Stock (DE),1,Strong Buy
+502,KO,Coca-Cola Company (The) Common Stock,1,Strong Buy
+503,ORCL,Oracle Corporation Common Stock,1,Buy
+504,XOM,Exxon Mobil Corporation Common Stock,1,Buy
+505,DHR,Danaher Corporation Common Stock,1,Strong Buy
+506,ACN,Accenture plc Class A Ordinary Shares (Ireland),1,Strong Buy
+507,ABT,Abbott Laboratories Common Stock,1,Strong Buy
+508,LLY,Eli Lilly and Company Common Stock,1,Strong Buy
+509,TMO,Thermo Fisher Scientific Inc Common Stock,1,Strong Buy
+510,PEP,PepsiCo Inc. Common Stock,1,Buy
+511,AVGO,Broadcom Inc. Common Stock,1,Strong Buy
+512,COST,Costco Wholesale Corporation Common Stock,1,Strong Buy
+513,T,AT&T Inc.,1,Buy
+514,WFC,Wells Fargo & Company Common Stock,1,Strong Buy
+515,ABBV,AbbVie Inc. Common Stock,1,Strong Buy
+516,CVX,Chevron Corporation Common Stock,1,Strong Buy
+517,MS,Morgan Stanley Common Stock,1,Strong Buy
+518,MRK,Merck & Company Inc. Common Stock (new),1,Buy
+519,TXN,Texas Instruments Incorporated Common Stock,1,Strong Buy
+520,MCD,McDonald's Corporation Common Stock,1,Strong Buy
+521,MDT,Medtronic plc. Ordinary Shares,1,Strong Buy
+522,MRNA,Moderna Inc. Common Stock,1,Buy
+523,UPS,United Parcel Service Inc. Common Stock,1,Buy
+524,NEE,NextEra Energy Inc. Common Stock,1,Strong Buy
+525,PM,Philip Morris International Inc Common Stock,1,Strong Buy
+526,TMUS,T-Mobile US Inc. Common Stock,1,Strong Buy
+527,INTU,Intuit Inc. Common Stock,1,Strong Buy
+528,QCOM,QUALCOMM Incorporated Common Stock,1,Strong Buy
+529,HON,Honeywell International Inc. Common Stock,1,Strong Buy
+530,C,Citigroup Inc. Common Stock,1,Strong Buy
+531,LOW,Lowe's Companies Inc. Common Stock,1,Strong Buy
+532,CHTR,Charter Communications Inc. Class A Common Stock New,1,Strong Buy
+533,BLK,BlackRock Inc. Common Stock,1,Strong Buy
+534,BMY,Bristol-Myers Squibb Company Common Stock,1,Strong Buy
+535,GS,Goldman Sachs Group Inc. (The) Common Stock,1,Strong Buy
+536,AMT,American Tower Corporation (REIT) Common Stock,1,Strong Buy
+537,SBUX,Starbucks Corporation Common Stock,1,Strong Buy
+538,SCHW,Charles Schwab Corporation (The) Common Stock,1,Strong Buy
+539,UNP,Union Pacific Corporation Common Stock,1,Strong Buy
+540,NOW,ServiceNow Inc. Common Stock,1,Strong Buy
+541,AXP,American Express Company Common Stock,1,Buy
+542,AMD,Advanced Micro Devices Inc. Common Stock,1,Strong Buy
+543,RTX,Raytheon Technologies Corporation Common Stock,1,Strong Buy
+544,AMAT,Applied Materials Inc. Common Stock,1,Strong Buy
+545,BA,Boeing Company (The) Common Stock,1,Strong Buy
+546,ISRG,Intuitive Surgical Inc. Common Stock,1,Buy
+547,AMGN,Amgen Inc. Common Stock,1,Buy
+548,IBM,International Business Machines Corporation Common Stock,1,Buy
+549,TGT,Target Corporation Common Stock,1,Strong Buy
+550,EL,Estee Lauder Companies Inc. (The) Common Stock,1,Strong Buy
+551,CVS,CVS Health Corporation Common Stock,1,Strong Buy
+552,CAT,Caterpillar Inc. Common Stock,1,Buy
+553,GE,General Electric Company Common Stock,1,Buy
+554,DE,Deere & Company Common Stock,1,Strong Buy
+555,SPGI,S&P Global Inc. Common Stock,1,Strong Buy
+556,MMM,3M Company Common Stock,1,Buy
+557,SQ,Square Inc. Class A Common Stock,1,Strong Buy
+558,SYK,Stryker Corporation Common Stock,1,Strong Buy
+559,TEAM,Atlassian Corporation Plc Class A Ordinary Shares,1,Strong Buy
+560,PLD,Prologis Inc. Common Stock,1,Strong Buy
+561,BKNG,Booking Holdings Inc. Common Stock,1,Buy
+562,ZTS,Zoetis Inc. Class A Common Stock,1,Strong Buy
+563,LMT,Lockheed Martin Corporation Common Stock,1,Strong Buy
+564,BX,Blackstone Inc. Common Stock,1,Strong Buy
+565,SNOW,Snowflake Inc. Class A Common Stock,1,Buy
+566,ANTM,Anthem Inc. Common Stock,1,Strong Buy
+567,MO,Altria Group Inc.,1,Strong Buy
+568,GILD,Gilead Sciences Inc. Common Stock,1,Strong Buy
+569,LRCX,Lam Research Corporation Common Stock,1,Strong Buy
+570,USB,U.S. Bancorp Common Stock,1,Buy
+571,MDLZ,Mondelez International Inc. Class A Common Stock,1,Strong Buy
+572,TJX,TJX Companies Inc. (The) Common Stock,1,Strong Buy
+573,MU,Micron Technology Inc. Common Stock,1,Strong Buy
+574,CCI,Crown Castle International Corp. (REIT) Common Stock,1,Strong Buy
+575,HCA,HCA Healthcare Inc. Common Stock,1,Strong Buy
+576,PNC,PNC Financial Services Group Inc. (The) Common Stock,1,Buy
+577,MMC,Marsh & McLennan Companies Inc. Common Stock,1,Buy
+578,CB,Chubb Limited  Common Stock,1,Strong Buy
+579,ZM,Zoom Video Communications Inc. Class A Common Stock,1,Buy
+580,COP,ConocoPhillips Common Stock,1,Strong Buy
+581,SHW,Sherwin-Williams Company (The) Common Stock,1,Strong Buy
+582,DUK,Duke Energy Corporation (Holding Company) Common Stock,1,Buy
+583,FIS,Fidelity National Information Services Inc. Common Stock,1,Strong Buy
+584,EQIX,Equinix Inc. Common Stock REIT,1,Strong Buy
+585,EW,Edwards Lifesciences Corporation Common Stock,1,Strong Buy
+586,GM,General Motors Company Common Stock,1,Strong Buy
+587,BDX,Becton Dickinson and Company Common Stock,1,Buy
+588,TFC,Truist Financial Corporation Common Stock,1,Buy
+589,DELL,Dell Technologies Inc. Class C Common Stock ,1,Strong Buy
+590,FISV,Fiserv Inc. Common Stock,1,Strong Buy
+591,UBER,Uber Technologies Inc. Common Stock,1,Strong Buy
+592,COF,Capital One Financial Corporation Common Stock,1,Strong Buy
+593,MCO,Moody's Corporation Common Stock,1,Strong Buy
+594,CI,Cigna Corporation Common Stock,1,Strong Buy
+595,SO,Southern Company (The) Common Stock,1,Buy
+596,CSX,CSX Corporation Common Stock,1,Strong Buy
+597,ITW,Illinois Tool Works Inc. Common Stock,1,Buy
+598,REGN,Regeneron Pharmaceuticals Inc. Common Stock,1,Strong Buy
+599,FDX,FedEx Corporation Common Stock,1,Strong Buy
+600,CME,CME Group Inc. Class A Common Stock,1,Buy
+601,ICE,Intercontinental Exchange Inc. Common Stock,1,Strong Buy
+602,DASH,DoorDash Inc. Class A Common Stock,1,Buy
+603,AON,Aon plc Class A Ordinary Shares (Ireland),1,Buy
+604,ILMN,Illumina Inc. Common Stock,1,Buy
+605,WM,Waste Management Inc. Common Stock,1,Buy
+606,ADI,Analog Devices Inc. Common Stock,1,Strong Buy
+607,BSX,Boston Scientific Corporation Common Stock,1,Strong Buy
+608,ECL,Ecolab Inc. Common Stock,1,Buy
+609,ETN,Eaton Corporation PLC Ordinary Shares,1,Strong Buy
+610,NSC,Norfolk Southern Corporation Common Stock,1,Buy
+611,ADSK,Autodesk Inc. Common Stock,1,Strong Buy
+612,D,Dominion Energy Inc. Common Stock,1,Strong Buy
+613,ATVI,Activision Blizzard Inc. Common Stock,1,Strong Buy
+614,APD,Air Products and Chemicals Inc. Common Stock,1,Strong Buy
+615,EMR,Emerson Electric Company Common Stock,1,Strong Buy
+616,TWLO,Twilio Inc. Class A Common Stock,1,Strong Buy
+617,NOC,Northrop Grumman Corporation Common Stock,1,Strong Buy
+618,NXPI,NXP Semiconductors N.V. Common Stock,1,Strong Buy
+619,IDXX,IDEXX Laboratories Inc. Common Stock,1,Strong Buy
+620,ALGN,Align Technology Inc. Common Stock,1,Strong Buy
+621,KLAC,KLA Corporation Common Stock,1,Strong Buy
+622,PSA,Public Storage Common Stock,1,Buy
+623,GD,General Dynamics Corporation Common Stock,1,Strong Buy
+624,PGR,Progressive Corporation (The) Common Stock,1,Buy
+625,JCI,Johnson Controls International plc Ordinary Share,1,Strong Buy
+626,FCX,Freeport-McMoRan Inc. Common Stock,1,Buy
+627,DOCU,DocuSign Inc. Common Stock,1,Strong Buy
+628,CRWD,CrowdStrike Holdings Inc. Class A Common Stock,1,Strong Buy
+629,DXCM,DexCom Inc. Common Stock,1,Strong Buy
+630,MSCI,MSCI Inc Common Stock,1,Buy
+631,MET,MetLife Inc. Common Stock,1,Strong Buy
+632,CMG,Chipotle Mexican Grill Inc. Common Stock,1,Strong Buy
+633,A,Agilent Technologies Inc. Common Stock,1,Strong Buy
+634,LULU,lululemon athletica inc. Common Stock,1,Strong Buy
+635,INFO,IHS Markit Ltd. Common Shares,1,Strong Buy
+636,F,Ford Motor Company Common Stock,1,Strong Buy
+637,WDAY,Workday Inc. Class A Common Stock,1,Strong Buy
+638,HUM,Humana Inc. Common Stock,1,Strong Buy
+639,MRVL,Marvell Technology Inc. Common Stock,1,Strong Buy
+640,SNPS,Synopsys Inc. Common Stock,1,Strong Buy
+641,DG,Dollar General Corporation Common Stock,1,Strong Buy
+642,MNST,Monster Beverage Corporation,1,Strong Buy
+643,KDP,Keurig Dr Pepper Inc. Common Stock,1,Strong Buy
+644,ROP,Roper Technologies Inc. Common Stock,1,Strong Buy
+645,EXC,Exelon Corporation Common Stock,1,Strong Buy
+646,IQV,IQVIA Holdings Inc. Common Stock,1,Strong Buy
+647,TWTR,Twitter Inc. Common Stock,1,Buy
+648,FTNT,Fortinet Inc. Common Stock,1,Buy
+649,VRTX,Vertex Pharmaceuticals Incorporated Common Stock,1,Strong Buy
+650,GPN,Global Payments Inc. Common Stock,1,Strong Buy
+651,CARR,Carrier Global Corporation Common Stock ,1,Buy
+652,EBAY,eBay Inc. Common Stock,1,Buy
+653,MAR,Marriott International Class A Common Stock,1,Buy
+654,PANW,Palo Alto Networks Inc. Common Stock,1,Strong Buy
+655,CDNS,Cadence Design Systems Inc. Common Stock,1,Strong Buy
+656,AIG,American International Group Inc. New Common Stock,1,Buy
+657,NEM,Newmont Corporation,1,Strong Buy
+658,LHX,L3Harris Technologies Inc. Common Stock,1,Strong Buy
+659,APH,Amphenol Corporation Common Stock,1,Strong Buy
+660,BK,The Bank of New York Mellon Corporation Common Stock,1,Strong Buy
+661,DOW,Dow Inc. Common Stock ,1,Buy
+662,BIIB,Biogen Inc. Common Stock,1,Buy
+663,MCHP,Microchip Technology Incorporated Common Stock,1,Strong Buy
+664,TT,Trane Technologies plc,1,Buy
+665,KHC,The Kraft Heinz Company Common Stock,1,Buy
+666,DLR,Digital Realty Trust Inc. Common Stock,1,Strong Buy
+667,MTCH,Match Group Inc. Common Stock,1,Strong Buy
+668,EOG,EOG Resources Inc. Common Stock,1,Strong Buy
+669,SPOT,Spotify Technology S.A. Ordinary Shares,1,Strong Buy
+670,AEP,American Electric Power Company Inc. Common Stock,1,Strong Buy
+671,SRE,DBA Sempra Common Stock,1,Buy
+672,WBA,Walgreens Boots Alliance Inc. Common Stock,1,Buy
+673,SPG,Simon Property Group Inc. Common Stock,1,Buy
+674,RMD,ResMed Inc. Common Stock,1,Buy
+675,BAX,Baxter International Inc. Common Stock,1,Strong Buy
+676,STZ,Constellation Brands Inc. Common Stock,1,Strong Buy
+677,APTV,Aptiv PLC Ordinary Shares,1,Strong Buy
+678,VEEV,Veeva Systems Inc. Class A Common Stock,1,Strong Buy
+679,ORLY,O'Reilly Automotive Inc. Common Stock,1,Strong Buy
+680,MSI,Motorola Solutions Inc. Common Stock,1,Strong Buy
+681,CTAS,Cintas Corporation Common Stock,1,Strong Buy
+682,SLB,Schlumberger N.V. Common Stock,1,Strong Buy
+683,ROKU,Roku Inc. Class A Common Stock,1,Strong Buy
+684,CTSH,Cognizant Technology Solutions Corporation Class A Common Stock,1,Strong Buy
+685,ROST,Ross Stores Inc. Common Stock,1,Strong Buy
+686,RSG,Republic Services Inc. Common Stock,1,Buy
+687,PAYX,Paychex Inc. Common Stock,1,Buy
+688,NET,Cloudflare Inc. Class A Common Stock,1,Strong Buy
+689,TRV,The Travelers Companies Inc. Common Stock,1,Buy
+690,SYY,Sysco Corporation Common Stock,1,Strong Buy
+691,XLNX,Xilinx Inc. Common Stock,1,Buy
+692,EA,Electronic Arts Inc. Common Stock,1,Strong Buy
+693,SBAC,SBA Communications Corporation Class A Common Stock,1,Strong Buy
+694,ALL,Allstate Corporation (The) Common Stock,1,Buy
+695,PXD,Pioneer Natural Resources Company Common Stock,1,Strong Buy
+696,OTIS,Otis Worldwide Corporation Common Stock ,1,Strong Buy
+697,MPC,Marathon Petroleum Corporation Common Stock,1,Strong Buy
+698,YUM,Yum! Brands Inc.,1,Buy
+699,KKR,KKR & Co. Inc. Common Stock,1,Strong Buy
+700,PH,Parker-Hannifin Corporation Common Stock,1,Strong Buy
+701,ZS,Zscaler Inc. Common Stock,1,Strong Buy
+702,OKTA,Okta Inc. Class A Common Stock,1,Strong Buy
+703,U,Unity Software Inc. Common Stock,1,Strong Buy
+704,DFS,Discover Financial Services Common Stock,1,Buy
+705,ROK,Rockwell Automation Inc. Common Stock,1,Buy
+706,WELL,Welltower Inc. Common Stock,1,Strong Buy
+707,AFL,AFLAC Incorporated Common Stock,1,Buy
+708,HLT,Hilton Worldwide Holdings Inc. Common Stock ,1,Buy
+709,DD,DuPont de Nemours Inc. Common Stock,1,Buy
+710,HSY,The Hershey Company Common Stock,1,Buy
+711,IFF,Internationa Flavors & Fragrances Inc. Common Stock,1,Strong Buy
+712,CNC,Centene Corporation Common Stock,1,Strong Buy
+713,PPG,PPG Industries Inc. Common Stock,1,Strong Buy
+714,GIS,General Mills Inc. Common Stock,1,Buy
+715,EPAM,EPAM Systems Inc. Common Stock,1,Strong Buy
+716,XEL,Xcel Energy Inc. Common Stock,1,Buy
+717,CPRT,Copart Inc. (DE) Common Stock,1,Strong Buy
+718,CSGP,CoStar Group Inc. Common Stock,1,Strong Buy
+719,ADM,Archer-Daniels-Midland Company Common Stock,1,Strong Buy
+720,FRC,FIRST REPUBLIC BANK Common Stock,1,Buy
+721,AZO,AutoZone Inc. Common Stock,1,Strong Buy
+722,TDG,Transdigm Group Incorporated Transdigm Group Inc. Common Stock,1,Strong Buy
+723,SIVB,SVB Financial Group Common Stock,1,Buy
+724,ODFL,Old Dominion Freight Line Inc. Common Stock,1,Buy
+725,CMI,Cummins Inc. Common Stock,1,Buy
+726,PINS,Pinterest Inc. Class A Common Stock,1,Buy
+727,WST,West Pharmaceutical Services Inc. Common Stock,1,Strong Buy
+728,DDOG,Datadog Inc. Class A Common Stock,1,Strong Buy
+729,AWK,American Water Works Company Inc. Common Stock,1,Buy
+730,MDB,MongoDB Inc. Class A Common Stock,1,Strong Buy
+731,EFX,Equifax Inc. Common Stock,1,Buy
+732,KEYS,Keysight Technologies Inc. Common Stock,1,Strong Buy
+733,VRSK,Verisk Analytics Inc. Common Stock,1,Strong Buy
+734,GLW,Corning Incorporated Common Stock,1,Strong Buy
+735,NDAQ,Nasdaq Inc. Common Stock,1,Strong Buy
+736,CBRE,CBRE Group Inc Common Stock Class A,1,Strong Buy
+737,GRMN,Garmin Ltd. Common Stock (Switzerland),1,Buy
+738,ANSS,ANSYS Inc. Common Stock,1,Buy
+739,MCK,McKesson Corporation Common Stock,1,Strong Buy
+740,HPQ,HP Inc. Common Stock,1,Buy
+741,NUE,Nucor Corporation Common Stock,1,Buy
+742,HUBS,HubSpot Inc. Common Stock,1,Strong Buy
+743,PEG,Public Service Enterprise Group Incorporated Common Stock,1,Strong Buy
+744,DHI,D.R. Horton Inc. Common Stock,1,Strong Buy
+745,LYB,LyondellBasell Industries NV Ordinary Shares Class A (Netherlands),1,Buy
+746,LBRDA,Liberty Broadband Corporation Class A Common Stock,1,Strong Buy
+747,LBRDK,Liberty Broadband Corporation Class C Common Stock,1,Strong Buy
+748,CTVA,Corteva Inc. Common Stock ,1,Strong Buy
+749,AVB,AvalonBay Communities Inc. Common Stock,1,Buy
+750,WMB,Williams Companies Inc. (The) Common Stock,1,Strong Buy
+751,AJG,Arthur J. Gallagher & Co. Common Stock,1,Strong Buy
+752,ZBRA,Zebra Technologies Corporation Class A Common Stock,1,Buy
+753,FAST,Fastenal Company Common Stock,1,Buy
+754,AMP,Ameriprise Financial Inc. Common Stock,1,Strong Buy
+755,TTD,The Trade Desk Inc. Class A Common Stock,1,Strong Buy
+756,EQR,Equity Residential Common Shares of Beneficial Interest,1,Buy
+757,WLTW,Willis Towers Watson Public Limited Company Ordinary Shares,1,Buy
+758,ZBH,Zimmer Biomet Holdings Inc. Common Stock,1,Strong Buy
+759,BLL,Ball Corporation Common Stock,1,Buy
+760,AME,AMETEK Inc.,1,Strong Buy
+761,ARE,Alexandria Real Estate Equities Inc. Common Stock,1,Strong Buy
+762,SWK,Stanley Black & Decker Inc. Common Stock,1,Strong Buy
+763,LEN,Lennar Corporation Class A Common Stock,1,Buy
+764,STT,State Street Corporation Common Stock,1,Strong Buy
+765,ES,Eversource Energy (D/B/A) Common Stock,1,Buy
+766,PCAR,PACCAR Inc. Common Stock,1,Buy
+767,SWKS,Skyworks Solutions Inc. Common Stock,1,Strong Buy
+768,LVS,Las Vegas Sands Corp. Common Stock,1,Buy
+769,WEC,WEC Energy Group Inc. Common Stock,1,Buy
+770,PSX,Phillips 66 Common Stock,1,Buy
+771,LH,Laboratory Corporation of America Holdings Common Stock,1,Strong Buy
+772,LUV,Southwest Airlines Company Common Stock,1,Strong Buy
+773,PTON,Peloton Interactive Inc. Class A Common Stock,1,Strong Buy
+774,PAYC,Paycom Software Inc. Common Stock,1,Strong Buy
+775,LSXMA,Liberty Media Corporation Series A Liberty SiriusXM Common Stock,1,Strong Buy
+776,LSXMK,Liberty Media Corporation Series C Liberty SiriusXM Common Stock,1,Strong Buy
+777,FWONK,Liberty Media Corporation Series C Liberty Formula One Common Stock,1,Strong Buy
+778,FWONA,Liberty Media Corporation Series A Liberty Formula One Common Stock,1,Buy
+779,GNRC,Generac Holdlings Inc. Common Stock,1,Strong Buy
+780,FITB,Fifth Third Bancorp Common Stock,1,Strong Buy
+781,TSN,Tyson Foods Inc. Common Stock,1,Buy
+782,SGEN,Seagen Inc. Common Stock,1,Buy
+783,ANET,Arista Networks Inc. Common Stock,1,Strong Buy
+784,ETSY,Etsy Inc. Common Stock,1,Strong Buy
+785,SYF,Synchrony Financial Common Stock,1,Strong Buy
+786,BILL,Bill.com Holdings Inc. Common Stock,1,Strong Buy
+787,ALB,Albemarle Corporation Common Stock,1,Buy
+788,VLO,Valero Energy Corporation Common Stock,1,Strong Buy
+789,VFC,V.F. Corporation Common Stock,1,Strong Buy
+790,BBY,Best Buy Co. Inc. Common Stock,1,Buy
+791,CDW,CDW Corporation Common Stock,1,Buy
+792,FTV,Fortive Corporation Common Stock ,1,Buy
+793,O,Realty Income Corporation Common Stock,1,Strong Buy
+794,IT,Gartner Inc. Common Stock,1,Buy
+795,WY,Weyerhaeuser Company Common Stock,1,Strong Buy
+796,VIAC,ViacomCBS Inc. Class B Common Stock,1,Buy
+797,ABC,AmerisourceBergen Corporation Common Stock,1,Buy
+798,OXY,Occidental Petroleum Corporation Common Stock,1,Buy
+799,BKR,Baker Hughes Company Class A Common Stock,1,Strong Buy
+800,KSU,Kansas City Southern Common Stock,1,Buy
+801,CCL,Carnival Corporation Common Stock,1,Buy
+802,DAL,Delta Air Lines Inc. Common Stock,1,Strong Buy
+803,WAT,Waters Corporation Common Stock,1,Buy
+804,VRSN,VeriSign Inc. Common Stock,1,Strong Buy
+805,AVTR,Avantor Inc. Common Stock,1,Strong Buy
+806,OKE,ONEOK Inc. Common Stock,1,Strong Buy
+807,URI,United Rentals Inc. Common Stock,1,Buy
+808,EXR,Extra Space Storage Inc Common Stock,1,Strong Buy
+809,SPLK,Splunk Inc. Common Stock,1,Strong Buy
+810,SIRI,Sirius XM Holdings Inc. Common Stock,1,Strong Buy
+811,HIG,Hartford Financial Services Group Inc. (The) Common Stock,1,Strong Buy
+812,PCG,Pacific Gas & Electric Co. Common Stock,1,Buy
+813,YUMC,Yum China Holdings Inc. Common Stock,1,Buy
+814,XYL,Xylem Inc. Common Stock New,1,Buy
+815,DOV,Dover Corporation Common Stock,1,Buy
+816,DKNG,DraftKings Inc. Class A Common Stock,1,Strong Buy
+817,HZNP,Horizon Therapeutics Public Limited Company Ordinary Shares,1,Strong Buy
+818,COO,The Cooper Companies Inc. Common Stock,1,Strong Buy
+819,CTLT,Catalent Inc. Common Stock,1,Strong Buy
+820,BIO,Bio-Rad Laboratories Inc. Class A Common Stock,1,Strong Buy
+821,TSCO,Tractor Supply Company Common Stock,1,Strong Buy
+822,INVH,Invitation Homes Inc. Common Stock,1,Strong Buy
+823,VMC,Vulcan Materials Company (Holding Company) Common Stock,1,Buy
+824,TRMB,Trimble Inc. Common Stock,1,Buy
+825,IR,Ingersoll Rand Inc. Common Stock,1,Strong Buy
+826,NTRS,Northern Trust Corporation Common Stock,1,Buy
+827,CZR,Caesars Entertainment Inc. Common Stock,1,Strong Buy
+828,SUI,Sun Communities Inc. Common Stock,1,Strong Buy
+829,MPWR,Monolithic Power Systems Inc. Common Stock,1,Strong Buy
+830,ETR,Entergy Corporation Common Stock,1,Strong Buy
+831,PPL,PPL Corporation Common Stock,1,Buy
+832,DTE,DTE Energy Company Common Stock,1,Buy
+833,IP,International Paper Company Common Stock,1,Buy
+834,DISH,DISH Network Corporation Class A Common Stock,1,Buy
+835,ZG,Zillow Group Inc. Class A Common Stock,1,Strong Buy
+836,TRU,TransUnion Common Stock,1,Strong Buy
+837,MLM,Martin Marietta Materials Inc. Common Stock,1,Buy
+838,HES,Hess Corporation Common Stock,1,Strong Buy
+839,EIX,Edison International Common Stock,1,Buy
+840,KMX,CarMax Inc,1,Strong Buy
+841,ALNY,Alnylam Pharmaceuticals Inc. Common Stock,1,Strong Buy
+842,HBAN,Huntington Bancshares Incorporated Common Stock,1,Strong Buy
+843,CRL,Charles River Laboratories International Inc. Common Stock,1,Strong Buy
+844,EXPE,Expedia Group Inc. Common Stock,1,Buy
+845,MAA,Mid-America Apartment Communities Inc. Common Stock,1,Buy
+846,AEE,Ameren Corporation Common Stock,1,Buy
+847,CERN,Cerner Corporation Common Stock,1,Strong Buy
+848,K,Kellogg Company Common Stock,1,Buy
+849,VTR,Ventas Inc. Common Stock,1,Buy
+850,UPST,Upstart Holdings Inc. Common stock,1,Strong Buy
+851,FLT,FleetCor Technologies Inc. Common Stock,1,Strong Buy
+852,GWW,W.W. Grainger Inc. Common Stock,1,Buy
+853,STE,STERIS plc (Ireland) Ordinary Shares,1,Strong Buy
+854,W,Wayfair Inc. Class A Common Stock,1,Buy
+855,TDOC,Teladoc Health Inc. Common Stock,1,Buy
+856,ESS,Essex Property Trust Inc. Common Stock,1,Buy
+857,RCL,D/B/A Royal Caribbean Cruises Ltd. Common Stock,1,Buy
+858,ON,ON Semiconductor Corporation Common Stock,1,Strong Buy
+859,PKI,PerkinElmer Inc. Common Stock,1,Buy
+860,ENPH,Enphase Energy Inc. Common Stock,1,Strong Buy
+861,NTAP,NetApp Inc. Common Stock,1,Strong Buy
+862,TECH,Bio-Techne Corp Common Stock,1,Strong Buy
+863,FE,FirstEnergy Corp. Common Stock,1,Buy
+864,CHD,Church & Dwight Company Inc. Common Stock,1,Buy
+865,DVN,Devon Energy Corporation Common Stock,1,Strong Buy
+866,ULTA,Ulta Beauty Inc. Common Stock,1,Strong Buy
+867,FOX,Fox Corporation Class B Common Stock,1,Strong Buy
+868,FOXA,Fox Corporation Class A Common Stock,1,Strong Buy
+869,TER,Teradyne Inc. Common Stock,1,Strong Buy
+870,DT,Dynatrace Inc. Common Stock,1,Strong Buy
+871,TDY,Teledyne Technologies Incorporated Common Stock,1,Strong Buy
+872,KEY,KeyCorp Common Stock,1,Buy
+873,PODD,Insulet Corporation Common Stock,1,Buy
+874,QRVO,Qorvo Inc. Common Stock,1,Strong Buy
+875,DLTR,Dollar Tree Inc. Common Stock,1,Buy
+876,BR,Broadridge Financial Solutions Inc.Common Stock,1,Buy
+877,HOLX,Hologic Inc. Common Stock,1,Strong Buy
+878,UI,Ubiquiti Inc. Common Stock,1,Buy
+879,MGM,MGM Resorts International Common Stock,1,Buy
+880,DRI,Darden Restaurants Inc. Common Stock,1,Strong Buy
+881,BSY,Bentley Systems Incorporated Class B Common Stock,1,Strong Buy
+882,BURL,Burlington Stores Inc. Common Stock,1,Strong Buy
+883,DRE,Duke Realty Corporation Common Stock,1,Strong Buy
+884,POOL,Pool Corporation Common Stock,1,Strong Buy
+885,AMCR,Amcor plc Ordinary Shares,1,Buy
+886,TYL,Tyler Technologies Inc. Common Stock,1,Strong Buy
+887,DGX,Quest Diagnostics Incorporated Common Stock,1,Strong Buy
+888,PEAK,Healthpeak Properties Inc. Common Stock,1,Buy
+889,LYV,Live Nation Entertainment Inc. Common Stock,1,Buy
+890,ALLY,Ally Financial Inc. Common Stock,1,Strong Buy
+891,RF,Regions Financial Corporation Common Stock,1,Buy
+892,CINF,Cincinnati Financial Corporation Common Stock,1,Buy
+893,RJF,Raymond James Financial Inc. Common Stock,1,Strong Buy
+894,CFG,Citizens Financial Group Inc. Common Stock,1,Strong Buy
+895,DPZ,Domino's Pizza Inc Common Stock,1,Buy
+896,HAL,Halliburton Company Common Stock,1,Strong Buy
+897,AVY,Avery Dennison Corporation Common Stock,1,Buy
+898,ROL,Rollins Inc. Common Stock,1,Buy
+899,AKAM,Akamai Technologies Inc. Common Stock,1,Strong Buy
+900,SSNC,SS&C Technologies Holdings Inc. Common Stock,1,Buy
+901,CMS,CMS Energy Corporation Common Stock,1,Strong Buy
+902,TFX,Teleflex Incorporated Common Stock,1,Strong Buy
+903,VICI,VICI Properties Inc. Common Stock,1,Strong Buy
+904,JBHT,J.B. Hunt Transport Services Inc. Common Stock,1,Buy
+905,EXAS,Exact Sciences Corporation Common Stock,1,Strong Buy
+906,WDC,Western Digital Corporation Common Stock,1,Strong Buy
+907,HPE,Hewlett Packard Enterprise Company Common Stock,1,Strong Buy
+908,CG,The Carlyle Group Inc. Common Stock,1,Strong Buy
+909,COUP,Coupa Software Incorporated Common Stock,1,Buy
+910,RNG,RingCentral Inc. Class A Common Stock,1,Strong Buy
+911,TTWO,Take-Two Interactive Software Inc. Common Stock,1,Strong Buy
+912,GPC,Genuine Parts Company Common Stock,1,Buy
+913,ENTG,Entegris Inc. Common Stock,1,Buy
+914,PFG,Principal Financial Group Inc Common Stock,1,Buy
+915,J,Jacobs Engineering Group Inc. Common Stock,1,Strong Buy
+916,MTB,M&T Bank Corporation Common Stock,1,Buy
+917,NVR,NVR Inc. Common Stock,1,Buy
+918,NUAN,Nuance Communications Inc. Common Stock,1,Buy
+919,BXP,Boston Properties Inc. Common Stock,1,Buy
+920,NVAX,Novavax Inc. Common Stock,1,Strong Buy
+921,BBWI,Bath & Body Works Inc.,1,Strong Buy
+922,WAB,Westinghouse Air Brake Technologies Corporation Common Stock,1,Strong Buy
+923,CE,Celanese Corporation Celanese Corporation Common Stock,1,Strong Buy
+924,MKL,Markel Corporation Common Stock,1,Strong Buy
+925,IEX,IDEX Corporation Common Stock,1,Strong Buy
+926,LYFT,Lyft Inc. Class A Common Stock,1,Strong Buy
+927,VTRS,Viatris Inc. Common Stock,1,Buy
+928,PWR,Quanta Services Inc. Common Stock,1,Strong Buy
+929,PPD,PPD Inc. Common Stock,1,Buy
+930,RGEN,Repligen Corporation Common Stock,1,Strong Buy
+931,INCY,Incyte Corp. Common Stock,1,Buy
+932,RPRX,Royalty Pharma plc Class A Ordinary Shares ,1,Strong Buy
+933,HEI,Heico Corporation Common Stock,1,Buy
+934,BRO,Brown & Brown Inc. Common Stock,1,Buy
+935,MKTX,MarketAxess Holdings Inc. Common Stock,1,Buy
+936,CDAY,Ceridian HCM Holding Inc. Common Stock,1,Buy
+937,ABMD,ABIOMED Inc. Common Stock,1,Strong Buy
+938,AES,The AES Corporation Common Stock,1,Strong Buy
+939,CAG,ConAgra Brands Inc. Common Stock,1,Buy
+940,UDR,UDR Inc. Common Stock,1,Strong Buy
+941,CGNX,Cognex Corporation Common Stock,1,Buy
+942,OMC,Omnicom Group Inc. Common Stock,1,Buy
+943,AVLR,Avalara Inc. Common Stock,1,Strong Buy
+944,VMW,Vmware Inc. Common stock Class A,1,Buy
+945,TXT,Textron Inc. Common Stock,1,Strong Buy
+946,CLR,Continental Resources Inc. Common Stock,1,Buy
+947,ACGL,Arch Capital Group Ltd. Common Stock,1,Buy
+948,MOH,Molina Healthcare Inc Common Stock,1,Strong Buy
+949,CLVT,Clarivate Plc Ordinary Shares,1,Strong Buy
+950,LKQ,LKQ Corporation Common Stock,1,Strong Buy
+951,CVNA,Carvana Co. Class A Common Stock,1,Strong Buy
+952,ELAN,Elanco Animal Health Incorporated Common Stock,1,Buy
+953,NLOK,NortonLifeLock Inc. Common Stock,1,Strong Buy
+954,CPT,Camden Property Trust Common Stock,1,Strong Buy
+955,ELS,Equity Lifestyle Properties Inc. Common Stock,1,Strong Buy
+956,CAH,Cardinal Health Inc. Common Stock,1,Buy
+957,MASI,Masimo Corporation Common Stock,1,Strong Buy
+958,PCTY,Paylocity Holding Corporation Common Stock,1,Strong Buy
+959,CNP,CenterPoint Energy Inc (Holding Co) Common Stock,1,Buy
+960,EVRG,Evergy Inc. Common Stock,1,Buy
+961,LNT,Alliant Energy Corporation Common Stock,1,Buy
+962,IPG,Interpublic Group of Companies Inc. (The) Common Stock,1,Buy
+963,FANG,Diamondback Energy Inc. Commmon Stock,1,Strong Buy
+964,PTC,PTC Inc. Common Stock,1,Strong Buy
+965,ESTC,Elastic N.V. Ordinary Shares,1,Strong Buy
+966,CCK,Crown Holdings Inc.,1,Strong Buy
+967,RH,RH Common Stock,1,Strong Buy
+968,ZEN,Zendesk Inc. Common Stock,1,Strong Buy
+969,MAS,Masco Corporation Common Stock,1,Buy
+970,EMN,Eastman Chemical Company Common Stock,1,Strong Buy
+971,ACI,Albertsons Companies Inc. Class A Common Stock,1,Buy
+972,UAL,United Airlines Holdings Inc. Common Stock,1,Buy
+973,BMRN,BioMarin Pharmaceutical Inc. Common Stock,1,Strong Buy
+974,NDSN,Nordson Corporation Common Stock,1,Buy
+975,TXG,10x Genomics Inc. Class A Common Stock,1,Strong Buy
+976,PLUG,Plug Power Inc. Common Stock,1,Buy
+977,WPC,W. P. Carey Inc. REIT,1,Strong Buy
+978,CTXS,Citrix Systems Inc. Common Stock,1,Buy
+979,HWM,Howmet Aerospace Inc. Common Stock,1,Strong Buy
+980,WSM,Williams-Sonoma Inc. Common Stock (DE),1,Buy
+981,WHR,Whirlpool Corporation Common Stock,1,Buy
+982,XRAY,DENTSPLY SIRONA Inc. Common Stock,1,Strong Buy
+983,WRK,Westrock Company Common Stock,1,Strong Buy
+984,FND,Floor & Decor Holdings Inc. Common Stock,1,Strong Buy
+985,HAS,Hasbro Inc. Common Stock,1,Strong Buy
+986,ATH,Athene Holding Ltd. Class A Common Shares,1,Buy
+987,KIM,Kimco Realty Corporation Common Stock,1,Strong Buy
+988,LDOS,Leidos Holdings Inc. Common Stock,1,Strong Buy
+989,DISCA,Discovery Inc. Series A Common Stock,1,Buy
+990,STLD,Steel Dynamics Inc.,1,Strong Buy
+991,FBHS,Fortune Brands Home & Security Inc. Common Stock,1,Strong Buy
+992,NVCR,NovoCure Limited Ordinary Shares,1,Buy
+993,FNF,FNF Group of Fidelity National Financial Inc. Common Stock,1,Strong Buy
+994,AMH,American Homes 4 Rent Common Shares of Beneficial Interest,1,Strong Buy
+995,IRM,Iron Mountain Incorporated (Delaware)Common Stock REIT,1,Buy
+996,GLOB,Globant S.A. Common Shares,1,Strong Buy
+997,GGG,Graco Inc. Common Stock,1,Buy
+998,MHK,Mohawk Industries Inc. Common Stock,1,Buy
+999,AAP,Advance Auto Parts Inc Advance Auto Parts Inc W/I,1,Buy
+1000,PNR,Pentair plc. Ordinary Share,1,Buy
+1001,NWSA,News Corporation Class A Common Stock,1,Strong Buy
+1002,BRKR,Bruker Corporation Common Stock,1,Buy
+1003,GH,Guardant Health Inc. Common Stock,1,Strong Buy
+1004,MOS,Mosaic Company (The) Common Stock,1,Strong Buy
+1005,DVA,DaVita Inc. Common Stock,1,Buy
+1006,WRB,W.R. Berkley Corporation Common Stock,1,Buy
+1007,ARES,Ares Management Corporation Class A Common Stock,1,Strong Buy
+1008,SC,Santander Consumer USA Holdings Inc. Common Stock,1,Buy
+1009,FICO,Fair Isaac Corproation Common Stock,1,Strong Buy
+1010,FMC,FMC Corporation Common Stock,1,Strong Buy
+1011,JKHY,Jack Henry & Associates Inc. Common Stock,1,Buy
+1012,FFIV,F5 Networks Inc. Common Stock,1,Strong Buy
+1013,AAL,American Airlines Group Inc. Common Stock,1,Buy
+1014,GDDY,GoDaddy Inc. Class A Common Stock,1,Strong Buy
+1015,LNC,Lincoln National Corporation Common Stock,1,Buy
+1016,DAR,Darling Ingredients Inc. Common Stock,1,Strong Buy
+1017,OSH,Oak Street Health Inc. Common Stock,1,Strong Buy
+1018,NLY,Annaly Capital Management Inc Common Stock,1,Strong Buy
+1019,ALLE,Allegion plc Ordinary Shares,1,Buy
+1020,TREX,Trex Company Inc. Common Stock,1,Buy
+1021,UHS,Universal Health Services Inc. Common Stock,1,Buy
+1022,PHM,PulteGroup Inc. Common Stock,1,Strong Buy
+1023,JLL,Jones Lang LaSalle Incorporated Common Stock,1,Buy
+1024,QGEN,Qiagen N.V. Common Shares ,1,Buy
+1025,EQH,Equitable Holdings Inc. Common Stock,1,Strong Buy
+1026,AGL,agilon health inc. Common Stock,1,Strong Buy
+1027,MPW,Medical Properties Trust Inc. common stock,1,Strong Buy
+1028,DECK,Deckers Outdoor Corporation Common Stock,1,Strong Buy
+1029,PENN,Penn National Gaming Inc. Common Stock,1,Buy
+1030,CABO,Cable One Inc. Common Stock,1,Buy
+1031,CHRW,C.H. Robinson Worldwide Inc. Common Stock,1,Buy
+1032,WIX,Wix.com Ltd. Ordinary Shares,1,Strong Buy
+1033,ATUS,Altice USA Inc. Class A Common Stock,1,Buy
+1034,SNA,Snap-On Incorporated Common Stock,1,Buy
+1035,HST,Host Hotels & Resorts Inc. Common Stock,1,Buy
+1036,IVZ,Invesco Ltd Common Stock,1,Buy
+1037,MTN,Vail Resorts Inc. Common Stock,1,Buy
+1038,ATO,Atmos Energy Corporation Common Stock,1,Strong Buy
+1039,LPLA,LPL Financial Holdings Inc. Common Stock,1,Strong Buy
+1040,AXON,Axon Enterprise Inc. Common Stock,1,Strong Buy
+1041,REG,Regency Centers Corporation Common Stock,1,Buy
+1042,BKI,Black Knight Inc. Common Stock ,1,Strong Buy
+1043,WTRG,Essential Utilities Inc. Common Stock,1,Strong Buy
+1044,RHI,Robert Half International Inc. Common Stock,1,Buy
+1045,PLTK,Playtika Holding Corp. Common Stock,1,Strong Buy
+1046,CLF,Cleveland-Cliffs Inc. Common Stock,1,Buy
+1047,BG,Bunge Limited Bunge Limited,1,Buy
+1048,GLPI,Gaming and Leisure Properties Inc. Common Stock,1,Strong Buy
+1049,WLK,Westlake Chemical Corporation Common Stock,1,Strong Buy
+1050,NTRA,Natera Inc. Common Stock,1,Strong Buy
+1051,AFG,American Financial Group Inc. Common Stock,1,Buy
+1052,IAC,IAC/InterActiveCorp Common Stock,1,Strong Buy
+1053,TPR,Tapestry Inc. Common Stock,1,Strong Buy
+1054,FIVN,Five9 Inc. Common Stock,1,Buy
+1055,FSLR,First Solar Inc. Common Stock,1,Buy
+1056,AOS,A.O. Smith Corporation Common Stock,1,Buy
+1057,BLDR,Builders FirstSource Inc. Common Stock,1,Strong Buy
+1058,HSIC,Henry Schein Inc. Common Stock,1,Buy
+1059,BAH,Booz Allen Hamilton Holding Corporation Common Stock,1,Strong Buy
+1060,WSO,Watsco Inc. Common Stock,1,Buy
+1061,STNE,StoneCo Ltd. Class A Common Shares,1,Buy
+1062,NRG,NRG Energy Inc. Common Stock,1,Strong Buy
+1063,PEGA,Pegasystems Inc. Common Stock,1,Strong Buy
+1064,NWL,Newell Brands Inc. Common Stock,1,Buy
+1065,CHGG,Chegg Inc. Common Stock,1,Strong Buy
+1066,TRGP,Targa Resources Inc. Common Stock,1,Strong Buy
+1067,CUBE,CubeSmart Common Shares,1,Buy
+1068,PEN,Penumbra Inc. Common Stock,1,Strong Buy
+1069,BWA,BorgWarner Inc. Common Stock,1,Strong Buy
+1070,EWBC,East West Bancorp Inc. Common Stock,1,Strong Buy
+1071,CF,CF Industries Holdings Inc. Common Stock,1,Strong Buy
+1072,HUBB,Hubbell Inc Common Stock,1,Strong Buy
+1073,WAL,Western Alliance Bancorporation Common Stock (DE),1,Strong Buy
+1074,SCI,Service Corporation International Common Stock,1,Strong Buy
+1075,MANH,Manhattan Associates Inc. Common Stock,1,Strong Buy
+1076,FIVE,Five Below Inc. Common Stock,1,Strong Buy
+1077,DOX,Amdocs Limited Ordinary Shares,1,Strong Buy
+1078,OPEN,Opendoor Technologies Inc Common Stock,1,Strong Buy
+1079,RPM,RPM International Inc. Common Stock,1,Buy
+1080,CSL,Carlisle Companies Incorporated Common Stock,1,Strong Buy
+1081,TAP,Molson Coors Beverage Company Class B Common Stock,1,Buy
+1082,RE,Everest Re Group Ltd. Common Stock,1,Strong Buy
+1083,CREE,Cree Inc. Common Stock,1,Buy
+1084,WYNN,Wynn Resorts Limited Common stock,1,Buy
+1085,GWRE,Guidewire Software Inc. Common Stock,1,Buy
+1086,MRO,Marathon Oil Corporation Common Stock,1,Strong Buy
+1087,HRC,Hill-Rom Holdings Inc Common Stock,1,Buy
+1088,AGCO,AGCO Corporation Common Stock,1,Strong Buy
+1089,CMA,Comerica Incorporated Common Stock,1,Buy
+1090,LAD,Lithia Motors Inc. Common Stock,1,Strong Buy
+1091,OC,Owens Corning Inc Common Stock New,1,Buy
+1092,LSI,Life Storage Inc. Common Stock,1,Strong Buy
+1093,DBX,Dropbox Inc. Class A Common Stock,1,Strong Buy
+1094,TPL,Texas Pacific Land Corporation Common Stock,1,Buy
+1095,MIDD,Middleby Corporation (The) Common Stock,1,Strong Buy
+1096,SYNH,Syneos Health Inc. Class A Common Stock,1,Strong Buy
+1097,AA,Alcoa Corporation Common Stock ,1,Strong Buy
+1098,AIZ,Assurant Inc. Common Stock,1,Strong Buy
+1099,LAMR,Lamar Advertising Company Class A Common Stock,1,Buy
+1100,LEA,Lear Corporation Common Stock,1,Strong Buy
+1101,ACM,AECOM Common Stock,1,Strong Buy
+1102,RS,Reliance Steel & Aluminum Co. Common Stock (DE),1,Strong Buy
+1103,PLAN,Anaplan Inc. Common Stock,1,Strong Buy
+1104,XPO,XPO Logistics Inc.,1,Strong Buy
+1105,CONE,CyrusOne Inc Common Stock,1,Strong Buy
+1106,NI,NiSource Inc Common Stock,1,Strong Buy
+1107,G,Genpact Limited Common Stock,1,Strong Buy
+1108,ZION,Zions Bancorporation N.A. Common Stock,1,Buy
+1109,TPX,Tempur Sealy International Inc. Common Stock,1,Strong Buy
+1110,GL,Globe Life Inc. Common Stock,1,Buy
+1111,FRT,Federal Realty Investment Trust Common Stock,1,Buy
+1112,STOR,STORE Capital Corporation Common Stock,1,Buy
+1113,OLED,Universal Display Corporation Common Stock,1,Strong Buy
+1114,COLD,Americold Realty Trust Common Shares,1,Buy
+1115,IPGP,IPG Photonics Corporation Common Stock,1,Strong Buy
+1116,UTHR,United Therapeutics Corporation Common Stock,1,Strong Buy
+1117,SMAR,Smartsheet Inc. Class A Common Stock,1,Strong Buy
+1118,JBL,Jabil Inc. Common Stock,1,Strong Buy
+1119,UGI,UGI Corporation Common Stock,1,Strong Buy
+1120,UAA,Under Armour Inc. Class A Common Stock,1,Buy
+1121,JNPR,Juniper Networks Inc. Common Stock,1,Buy
+1122,GXO,GXO Logistics Inc. Common Stock ,1,Strong Buy
+1123,NBIX,Neurocrine Biosciences Inc. Common Stock,1,Strong Buy
+1124,ST,Sensata Technologies Holding plc Ordinary Shares,1,Strong Buy
+1125,JEF,Jefferies Financial Group Inc. Common Stock,1,Strong Buy
+1126,DXC,DXC Technology Company Common Stock ,1,Strong Buy
+1127,CNXC,Concentrix Corporation Common Stock,1,Strong Buy
+1128,TW,Tradeweb Markets Inc. Class A Common Stock,1,Buy
+1129,GPS,Gap Inc. (The) Common Stock,1,Buy
+1130,SITE,SiteOne Landscape Supply Inc. Common Stock,1,Buy
+1131,YETI,YETI Holdings Inc. Common Stock,1,Strong Buy
+1132,LW,Lamb Weston Holdings Inc. Common Stock ,1,Strong Buy
+1133,RUN,Sunrun Inc. Common Stock,1,Strong Buy
+1134,ZNGA,Zynga Inc. Class A Common Stock,1,Strong Buy
+1135,KNX,Knight-Swift Transportation Holdings Inc.,1,Strong Buy
+1136,NTNX,Nutanix Inc. Class A Common Stock,1,Strong Buy
+1137,SEE,Sealed Air Corporation Common Stock,1,Strong Buy
+1138,Y,Alleghany Corporation Common Stock,1,Strong Buy
+1139,MRTX,Mirati Therapeutics Inc. Common Stock,1,Buy
+1140,DKS,Dick's Sporting Goods Inc Common Stock,1,Strong Buy
+1141,AZPN,Aspen Technology Inc. Common Stock,1,Buy
+1142,BERY,Berry Global Group Inc. Common Stock,1,Strong Buy
+1143,VST,Vistra Corp. Common Stock,1,Strong Buy
+1144,OGN,Organon & Co. Common Stock ,1,Strong Buy
+1145,FHN,First Horizon Corporation Common Stock,1,Strong Buy
+1146,BFAM,Bright Horizons Family Solutions Inc. Common Stock,1,Buy
+1147,CHDN,Churchill Downs Incorporated Common Stock,1,Strong Buy
+1148,WU,Western Union Company (The) Common Stock,1,Buy
+1149,SEIC,SEI Investments Company Common Stock,1,Buy
+1150,MKSI,MKS Instruments Inc. Common Stock,1,Strong Buy
+1151,AGNC,AGNC Investment Corp. Common Stock,1,Strong Buy
+1152,ERIE,Erie Indemnity Company Class A Common Stock,1,Buy
+1153,REXR,Rexford Industrial Realty Inc. Common Stock,1,Strong Buy
+1154,VRT,Vertiv Holdings LLC Class A Common Stock,1,Strong Buy
+1155,NYT,New York Times Company (The) Common Stock,1,Strong Buy
+1156,CIEN,Ciena Corporation Common Stock,1,Buy
+1157,XEC,Cimarex Energy Co Common Stock,1,Strong Buy
+1158,ATR,AptarGroup Inc. Common Stock,1,Buy
+1159,ARMK,Aramark Common Stock,1,Buy
+1160,RL,Ralph Lauren Corporation Common Stock,1,Buy
+1161,GMED,Globus Medical Inc. Class A Common Stock,1,Buy
+1162,JAZZ,Jazz Pharmaceuticals plc Common Stock (Ireland),1,Strong Buy
+1163,XLRN,Acceleron Pharma Inc. Common Stock,1,Strong Buy
+1164,SMG,Scotts Miracle-Gro Company (The) Common Stock,1,Strong Buy
+1165,HII,Huntington Ingalls Industries Inc. Common Stock,1,Buy
+1166,COG,Cabot Oil & Gas Corporation Common Stock,1,Buy
+1167,LECO,Lincoln Electric Holdings Inc. Common Shares,1,Buy
+1168,OLN,Olin Corporation Common Stock,1,Strong Buy
+1169,NNN,National Retail Properties Common Stock,1,Strong Buy
+1170,AN,AutoNation Inc. Common Stock,1,Buy
+1171,KSS,Kohl's Corporation Common Stock,1,Buy
+1172,CPRI,Capri Holdings Limited Ordinary Shares,1,Strong Buy
+1173,AIRC,Apartment Income REIT Corp. Common Stock,1,Buy
+1174,ITT,ITT Inc. Common Stock ,1,Strong Buy
+1175,PVH,PVH Corp. Common Stock,1,Buy
+1176,APA,APA Corporation Common Stock,1,Strong Buy
+1177,WWD,Woodward Inc. Common Stock,1,Buy
+1178,EQT,EQT Corporation Common Stock,1,Strong Buy
+1179,TNDM,Tandem Diabetes Care Inc. Common Stock,1,Buy
+1180,SBNY,Signature Bank Common Stock,1,Strong Buy
+1181,RGA,Reinsurance Group of America Incorporated Common Stock,1,Buy
+1182,OHI,Omega Healthcare Investors Inc. Common Stock,1,Buy
+1183,WEX,WEX Inc. common stock,1,Buy
+1184,GNTX,Gentex Corporation Common Stock,1,Strong Buy
+1185,EHC,Encompass Health Corporation Common Stock,1,Strong Buy
+1186,KRC,Kilroy Realty Corporation Common Stock,1,Buy
+1187,PSTG,Pure Storage Inc. Class A Common Stock,1,Strong Buy
+1188,DCI,Donaldson Company Inc. Common Stock,1,Buy
+1189,BC,Brunswick Corporation Common Stock,1,Strong Buy
+1190,OSK,Oshkosh Corporation (Holding Company)Common Stock,1,Strong Buy
+1191,CHE,Chemed Corp,1,Strong Buy
+1192,FAF,First American Corporation (New) Common Stock,1,Strong Buy
+1193,DNB,Dun & Bradstreet Holdings Inc. Common Stock,1,Strong Buy
+1194,WMS,Advanced Drainage Systems Inc. Common Stock,1,Buy
+1195,OMF,OneMain Holdings Inc. Common Stock,1,Strong Buy
+1196,TSP,TuSimple Holdings Inc. Class A Common Stock,1,Strong Buy
+1197,PII,Polaris Inc. Common Stock,1,Buy
+1198,USFD,US Foods Holding Corp. Common Stock,1,Strong Buy
+1199,PAG,Penske Automotive Group Inc. Common Stock,1,Strong Buy
+1200,TOL,Toll Brothers Inc. Common Stock,1,Buy
+1201,NCNO,nCino Inc. Common Stock,1,Strong Buy
+1202,BLD,TopBuild Corp. Common Stock,1,Strong Buy
+1203,FCNCA,First Citizens BancShares Inc. Class A Common Stock,1,Strong Buy
+1204,NLSN,Nielsen N.V. Ordinary Shares,1,Buy
+1205,IAA,IAA Inc. Common Stock ,1,Strong Buy
+1206,RGLD,Royal Gold Inc. Common Stock,1,Buy
+1207,MAT,Mattel Inc. Common Stock,1,Strong Buy
+1208,BEPC,Brookfield Renewable Corporation Class A Subordinate Voting Shares ,1,Buy
+1209,ORI,Old Republic International Corporation Common Stock,1,Buy
+1210,STWD,STARWOOD PROPERTY TRUST INC. Starwood Property Trust Inc.,1,Strong Buy
+1211,VOYA,Voya Financial Inc. Common Stock,1,Buy
+1212,CASY,Casey's General Stores Inc. Common Stock,1,Buy
+1213,ALK,Alaska Air Group Inc. Common Stock,1,Strong Buy
+1214,SHC,Sotera Health Company Common Stock,1,Strong Buy
+1215,NVST,Envista Holdings Corporation Common Stock,1,Strong Buy
+1216,BYND,Beyond Meat Inc. Common Stock,1,Buy
+1217,FR,First Industrial Realty Trust Inc. Common Stock,1,Strong Buy
+1218,PNFP,Pinnacle Financial Partners Inc. Common Stock,1,Strong Buy
+1219,SF,Stifel Financial Corporation Common Stock,1,Buy
+1220,BRX,Brixmor Property Group Inc. Common Stock,1,Buy
+1221,OGE,OGE Energy Corp Common Stock,1,Buy
+1222,X,United States Steel Corporation Common Stock,1,Buy
+1223,ALGM,Allegro MicroSystems Inc. Common Stock,1,Strong Buy
+1224,ACC,American Campus Communities Inc Common Stock,1,Strong Buy
+1225,MTZ,MasTec Inc. Common Stock,1,Strong Buy
+1226,POST,Post Holdings Inc. Common Stock,1,Strong Buy
+1227,BRKS,Brooks Automation Inc.,1,Strong Buy
+1228,PPC,Pilgrim's Pride Corporation Common Stock,1,Strong Buy
+1229,WH,Wyndham Hotels & Resorts Inc. Common Stock ,1,Strong Buy
+1230,EEFT,Euronet Worldwide Inc. Common Stock,1,Strong Buy
+1231,CFX,Colfax Corporation Common Stock,1,Strong Buy
+1232,SRPT,Sarepta Therapeutics Inc. Common Stock (DE),1,Strong Buy
+1233,AXTA,Axalta Coating Systems Ltd. Common Shares,1,Buy
+1234,CHNG,Change Healthcare Inc. Common Stock,1,Buy
+1235,HTA,Healthcare Trust of America Inc. Class A Common Stock,1,Buy
+1236,LFUS,Littelfuse Inc. Common Stock,1,Strong Buy
+1237,HBI,Hanesbrands Inc. Common Stock,1,Strong Buy
+1238,BYD,Boyd Gaming Corporation Common Stock,1,Strong Buy
+1239,COLM,Columbia Sportswear Company Common Stock,1,Strong Buy
+1240,AMG,Affiliated Managers Group Inc. Common Stock,1,Strong Buy
+1241,CHPT,ChargePoint Holdings Inc. Common Stock,1,Strong Buy
+1242,VAC,Marriott Vacations Worldwide Corporation Common Stock,1,Strong Buy
+1243,RARE,Ultragenyx Pharmaceutical Inc. Common Stock,1,Strong Buy
+1244,DCT,Duck Creek Technologies Inc. Common Stock,1,Strong Buy
+1245,PLNT,Planet Fitness Inc. Common Stock,1,Buy
+1246,MAN,ManpowerGroup Common Stock,1,Strong Buy
+1247,EXEL,Exelixis Inc. Common Stock,1,Strong Buy
+1248,COTY,Coty Inc. Class A Common Stock,1,Buy
+1249,SRCL,Stericycle Inc. Common Stock,1,Buy
+1250,MDU,MDU Resources Group Inc. Common Stock (Holding Company),1,Strong Buy
+1251,LITE,Lumentum Holdings Inc. Common Stock,1,Strong Buy
+1252,LEG,Leggett & Platt Incorporated Common Stock,1,Buy
+1253,DLB,Dolby Laboratories Common Stock,1,Strong Buy
+1254,NXST,Nexstar Media Group Inc. Class A Common Stock,1,Strong Buy
+1255,SNX,Synnex Corporation Common Stock,1,Strong Buy
+1256,VNT,Vontier Corporation Common Stock ,1,Strong Buy
+1257,PB,Prosperity Bancshares Inc. Common Stock,1,Buy
+1258,SPCE,Virgin Galactic Holdings Inc. Common Stock,1,Buy
+1259,SKX,Skechers U.S.A. Inc. Common Stock,1,Strong Buy
+1260,QDEL,Quidel Corporation Common Stock,1,Buy
+1261,EVBG,Everbridge Inc. Common Stock,1,Strong Buy
+1262,THO,Thor Industries Inc. Common Stock,1,Buy
+1263,AYI,Acuity Brands Inc. ,1,Buy
+1264,RBC,Regal Beloit Corporation Common Stock,1,Strong Buy
+1265,MSA,MSA Safety Incorporated Common Stock,1,Buy
+1266,HUN,Huntsman Corporation Common Stock,1,Strong Buy
+1267,IBKR,Interactive Brokers Group Inc. Class A Common Stock,1,Strong Buy
+1268,PRGO,Perrigo Company plc Ordinary Shares,1,Buy
+1269,GPK,Graphic Packaging Holding Company,1,Buy
+1270,EXP,Eagle Materials Inc Common Stock,1,Strong Buy
+1271,NYCB,New York Community Bancorp Inc. Common Stock,1,Buy
+1272,HOG,Harley-Davidson Inc. Common Stock,1,Buy
+1273,CACI,CACI International Inc. Class A Common Stock,1,Strong Buy
+1274,SRC,Spirit Realty Capital Inc. Common Stock,1,Strong Buy
+1275,BPOP,Popular Inc. Common Stock,1,Strong Buy
+1276,FRPT,Freshpet Inc. Common Stock,1,Strong Buy
+1277,PRI,Primerica Inc. Common Stock,1,Buy
+1278,NFE,New Fortress Energy Inc. Class A Common Stock,1,Buy
+1279,AZEK,The AZEK Company Inc. Class A Common Stock,1,Strong Buy
+1280,BOKF,BOK Financial Corporation Common Stock,1,Buy
+1281,IART,Integra LifeSciences Holdings Corporation Common Stock,1,Buy
+1282,REYN,Reynolds Consumer Products Inc. Common Stock,1,Strong Buy
+1283,VVV,Valvoline Inc. Common Stock,1,Strong Buy
+1284,LPX,Louisiana-Pacific Corporation Common Stock,1,Strong Buy
+1285,DEI,Douglas Emmett Inc. Common Stock,1,Buy
+1286,SNV,Synovus Financial Corp. Common Stock,1,Strong Buy
+1287,DV,DoubleVerify Holdings Inc. Common Stock,1,Strong Buy
+1288,ASH,Ashland Global Holdings Inc. Common Stock,1,Strong Buy
+1289,CR,Crane Co. Common Stock,1,Strong Buy
+1290,TDC,Teradata Corporation Common Stock,1,Strong Buy
+1291,CUZ,Cousins Properties Incorporated Common Stock,1,Strong Buy
+1292,NVT,nVent Electric plc Ordinary Shares ,1,Strong Buy
+1293,EVR,Evercore Inc. Class A Common Stock,1,Strong Buy
+1294,AMED,Amedisys Inc Common Stock,1,Strong Buy
+1295,CERT,Certara Inc. Common Stock,1,Strong Buy
+1296,MRVI,Maravai LifeSciences Holdings Inc. Class A Common Stock,1,Strong Buy
+1297,CLH,Clean Harbors Inc. Common Stock,1,Strong Buy
+1298,SLM,SLM Corporation Common Stock,1,Strong Buy
+1299,NOV,NOV Inc. Common Stock,1,Strong Buy
+1300,SAM,Boston Beer Company Inc. (The) Common Stock,1,Buy
+1301,VSCO,Victorias Secret & Co. Common Stock ,1,Strong Buy
+1302,NCLH,Norwegian Cruise Line Holdings Ltd. Ordinary Shares,1,Buy
+1303,TKR,Timken Company (The) Common Stock,1,Strong Buy
+1304,ESI,Element Solutions Inc. Common Stock,1,Strong Buy
+1305,ACHC,Acadia Healthcare Company Inc. Common Stock,1,Buy
+1306,TMX,Terminix Global Holdings Inc. Common Stock,1,Strong Buy
+1307,LAZ,Lazard LTD. Lazard LTD. Class A Common Stock,1,Strong Buy
+1308,UNM,Unum Group Common Stock,1,Buy
+1309,VMEO,Vimeo Inc. Common Stock,1,Strong Buy
+1310,VMI,Valmont Industries Inc. Common Stock,1,Strong Buy
+1311,TFSL,TFS Financial Corporation Common Stock,1,Strong Buy
+1312,IDA,IDACORP Inc. Common Stock,1,Buy
+1313,IONS,Ionis Pharmaceuticals Inc. Common Stock,1,Buy
+1314,CC,Chemours Company (The) Common Stock,1,Buy
+1315,BWXT,BWX Technologies Inc. Common Stock,1,Strong Buy
+1316,NCR,NCR Corporation Common Stock,1,Strong Buy
+1317,ICUI,ICU Medical Inc. Common Stock,1,Strong Buy
+1318,FL,Foot Locker Inc.,1,Strong Buy
+1319,ADPT,Adaptive Biotechnologies Corporation Common Stock,1,Strong Buy
+1320,CDK,CDK Global Inc. Common Stock,1,Strong Buy
+1321,NRZ,New Residential Investment Corp. Common Stock,1,Strong Buy
+1322,MTG,MGIC Investment Corporation Common Stock,1,Strong Buy
+1323,WOOF,Petco Health and Wellness Company Inc. Class A Common Stock,1,Buy
+1324,CRUS,Cirrus Logic Inc. Common Stock,1,Strong Buy
+1325,HFC,HollyFrontier Corporation Common Stock,1,Buy
+1326,OZK,Bank OZK Common Stock,1,Buy
+1327,DRVN,Driven Brands Holdings Inc. Common Stock,1,Strong Buy
+1328,WEN,Wendy's Company (The) Common Stock,1,Strong Buy
+1329,AI,C3.ai Inc. Class A Common Stock,1,Buy
+1330,NEWR,New Relic Inc. Common Stock,1,Buy
+1331,SAIC,SCIENCE APPLICATIONS INTERNATIONAL CORPORATION Common Stock,1,Strong Buy
+1332,PACW,PacWest Bancorp Common Stock,1,Strong Buy
+1333,GTES,Gates Industrial Corporation plc Ordinary Shares,1,Strong Buy
+1334,HHC,Howard Hughes Corporation (The) Common Stock,1,Strong Buy
+1335,HLF,Herbalife Nutrition Ltd. Common Stock,1,Strong Buy
+1336,TNL,Travel   Leisure Co. Common  Stock,1,Strong Buy
+1337,PINC,Premier Inc. Class A Common Stock,1,Buy
+1338,ADS,Alliance Data Systems Corporation Common Stock,1,Strong Buy
+1339,NFG,National Fuel Gas Company Common Stock,1,Buy
+1340,SLG,SL Green Realty Corp Common Stock,1,Buy
+1341,JBLU,JetBlue Airways Corporation Common Stock,1,Strong Buy
+1342,THG,Hanover Insurance Group Inc,1,Strong Buy
+1343,DSEY,Diversey Holdings Ltd. Ordinary Shares,1,Strong Buy
+1344,CW,Curtiss-Wright Corporation Common Stock,1,Strong Buy
+1345,FLS,Flowserve Corporation Common Stock,1,Buy
+1346,HIW,Highwoods Properties Inc. Common Stock,1,Strong Buy
+1347,DTM,DT Midstream Inc. Common Stock ,1,Buy
+1348,FCN,FTI Consulting Inc. Common Stock,1,Strong Buy
+1349,HAYW,Hayward Holdings Inc. Common Stock,1,Strong Buy
+1350,PK,Park Hotels & Resorts Inc. Common Stock ,1,Buy
+1351,SLGN,Silgan Holdings Inc. Common Stock,1,Strong Buy
+1352,HRB,H&R Block Inc. Common Stock,1,Buy
+1353,OLLI,Ollie's Bargain Outlet Holdings Inc. Common Stock,1,Buy
+1354,JAMF,Jamf Holding Corp. Common Stock,1,Strong Buy
+1355,LMND,Lemonade Inc. Common Stock,1,Buy
+1356,WBS,Webster Financial Corporation Common Stock,1,Strong Buy
+1357,AL,Air Lease Corporation Class A Common Stock,1,Strong Buy
+1358,TRIP,TripAdvisor Inc. Common Stock,1,Buy
+1359,FEYE,FireEye Inc. Common Stock,1,Buy
+1360,R,Ryder System Inc. Common Stock,1,Buy
+1361,CRI,Carter's Inc. Common Stock,1,Strong Buy
+1362,STL,Sterling Bancorp,1,Strong Buy
+1363,UMPQ,Umpqua Holdings Corporation Common Stock,1,Strong Buy
+1364,LESL,Leslie's Inc. Common Stock,1,Strong Buy
+1365,WTFC,Wintrust Financial Corporation Common Stock,1,Strong Buy
+1366,QRTEA,Qurate Retail Inc. Series A Common Stock ,1,Buy
+1367,KMPR,Kemper Corporation,1,Buy
+1368,SPR,Spirit Aerosystems Holdings Inc. Common Stock,1,Strong Buy
+1369,AYX,Alteryx Inc. Class A Common Stock,1,Buy
+1370,SKLZ,Skillz Inc. Class A Common Stock,1,Buy
+1371,SPB,Spectrum Brands Holdings Inc. Common Stock,1,Strong Buy
+1372,HPP,Hudson Pacific Properties Inc. Common Stock,1,Buy
+1373,AXS,Axis Capital Holdings Limited Common Stock,1,Buy
+1374,LOPE,Grand Canyon Education Inc. Common Stock,1,Strong Buy
+1375,UNVR,Univar Solutions Inc. Common Stock,1,Strong Buy
+1376,JBGS,JBG SMITH Properties Common Shares ,1,Buy
+1377,MSP,Datto Holding Corp. Common Stock,1,Buy
+1378,FTDR,Frontdoor Inc. Common Stock,1,Strong Buy
+1379,ALSN,Allison Transmission Holdings Inc. Common Stock,1,Buy
+1380,SGFY,Signify Health Inc. Class A Common Stock,1,Strong Buy
+1381,AVT,Avnet Inc. Common Stock,1,Buy
+1382,HAIN,Hain Celestial Group Inc. (The) Common Stock,1,Strong Buy
+1383,MSM,MSC Industrial Direct Company Inc. Common Stock,1,Buy
+1384,IOVA,Iovance Biotherapeutics Inc. Common Stock,1,Strong Buy
+1385,EPR,EPR Properties Common Stock,1,Buy
+1386,FOUR,Shift4 Payments Inc. Class A Common Stock,1,Buy
+1387,SIX,Six Flags Entertainment Corporation New Common Stock,1,Strong Buy
+1388,SWCH,Switch Inc. Class A Common Stock,1,Strong Buy
+1389,MCFE,McAfee Corp. Class A Common Stock,1,Buy
+1390,VSAT,ViaSat Inc. Common Stock,1,Strong Buy
+1391,MSGS,Madison Square Garden Sports Corp. Class A Common Stock (New),1,Strong Buy
+1392,FNB,F.N.B. Corporation Common Stock,1,Strong Buy
+1393,VRM,Vroom Inc. Common Stock,1,Strong Buy
+1394,SHLS,Shoals Technologies Group Inc. Class A Common Stock,1,Strong Buy
+1395,KEX,Kirby Corporation Common Stock,1,Buy
+1396,COMM,CommScope Holding Company Inc. Common Stock,1,Strong Buy
+1397,NKTR,Nektar Therapeutics  Common Stock,1,Buy
+1398,VIRT,Virtu Financial Inc. Class A Common Stock,1,Strong Buy
+1399,SWI,SolarWinds Corporation Common Stock,1,Buy
+1400,SAGE,Sage Therapeutics Inc. Common Stock,1,Buy
+1401,MRCY,Mercury Systems Inc Common Stock,1,Buy
+1402,WWE,World Wrestling Entertainment Inc. Class A Common Stock,1,Strong Buy
+1403,CPA,Copa Holdings S.A. Copa Holdings S.A. Class A Common Stock,1,Buy
+1404,NABL,N-able Inc. Common Stock,1,Strong Buy
+1405,GO,Grocery Outlet Holding Corp. Common Stock,1,Buy
+1406,SNDR,Schneider National Inc. Common Stock,1,Buy
+1407,PSFE,Paysafe Limited Common Shares,1,Strong Buy
+1408,UWMC,UWM Holdings Corporation Class A Common Stock,1,Strong Buy
+1409,GOCO,GoHealth Inc. Class A Common Stock,1,Strong Buy
+1410,ARD,Ardagh Group S.A. Common Shares,1,Strong Buy
