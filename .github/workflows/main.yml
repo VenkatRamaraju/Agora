@@ -17,37 +17,6 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Scrape headlines
-        run: |
-          cd Data_Collection/Scrapers && python headlines_scraper.py
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v7
-        with:
-          default_author: github_actions
-
-      - name: Scrape conversations
-        run: |
-          cd Data_Collection/Scrapers && python conversations_scraper.py
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v7
-        with:
-          default_author: github_actions
-
-      - name: Setup NLTK
-        run: |
-          cd Polarity_Analysis && python setup.py
-
-      - name: Generate polarities
-        run: |
-          cd Polarity_Analysis && python sentiment_generation.py
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v7
-        with:
-          default_author: github_actions
-
       - name: Update Training Dataset
         run: |
           cd Model_Training && python model.py

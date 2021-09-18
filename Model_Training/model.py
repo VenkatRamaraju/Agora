@@ -24,17 +24,16 @@ def get_data():
     df = df.reindex(columns=df.columns.tolist() + new_columns)
 
     for column in new_columns:
-        df[column] = 0.0
+        df[column] = None
 
     for index, row in df.iterrows():
         ticker = yf.Ticker(row['Ticker'])
-        for col in new_columns:
-            if col in ticker.info:
-                df.at[index, col] = ticker.info[col]
-            else:
-                df.at[index, col] = None
+        if ticker is not None:
+            for col in new_columns:
+                if col in ticker.info:
+                    df.at[index, col] = ticker.info[col]
 
-    df.to_csv('training_data.csv')
+    df.to_csv('final_training_data.csv')
 
 
 def main():
