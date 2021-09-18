@@ -16,25 +16,27 @@ def get_data():
     """
     files = [f for f in os.listdir('Stocks') if f.endswith('.csv')]
     master_dict = {}
-    print(files)
+    company_dict = {}
 
     for file in files:
-        if file == 'buy.csv':
-            df = pd.read_csv('Stocks/buy.csv')
+        if file == 'nyse_buy.csv' or file == 'nasdaq_buy.csv':
+            df = pd.read_csv('Stocks/' + str(file))
             for index, row in df.iterrows():
                 master_dict[row['Symbol']] = 1
+                company_dict[row['Symbol']] = row['Name']
         else:
             df = pd.read_csv('Stocks/' + str(file))
             for index, row in df.iterrows():
                 master_dict[row['Symbol']] = 0
+                company_dict[row['Symbol']] = row['Name']
 
-    training_df = pd.read_csv('training_data.csv', index_col=0)
-    training_df['Buy'] = -1
+    master_df = pd.DataFrame(columns=['Symbol', 'Name', 'Buy'])
 
-    for index, row in training_df.iterrows():
-        training_df.at[index, 'Buy'] = master_dict[row['Ticker']]
+    for ticker in master_dict:
+        ticker_row = {'Symbol': ticker, 'Name': company_dict[ticker], 'Buy': master_dict[ticker]}
+        master_df = master_df.append(ticker_row, ignore_index=True)
 
-    training_df.to_csv('recent_training_data.csv')
+    master_df.to_csv('recent_training_data.csv')
 
 
 def main():
