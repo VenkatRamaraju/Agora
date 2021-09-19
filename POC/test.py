@@ -43,8 +43,6 @@ def get_data():
                 training_row = {'Symbol': row['Symbol'], 'Name': company_dict[row['Symbol']],
                                 'Buy': master_dict[row['Symbol']], 'Analyst': analyst_dict[row['Symbol']]}
                 training_df = training_df.append(training_row, ignore_index=True)
-
-
         elif file == 'nasdaq_sell.csv' or file == 'nyse__sell.csv':
             df = pd.read_csv('Stocks/' + str(file))
             for index, row in df.iterrows():
@@ -55,8 +53,6 @@ def get_data():
                 training_row = {'Symbol': row['Symbol'], 'Name': company_dict[row['Symbol']],
                                 'Buy': master_dict[row['Symbol']], 'Analyst': analyst_dict[row['Symbol']]}
                 training_df = training_df.append(training_row, ignore_index=True)
-
-
         elif file == 'nasdaq_strong_sell.csv' or file == 'nyse_strong_sell.csv':
             df = pd.read_csv('Stocks/' + str(file))
             for index, row in df.iterrows():
