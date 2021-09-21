@@ -75,9 +75,10 @@ def generate_aggregated_csv():
 
     for ticker, headlines_polarity in headlines_map.items():
         try:
-            polarity = 0.0
             if ticker in conversations_map:
                 polarity = conversations_map[ticker]
+            else:
+                polarity = twitterSentiment(ticker)
             row = {"Ticker": ticker, "Conversations": polarity, "Headlines": headlines_polarity}
             aggregated_df = aggregated_df.append(row, ignore_index=True)
         except RuntimeError as e:
@@ -116,6 +117,32 @@ def get_conversation_sentiments():
             conversations_map[ticker] = sum_of_polarities[ticker]/count_of_conversations[ticker]
         else:
             conversations_map[ticker] = 0.0
+
+
+def twitterSentiment(ticker):
+    # import tweepy
+    # api_key = ""
+    # api_secret_key = ""
+    # access_token = ""
+    # access_token_secret = ""
+    #
+    # auth = tweepy.OAuthHandler(api_key, api_secret_key)
+    # auth.set_access_token(access_token, access_token_secret)
+    # api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+    # stock = "$" + ticker
+    # search_results = api.search(q=stock, count=50)
+    #
+    # print("Conversations on ", stock)
+    # polaritySum = 0
+    # count = 0
+    # for tweet in search_results:
+    #     lemma_text = lemmatizer.lemmatize(str(tweet.text))
+    #     scores = sia.polarity_scores(lemma_text)
+    #     polaritySum += scores["compound"]
+    #     count += 1
+    #
+    # return polaritySum/count
+    return 0.0
 
 
 def main():
