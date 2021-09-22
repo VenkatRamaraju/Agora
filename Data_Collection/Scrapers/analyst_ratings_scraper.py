@@ -35,7 +35,10 @@ def build_analyst_csv():
     # Output to csv
     df = pd.DataFrame(columns=['Ticker', 'Rating'])
     for stock in stocks:
-        df = df.append({'Ticker': stock, 'Rating': analyst_ratings_scraper(stock)}, ignore_index=True)
+        try:
+            df = df.append({'Ticker': stock, 'Rating': analyst_ratings_scraper(stock)}, ignore_index=True)
+        except Exception as e:
+            print(e, stock)
 
     df.to_csv('Final_Analyst_Rating.csv')
 

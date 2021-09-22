@@ -8,3 +8,8 @@ selenium~=3.141.0
 beautifulsoup4==4.9.3
 nltk==3.6.1
 Flask==2.0.1
+xlrd >= 1.0.0
+openpyxl==2.6.2
+XlsxWriter==1.1.8
+webdriver-manager==3.2.2
+demoji==0.4.0

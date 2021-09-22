@@ -8,13 +8,16 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
-import demoji
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
-from os import path
-from pathlib import Path
+import yfinance as yf
+import re
+
+# Global Variables
+overall_headlines_df = pd.DataFrame(columns=['Ticker', 'Headline'])
+stocks_dict = {}
 
 
 def get_soup(request, element, class_value):
@@ -39,56 +42,76 @@ def create_array(data_list):
     result_array = []
     for li in data_list:
         if li.text != "":
-            result_array.append(' '.join(li.text.split()))  # Removes tabs, newlines, and gets text from HTML
+            result_array.append(str(' '.join(li.text.split())))  # Removes tabs, newlines, and gets text from HTML
 
     return result_array
 
 
-def cleanup_array(overall_array, stock, company):
+def contains_company_name(headline, name):
     """
-    Cleans up the array of headlines/conversations by removing headlines that do not contain the stock ticker or
-    company name in it.
+    Returns whether or not the headline contains the name of the company. This function is used to determine
+    if a headline is relevant to the company.
+    :param name: Name of the company for which the headlines have been scraped.
+    :param headline: Headline from the internet. The company name will be searched in this headline.
+    :return: True if the company name is in the headline, false otherwise.
+    """
+    # Remove punctuations and format into array
+    company = re.sub(r'[^\w\s]', '', name).lower().strip()
+    company_words = company.split(' ')
+
+    # Words to remove for comparison
+    words_to_remove = ['a', 'and', 'the', 'company', 'incorporated', 'corporation', 'group', 'inc']
+
+    # Removing words
+    for word in words_to_remove:
+        if word in company_words:
+            company_words.remove(word)
+
+    # Removing empty words and formatting headline into array
+    company_words = list(filter(None, company_words))
+    headline_words = headline.split(' ')
+
+    for word in company_words:
+        if word in headline_words:  # Headline contains company name in it
+            return True
+
+    return False
+
+
+def cleanup_array(overall_array, stock):
+    """
+    Cleans up the array of headlines by removing headlines that do not contain the stock ticker or company name in it.
     :param overall_array: Array of headlines/conversations from which data points need to be removed.
     :param stock: Ticker of the company for which the headlines have been scraped.
-    :param company: Name of the company for which the headlines have been scraped.
     :return: An array with data points that contain the company or stock in it.
     """
 
+    if len(overall_array) < 15:
+        return overall_array
+
     cleaned_array = []
+    ticker = yf.Ticker(stock)
+    name = stocks_dict[stock]
     for entry in overall_array:
-        if stock.lower() in str(entry).lower() or company.lower() in str(entry).lower():
+        if stock in str(entry) or contains_company_name(str(entry).lower(), name.lower()):
             cleaned_array.append(entry)
 
     return cleaned_array
 
 
-def output(overall_data, stock, category):
+def output(overall_data, stock):
     """
-    Prints out the pandas dataframe after removing duplicates.
+    Appends to overall dataframe to create the list of headlines.
     :param overall_data: Array of headlines/conversations after retrieving from respective web sources, in text form.
     :param stock: Name of the stock for which all the above data is being retrieved.
-    :param category: Headlines or Conversations
     :return None.
     """
 
-    # Removes duplicates by first converting to hash set (Stores only unique values), then converts back to list
-    overall_data = list(set(overall_data))
-    file_path = str(Path(__file__).resolve().parents[1]) + '/CSV_Results/' + stock.upper() + '_' + \
-                category.lower() + '_results.csv'
-
+    global overall_headlines_df
     if len(overall_data) > 0:
-        # Formatting current dataframe, merging with previously existing (if it exists)
-        title = 'Recent headlines and conversations for ' + stock
-        overall_dataframe = pd.DataFrame(overall_data, columns=[title])
-        overall_dataframe[title] = overall_dataframe[title].apply(demoji.replace)
-        current_dataframe = pd.DataFrame(columns=[title])
-        if path.exists(file_path):
-            current_dataframe = pd.read_csv(file_path)
-
-        # Appending to CSV, or creating new one for stock
-        overall_dataframe = pd.concat([overall_dataframe, current_dataframe], ignore_index=True)
-        overall_dataframe.drop_duplicates(subset=title, inplace=True)
-        overall_dataframe.to_csv(file_path, index=False)
+        for headline in overall_data:
+            row = {'Ticker': stock, 'Headline': headline}
+            overall_headlines_df = overall_headlines_df.append(row, ignore_index=True)
     else:
         print("Invalid ticker/company or no headlines/conversations available.")
 
@@ -147,39 +170,86 @@ def get_cnbc_headlines(stock):
     return list_of_headlines
 
 
-def get_all_headlines(stock, company):
+def get_all_headlines(stock):
     """
     Gets headlines from various sources, concatenates the arrays of headlines, cleans up the text and returns the
     overall array.
     :param stock: Name of stock ticker.
-    :param company: Name of company.
     :return: Overall array of headlines from various sources after cleaning (Removal of punctuations).
     """
 
     print("\nParsing headlines for:", stock)
 
     # List of sources
-    source_1 = np.array(get_cnbc_headlines(stock))
-    source_2 = np.array(get_reuters_headlines(stock))
-    source_3 = np.array(get_morningstar_headlines(stock))
-    source_4 = np.array(get_usa_today_headlines(stock))
-    source_5 = np.array(get_google_finance_headlines(stock))
-    source_6 = np.array(get_business_insider_headlines(stock))
-    source_7 = np.array(get_cnn_headlines(stock))
-    source_8 = np.array(get_yahoo_headlines(stock))
+    source_1 = np.array([])
+    source_2 = np.array([])
+    source_3 = np.array([])
+    source_4 = np.array([])
+    source_5 = np.array([])
+    source_6 = np.array([])
+    source_7 = np.array([])
+    source_8 = np.array([])
+
+    try:
+        source_1 = np.array(get_cnbc_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_2 = np.array(get_reuters_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_3 = np.array(get_morningstar_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_4 = np.array(get_usa_today_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_5 = np.array(get_google_finance_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_6 = np.array(get_business_insider_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_7 = np.array(get_cnn_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    try:
+        source_8 = np.array(get_yahoo_headlines(stock))
+    except RuntimeError as e:
+        print(e, "was handled")
+
+    # source_2 = np.array(get_reuters_headlines(stock))
+    # source_3 = np.array(get_morningstar_headlines(stock))
+    # source_4 = np.array(get_usa_today_headlines(stock))
+    # source_5 = np.array(get_google_finance_headlines(stock))
+    # source_6 = np.array(get_business_insider_headlines(stock))
+    # source_7 = np.array(get_cnn_headlines(stock))
+    # source_8 = np.array(get_yahoo_headlines(stock))
 
     # Combine all sources, clean up the array
     total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
                                            source_8), axis=None))
 
-    return cleanup_array(total_headlines, stock, company)
+    return cleanup_array(total_headlines, stock)
 
 
 def main():
     # Tickers and companies
 
     stocks_df = pd.read_csv("../companies.csv")
-    stocks_dict = {}
+    global stocks_dict
 
     for index, row in stocks_df.iterrows():
         stocks_dict.update(
@@ -187,16 +257,18 @@ def main():
         )
 
     tickers = list(stocks_dict.keys())
-    companies = list(stocks_dict.values())
 
     for i in range(0, len(tickers)):
         try:
-            total_headlines = get_all_headlines(tickers[i], companies[i])
+            total_headlines = get_all_headlines(tickers[i])
 
             # Combining data and output to CSV
-            output(total_headlines, tickers[i], "headlines")
+            output(total_headlines, tickers[i])
         except RuntimeError as e:
             print(e, "was handled")
+
+    overall_headlines_df.drop_duplicates(subset=None, keep='first', inplace=True)
+    overall_headlines_df.to_csv('../Headlines.csv', index=False)
 
 
 if __name__ == "__main__":

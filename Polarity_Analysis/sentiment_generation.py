@@ -1,26 +1,37 @@
+#!/usr/bin/env python3
+
+"""
+Authors: Venkat Ramaraju, Jayanth Rao
+Functionality implemented:
+- Generates and aggregates polarities across headlines and conversations
+"""
+
+# Libraries and Dependencies
+import os
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pandas as pd
-import os
 from nltk.stem import WordNetLemmatizer
 
 # Global Variables
 sia = SentimentIntensityAnalyzer()
 lemmatizer = WordNetLemmatizer()
+conversations_map = {}
+headlines_map = {}
 
 
 def update_stock_terminology():
     """
     Creates dictionary with updated terminologies for SentimentIntensityAnalyzer. Includes positive and negative words,
-    along with polarized words with weights. Used to improve VADER accuracy
+    along with polarized words with weights. Used to improve VADER accuracy.
     """
     stock_lexicon = {}
-    csv_df = pd.read_csv('setup_csvs/new_stock_lex.csv')
-    for index, row in csv_df.iterrows():
-        stock_lexicon[row['Item']] = row['Polarity']
+    # csv_df = pd.read_csv('setup_csvs/new_stock_lex.csv')
+    # for index, row in csv_df.iterrows():
+    #     stock_lexicon[row['Item']] = row['Polarity']
 
-    csv_df = pd.read_csv('setup_csvs/modified_stock_lex.csv')
+    csv_df = pd.read_csv('setup_csvs/polarized_stock_lex.csv')
     for index, row in csv_df.iterrows():
-        stock_lexicon[row['Word']] = row['Polarity']
+        stock_lexicon[row['word']] = row['polarity']
 
     resulting_lex = {}
     resulting_lex.update(stock_lexicon)
@@ -28,64 +39,117 @@ def update_stock_terminology():
     sia.lexicon = resulting_lex
 
 
-def get_sentiments():
+def get_headline_sentiments():
     """
-    Analyze polarities of the given stock tickers, based on  terminologies inserted in SentimentIntensityAnalyzer.
+    Analyze polarities of the given stock tickers, based on terminologies inserted in SentimentIntensityAnalyzer.
     Prints out the aggregated results to CSV.
     """
-    file_path = "../Data_Collection/CSV_Results/"
-    conversations_map = {}
-    headlines_map = {}
-    all_csv_results = [f for f in os.listdir("../Data_Collection/CSV_Results/") if f.endswith("csv")]
+    headlines_csv = pd.read_csv("../Data_Collection/Headlines.csv")
+    sum_of_polarities = {}
+    count_of_headlines = {}
 
-    for csv in all_csv_results:
-        csv_df = pd.read_csv(file_path + csv)
-        csv_df["Polarity"] = ""
-        avg = 0.0
-        rows = 0
-
-        for index, row in csv_df.iterrows():
-            lemma_text = lemmatizer.lemmatize(row[csv_df.columns[0]])
+    for index, row in headlines_csv.iterrows():
+        try:
+            lemma_text = lemmatizer.lemmatize(str(row['Headline']))
             scores = sia.polarity_scores(lemma_text)
-            row["Polarity"] = scores["compound"]  # compound field shows a holistic view of the derived sentiment
+            row["Polarity"] = scores["compound"]
 
-            avg += row["Polarity"]
-            rows += 1
+            if row['Ticker'] not in sum_of_polarities:
+                sum_of_polarities[row['Ticker']] = scores["compound"]
+                count_of_headlines[row['Ticker']] = 1
+            else:
+                sum_of_polarities[row['Ticker']] = sum_of_polarities[row['Ticker']] + scores["compound"]
+                count_of_headlines[row['Ticker']] = count_of_headlines[row['Ticker']] + 1
+        except RuntimeError as e:
+            print(e, "was handled")
 
-        csv = csv[:-3] # Remove the .csv for ease of parsing
-
-        file_name = csv + "_+_polarity"
-        csv_df.to_csv(f"../Polarity_Analysis/csvs_with_polarity/{file_name}.csv")
-        ticker = csv.split("_")[0]
-        category = csv.split("_")[1]
-        polarity = round(avg/rows, 3)
-
-        if category == "headlines":
-            headlines_map[ticker] = polarity
-        else:
-            conversations_map[ticker] = polarity
-
-    return headlines_map, conversations_map
+    for ticker in sum_of_polarities:
+        headlines_map[ticker] = sum_of_polarities[ticker]/count_of_headlines[ticker]
 
 
-def generate_aggregated_csv(headlines_map, conversations_map):
+def generate_aggregated_csv():
     """
-    Generates a CSV with the aggregated polarities of headlines and conversations for the group of stocks that are
-    being analyzed.
+    Generates a CSV with the aggregated polarities of headlines for the group of stocks that are being analyzed.
     """
     aggregated_df = pd.DataFrame(columns=["Ticker", "Conversations", "Headlines"])
 
     for ticker, headlines_polarity in headlines_map.items():
-        row = {"Ticker": ticker, "Conversations": conversations_map[ticker], "Headlines": headlines_polarity}
-        aggregated_df = aggregated_df.append(row, ignore_index=True)
+        try:
+            if ticker in conversations_map:
+                polarity = conversations_map[ticker]
+            else:
+                polarity = twitterSentiment(ticker)
+            row = {"Ticker": ticker, "Conversations": polarity, "Headlines": headlines_polarity}
+            aggregated_df = aggregated_df.append(row, ignore_index=True)
+        except RuntimeError as e:
+            print(e, "was handled")
 
     aggregated_df.to_csv("aggregated_polarities.csv")
 
 
+def get_conversation_sentiments():
+    """
+    Generates a CSV with the aggregated polarities of conversations for the group of stocks that are being analyzed.
+    """
+    list_of_conversations = [f for f in os.listdir('../Data_Collection/Conversations/') if f.endswith('.csv')]
+    sum_of_polarities = {}
+    count_of_conversations = {}
+
+    for ticker_csv in list_of_conversations:
+        conversations_csv = pd.read_csv('../Data_Collection/Conversations/' + str(ticker_csv))
+        ticker = ticker_csv.split("_")[0].upper()
+        for index, row in conversations_csv.iterrows():
+            try:
+                lemma_text = lemmatizer.lemmatize(str(row['Conversation']))
+                scores = sia.polarity_scores(lemma_text)
+                row["Polarity"] = scores["compound"]
+
+                if ticker not in sum_of_polarities:
+                    sum_of_polarities[ticker] = scores["compound"]
+                    count_of_conversations[ticker] = 1
+                else:
+                    sum_of_polarities[ticker] = sum_of_polarities[ticker] + scores["compound"]
+                    count_of_conversations[ticker] = count_of_conversations[ticker] + 1
+            except RuntimeError as e:
+                print(e, "was handled")
+
+        if count_of_conversations[ticker] > 0:
+            conversations_map[ticker] = sum_of_polarities[ticker]/count_of_conversations[ticker]
+        else:
+            conversations_map[ticker] = 0.0
+
+
+def twitterSentiment(ticker):
+    # import tweepy
+    # api_key = ""
+    # api_secret_key = ""
+    # access_token = ""
+    # access_token_secret = ""
+    #
+    # auth = tweepy.OAuthHandler(api_key, api_secret_key)
+    # auth.set_access_token(access_token, access_token_secret)
+    # api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+    # stock = "$" + ticker
+    # search_results = api.search(q=stock, count=50)
+    #
+    # print("Conversations on ", stock)
+    # polaritySum = 0
+    # count = 0
+    # for tweet in search_results:
+    #     lemma_text = lemmatizer.lemmatize(str(tweet.text))
+    #     scores = sia.polarity_scores(lemma_text)
+    #     polaritySum += scores["compound"]
+    #     count += 1
+    #
+    # return polaritySum/count
+    return 0.0
+
+
 def main():
     update_stock_terminology()
-    headlines_map, conversations_map = get_sentiments()
-    generate_aggregated_csv(headlines_map, conversations_map)
+    get_headline_sentiments()
+    get_conversation_sentiments()
+    generate_aggregated_csv()
 
 
 if __name__ == "__main__":
