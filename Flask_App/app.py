@@ -4,6 +4,7 @@ from sqlite3 import Error
 import os.path
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+print(BASE_DIR)
 db_path = os.path.join(BASE_DIR, "database.db")
 
 
@@ -27,8 +28,6 @@ def select_all(conn):
         print(row)
 
 
-# select_all(get_db_connection())
-
 app = Flask(__name__)
 
 
@@ -45,8 +44,16 @@ def data():
         form_data = request.form
         conn = get_db_connection()
         ticker_name = form_data["Searched Ticker"]
+
+        predictions_sql = f"""
+                Select * from TickerPredictions where ticker="{ticker_name}";
+                """
+        ticker_preds = conn.execute(predictions_sql).fetchall()
+
+        # print(ticker_preds.)
+
         info_sql = f"""
-              Select * from TickerInfo where ticker="{ticker_name}";
+              Select * from TickerStockMetrics where ticker="{ticker_name}";
               """
         ticker_info = conn.execute(info_sql).fetchall()
 
@@ -54,8 +61,12 @@ def data():
                     Select headlines from TickerHeadlines where ticker="{ticker_name}" limit 3
                     """
         ticker_headlines = conn.execute(headlines_sql).fetchall()
+        print(ticker_headlines)
 
         conn.close()
 
-        return render_template('data.html', form_data=form_data,
-                               ticker_info=ticker_info, ticker_headlines=ticker_headlines)
+        return render_template('data.html',
+                               form_data=form_data,
+                               ticker_info=ticker_info,
+                               ticker_headlines=ticker_headlines,
+                               ticker_predictions=ticker_preds)

@@ -13,7 +13,7 @@ cur.execute(init_cleanup)
 table2_sql = f"""create table {table2}(
     headlines text,
     ticker text not null,
-    foreign key (ticker) references TickerInfo(ticker)
+    foreign key (ticker) references TickerPredictions(ticker)
 )"""
 
 cur.execute(table2_sql)

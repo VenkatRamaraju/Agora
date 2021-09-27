@@ -6,6 +6,13 @@ h1 {
     font-size: 48px;
 }
 
+h3 {
+    font-family: "Metropolis", sans-serif;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
 p {
     font-family: "Metropolis", sans-serif;
     text-align: left;
