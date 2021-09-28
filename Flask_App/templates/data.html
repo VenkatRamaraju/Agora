@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Entered Stock Ticker: {{form_data["Searched Ticker"]}}</title>
+</head>
+<body>
+
+<!--{{ticker_predictions}}-->
+{% for info_row in ticker_predictions %}
+    {% if info_row[3] != None %}
+        {% if info_row[3] == 1.0 %}
+            <h1>The Agora recommends... <span style="color: #006400">buying</span> {{info_row[0]}}.</h1>
+        {% else %}
+            <h1>The Agora recommends... <span style="color: #8b0000">not buying</span> {{info_row[0]}}.</h1>
+        {% endif %}
+    {% else %}
+        {% if info_row[2] == 'Buy' or info_row[2] == 'Strong Buy' %}
+            <h1>Analysts recommend a ... <span style="color: #006400">{{info_row[2]}}</span> for {{info_row[0]}}.</h1>
+        {% elif info_row[2] == 'Sell' or info_row[2] == 'Strong Sell' %}
+            <h1>Analysts recommend a ... <span style="color: #8b0000">{{info_row[2]}}</span> for {{info_row[0]}}.</h1>
+        {% else %}
+            <h1>Analysts recommend a ... <span style="color: #949494">{{info_row[2]}}</span></h1>
+        {% endif %}
+        <h3>An Agora recommendation was not available due to an incomplete feature set for this stock.</h3>
+    {% endif %}
+{% endfor %}
+
+
+{% for key, value in form_data.items() %}
+<!--<h1> {{key}}: {{value}}</h1>-->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div id="tradingview_eebdd"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-{{value}}/" rel="noopener"
+                                                 target="_blank"><span class="blue-text">{{value}} Chart</span></a> by
+        TradingView
+    </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+            {
+                "width": 980,
+                "height": 610,
+                "symbol": "{{value}}",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_eebdd"
+            }
+        );
+    </script>
+</div>
+<!-- TradingView Widget END -->
+{% endfor %}
+<p> {{value}}</p>
+
+<!--{{ticker_info}}-->
+<h1>Ticker Properties</h1>
+{% for info_row in ticker_predictions %}
+    Ticker: {{info_row[0]}} <br>
+    Company Name: {{info_row[1]}} <br>
+    Analyst Rating: {{info_row[2]}} <br>
+
+    {% if info_row[4] and info_row[5] %}
+    <p>
+        Headline Polarity: {{info_row[4]}} <br>
+        Conversation Polarity: {{info_row[5]}}
+    </p>
+    {% endif %}
+{% endfor %}
+
+{% for metric_row in ticker_info %}
+    {% if metric_row[1] != None %}
+        Stock Volatility (Beta): {{metric_row[1]}} <br>
+    {% endif %}
+
+    {% if metric_row[2] != None %}
+        Profit Margins: ${{metric_row[2]}} <br>
+    {% endif %}
+
+    {% if metric_row[3] != None %}
+        Predicted Earnings Per Share (Forward EPS): ${{metric_row[3]}} <br>
+    {% endif %}
+
+    {% if metric_row[4] != None %}
+        Stock Purchase Price (Book Value): ${{metric_row[4]}} <br>
+    {% endif %}
+
+    {% if metric_row[5] != None %}
+        % of Shares Owned by Financial Institutions: {{metric_row[5] * 100}}% <br>
+    {% endif %}
+
+    {% if metric_row[6] != None %}
+        Number of Shorted Shares Over 30 Days: {{metric_row[6] * 100}}% <br>
+    {% endif %}
+
+    {% if metric_row[7] != None %}
+        Number of Shorted Shares by Financial Institutions: {{metric_row[7] * 100}}% <br>
+    {% endif %}
+{% endfor %}
+<br>
+
+
+
+{% if ticker_headlines %}
+    <h1>Latest News Regarding {{form_data["Searched Ticker"]}}</h1>
+    {% for headline_row in ticker_headlines %}
+        <p>
+            {{headline_row[0]}}
+        </p>
+    {% endfor %}
+{% endif %}
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

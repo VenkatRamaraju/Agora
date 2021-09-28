@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>
+        AGORA
+    </title>
+</head>
+<body>
+<h1>AGORA</h1>
+<hr>
+<form action="/data" method="POST">
+    <p><input type="text" name="Searched Ticker" placeholder="Search for a ticker..."/></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+</body>
+</html>
