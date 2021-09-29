@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[37]:
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -10,20 +9,14 @@ from sklearn.metrics import classification_report
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from sklearn.metrics import accuracy_score
-
 from itertools import combinations
-# pd.set_option("display.max_rows", None, "display.max_columns", None)
-
 import time
-
-
-# In[20]:
 
 new_training_df = pd.DataFrame()
 
 
 def run_model(added_cols, new_df):
-    training_df = pd.read_csv('overall_training_data.csv',index_col=[0])
+    training_df = pd.read_csv('overall_training_data.csv', index_col=[0])
     list_of_cols = [x for x in training_df.columns if x in ['Buy', 'Ticker', 'Headlines', 'Conversations']]
     for to_be_added in added_cols:
         list_of_cols.append(to_be_added)
@@ -37,10 +30,6 @@ def run_model(added_cols, new_df):
     training_df['Conversations'] = training_df['Conversations'] * 2
 
     # Cols used in DF
-
-#     Scaler = MinMaxScaler()
-#     cols = [x for x in training_df.columns if x not in ['Buy', 'Ticker']]
-#     training_df[cols] = Scaler.fit_transform(training_df[cols])
     
     # Creating training and testing datasets
     X_total = training_df[[x for x in training_df.columns if x not in ['Buy', 'Ticker']]]
@@ -55,23 +44,12 @@ def run_model(added_cols, new_df):
         return -1
 
     y_prediction = LR.predict(X_test)
-    acc = accuracy_score(y_test, y_prediction)
     full_prediction = LR.predict(X_total)
     full_acc_score = accuracy_score(y_total, full_prediction)
     return new_df, full_prediction, accuracy_score(y_test, y_prediction), full_acc_score
 
-
-# In[33]:
-
-
 # training_df = pd.read_csv('overall_training_data.csv',index_col=[0])
 # list_of_cols = [x for x in training_df.columns if x not in ['Buy', 'Ticker', 'Headlines']]
-
-# training_df
-
-
-# In[39]:
-
 
 # def subsets(nums):
 #         res=[]

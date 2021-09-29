@@ -12,3 +12,4 @@ xlrd >= 1.0.0
 openpyxl==2.6.2
 XlsxWriter==1.1.8
 webdriver-manager==3.2.2
+scikit-learn~=1.0

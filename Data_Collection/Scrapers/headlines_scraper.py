@@ -230,14 +230,6 @@ def get_all_headlines(stock):
     except RuntimeError as e:
         print(e, "was handled")
 
-    # source_2 = np.array(get_reuters_headlines(stock))
-    # source_3 = np.array(get_morningstar_headlines(stock))
-    # source_4 = np.array(get_usa_today_headlines(stock))
-    # source_5 = np.array(get_google_finance_headlines(stock))
-    # source_6 = np.array(get_business_insider_headlines(stock))
-    # source_7 = np.array(get_cnn_headlines(stock))
-    # source_8 = np.array(get_yahoo_headlines(stock))
-
     # Combine all sources, clean up the array
     total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
                                            source_8), axis=None))

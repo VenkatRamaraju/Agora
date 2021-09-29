@@ -19,15 +19,6 @@ def get_db_connection():
     return conn
 
 
-def select_all(conn):
-    cursor = conn.cursor()
-    cursor.execute("Select * from TickerInfo")
-    rows = cursor.fetchall()
-
-    for row in rows:
-        print(row)
-
-
 app = Flask(__name__)
 
 
@@ -50,8 +41,6 @@ def data():
                 """
         ticker_preds = conn.execute(predictions_sql).fetchall()
 
-        # print(ticker_preds.)
-
         info_sql = f"""
               Select * from TickerStockMetrics where ticker="{ticker_name}";
               """
@@ -61,7 +50,6 @@ def data():
                     Select headlines from TickerHeadlines where ticker="{ticker_name}" limit 3
                     """
         ticker_headlines = conn.execute(headlines_sql).fetchall()
-        print(ticker_headlines)
 
         conn.close()
 

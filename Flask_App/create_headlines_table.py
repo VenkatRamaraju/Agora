@@ -21,14 +21,8 @@ cur.execute(table2_sql)
 ticker_headlines = pd.read_csv("../Data_Collection/Headlines.csv", index_col=False)
 
 ticker_headlines.columns = ['ticker', 'headlines']
-print(ticker_headlines.duplicated().sum())
-# print(ticker_headlines)
 
 ticker_headlines = ticker_headlines.drop_duplicates()
-
-print(ticker_headlines.duplicated().sum())
-
-print(ticker_headlines.columns)
 
 ticker_headlines.to_sql(table2, connection, if_exists="append", index=False)
 

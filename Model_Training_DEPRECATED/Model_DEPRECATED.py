@@ -43,7 +43,7 @@ def add_analyst_rating():
     for index, row in df.iterrows():
         buy_dict[row['Symbol']] = row['Buy']
 
-    training_df = pd.read_csv('final_training_data.csv')
+    training_df = pd.read_csv('final_overall_training_data.csv')
     training_df['Buy'] = -1
 
     for index, row in training_df.iterrows():
