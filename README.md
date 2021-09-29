@@ -1,8 +1,10 @@
-# Thesis Source Code
+# Agora
 
-Source code for CSE 492-493 Honors Thesis Study by Venkat Ramaraju and Jayanth Rao.
+### Stock Predictor with Sentiment Analysis
 
 Install requirements with ```pip install -r requirements.txt```
+
+Run Web App with ```flask run``` in the Flask_App directory.
 
 ### Mockups of UI:
 
