@@ -1,6 +1,6 @@
 # Agora
 
-## Sentiment Analysis Stock Predictor
+#### Sentiment Analysis Stock Predictor
 
 ![Homepage](/Mockups/homepage.png?raw=true)
 
@@ -8,11 +8,13 @@
 
 ## Usage
 
-Install requirements with ```pip install -r requirements.txt```.
+1. Clone this repository to your local machine.
 
-Run ```flask run``` in the Flask_App directory.
+2. Install requirements with ```pip install -r requirements.txt```.
 
-Go to ```http://localhost:5000/``` in a web browser.
+3. Run ```flask run``` in the Flask_App directory.
+
+4. Go to ```http://localhost:5000/``` in a web browser.
 
 ## Technical Information
 
@@ -21,10 +23,10 @@ This application uses
 - Flask web application framework
 - Selenium web drivers
 - NTLK VADER sentiment analysis model
-- yfinance queries
+- yfinance API queries
 - Logistic Regression machine learning models
 - GitHub actions for workflow automation
 
-## Technical Information
+## Disclaimer
 This application does not offer investment advice. Do not invest what you cannot lose. You should
 carry out your own independent research before making any investment decision.
