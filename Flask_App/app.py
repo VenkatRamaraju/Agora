@@ -46,6 +46,9 @@ def data():
               """
         ticker_info = conn.execute(info_sql).fetchall()
 
+        if ticker_info == [] or ticker_preds == []:     # Enter a valid ticker
+            return render_template('index.html')
+
         headlines_sql = f"""
                     Select headlines from TickerHeadlines where ticker="{ticker_name}" limit 3
                     """
