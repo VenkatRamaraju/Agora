@@ -50,7 +50,7 @@ jobs:
 
       - name: Update Training Dataset
         run: |
-          cd Model_Training && python model.py
+          cd Model_Training && python fetch_stock_metrics.py
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7

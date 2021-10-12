@@ -16,7 +16,7 @@ import yfinance as yf
 import re
 
 # Global Variables
-overall_headlines_df = pd.DataFrame(columns=['Ticker', 'Headline'])
+overall_headlines_df = pd.DataFrame(columns=['Ticker', 'Headline', 'URL', 'Publisher'])
 stocks_dict = {}
 
 
@@ -90,7 +90,6 @@ def cleanup_array(overall_array, stock):
         return overall_array
 
     cleaned_array = []
-    ticker = yf.Ticker(stock)
     name = stocks_dict[stock]
     for entry in overall_array:
         if stock in str(entry) or contains_company_name(str(entry).lower(), name.lower()):
@@ -99,21 +98,21 @@ def cleanup_array(overall_array, stock):
     return cleaned_array
 
 
-def output(overall_data, stock):
+def output(final_headlines_list, url, publisher, stock):
     """
     Appends to overall dataframe to create the list of headlines.
-    :param overall_data: Array of headlines/conversations after retrieving from respective web sources, in text form.
+    :param final_headlines_list: Array of headlines after retrieving from respective web sources, in text form.
+    :param url: URL of website from where headlines were mined.
+    :param publisher: Name of publisher that published the given set of headlines.
     :param stock: Name of the stock for which all the above data is being retrieved.
     :return None.
     """
 
     global overall_headlines_df
-    if len(overall_data) > 0:
-        for headline in overall_data:
-            row = {'Ticker': stock, 'Headline': headline}
+    if len(final_headlines_list) > 0:
+        for headline in final_headlines_list:
+            row = {'Ticker': stock, 'Headline': headline, 'URL': url, 'Publisher': publisher}
             overall_headlines_df = overall_headlines_df.append(row, ignore_index=True)
-    else:
-        print("Invalid ticker/company or no headlines/conversations available.")
 
 
 # Each of the methods below retrieves the HTML text from the respective web page link and returns an array of the
@@ -121,32 +120,33 @@ def output(overall_data, stock):
 
 def get_morningstar_headlines(stock):
     request = 'https://www.morningstar.com/stocks/xnas/' + stock.lower() + '/news'
-    return create_array(get_soup(request, 'a', 'mdc-link mdc-news-module__headline mds-link mds-link--no-underline'))
+    return create_array(get_soup(request, 'a', 'mdc-link mdc-news-module__headline mds-link mds-link--no-underline')),\
+        request, 'Morning Star'
 
 
 def get_usa_today_headlines(stock):
     request = 'https://www.usatoday.com/search/?q=' + stock
-    return create_array(get_soup(request, 'a', 'gnt_se_a gnt_se_a__hd gnt_se_a__hi'))
+    return create_array(get_soup(request, 'a', 'gnt_se_a gnt_se_a__hd gnt_se_a__hi')), request, 'USA Today'
 
 
 def get_reuters_headlines(stock):
     request = 'https://www.reuters.com/search/news?blob=' + stock
-    return create_array(get_soup(request, 'h3', 'search-result-title'))
+    return create_array(get_soup(request, 'h3', 'search-result-title')), request, 'Reuters'
 
 
 def get_google_finance_headlines(stock):
     request = 'https://www.google.com/finance/quote/' + stock + ':NASDAQ'
-    return create_array(get_soup(request, 'div', 'AoCdqe'))
+    return create_array(get_soup(request, 'div', 'AoCdqe')), request, 'Google Finance'
 
 
 def get_business_insider_headlines(stock):
     request = 'https://markets.businessinsider.com/stocks/' + stock.lower() + '-stock'
-    return create_array(get_soup(request, 'a', 'instrument-stories__link'))
+    return create_array(get_soup(request, 'a', 'instrument-stories__link')), request, 'Business Insider'
 
 
 def get_cnn_headlines(stock):
     request = 'https://money.cnn.com/quote/news/news.html?symb=' + stock
-    return create_array(get_soup(request, 'a', 'wsod_bold'))
+    return create_array(get_soup(request, 'a', 'wsod_bold')), request, 'CNN'
 
 
 def get_yahoo_headlines(stock):
@@ -154,7 +154,7 @@ def get_yahoo_headlines(stock):
     return create_array(get_soup(request, 'a', 'js-content-viewer wafer-caas Fw(b) Fz(18px) Lh(23px) LineClamp(2,46px) '
                                                'Fz(17px)--sm1024 Lh(19px)--sm1024 LineClamp(2,38px)--sm1024 '
                                                'mega-item-header-link Td(n) C(#0078ff):h C(#000) LineClamp(2,46px) '
-                                               'LineClamp(2,38px)--sm1024 not-isInStreamVideoEnabled'))
+                                               'LineClamp(2,38px)--sm1024 not-isInStreamVideoEnabled')), request, 'Yahoo! Finance'
 
 
 def get_cnbc_headlines(stock):
@@ -167,7 +167,7 @@ def get_cnbc_headlines(stock):
         if headline.text != "":
             list_of_headlines.append(headline.text)
 
-    return list_of_headlines
+    return list_of_headlines, request, 'CNBC'
 
 
 def get_all_headlines(stock):
@@ -181,65 +181,72 @@ def get_all_headlines(stock):
     print("\nParsing headlines for:", stock)
 
     # List of sources
-    source_1 = np.array([])
-    source_2 = np.array([])
-    source_3 = np.array([])
-    source_4 = np.array([])
-    source_5 = np.array([])
-    source_6 = np.array([])
-    source_7 = np.array([])
-    source_8 = np.array([])
+    total_sources = []
 
     try:
-        source_1 = np.array(get_cnbc_headlines(stock))
+        headline_list, url, publisher = get_cnbc_headlines(stock)
+        source_1 = np.array(headline_list)
+        total_sources.append((source_1, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
     try:
-        source_2 = np.array(get_reuters_headlines(stock))
+        headline_list, url, publisher = get_reuters_headlines(stock)
+        source_2 = np.array(headline_list)
+        total_sources.append((source_2, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
     try:
-        source_3 = np.array(get_morningstar_headlines(stock))
+        headline_list, url, publisher = get_morningstar_headlines(stock)
+        source_3 = np.array(headline_list)
+        total_sources.append((source_3, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
     try:
-        source_4 = np.array(get_usa_today_headlines(stock))
+        headline_list, url, publisher = get_usa_today_headlines(stock)
+        source_4 = np.array(headline_list)
+        total_sources.append((source_4, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
     try:
-        source_5 = np.array(get_google_finance_headlines(stock))
+        headline_list, url, publisher = get_google_finance_headlines(stock)
+        source_5 = np.array(headline_list)
+        total_sources.append((source_5, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
     try:
-        source_6 = np.array(get_business_insider_headlines(stock))
+        headline_list, url, publisher = get_business_insider_headlines(stock)
+        source_6 = np.array(headline_list)
+        total_sources.append((source_6, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
     try:
-        source_7 = np.array(get_cnn_headlines(stock))
+        headline_list, url, publisher = get_cnn_headlines(stock)
+        source_7 = np.array(headline_list)
+        total_sources.append((source_7, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
     try:
-        source_8 = np.array(get_yahoo_headlines(stock))
+        headline_list, url, publisher = get_yahoo_headlines(stock)
+        source_8 = np.array(headline_list)
+        total_sources.append((source_8, url, publisher))
     except RuntimeError as e:
         print(e, "was handled")
 
-    # Combine all sources, clean up the array
-    total_headlines = list(np.concatenate((source_1, source_2, source_3, source_4, source_5, source_6, source_7,
-                                           source_8), axis=None))
-
-    return cleanup_array(total_headlines, stock)
+    for source in total_sources:
+        headline_list, url, publisher = source
+        final_headlines_list = cleanup_array(headline_list, stock)
+        output(final_headlines_list, url, publisher, stock)
 
 
 def main():
     # Tickers and companies
-
     stocks_df = pd.read_csv("../companies.csv")
     global stocks_dict
 
@@ -249,13 +256,9 @@ def main():
         )
 
     tickers = list(stocks_dict.keys())
-
     for i in range(0, len(tickers)):
         try:
-            total_headlines = get_all_headlines(tickers[i])
-
-            # Combining data and output to CSV
-            output(total_headlines, tickers[i])
+            get_all_headlines(tickers[i])
         except RuntimeError as e:
             print(e, "was handled")
 
