@@ -64,4 +64,9 @@ input[type=submit] {
     justify-content: space-around;
 }
 
+.table {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
 

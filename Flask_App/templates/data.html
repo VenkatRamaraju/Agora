@@ -29,7 +29,9 @@
     {% endif %}
 {% endfor %}
 
-
+<br>
+<br>
+<br>
 <div class="middle-section">
 {% for key, value in form_data.items() %}
 <!--<h1> {{key}}: {{value}}</h1>-->
@@ -156,12 +158,16 @@
 </div>
 
 {% if ticker_headlines %}
+
     <h1>Latest News Regarding {{form_data["Searched Ticker"]}}</h1>
-    {% for headline_row in ticker_headlines %}
-        <p>
-            {{headline_row[0]}}
-        </p>
-    {% endfor %}
+    <table class="table">
+        {% for headline_row in ticker_headlines %}
+        <tr>
+            <th>PUBLICATION HERE</th>
+            <td>{{headline_row[0]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 {% endif %}
 
 <br>
