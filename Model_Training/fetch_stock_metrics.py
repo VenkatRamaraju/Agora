@@ -20,7 +20,7 @@ def get_stock_metrics(company_df: pandas.DataFrame):
         if ticker is not None:
             for col in new_columns:
                 if col in ticker.info:
-                    company_df.at[index, col] = ticker.info[col]
+                    company_df.at[index, col] = int(round(ticker.info[col], 2))
 
     company_df.to_csv("finalized_stock_metrics_all.csv")
 
