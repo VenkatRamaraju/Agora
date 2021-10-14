@@ -5,169 +5,170 @@
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <title>Entered Stock Ticker: {{form_data["Searched Ticker"]}}</title>
+    <title>Entered Stock Ticker: {{ticker_name}}</title>
 </head>
 <body>
-
-<!--{{ticker_predictions}}-->
-{% for info_row in ticker_predictions %}
-    {% if info_row[3] != None %}
-        {% if info_row[3] == 1.0 %}
-            <h1>The Agora recommends... <span style="color: #006400">buying</span> {{info_row[0]}}.</h1>
-        {% else %}
-            <h1>The Agora recommends... <span style="color: #8b0000">not buying</span> {{info_row[0]}}.</h1>
-        {% endif %}
-    {% else %}
-        {% if info_row[2] == 'Buy' or info_row[2] == 'Strong Buy' %}
-            <h1>Analysts recommend a ... <span style="color: #006400">{{info_row[2]}}</span> for {{info_row[0]}}.</h1>
-        {% elif info_row[2] == 'Sell' or info_row[2] == 'Strong Sell' %}
-            <h1>Analysts recommend a ... <span style="color: #8b0000">{{info_row[2]}}</span> for {{info_row[0]}}.</h1>
-        {% else %}
-            <h1>Analysts recommend a ... <span style="color: #949494">{{info_row[2]}}</span></h1>
-        {% endif %}
-        <h3>An Agora recommendation was not available due to an incomplete feature set for this stock.</h3>
-    {% endif %}
-{% endfor %}
-
-
-<div class="middle-section">
-{% for key, value in form_data.items() %}
-<!--<h1> {{key}}: {{value}}</h1>-->
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div id="tradingview_eebdd"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-{{value}}/" rel="noopener"
-                                                 target="_blank"><span class="blue-text">{{value}} Chart</span></a> by
-        TradingView
-    </div>
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-    <script type="text/javascript">
-        new TradingView.widget(
-            {
-                "width": 750,
-                "height": 500,
-                "symbol": "{{value}}",
-                "interval": "D",
-                "timezone": "Etc/UTC",
-                "theme": "dark",
-                "style": "1",
-                "locale": "en",
-                "toolbar_bg": "#f1f3f6",
-                "enable_publishing": false,
-                "allow_symbol_change": true,
-                "container_id": "tradingview_eebdd"
-            }
-        );
-    </script>
-</div>
-<!-- TradingView Widget END -->
-{% endfor %}
-<p> {{value}}</p>
-
-    <div class="ticker-properties">
-        <!--{{ticker_info}}-->
-        <h1>Ticker Properties</h1>
-        <table class="table">
+    <div class="container">
+        <!--{{ticker_predictions}}-->
         {% for info_row in ticker_predictions %}
-            <tr>
-                <th>Ticker</th>
-                <td>{{info_row[0]}}</td>
-            </tr>
-            <tr>
-                <th>Company Name</th>
-                <td>{{info_row[1]}}</td>
-            </tr>
-            <tr>
-                <th>Analyst Rating</th>
-                {% if info_row[2] == 'Buy' or info_row[2] == 'Strong Buy' %}
-                    <td><b><span style="color: #006400">{{info_row[2]}}</span></b></td>
-                {% elif info_row[2] == 'Sell' or info_row[2] == 'Strong Sell' %}
-                    <td><b><span style="color: #8b0000">{{info_row[2]}}</span></b></td>
+            {% if info_row[3] != None %}
+                {% if info_row[3] == 1.0 %}
+                    <h1 class="display-3">The Agora recommends... <span style="color: #006400">buying</span> <a href="https://finance.yahoo.com/quote/{{info_row[0]}}" target="_blank">{{info_row[0]}}</a>.</h1>
                 {% else %}
-                    <td><b><span style="color: #949494">{{info_row[2]}}</span></b></td>
+                    <h1 class="display-3">The Agora recommends... <span style="color: #8b0000">not buying</span> <a href="https://finance.yahoo.com/quote/{{info_row[0]}}" target="_blank">{{info_row[0]}}</a>.</h1>
                 {% endif %}
-
-            </tr>
-            {% if info_row[4] and info_row[5] %}
-                <tr>
-                    <th>Headline Polarity</th>
-                    <td>{{info_row[4]}}</td>
-                </tr>
-                <tr>
-                    <th>Conversation Polarity</th>
-                    <td>{{info_row[5]}}</td>
-                </tr>
+            {% else %}
+                {% if info_row[2] == 'Buy' or info_row[2] == 'Strong Buy' %}
+                    <h1 class="display-3">Analysts recommend a ... <span style="color: #006400">{{info_row[2]}}</span> for <a href="https://finance.yahoo.com/quote/{{info_row[0]}}" target="_blank">{{info_row[0]}}</a>.</h1>
+                {% elif info_row[2] == 'Sell' or info_row[2] == 'Strong Sell' %}
+                    <h1 class="display-3">Analysts recommend a ... <span style="color: #8b0000">{{info_row[2]}}</span> for <a href="https://finance.yahoo.com/quote/{{info_row[0]}}" target="_blank">{{info_row[0]}}</a>.</h1>
+                {% else %}
+                    <h1 class="display-3">Analysts recommend a ... <span style="color: #949494">{{info_row[2]}}</span> for <a href="https://finance.yahoo.com/quote/{{info_row[0]}}" target="_blank">{{info_row[0]}}</a>.</h1>
+                {% endif %}
+                <h3>An Agora recommendation was not available due to an incomplete feature set for this stock.</h3>
             {% endif %}
         {% endfor %}
 
-        {% for metric_row in ticker_info %}
-            {% if metric_row[1] != None %}
-                <tr>
-                    <th>Stock Volatility (Beta)</th>
-                    <td>{{metric_row[1]}}</td>
-                </tr>
-            {% endif %}
+        <br>
+        <br>
+        <div class="middle-section">
+        <!--<h1> {{key}}: {{value}}</h1>-->
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_eebdd"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-{{value}}/" rel="noopener"
+                                                         target="_blank"><span class="blue-text">{{ticker_name}} Chart</span></a> by
+                TradingView
+            </div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                    {
+                        "width": 750,
+                        "height": 500,
+                        "symbol": "{{value}}",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "locale": "en",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_eebdd"
+                    }
+                );
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
 
-            {% if metric_row[2] != None %}
-                <tr>
-                    <th>Profit Margin</th>
-                    <td>${{metric_row[2]}}</td>
-                </tr>
-            {% endif %}
+            <div class="ticker-properties">
+                <!--{{ticker_info}}-->
+                <h1>Ticker Properties</h1>
+                <table class="table">
+                {% for info_row in ticker_predictions %}
+                    <tr>
+                        <th>Ticker</th>
+                        <td>{{info_row[0]}}</td>
+                    </tr>
+                    <tr>
+                        <th>Company Name</th>
+                        <td>{{info_row[1]}}</td>
+                    </tr>
+                    <tr>
+                        <th>Analyst Rating</th>
+                        {% if info_row[2] == 'Buy' or info_row[2] == 'Strong Buy' %}
+                            <td><b><span style="color: #006400">{{info_row[2]}}</span></b></td>
+                        {% elif info_row[2] == 'Sell' or info_row[2] == 'Strong Sell' %}
+                            <td><b><span style="color: #8b0000">{{info_row[2]}}</span></b></td>
+                        {% else %}
+                            <td><b><span style="color: #949494">{{info_row[2]}}</span></b></td>
+                        {% endif %}
 
-            {% if metric_row[3] != None %}
-                <tr>
-                    <th>Predicted Earnings Per Share (Forward EPS)</th>
-                    <td>${{metric_row[3]}}</td>
-                </tr>
-            {% endif %}
+                    </tr>
+                    {% if info_row[4] and info_row[5] %}
+                        <tr>
+                            <th>Headline Polarity</th>
+                            <td>{{info_row[4]}}</td>
+                        </tr>
+                        <tr>
+                            <th>Conversation Polarity</th>
+                            <td>{{info_row[5]}}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
 
-            {% if metric_row[4] != None %}
-                <tr>
-                    <th>Stock Purchase Price (Book Value)</th>
-                    <td>${{metric_row[4]}}</td>
-                </tr>
-            {% endif %}
+                {% for metric_row in ticker_info %}
+                    {% if metric_row[1] != None %}
+                        <tr>
+                            <th>Stock Volatility (Beta)</th>
+                            <td>{{metric_row[1]}}</td>
+                        </tr>
+                    {% endif %}
 
-            {% if metric_row[5] != None %}
-                <tr>
-                    <th>Number of Shares Owned by Financial Institutions</th>
-                    <td>{{metric_row[5] * 100}}%</td>
-                </tr>
-            {% endif %}
+                    {% if metric_row[2] != None %}
+                        <tr>
+                            <th>Profit Margin</th>
+                            <td>${{metric_row[2]}}</td>
+                        </tr>
+                    {% endif %}
 
-            {% if metric_row[6] != None %}
-                <tr>
-                    <th>Number of Shorted Shares Over 30 Days</th>
-                    <td>{{metric_row[6] * 100}}%</td>
-                </tr>
-            {% endif %}
+                    {% if metric_row[3] != None %}
+                        <tr>
+                            <th>Predicted Earnings Per Share (Forward EPS)</th>
+                            <td>${{metric_row[3]}}</td>
+                        </tr>
+                    {% endif %}
 
-            {% if metric_row[7] != None %}
+                    {% if metric_row[4] != None %}
+                        <tr>
+                            <th>Stock Purchase Price (Book Value)</th>
+                            <td>${{metric_row[4]}}</td>
+                        </tr>
+                    {% endif %}
+
+                    {% if metric_row[5] != None %}
+                        <tr>
+                            <th>Number of Shares Owned by Financial Institutions</th>
+                            <td>{{metric_row[5] * 100}}%</td>
+                        </tr>
+                    {% endif %}
+
+                    {% if metric_row[6] != None %}
+                        <tr>
+                            <th>Number of Shorted Shares Over 30 Days</th>
+                            <td>{{metric_row[6] * 100}}%</td>
+                        </tr>
+                    {% endif %}
+
+                    {% if metric_row[7] != None %}
+                        <tr>
+                            <th>Number of Shorted Shares by Financial Institutions</th>
+                            <td>{{metric_row[7] * 100}}%</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+                </table>
+                <br>
+            </div>
+        </div>
+
+        {% if ticker_headlines %}
+
+            <h1>Latest News Regarding {{ticker_name}}</h1>
+            <table class="table">
+                {% for headline_row in ticker_headlines %}
                 <tr>
-                    <th>Number of Shorted Shares by Financial Institutions</th>
-                    <td>{{metric_row[7] * 100}}%</td>
+                    <th>PUBLICATION HERE</th>
+                    <td>{{headline_row[0]}}</td>
                 </tr>
-            {% endif %}
-        {% endfor %}
-        </table>
+                {% endfor %}
+            </table>
+        {% endif %}
+        <br>
+        <br>
+        <br>
         <br>
     </div>
-</div>
-
-{% if ticker_headlines %}
-    <h1>Latest News Regarding {{form_data["Searched Ticker"]}}</h1>
-    {% for headline_row in ticker_headlines %}
-        <p>
-            {{headline_row[0]}}
-        </p>
-    {% endfor %}
-{% endif %}
-
-<br>
-<br>
-<br>
-<br>
-
 </body>
 </html>

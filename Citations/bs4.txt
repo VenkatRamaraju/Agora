@@ -1,0 +1,59 @@
+[
+  {
+    "URL": "http://www.crummy.com/software/BeautifulSoup/bs4/",
+    "abstract": "Screen-scraping library",
+    "accessed": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          3
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Leonard Richardson"
+      }
+    ],
+    "categories": [
+      "software",
+      "python",
+      "libraries",
+      "pypi",
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Text Processing :: Markup :: HTML",
+      "Topic :: Text Processing :: Markup :: SGML",
+      "Topic :: Text Processing :: Markup :: XML"
+    ],
+    "id": "beautifulsoup4",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          3
+        ]
+      ]
+    },
+    "original-date": {
+      "date-parts": [
+        [
+          2013,
+          10,
+          2
+        ]
+      ]
+    },
+    "publisher": "crummy.com",
+    "title": "beautifulsoup4",
+    "type": "webpage",
+    "version": "4.9.3"
+  }
+]
