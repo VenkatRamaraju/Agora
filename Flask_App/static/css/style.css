@@ -19,6 +19,13 @@ h3 {
     padding: 10px;
 }
 
+h4 {
+    font-family: "Metropolis", sans-serif;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
 p {
     font-family: "Metropolis", sans-serif;
     text-align: left;
@@ -68,8 +75,7 @@ input[type=submit] {
 .middle-section {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: center;
 }
 
 .table {
@@ -78,12 +84,17 @@ input[type=submit] {
     justify-content: space-around;
 }
 
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+.container-mf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
+.ticker-properties {
+    padding: 1rem;
+}
+
+.tradingview-widget-container {
+    padding: 1rem;
+}
