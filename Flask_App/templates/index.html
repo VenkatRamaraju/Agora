@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <title>
         AGORA
     </title>
 </head>
 <body>
-<h1>AGORA</h1>
-<hr>
-<form action="/data" method="POST">
-    <p><input type="text" name="Searched Ticker" placeholder="Search for a ticker..."/></p>
-    <p><input type="submit" value="Submit" /></p>
-</form>
+    <div class="container">
+        <h1 class="display-2"><b>AGORA</b></h1>
+        <br>
+        <form action="/data/" method="GET">
+            <p><input type="text" name="Searched Ticker" placeholder="Search for a ticker..."/></p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+        <br>
+        <br>
+        <div>
+            <h2 align="center" class="display-6"><b>TRENDING STOCKS</b></h2>
+            <table class="table">
+                {% for stock in trending_stocks %}
+                    <tr>
+                        <th><a href="/data/?Searched+Ticker={{stock}}"> <h3>{{stock}}</h3> </a></th>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
 </body>
 </html>

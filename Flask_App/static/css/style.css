@@ -3,7 +3,13 @@ h1 {
     color: black;
     text-align: center;
     padding: 10px;
-    font-size: 48px;
+}
+
+h2 {
+    font-family: "Metropolis", sans-serif;
+    color: black;
+    text-align: center;
+    padding: 10px;
 }
 
 h3 {
@@ -27,6 +33,7 @@ hr {
     border: 0 none;
     margin-top: -30px;
     margin-bottom: 100px;
+    align=center;
 }
 
 *, *:before, *:after {
@@ -62,11 +69,21 @@ input[type=submit] {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .table {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
