@@ -96,5 +96,7 @@ input[type=submit] {
 }
 
 .tradingview-widget-container {
+    display: flex;
+    align-items: center;
     padding: 1rem;
 }

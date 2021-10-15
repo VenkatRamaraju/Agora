@@ -8,12 +8,17 @@ Functionality implemented:
 """
 
 # Libraries and Dependencies
+import pprint
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
 import yfinance as yf
 import re
+import hl_dict_creator
+
+pd.set_option('display.max_columns', 7)
 
 # Global Variables
 overall_headlines_df = pd.DataFrame(columns=['Ticker', 'Headline', 'URL', 'Publisher'])
@@ -56,11 +61,11 @@ def contains_company_name(headline, name):
     :return: True if the company name is in the headline, false otherwise.
     """
     # Remove punctuations and format into array
-    company = re.sub(r'[^\w\s]', '', name).lower().strip()
+    company = re.sub(r'[^\w\s]', '', name).strip()
     company_words = company.split(' ')
 
     # Words to remove for comparison
-    words_to_remove = ['a', 'and', 'the', 'company', 'incorporated', 'corporation', 'group', 'inc']
+    words_to_remove = ['a', 'and', 'the', 'company', 'incorporated', 'corporation', 'group', 'inc', 'common', 'stock']
 
     # Removing words
     for word in words_to_remove:
@@ -114,6 +119,26 @@ def output(final_headlines_list, url, publisher, stock):
             row = {'Ticker': stock, 'Headline': headline, 'URL': url, 'Publisher': publisher}
             overall_headlines_df = overall_headlines_df.append(row, ignore_index=True)
 
+
+def output_2(final_headlines_list, ticker):
+    """
+    Appends to overall dataframe to create the list of headlines.
+    :param final_headlines_list: Array of headlines after retrieving from respective web sources, in text form.
+    :param url: URL of website from where headlines were mined.
+    :param publisher: Name of publisher that published the given set of headlines.
+    :param stock: Name of the stock for which all the above data is being retrieved.
+    :return None.
+    """
+
+    global overall_headlines_df
+    if len(final_headlines_list) > 0:
+        for hl in final_headlines_list:
+            headline = hl[0]
+            url = hl[1]
+            publisher = hl[2]
+
+            row = {'Ticker': ticker, 'Headline': headline, 'URL': url, 'Publisher': publisher}
+            overall_headlines_df = overall_headlines_df.append(row, ignore_index=True)
 
 # Each of the methods below retrieves the HTML text from the respective web page link and returns an array of the
 # headlines on those webpages, leveraging all the above methods as subroutines.
@@ -170,7 +195,7 @@ def get_cnbc_headlines(stock):
     return list_of_headlines, request, 'CNBC'
 
 
-def get_all_headlines(stock):
+def get_all_headlines(stock, company_name):
     """
     Gets headlines from various sources, concatenates the arrays of headlines, cleans up the text and returns the
     overall array.
@@ -183,66 +208,145 @@ def get_all_headlines(stock):
     # List of sources
     total_sources = []
 
-    try:
-        headline_list, url, publisher = get_cnbc_headlines(stock)
-        source_1 = np.array(headline_list)
-        total_sources.append((source_1, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+    # try:
+    #     headline_list, url, publisher = get_cnbc_headlines(stock)
+    #     source_1 = np.array(headline_list)
+    #     total_sources.append((source_1, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+
+    # try:
+    #     headline_list, url, publisher = get_reuters_headlines(stock)
+    #     source_2 = np.array(headline_list)
+    #     total_sources.append((source_2, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+    #
+    # try:
+    #     headline_list, url, publisher = get_morningstar_headlines(stock)
+    #     source_3 = np.array(headline_list)
+    #     total_sources.append((source_3, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+    #
+    # try:
+    #     headline_list, url, publisher = get_usa_today_headlines(stock)
+    #     source_4 = np.array(headline_list)
+    #     total_sources.append((source_4, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+    #
+    # try:
+    #     headline_list, url, publisher = get_google_finance_headlines(stock)
+    #     source_5 = np.array(headline_list)
+    #     total_sources.append((source_5, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+    #
+    # try:
+    #     headline_list, url, publisher = get_business_insider_headlines(stock)
+    #     source_6 = np.array(headline_list)
+    #     total_sources.append((source_6, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+    #
+    # try:
+    #     headline_list, url, publisher = get_cnn_headlines(stock)
+    #     source_7 = np.array(headline_list)
+    #     total_sources.append((source_7, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+    #
+    # try:
+    #     headline_list, url, publisher = get_yahoo_headlines(stock)
+    #     source_8 = np.array(headline_list)
+    #     total_sources.append((source_8, url, publisher))
+    # except RuntimeError as e:
+    #     print(e, "was handled")
+    #
+    # for source in total_sources:
+    #     headline_list, url, publisher = source
+    #     final_headlines_list = cleanup_array(headline_list, stock)
+    #     output(final_headlines_list, url, publisher, stock)
 
     try:
-        headline_list, url, publisher = get_reuters_headlines(stock)
-        source_2 = np.array(headline_list)
-        total_sources.append((source_2, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+        hl_list = hl_dict_creator.get_reuters_headlines(stock)
+        for hl in hl_list:
+            hl_tuple = (hl['title'], hl['url'], hl['publisher'])
+            relevant = contains_company_name(hl['title'], company_name)
+            # relevant = True
+            if relevant:
+                total_sources.append(hl_tuple)
+    except Exception as e:
+        print("reuters handled that bitch", e)
 
     try:
-        headline_list, url, publisher = get_morningstar_headlines(stock)
-        source_3 = np.array(headline_list)
-        total_sources.append((source_3, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+        hl_list = hl_dict_creator.get_cnbc_headlines(stock)
+        for hl in hl_list:
+            hl_tuple = (hl['title'], hl['url'], hl['publisher'])
+            relevant = contains_company_name(hl['title'], company_name)
+            # relevant = True
+            if relevant:
+                total_sources.append(hl_tuple)
+    except Exception as e:
+        print("cnbc handled that bitch", e)
 
     try:
-        headline_list, url, publisher = get_usa_today_headlines(stock)
-        source_4 = np.array(headline_list)
-        total_sources.append((source_4, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+        hl_list = hl_dict_creator.get_yahoo_headlines(stock)
+        for hl in hl_list:
+            hl_tuple = (hl['title'], hl['url'], hl['publisher'])
+            relevant = contains_company_name(hl['title'], company_name)
+            # relevant = True
+            if relevant:
+                total_sources.append(hl_tuple)
+    except Exception as e:
+        print("yahoo handled that bitch", e)
 
     try:
-        headline_list, url, publisher = get_google_finance_headlines(stock)
-        source_5 = np.array(headline_list)
-        total_sources.append((source_5, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+        hl_list = hl_dict_creator.get_cnn_headlines(stock)
+        for hl in hl_list:
+            hl_tuple = (hl['title'], hl['url'], hl['publisher'])
+            relevant = contains_company_name(hl['title'], company_name)
+            # relevant = True
+            if relevant:
+                total_sources.append(hl_tuple)
+    except Exception as e:
+        print("cnn handled that bitch", e)
 
     try:
-        headline_list, url, publisher = get_business_insider_headlines(stock)
-        source_6 = np.array(headline_list)
-        total_sources.append((source_6, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+        hl_list = hl_dict_creator.get_business_insider_headlines(stock)
+        for hl in hl_list:
+            hl_tuple = (hl['title'], hl['url'], hl['publisher'])
+            relevant = contains_company_name(hl['title'], company_name)
+            # relevant = True
+            if relevant:
+                total_sources.append(hl_tuple)
+    except Exception as e:
+        print("bi handled that bitch", e)
 
     try:
-        headline_list, url, publisher = get_cnn_headlines(stock)
-        source_7 = np.array(headline_list)
-        total_sources.append((source_7, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+        hl_list = hl_dict_creator.get_google_finance_headlines(stock)
+        for hl in hl_list:
+            hl_tuple = (hl['title'], hl['url'], hl['publisher'])
+            relevant = contains_company_name(hl['title'], company_name)
+            # relevant = True
+            if relevant:
+                total_sources.append(hl_tuple)
+    except Exception as e:
+        print("gf handled that bitch", e)
 
     try:
-        headline_list, url, publisher = get_yahoo_headlines(stock)
-        source_8 = np.array(headline_list)
-        total_sources.append((source_8, url, publisher))
-    except RuntimeError as e:
-        print(e, "was handled")
+        hl_list = hl_dict_creator.get_morningstar_headlines(stock)
+        for hl in hl_list:
+            hl_tuple = (hl['title'], hl['url'], hl['publisher'])
+            relevant = contains_company_name(hl['title'], company_name)
+            # relevant = True
+            if relevant:
+                total_sources.append(hl_tuple)
+    except Exception as e:
+        print("ms handled that bitch", e)
 
-    for source in total_sources:
-        headline_list, url, publisher = source
-        final_headlines_list = cleanup_array(headline_list, stock)
-        output(final_headlines_list, url, publisher, stock)
+    return total_sources
 
 
 def main():
@@ -254,16 +358,29 @@ def main():
         stocks_dict.update(
             {row["Symbol"]: row["Company"]}
         )
+    #
+    # tickers = list(stocks_dict.keys())
+    # for i in range(0, len(tickers)):
+    #     try:
+    #         get_all_headlines(tickers[i])
+    #     except RuntimeError as e:
+    #         print(e, "was handled")
+    #
+    # overall_headlines_df.drop_duplicates(subset=None, keep='first', inplace=True)
+    # overall_headlines_df.to_csv('../Headlines.csv', index=False)
 
-    tickers = list(stocks_dict.keys())
-    for i in range(0, len(tickers)):
-        try:
-            get_all_headlines(tickers[i])
-        except RuntimeError as e:
-            print(e, "was handled")
+    headline_total = []
+    # # headline_total += get_all_headlines("AAPL", "Apple Inc. Common Stock")
+    # headline_total += get_all_headlines("MSFT", "Microsoft Corporation Common Stock")
+    #
+    # pprint.pprint(headline_total)
+    for ticker, name in stocks_dict.items():
+        output_2(get_all_headlines(ticker, name), ticker)
+        # overall_headlines_df.to_csv("../Headlines_2.csv", index=False)
 
-    overall_headlines_df.drop_duplicates(subset=None, keep='first', inplace=True)
-    overall_headlines_df.to_csv('../Headlines.csv', index=False)
+        # print(overall_headlines_df)
+
+    overall_headlines_df.to_csv("../Headlines_2.csv", index=False)
 
 
 if __name__ == "__main__":

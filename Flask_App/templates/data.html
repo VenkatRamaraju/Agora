@@ -35,32 +35,29 @@
         <br>
         <div class="middle-section">
         <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div id="tradingview_eebdd"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-{{value}}/" rel="noopener"
-                                                         target="_blank"><span class="blue-text">{{ticker_name}} Chart</span></a> by
-                TradingView
+            <div class="tradingview-widget-container">
+              <div id="tradingview_b263f"></div>
+<!--              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols//" rel="noopener" target="_blank"><span class="blue-text"></span></a> by TradingView</div>-->
+              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+              <script type="text/javascript">
+              new TradingView.widget(
+              {
+              "width": 800,
+              "height": 500,
+              "symbol": "{{ticker_name}}",
+              "interval": "D",
+              "timezone": "Etc/UTC",
+              "theme": "dark",
+              "style": "1",
+              "locale": "en",
+              "toolbar_bg": "#f1f3f6",
+              "enable_publishing": false,
+              "allow_symbol_change": true,
+              "container_id": "tradingview_b263f"
+            }
+              );
+              </script>
             </div>
-            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-            <script type="text/javascript">
-                new TradingView.widget(
-                    {
-                        "width": 750,
-                        "height": 500,
-                        "symbol": "{{value}}",
-                        "interval": "D",
-                        "timezone": "Etc/UTC",
-                        "theme": "dark",
-                        "style": "1",
-                        "locale": "en",
-                        "toolbar_bg": "#f1f3f6",
-                        "enable_publishing": false,
-                        "allow_symbol_change": true,
-                        "container_id": "tradingview_eebdd"
-                    }
-                );
-            </script>
-        </div>
         <!-- TradingView Widget END -->
 
             <div class="ticker-properties">
@@ -160,8 +157,8 @@
             <table class="table">
                 {% for headline_row in ticker_headlines %}
                 <tr>
-                    <th>PUBLICATION HERE</th>
-                    <td>{{headline_row[0]}}</td>
+                    <th>{{headline_row[2]}}</th>
+                    <td><a href="{{headline_row[1]}}" target="_blank">{{headline_row[0]}}</a></td>
                 </tr>
                 {% endfor %}
             </table>

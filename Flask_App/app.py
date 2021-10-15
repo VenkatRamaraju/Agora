@@ -77,11 +77,11 @@ def data():
           """
     ticker_info = conn.execute(info_sql).fetchall()
 
-    if ticker_info == [] or ticker_preds == []:     # Enter a valid ticker
+    if ticker_info == [] or ticker_preds == []:  # Enter a valid ticker
         return render_template('index.html')
 
     headlines_sql = f"""
-                Select headlines from TickerHeadlines where ticker="{ticker_name}" limit 3
+                SELECT headline, url, publisher FROM 'TickerHeadlines' where ticker='{ticker_name}' group by publisher;
                 """
     ticker_headlines = conn.execute(headlines_sql).fetchall()
 

@@ -11,16 +11,18 @@ init_cleanup = f"""drop table if exists {table2};"""
 cur.execute(init_cleanup)
 
 table2_sql = f"""create table {table2}(
-    headlines text,
+    headline text,
     ticker text not null,
+    url text,
+    publisher text,
     foreign key (ticker) references TickerPredictions(ticker)
 )"""
 
 cur.execute(table2_sql)
 
-ticker_headlines = pd.read_csv("../Data_Collection/Headlines.csv", index_col=False)
+ticker_headlines = pd.read_csv("../Data_Collection/Headlines_2.csv", index_col=False)
 
-ticker_headlines.columns = ['ticker', 'headlines']
+ticker_headlines.columns = ['ticker', 'headline', 'url', 'publisher']
 
 ticker_headlines = ticker_headlines.drop_duplicates()
 
