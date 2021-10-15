@@ -44,13 +44,13 @@ def get_headline_sentiments():
     Analyze polarities of the given stock tickers, based on terminologies inserted in SentimentIntensityAnalyzer.
     Prints out the aggregated results to CSV.
     """
-    headlines_csv = pd.read_csv("../Data_Collection/Headlines.csv")
+    headlines_csv = pd.read_csv("../Data_Collection/Headlines_2.csv")
     sum_of_polarities = {}
     count_of_headlines = {}
 
     for index, row in headlines_csv.iterrows():
         try:
-            lemma_text = lemmatizer.lemmatize(str(row['Headline']))
+            lemma_text = lemmatizer.lemmatize(str(row['headline']))
             scores = sia.polarity_scores(lemma_text)
             row["Polarity"] = scores["compound"]
 

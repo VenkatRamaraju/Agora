@@ -367,7 +367,7 @@ def main():
     #         print(e, "was handled")
     #
     # overall_headlines_df.drop_duplicates(subset=None, keep='first', inplace=True)
-    # overall_headlines_df.to_csv('../Headlines.csv', index=False)
+    # overall_headlines_df.to_csv('../Headlines_hella_merge_conflicts.csv', index=False)
 
     headline_total = []
     # # headline_total += get_all_headlines("AAPL", "Apple Inc. Common Stock")
