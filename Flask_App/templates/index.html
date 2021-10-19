@@ -8,22 +8,31 @@
         AGORA
     </title>
 </head>
-<body>
+<body style="display:flex;
+    flex-direction:column;
+    justify-content:center;">
     <div class="container">
-        <h1 class="display-2"><b>AGORA</b></h1>
+        <h1 class="display-1"><b>AGORA</b></h1>
+        <h4 align="center">TAGLINE HERE</h4>
         <br>
         <form action="/data/" method="GET">
-            <p><input type="text" name="Searched Ticker" placeholder="Search for a ticker..."/></p>
+            <p><input style="text-align: center; font-size: 20px;" type="text" name="Searched Ticker" placeholder="Search for a ticker..."/></p>
             <p><input type="submit" value="Submit" /></p>
         </form>
         <br>
         <br>
         <div>
-            <h2 align="center" class="display-6"><b>TRENDING STOCKS</b></h2>
-            <table class="table">
+            <h3 align="center"><b>TRENDING STOCKS</b></h3>
+            <table class="table align-middle">
                 {% for stock in trending_stocks %}
-                    <tr>
-                        <th><a href="/data/?Searched+Ticker={{stock}}"> <h3>{{stock}}</h3> </a></th>
+                    <tr class="align-middle">
+                        <th><h4>${{stock['price']}}</h4></th>
+                        <th><a href="/data/?Searched+Ticker={{stock['ticker']}}"><h4>{{stock['ticker']}}</h4> </a></th>
+                        {% if stock['pred'] == 1.0 %}
+                            <th><h4><span style="color: #006400">Buy</span></h4></th>
+                        {% elif stock['pred'] == 0.0 %}
+                            <th><h4><span style="color: #8b0000">Not Buy</span></h4></th>
+                        {% endif %}
                     </tr>
                 {% endfor %}
             </table>

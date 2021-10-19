@@ -49,7 +49,7 @@ hr {
 
 input[type=text] {
     font-family: "Metropolis", sans-serif;
-    width: 40%;
+    width: 60%;
     margin: 10px auto;
     padding: 10px;
     background-color: #fafafa;
@@ -92,11 +92,19 @@ input[type=submit] {
 }
 
 .ticker-properties {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .tradingview-widget-container {
     display: flex;
     align-items: center;
-    padding: 1rem;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+.chart {
+    padding: 2rem;
 }

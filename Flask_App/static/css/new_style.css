@@ -1,0 +1,39 @@
+div.wrap {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0.75rem;
+}
+
+div.vertical-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+* {
+    font-family: Metropolis;
+}
+
+div.main-content {
+    padding-top: 0.75rem;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a.custom-style {
+    color: #0D6EFD;
+    text-decoration: underline;
+}
+
+span.custom-style-2 {
+    color: black;
+    text-decoration: none;
+}
+
+.ticker-metrics-table td {
+    padding-right: 3rem !important;
+}

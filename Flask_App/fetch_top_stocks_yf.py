@@ -12,11 +12,14 @@ def get_trending_stocks():
     html = requests.get(url).text
     soup = BeautifulSoup(html, 'lxml')
     table = soup.find_all("a", class_="Fw(600) C($linkColor)")
+    table_2 = soup.find_all("td", {'class': 'Va(m) Ta(end) Pstart(20px) Fw(600) Fz(s)', 'aria-label': 'Last Price'})
+
+    # pprint.pprint(table_2)
 
     trending_stocks_list = []
 
-    for company in table:
-        title = company.get('title')\
+    for i in range(len(table)):
+        title = table[i].get('title')\
             .replace(", Inc.", "")\
             .replace(" Inc.", "")\
             .replace(" Group", "")\
@@ -25,12 +28,18 @@ def get_trending_stocks():
             .replace(" Holdings", "")
 
         stock_dict = {
-            'ticker': company.contents[0],
-            'url': "https://finance.yahoo.com" + company.get('href'),
-            'title': title
+            'ticker': table[i].contents[0],
+            'url': "https://finance.yahoo.com" + table[i].get('href'),
+            'title': title,
+            'current_price': table_2[i].find('fin-streamer').get('value')
         }
 
         trending_stocks_list.append(stock_dict)
 
     return trending_stocks_list
+
+
+# pprint.pprint(get_trending_stocks())
+
+# pprint.pprint(get_trending_stocks())
 

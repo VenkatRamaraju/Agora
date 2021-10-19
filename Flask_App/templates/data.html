@@ -9,7 +9,7 @@
 </head>
 <body>
     <br>
-    <h4><b><a href="/" class="link-dark">AGORA</a></b></h4>
+    <h3><b><a href="/" class="link-dark">AGORA</a></b></h3>
     <div class="container-mf">
         <!--{{ticker_predictions}}-->
         {% for info_row in ticker_predictions %}
@@ -35,28 +35,32 @@
         <br>
         <div class="middle-section">
         <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-              <div id="tradingview_b263f"></div>
-<!--              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols//" rel="noopener" target="_blank"><span class="blue-text"></span></a> by TradingView</div>-->
-              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-              <script type="text/javascript">
-              new TradingView.widget(
-              {
-              "width": 800,
-              "height": 500,
-              "symbol": "{{ticker_name}}",
-              "interval": "D",
-              "timezone": "Etc/UTC",
-              "theme": "dark",
-              "style": "1",
-              "locale": "en",
-              "toolbar_bg": "#f1f3f6",
-              "enable_publishing": false,
-              "allow_symbol_change": true,
-              "container_id": "tradingview_b263f"
-            }
-              );
-              </script>
+            <div class="chart">
+                <h1>Interactive Ticker Chart</h1>
+                <div class="tradingview-widget-container">
+
+                  <div id="tradingview_b263f"></div>
+    <!--              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols//" rel="noopener" target="_blank"><span class="blue-text"></span></a> by TradingView</div>-->
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                  new TradingView.widget(
+                  {
+                  "width": 800,
+                  "height": 500,
+                  "symbol": "{{ticker_name}}",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "light",
+                  "style": "1",
+                  "locale": "en",
+                  "toolbar_bg": "#f1f3f6",
+                  "enable_publishing": false,
+                  "allow_symbol_change": true,
+                  "container_id": "tradingview_b263f"
+                }
+                  );
+                  </script>
+                </div>
             </div>
         <!-- TradingView Widget END -->
 
@@ -128,21 +132,21 @@
                     {% if metric_row[5] != None %}
                         <tr>
                             <th>Number of Shares Owned by Financial Institutions</th>
-                            <td>{{metric_row[5] * 100}}%</td>
+                            <td>{{int(metric_row[5] * 100)}}%</td>
                         </tr>
                     {% endif %}
 
                     {% if metric_row[6] != None %}
                         <tr>
                             <th>Number of Shorted Shares Over 30 Days</th>
-                            <td>{{metric_row[6] * 100}}%</td>
+                            <td>{{int(metric_row[6] * 100)}}%</td>
                         </tr>
                     {% endif %}
 
                     {% if metric_row[7] != None %}
                         <tr>
                             <th>Number of Shorted Shares by Financial Institutions</th>
-                            <td>{{metric_row[7] * 100}}%</td>
+                            <td>{{int(metric_row[7] * 100)}}%</td>
                         </tr>
                     {% endif %}
                 {% endfor %}
