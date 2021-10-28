@@ -9,20 +9,140 @@
 </head>
 <body>
     <div class="wrap">
-        <h1 class="display-1">About Agora</h1>
+        <h2 style="margin-left:auto;margin-right:auto;text-align:center"><a href="/" class="link-dark">AGORA</a></h2>
+
+        <div class="top-bar">
+            <h5 style="float: left;"><a href="/" style="text-decoration: none; float: left;">◄ BACK</a></h5>
+
+            <form style="float: left;" action="/data/" method="GET" >
+                <input style="text-align: center; font-size: 14px; height: 30px; width: 245px;" type="text" name="Searched Ticker" placeholder="Search for a ticker..." required/>
+                <input style="float: right; height: 30px; font-size: 14px;" type="submit" value="Submit"/>
+            </form>
+        </div>
+
+        <h1 class="display-1" style="padding-top: 1.5rem;">About Agora</h1>
+        <hr>
 
         <div class="main-content">
-            <h1 class="display-4">What is Agora?</h1>
+            <a id="what-is-agora"><h1 class="display-4">What is Agora?</h1></a>
 
-            <p class="lead" style="padding-top: 0.75rem;">
-                Agora seeks to introduce the financial opinion of the Internet to traditional stock analysis.
+            <p style="font-size: 20px;">
+                Agora, meaning "the marketplace" in ancient Greek, is a stock prediction tool built on the financial opinions of the Internet
+                paired with numerical stock metrics used in traditional stock market analysis.
             </p>
 
-            <p>
-                Agora, meaning "the marketplace" in ancient Greek, aggregates conversations from Yahoo! Finance and headlines
-                from major news publications to determine a sentiment polarity score.
+            <p class="lead" style="padding-top: 0.75rem; font-size: 30px;">
+                › Agora's Building Blocks
             </p>
 
+            <p style="font-size: 20px;">
+                Agora's dataset consists of three main components:
+             </p>
+                <ol style="font-size: 20px;">
+                    <li><b>Conversations: </b>Conversations scraped from Yahoo! Finance's "Conversations" tab for a given stock</li>
+                    <li><b>Headlines: </b>Financial headlines scraped from 7 major news publications for a given stock</li>
+                    <li><b>Financial stock metrics: </b>Numerical metrics that reflect the performance of a given stock</li>
+                </ol>
+            <p class="lead" style="padding-top: 0.75rem; font-size: 30px;">
+                › Retail Investing
+            </p>
+
+            <p style="font-size: 20px;">
+                Due to the COVID-19 pandemic, retail investing has become a type of revolution. As seen in January of 2021, retail investors
+                were brought together on the Internet through forums like Yahoo! Finance Conversations and the WallStreetBets subreddit
+                when they caught wind of the GameStop <a href="https://finance.yahoo.com/quote/GME/" target="_blank">(GME)</a> stock.
+                <br>
+                <br>
+                Individual investors believed that the stock was too undervalued and that GameStop's new leadership could revitalize the
+                company back into a profitable business. These investors performed their own research on GME and discussed the stock
+                on their platforms of choice.
+                <br>
+                <br>
+                Agora's reliance on these Yahoo! Finance "Conversations" aims to operate in scenarios like what happened with GME. At the time,
+                many financial analysts continued to be bearish on GME due to the number of shares that were shorted by financial instituations,
+                but retail investors continued to support the stock.
+                <br>
+                <br>
+                On January 5th, 2021, the price of GME was $17.37. On January 27th, 2021, the stock closed at $347.51. Over those 22 days,
+                financial analysts only recommend selling GME, but retail investors and news publications continued to provide their support
+                for the stock. As of October 28th, 2021, GME is $173.51.
+                <br>
+                <br>
+                GME is one of the many stocks that has been wrongly predicted by traditional financial analysts. Agora aims to provide predictions
+                on stock ratings even in unpredictable situations like this by providing an importance to the voice of the average retail investor.
+            </p>
+            <br>
+            <hr>
+            <br>
+
+            <a id="how-does-agora-work"><h1 class="display-4">How does Agora work?</h1></a>
+
+             <p class="lead" style="padding-top: 0.75rem; font-size: 30px;">
+                › Sentiment Analysis & Machine Learning
+            </p>
+
+            <p style="font-size: 20px;">
+                Agora's functionality can be broken down into two main components:
+            </p>
+            <ol style="font-size: 20px;">
+                <li><b>Sentiment Analysis: </b>Polarities of the conversations and headlines are derived through VADER</li>
+                <li><b>Machine Learning: </b>A logistic regression machine learning model determines a prediction based on the generated polarities
+                    and a set of seven stock metrics</li>
+            </ol>
+            <p class="lead" style="padding-top: 0.75rem; font-size: 25px;">
+                › Sentiment Analysis with VADER
+            </p>
+            <p style="font-size: 20px;">
+                Agora utilizes the Valence Aware Dictionary and Sentiment Reasoner (<a href="https://github.com/cjhutto/vaderSentiment" target="_blank">VADER</a>) module,
+                found in Python's Natural Language Toolkit (<a href="https://www.nltk.org/" target="_blank">NLTK</a>) package. VADER is arguably the most
+                advanced sentiment analysis library due to its ability to differentiate modern language paradigms such as slang, emoticons, and letter capitalizations.
+                <br>
+                <br>
+                After scraping the conversations and headlines, we utilize VADER to parse each of these individual texts to determine a polarity score. To determine a polarity
+                score, VADER references a lexicon, or dictionary, that contains words paired to a negative or positive polarity. These individual word polarities were determined
+                by outsourcing reviews of words through Amazon Mechanical Turk. VADER also provides the functionality to import a custom lexicon, which we leveraged to
+                fine-tune the polarity scores towards financial terms. This financial lexicon was provided by <a href="https://sraf.nd.edu/textual-analysis/resources/#Master%20Dictionary" target="_blank">Tim Loughran and Bill McDonald</a> from the University of Notre Dame.
+                <br>
+                <br>
+                To truly differentiate conversations and headlines that conveyed positive or negative sentiment through financial terms, we increased the polarity of each of the words in
+                the Loughran-McDonald lexicon (LML) by a factor of two. This way, VADER knows that these words contribute more towards an overall phrase's polarity.
+            </p>
+
+            <p class="lead" style="padding-top: 0.75rem; font-size: 25px;">
+                › Machine Learning
+            </p>
+            <p style="font-size: 20px;">
+                Agora's knowledge base and prediction system is built on top of a <a href="https://www.ibm.com/topics/logistic-regression" target="_blank">Logistic Regression</a> machine learning model. We tested numerous models, and found that the best accuracy
+                was provided by a logistic regression model.
+                <br>
+                <br>
+                Logistic regression performs binary analysis and prediction, meaning for a given set of feature values, there can only be one of two outcomes. The two categories we divide our predictions into
+                are <span style="color: #006400"><b>"Buy"</b></span> and <span style="color: #8b0000"><b>"Not Buy"</b></span>. A "Buy" prediction by Agora is similar to a "Buy" or a
+                "Strong Buy" prediction by a financial analyst. A "Not Buy" prediction is similar to a "Hold", "Sell", or "Strong Sell" prediction by a financial analyst.
+                <br>
+                <br>
+                Finally, this logistic regression model is trained on all stocks that have a sufficient number of conversation and headline data points generated. The model is tested against financial analyst predictions
+                provided by the <a href="https://www.nasdaq.com/market-activity/stocks/screener" target="_blank">NASDAQ Stock Screener</a>. These predictions are outputted to a
+                SQLite database, and are offered to you, the user, through our front-end UI!
+            </p>
+            <br>
+            <hr>
+            <br>
+            <a id="polarity-scores"><h1 class="display-4">Polarity Scores</h1></a>
+            <p style="font-size: 20px;">
+                Polarity scores are numerical representations of the sentiment of a given phrase, sentence, or even paragraph. Sentiment, or the opinion towards a situation
+                or event, can be considered to be either positive or negative. VADER utilizes its lexicon to determine the polarity score of the provided phrase. VADER generates
+                four individual scores:
+            </p>
+            <ul style="font-size: 20px">
+                <li>Positive</li>
+                <li>Neutral</li>
+                <li>Negative</li>
+                <li>Compound</li>
+            </ul>
+            <p style="font-size: 20px;">
+                The Compound score is a summation of the Positive, Neutral, and Negative scores normalized to be within the -1 and 1 numerical range.
+            </p>
         </div>
     </div>
 
