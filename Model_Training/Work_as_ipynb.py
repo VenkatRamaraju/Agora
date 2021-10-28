@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+import pickle
 
 import numpy as np
 import pandas as pd
@@ -37,17 +38,31 @@ def run_model(added_cols, new_df):
     X_train, X_test, y_train, y_test = train_test_split(X_total, y_total, test_size=0.33, random_state=42)
     
     # Logistic Regression Mode
-    LR = LogisticRegression(class_weight='balanced')
+    LR = LogisticRegression(class_weight='balanced', solver='lbfgs', max_iter=1000)
     try:
         LR = LR.fit(X_train, y_train)
     except Exception as e:
         return -1
 
+    # filename = 'pickle_model.sav'
+    # pickle.dump(LR, open(filename, 'wb'))
     y_prediction = LR.predict(X_test)
     full_prediction = LR.predict(X_total)
     full_acc_score = accuracy_score(y_total, full_prediction)
+    print(accuracy_score(y_test, y_prediction))
+    print(full_acc_score)
+    print()
+    loaded_model = pickle.load(open('pickle_model.sav', 'rb'))
+    result = loaded_model.score(X_test, y_test)
+    print(result)
+    print(loaded_model.score(X_total, y_total))
     return new_df, full_prediction, accuracy_score(y_test, y_prediction), full_acc_score
 
+
+run_model(['beta', 'profitMargins', 'forwardEps', 'bookValue', 'heldPercentInstitutions', 'shortRatio', 'shortPercentOfFloat'], None)
+
+
+"""
 # training_df = pd.read_csv('overall_training_data.csv',index_col=[0])
 # list_of_cols = [x for x in training_df.columns if x not in ['Buy', 'Ticker', 'Headlines']]
 
@@ -145,3 +160,4 @@ all_companies.to_csv("all_companies_w_preds.csv")
 # print(full_acc)
 # print(len(predictions))
 # print(predictions)
+"""
