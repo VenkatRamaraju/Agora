@@ -9,7 +9,19 @@
 </head>
 <body>
 <div class="wrap">
-    <h2 style="text-align: center;"><a href="/" class="link-dark">AGORA</a></h2>
+    <div class="top-bar">
+        <h5><a href="/" style="text-decoration: none;">◄ BACK</a></h5>
+
+        <h2 style="text-align: center;"><a href="/" class="link-dark">AGORA</a></h2>
+
+        <form action="/data/" method="GET" >
+            <p><input style="text-align: center; font-size: 20px;" type="text" name="Searched Ticker" placeholder="Search for a ticker..." required/></p>
+            <p><input type="submit" value="Submit"/></p>
+        </form>
+    </div>
+
+
+
 
     <div class="main-content">
         <h6><small class="text-muted">{{ticker_name}} • {{stock_price_dict["exchange"]}}</small></h6>

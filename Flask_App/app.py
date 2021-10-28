@@ -137,3 +137,8 @@ def data():
                            ticker_headlines=ticker_headlines,
                            ticker_predictions=ticker_preds,
                            stock_price_dict=stock_price_dict)
+
+
+@app.route('/about', methods=['GET', 'POST'])
+def about():
+    return render_template("about.html")

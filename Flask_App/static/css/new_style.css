@@ -37,3 +37,17 @@ span.custom-style-2 {
 .ticker-metrics-table td {
     padding-right: 3rem !important;
 }
+
+.para-format p {
+    padding-left: 0.75rem;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form.search-bar {
+    display: inline-block;
+}
