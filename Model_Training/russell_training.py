@@ -6,6 +6,7 @@ Functionality implemented:
 - Prepares data for model training
 """
 
+# Imports and dependencies
 import pandas as pd
 import os
 
@@ -20,6 +21,7 @@ def get_data():
     analyst_dict = {}
     training_df = pd.DataFrame(columns=['Symbol', 'Name', 'Buy'])
 
+    # Building training dataset based on the NASDAQ predictions (in Stocks/ directory).
     for file in files:
         if file == 'nasdaq_strong_buy.csv' or file == 'nyse_strong_buy.csv':
             df = pd.read_csv('Stocks/' + str(file))
@@ -79,6 +81,7 @@ def get_data():
                       'Analyst': analyst_dict[row['Symbol']]}
                 training_df = training_df.append(training_row, ignore_index=True)
 
+    # Final training datasets
     master_df.to_csv('final_db.csv')
     training_df.to_csv('companies.csv')
 

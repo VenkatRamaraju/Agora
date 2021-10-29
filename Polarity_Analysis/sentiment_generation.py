@@ -11,6 +11,7 @@ import os
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pandas as pd
 from nltk.stem import WordNetLemmatizer
+import tweepy
 
 # Global Variables
 sia = SentimentIntensityAnalyzer()
@@ -25,14 +26,11 @@ def update_stock_terminology():
     along with polarized words with weights. Used to improve VADER accuracy.
     """
     stock_lexicon = {}
-    # csv_df = pd.read_csv('setup_csvs/new_stock_lex.csv')
-    # for index, row in csv_df.iterrows():
-    #     stock_lexicon[row['Item']] = row['Polarity']
-
     csv_df = pd.read_csv('setup_csvs/polarized_stock_lex.csv')
     for index, row in csv_df.iterrows():
         stock_lexicon[row['word']] = row['polarity']
 
+    # Updates existing dictionary with stock-related terms
     resulting_lex = {}
     resulting_lex.update(stock_lexicon)
     resulting_lex.update(sia.lexicon)
@@ -48,6 +46,7 @@ def get_headline_sentiments():
     sum_of_polarities = {}
     count_of_headlines = {}
 
+    # Aggregates data across headlines
     for index, row in headlines_csv.iterrows():
         try:
             lemma_text = lemmatizer.lemmatize(str(row['headline']))
@@ -69,10 +68,13 @@ def get_headline_sentiments():
 
 def generate_aggregated_csv():
     """
-    Generates a CSV with the aggregated polarities of headlines for the group of stocks that are being analyzed.
+    Generates a CSV with the aggregated polarities of headlines for the group of stocks that are being analyzed. In
+    the case where no conversations are available for a given stock, we default to Twitter conversations for our
+    analysis.
     """
     aggregated_df = pd.DataFrame(columns=["Ticker", "Conversations", "Headlines"])
 
+    # Outputs aggregated headlines and conversations to a CSV.
     for ticker, headlines_polarity in headlines_map.items():
         try:
             if ticker in conversations_map:
@@ -95,6 +97,7 @@ def get_conversation_sentiments():
     sum_of_polarities = {}
     count_of_conversations = {}
 
+    # Aggregates data across conversations
     for ticker_csv in list_of_conversations:
         conversations_csv = pd.read_csv('../Data_Collection/Conversations/' + str(ticker_csv))
         ticker = ticker_csv.split("_")[0].upper()
@@ -120,29 +123,37 @@ def get_conversation_sentiments():
 
 
 def twitterSentiment(ticker):
-    # import tweepy
-    # api_key = ""
-    # api_secret_key = ""
-    # access_token = ""
-    # access_token_secret = ""
-    #
-    # auth = tweepy.OAuthHandler(api_key, api_secret_key)
-    # auth.set_access_token(access_token, access_token_secret)
-    # api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
-    # stock = "$" + ticker
-    # search_results = api.search(q=stock, count=50)
-    #
-    # print("Conversations on ", stock)
-    # polaritySum = 0
-    # count = 0
-    # for tweet in search_results:
-    #     lemma_text = lemmatizer.lemmatize(str(tweet.text))
-    #     scores = sia.polarity_scores(lemma_text)
-    #     polaritySum += scores["compound"]
-    #     count += 1
-    #
-    # return polaritySum/count
-    return 0.0
+    """
+    Gathers 100 tweets related to a specific stock ticker and runs the VADER sentiment analysis model on it to
+    generate a polarity scores.
+    :param ticker: Name of stock ticker.
+    :return: Aggregated polarity value for conversations on twitter.
+    """
+
+    # Credentials
+    api_key = ""
+    api_secret_key = ""
+    access_token = ""
+    access_token_secret = ""
+
+    # API calls
+    auth = tweepy.OAuthHandler(api_key, api_secret_key)
+    auth.set_access_token(access_token, access_token_secret)
+    api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+    stock = "$" + ticker
+    search_results = api.search(q=stock, count=100)
+
+    # Aggregating data
+    print("Conversations on ", stock)
+    polaritySum = 0
+    count = 0
+    for tweet in search_results:
+        lemma_text = lemmatizer.lemmatize(str(tweet.text))
+        scores = sia.polarity_scores(lemma_text)
+        polaritySum += scores["compound"]
+        count += 1
+
+    return polaritySum/count
 
 
 def main():

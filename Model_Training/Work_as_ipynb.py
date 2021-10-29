@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
-import pickle
 
+"""
+Authors: Venkat Ramaraju, Jayanth Rao
+Functionality implemented:
+- Prepares data for model training
+"""
+
+# Imports and dependencies
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -12,11 +18,18 @@ from sklearn import metrics
 from sklearn.metrics import accuracy_score
 from itertools import combinations
 import time
+import pickle
 
+# Global data
 new_training_df = pd.DataFrame()
 
 
-def run_model(added_cols, new_df):
+def run_model(added_cols):
+    """
+    Runs the pickled logistic regression machine learning model on the subset of columns provided. The subset of
+    columns have been feature selected to derive the highest accuracy.
+    :param added_cols: set of columns that will be used to train the machine learning model.
+    """
     training_df = pd.read_csv('overall_training_data.csv', index_col=[0])
     list_of_cols = [x for x in training_df.columns if x in ['Buy', 'Ticker', 'Headlines', 'Conversations']]
     for to_be_added in added_cols:
@@ -29,8 +42,6 @@ def run_model(added_cols, new_df):
 
     training_df['Headlines'] = training_df['Headlines'] * 2
     training_df['Conversations'] = training_df['Conversations'] * 2
-
-    # Cols used in DF
     
     # Creating training and testing datasets
     X_total = training_df[[x for x in training_df.columns if x not in ['Buy', 'Ticker']]]
@@ -56,10 +67,10 @@ def run_model(added_cols, new_df):
     result = loaded_model.score(X_test, y_test)
     print(result)
     print(loaded_model.score(X_total, y_total))
-    return new_df, full_prediction, accuracy_score(y_test, y_prediction), full_acc_score
 
 
-run_model(['beta', 'profitMargins', 'forwardEps', 'bookValue', 'heldPercentInstitutions', 'shortRatio', 'shortPercentOfFloat'], None)
+run_model(['beta', 'profitMargins', 'forwardEps', 'bookValue', 'heldPercentInstitutions',
+           'shortRatio', 'shortPercentOfFloat'])
 
 
 """

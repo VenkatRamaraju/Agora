@@ -14,6 +14,7 @@ nltk.download('vader_lexicon')
 nltk.download('punkt')
 nltk.download('wordnet')
 
+# Initializing data
 sia = SentimentIntensityAnalyzer()
 
 cols = ['word']
@@ -25,7 +26,7 @@ negative_df = pd.read_csv('setup_csvs/loughran_mcdonald_negative_words.csv', nam
                           delim_whitespace=True)
 negative_df["polarity"] = ""
 
-
+# Populating CSV with +/- 2 polarities for modified sentiment analysis model
 for index, row in positive_df.iterrows():
     word = row["word"].lower()
     row["word"] = word
@@ -35,9 +36,6 @@ for index, row in negative_df.iterrows():
     word = row["word"].lower()
     row["word"] = word
     row["polarity"] = -2
-
-print(positive_df)
-print(negative_df)
 
 overall_df = positive_df.append(negative_df)
 overall_df.to_csv('setup_csvs/polarized_stock_lex.csv')

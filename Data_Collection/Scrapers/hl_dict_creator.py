@@ -1,15 +1,26 @@
-import pprint
+#!/usr/bin/env python3
+
+"""
+Authors: Venkat Ramaraju, Jayanth Rao
+Functionality implemented:
+- Populates headlines dictionary.
+"""
 
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 
+# Global data
 nasdaq = pd.read_csv("nasdaq.csv", index_col=False)
 nyse = pd.read_csv("nyse.csv", index_col=False)
 
 nasdaq = nasdaq[['Symbol', 'Name']]
 nyse = nyse[['Symbol', 'Name']]
 
+
+# Each method below gathers and formats headlines for a specific stock ticker on a different website. At the end,
+# is aggregated for sentiment analysis. We populate the dataset with the headline, and the link to it (so it can
+# be clicked on in the interface).
 
 def get_reuters_headlines(ticker):
     url = 'https://www.reuters.com/search/news?blob=' + ticker
