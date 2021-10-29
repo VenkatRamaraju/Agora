@@ -121,9 +121,26 @@
                 "Strong Buy" prediction by a financial analyst. A "Not Buy" prediction is similar to a "Hold", "Sell", or "Strong Sell" prediction by a financial analyst.
                 <br>
                 <br>
-                Finally, this logistic regression model is trained on all stocks that have a sufficient number of conversation and headline data points generated. The model is tested against financial analyst predictions
-                provided by the <a href="https://www.nasdaq.com/market-activity/stocks/screener" target="_blank">NASDAQ Stock Screener</a>. These predictions are outputted to a
-                SQLite database, and are offered to you, the user, through our front-end UI!
+                Finally, this logistic regression model is trained on all stocks that have a sufficient number of conversation and headline data points generated, along with 7 numerical stock metrics.
+                The stock metrics were derived after performing the Recursive Feature Elimination algorithm to determine which features provide the best
+                accuracy from the model when paired with the Headline and Conversation polarity scores. The 9 total features are listed below:
+            </p>
+            <ul style="font-size: 20px;">
+                <li><b>Conversation Polarity</b></li>
+                <li><b>Headline Polarity</b></li>
+                <li><b>Beta:</b> The risk and volatility of a stock compared to the rest of the market</li>
+                <li><b>Profit Margins:</b> The ratio between the profit a company achieves and the number of sales achieved in the same quarter</li>
+                <li><b>Forward EPS:</b> It involves making an estimation of a company’s upcoming earnings</li>
+                <li><b>Book Value:</b> The value of all the assets of a corporation minus any liabilities (expenses or debts) held by the corporation</li>
+                <li><b>Institutional Ownership Percentage:</b> Percentage of shares outstanding that are owned by financial institutions</li>
+                <li><b>Short Ratio:</b> Calculated by dividing ht number of shares sold short by the average daily trading volume</li>
+                <li><b>Short Percent of Float:</b> The short percentage of float is the percentage of a company's stock that has been shorted by
+                    institutional traders, compared to the number of shares of a company's stock that are available to the public</li>
+
+            </ul>
+            <p style="font-size: 20px;">
+                The model is tested against financial analyst predictions provided by the <a href="https://www.nasdaq.com/market-activity/stocks/screener" target="_blank">NASDAQ Stock Screener</a>.
+                These predictions are outputted to a SQLite database, and are offered to you, the user, through our front-end UI!
             </p>
             <br>
             <hr>

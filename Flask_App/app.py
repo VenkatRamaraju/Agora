@@ -112,16 +112,21 @@ def data():
             """
     ticker_preds = conn.execute(predictions_sql).fetchall()
 
+    # info_sql = f"""
+    #       Select ticker, Round(beta, 2) as beta,
+    #       	     Round(profit_margins, 2) as profit_margins,
+    #       	     Round(forward_eps, 2) as forward_eps,
+    #       	     Round(book_value, 2) as book_value,
+    #       	     Round(held_percent_institutions, 2) as held_percent_institutions,
+    #       	     Round(short_ratio, 2) as short_ratio,
+    #       	     Round(short_percent_of_float, 2) as short_percent_of_float
+    #       	     from TickerStockMetrics where ticker="{ticker_name}";
+    #       """
+
     info_sql = f"""
-          Select ticker, Round(beta, 2) as beta,
-          	     Round(profit_margins, 2) as profit_margins,
-          	     Round(forward_eps, 2) as forward_eps,
-          	     Round(book_value, 2) as book_value,
-          	     Round(held_percent_institutions, 2) as held_percent_institutions,
-          	     Round(short_ratio, 2) as short_ratio,
-          	     Round(short_percent_of_float, 2) as short_percent_of_float
-          	     from TickerStockMetrics where ticker="{ticker_name}";
-          """
+        Select * from TickerStockMetrics where ticker="{ticker_name}";
+    """
+
     ticker_info = conn.execute(info_sql).fetchall()
 
     headlines_sql = f"""

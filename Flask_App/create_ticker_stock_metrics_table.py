@@ -1,6 +1,8 @@
 import sqlite3
 import pandas as pd
 
+pd.set_option('display.max_columns', None)
+
 connection = sqlite3.connect('database.db')
 cur = connection.cursor()
 
@@ -24,7 +26,7 @@ table1_sql = f"""create table {table1}(
 
 cur.execute(table1_sql)
 
-new_ticker_info = pd.read_csv("../POC/finalized_stock_metrics_all.csv")
+new_ticker_info = pd.read_csv("../Model_Training/finalized_stock_metrics_all.csv")
 del new_ticker_info['Unnamed: 0']
 del new_ticker_info['Name']
 del new_ticker_info['Buy']
@@ -32,7 +34,25 @@ del new_ticker_info['Analyst']
 
 # Reformat column names
 new_ticker_info.columns = ['ticker', 'beta', 'profit_margins', 'forward_eps', 'book_value',
-                                   'held_percent_institutions', 'short_ratio', 'short_percent_of_float']
+                           'held_percent_institutions', 'short_ratio', 'short_percent_of_float']
+
+print(new_ticker_info.dtypes)
+
+print(new_ticker_info.loc[new_ticker_info['ticker'] == 'AAPL'])
+
+new_ticker_info = new_ticker_info.round({
+    'beta': 2,
+    'profit_margins': 2,
+    'forward_eps': 2,
+    'book_value': 2,
+    'held_percent_institutions': 2,
+    'short_ratio': 2,
+    'short_percent_of_float': 2
+})
+
+print(new_ticker_info.loc[new_ticker_info['ticker'] == 'AAPL'])
+
+# new_ticker_info.round(2)
 
 # Insert data into table
 new_ticker_info.to_sql(table1, connection, if_exists="append", index=False)
