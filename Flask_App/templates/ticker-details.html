@@ -37,10 +37,24 @@
         <h1 class="display-3">The Agora could not make a recommendation for this stock.</h1>
         {% endif %}
 
-        {% if info_row[4] and info_row[5] %}
-        <h4><small class="text-muted">Headline Polarity<a href="/about#polarity-scores"><sup class="text-muted">2</sup></a>: </small>{{info_row[4]}}</h4>
-        <h4><small class="text-muted">Conversation Polarity<a href="/about#polarity-scores"><sup class="text-muted">3</sup></a>: </small>{{info_row[5]}}</h4>
-        {% endif %}
+        <div style="display: flex; flex-direction: row; align-items: flex-start;">
+            {% if info_row[4] and info_row[5] %}
+            <div style="display: flex; flex-direction: column; padding-right: 2rem;">
+                <h4><small class="text-muted">Headline Polarity<a href="/about#polarity-scores"><sup class="text-muted">2</sup></a>: </small>{{info_row[4]}}</h4>
+                <h4><small class="text-muted">Conversation Polarity<a href="/about#polarity-scores"><sup class="text-muted">3</sup></a>: </small>{{info_row[5]}}</h4>
+            </div>
+            {% endif %}
+
+            {% if (info_row[2] == 'Buy' or info_row[2] == 'Strong Buy') and (info_row[3] != 1.0) %}
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <div class="vertical-line" style="height: 62px;"></div>
+                <div style="padding-left: 2rem; width: 700px;">
+                    <h5 style="display: inline-block;"><small class="text-muted">Check out the <a href="/about#reconciling-differences" style="color: black;">About</a> page to understand why Agora's prediction doesn't match up with the Analyst firms' rating.</small></h5>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
 
         <div style="padding-top: 1.5rem">
             {% if info_row[2] == 'Buy' or info_row[2] == 'Strong Buy' %}
@@ -98,7 +112,7 @@
             </div>
 
             <div style="padding-left: 0.2rem; float: right;">
-                <h1>Ticker Metrics</h1>
+                <h1>Ticker Metrics<sup><a style="color: black" href="/about#metrics-feature-set">4</a></sup></h1>
                 <table class="table align-middle ticker-metrics-table">
                     {% for metric_row in ticker_info %}
                     {% if metric_row[1] != None %}

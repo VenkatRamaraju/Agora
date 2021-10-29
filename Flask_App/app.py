@@ -82,12 +82,10 @@ def data():
     ticker_name = ""
     if request.method == 'GET':
         # return f"The URL '/data' is accessed directly"
-        ticker_name = request.args["Searched Ticker"]
+        ticker_name = request.args["Searched Ticker"].upper()
     if request.method == 'POST':
         form_data = request.form
-        ticker_name = form_data["Searched Ticker"]
-
-    stock_price_dict = get_last_price(ticker_name)
+        ticker_name = form_data["Searched Ticker"].upper()
 
     all_tickers_sql = conn.execute(
         "select ticker from TickerStockMetrics;"
@@ -98,7 +96,10 @@ def data():
         all_tickers.append(i[0])
 
     if ticker_name not in all_tickers:
-        return redirect("/")
+        return render_template("dne.html",
+                               ticker_name=ticker_name)
+
+    stock_price_dict = get_last_price(ticker_name)
 
     predictions_sql = f"""
             Select * from TickerPredictions where ticker="{ticker_name}";

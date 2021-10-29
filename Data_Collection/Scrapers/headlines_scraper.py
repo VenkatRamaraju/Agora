@@ -64,6 +64,10 @@ def contains_company_name(headline, name):
     company = re.sub(r'[^\w\s]', '', name).strip()
     company_words = company.split(' ')
 
+    # for weird edge cases like amazon
+    for i in company_words:
+        i.replace('.com', '')
+
     # Words to remove for comparison
     words_to_remove = ['a', 'and', 'the', 'company', 'incorporated', 'corporation', 'group', 'inc', 'common', 'stock']
 

@@ -109,7 +109,7 @@
             </p>
 
             <p class="lead" style="padding-top: 0.75rem; font-size: 25px;">
-                › Machine Learning
+                <a id="metrics-feature-set">› Machine Learning</a>
             </p>
             <p style="font-size: 20px;">
                 Agora's knowledge base and prediction system is built on top of a <a href="https://www.ibm.com/topics/logistic-regression" target="_blank">Logistic Regression</a> machine learning model. We tested numerous models, and found that the best accuracy
@@ -159,6 +159,28 @@
             </ul>
             <p style="font-size: 20px;">
                 The Compound score is a summation of the Positive, Neutral, and Negative scores normalized to be within the -1 and 1 numerical range.
+            </p>
+            <br>
+            <hr>
+            <br>
+             <a id="reconciling-differences"><h1 class="display-4">Agora's Predictions vs. Analyst Firm Ratings</h1></a>
+             <p style="font-size: 20px;">
+                 With a train-test accuracy of <b>82.5%</b>, the logistic regression model is validated by analyst firm ratings most of
+                 the time. However, there are instances where Agora may recommend not buying a stock when analyst firms say you should buy,
+                 and vice versa.
+                 <br>
+                 <br>
+                 In instances like these, a justification for the Agora prediction can be provided by analyzing the conversation and headline
+                 polarity scores.
+            </p>
+            <ul style="font-size: 20px;">
+                <li>A polarity score greater than 0.7 can be considered to be overwhelmingly positive. Agora tends to recommend a "Buy" rating
+                if the polarities of the headlines and conversations for the given stocks are between 0.7 and 1. </li>
+                <li>If the polarity scores are below 0.7, then Agora tends to recommend a "Not Buy" rating. We trained the Agora model to
+                make more conservative predictions.</li>
+            </ul>
+            <p style="font-size: 20px;">
+                 At this point, we leave the decision to you, the investor!
             </p>
         </div>
     </div>

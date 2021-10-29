@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/new_style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>{{ticker_name}} does not exist!</title>
+</head>
+<body>
+    <div class="wrap">
+        <h2 style="margin-left:auto;margin-right:auto;text-align:center"><a href="/" class="link-dark">AGORA</a></h2>
+
+        <div class="top-bar">
+            <h5 style="float: left;"><a href="/" style="text-decoration: none; float: left; color: black">◄ BACK</a></h5>
+
+            <form style="float: left;" action="/data/" method="GET" >
+                <input style="text-align: center; font-size: 14px; height: 30px; width: 245px;" type="text" name="Searched Ticker" placeholder="Search for a ticker..." required/>
+                <input style="float: right; height: 30px; font-size: 14px;" type="submit" value="Submit"/>
+            </form>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <br>
+            <br>
+            <br>
+            <h1 class="display-1" style="text-align: center;">We're sorry, <i style="color: gray;">{{ticker_name}}</i> does not exist! Please search for another ticker. </h1>
+        </div>
+
+    </div>
+</body>
+</html>
