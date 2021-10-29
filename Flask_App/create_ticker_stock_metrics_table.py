@@ -36,10 +36,6 @@ del new_ticker_info['Analyst']
 new_ticker_info.columns = ['ticker', 'beta', 'profit_margins', 'forward_eps', 'book_value',
                            'held_percent_institutions', 'short_ratio', 'short_percent_of_float']
 
-print(new_ticker_info.dtypes)
-
-print(new_ticker_info.loc[new_ticker_info['ticker'] == 'AAPL'])
-
 new_ticker_info = new_ticker_info.round({
     'beta': 2,
     'profit_margins': 2,
@@ -49,10 +45,6 @@ new_ticker_info = new_ticker_info.round({
     'short_ratio': 2,
     'short_percent_of_float': 2
 })
-
-print(new_ticker_info.loc[new_ticker_info['ticker'] == 'AAPL'])
-
-# new_ticker_info.round(2)
 
 # Insert data into table
 new_ticker_info.to_sql(table1, connection, if_exists="append", index=False)

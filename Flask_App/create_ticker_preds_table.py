@@ -21,7 +21,7 @@ table2_sql = f"""create table {table2}(
 
 cur.execute(table2_sql)
 
-ticker_predictions = pd.read_csv("../POC/all_companies_w_preds.csv", index_col=False)
+ticker_predictions = pd.read_csv("../Model_Training/all_companies_w_preds.csv", index_col=False)
 
 del ticker_predictions["Unnamed: 0"]
 del ticker_predictions["Unnamed: 0.1"]

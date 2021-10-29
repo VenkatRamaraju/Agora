@@ -80,7 +80,7 @@ def generate_aggregated_csv():
             if ticker in conversations_map:
                 polarity = conversations_map[ticker]
             else:
-                polarity = twitterSentiment(ticker)
+                polarity = twitter_sentiment(ticker)
             row = {"Ticker": ticker, "Conversations": polarity, "Headlines": headlines_polarity}
             aggregated_df = aggregated_df.append(row, ignore_index=True)
         except RuntimeError as e:
@@ -122,7 +122,7 @@ def get_conversation_sentiments():
             conversations_map[ticker] = 0.0
 
 
-def twitterSentiment(ticker):
+def twitter_sentiment(ticker):
     """
     Gathers 100 tweets related to a specific stock ticker and runs the VADER sentiment analysis model on it to
     generate a polarity scores.
@@ -145,15 +145,15 @@ def twitterSentiment(ticker):
 
     # Aggregating data
     print("Conversations on ", stock)
-    polaritySum = 0
+    polarity_sum = 0
     count = 0
     for tweet in search_results:
         lemma_text = lemmatizer.lemmatize(str(tweet.text))
         scores = sia.polarity_scores(lemma_text)
-        polaritySum += scores["compound"]
+        polarity_sum += scores["compound"]
         count += 1
 
-    return polaritySum/count
+    return polarity_sum/count
 
 
 def main():

@@ -1,6 +1,5 @@
 import requests
 import pprint
-import re
 
 
 def get_last_price(ticker):
@@ -33,8 +32,6 @@ def get_last_price(ticker):
 
     diff = float(current_price) - float(open_price)
 
-    color = ""
-
     if diff > 0:
         color = "#006400"
     elif diff < 0:
@@ -51,6 +48,3 @@ def get_last_price(ticker):
     pprint.pprint(stock_dict)
 
     return stock_dict
-
-
-# pprint.pprint(get_last_price("AAPL"))

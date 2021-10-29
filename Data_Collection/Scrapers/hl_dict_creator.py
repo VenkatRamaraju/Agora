@@ -3,7 +3,7 @@
 """
 Authors: Venkat Ramaraju, Jayanth Rao
 Functionality implemented:
-- Populates headlines dictionary.
+- methods to fetch headlines as a list from each news publication
 """
 
 from bs4 import BeautifulSoup
@@ -22,7 +22,7 @@ nyse = nyse[['Symbol', 'Name']]
 # is aggregated for sentiment analysis. We populate the dataset with the headline, and the link to it (so it can
 # be clicked on in the interface).
 
-def get_reuters_headlines(ticker):
+def get_reuters_headlines(ticker: str):
     url = 'https://www.reuters.com/search/news?blob=' + ticker
 
     html_page = requests.get(url).text
@@ -43,7 +43,7 @@ def get_reuters_headlines(ticker):
             }
             reuters_hls.append(hl_dict)
         except Exception as e:
-            print("Reuters; something broke lmao:", e)
+            print("Reuters:", e)
             continue
 
     deduped = []
@@ -78,7 +78,7 @@ def get_morningstar_headlines(ticker):
 
             ms_hls.append(hl_dict)
         except Exception as e:
-            print("MS; something broke lmao:", e)
+            print("MS:", e)
             continue
 
     deduped = []
@@ -118,7 +118,7 @@ def get_google_finance_headlines(ticker):
 
             gf_hls.append(hl_dict)
         except Exception as e:
-            print("GF; something broke lmao:", e)
+            print("GF:", e)
             continue
 
     deduped = []
@@ -152,7 +152,7 @@ def get_business_insider_headlines(ticker):
 
             bi_hls.append(hl_dict)
         except Exception as e:
-            print("BI; something broke lmao:", e)
+            print("BI:", e)
             continue
 
     deduped = []
@@ -186,7 +186,7 @@ def get_cnn_headlines(ticker):
 
             cnn_hls.append(hl_dict)
         except Exception as e:
-            print("CNN; something broke lmao:", e)
+            print("CNN:", e)
             continue
 
     deduped = []
@@ -224,7 +224,7 @@ def get_yahoo_headlines(ticker):
 
             yf_hls.append(hl_dict)
         except Exception as e:
-            print("YF; something broke lmao:", e)
+            print("YF:", e)
             continue
 
     return yf_hls
@@ -250,7 +250,7 @@ def get_cnbc_headlines(ticker):
 
             cnbc_hls.append(hl_dict)
         except Exception as e:
-            print("CNBC; something broke lmao:", e)
+            print("CNBC:", e)
             continue
 
     return cnbc_hls

@@ -5,6 +5,7 @@ import os.path
 from fetch_top_stocks_yf import get_trending_stocks
 from price import get_last_price
 
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 print(BASE_DIR)
 db_path = os.path.join(BASE_DIR, "database.db")
@@ -28,9 +29,6 @@ app = Flask(__name__)
 def index():
     trending_stocks = get_trending_stocks()
     conn = get_db_connection()
-    all_tickers_sql = conn.execute(
-        "select ticker from TickerStockMetrics;"
-    ).fetchall()
 
     all_tickers_sql_preds = conn.execute(
         "select ticker, agora_pred from TickerPredictions;"
@@ -68,10 +66,6 @@ def index():
                     }
                 )
 
-    # filtered_tickers = [x for x in trending_tickers if x in all_tickers]
-
-    # print(filtered_tickers)
-
     return render_template('index.html',
                            trending_stocks=filtered_tickers[:5])
 
@@ -102,27 +96,12 @@ def data():
     stock_price_dict = get_last_price(ticker_name)
 
     predictions_sql = f"""
-            Select * from TickerPredictions where ticker="{ticker_name}";
-            """
-
-    predictions_sql = f"""
             Select ticker, company_name, analyst_pred, agora_pred, 
                    Round(headline_polarity, 2) as headline_polarity,
                    Round(conversation_polarity, 2) as conversation_polarity 
                    from TickerPredictions where ticker="{ticker_name}";
             """
     ticker_preds = conn.execute(predictions_sql).fetchall()
-
-    # info_sql = f"""
-    #       Select ticker, Round(beta, 2) as beta,
-    #       	     Round(profit_margins, 2) as profit_margins,
-    #       	     Round(forward_eps, 2) as forward_eps,
-    #       	     Round(book_value, 2) as book_value,
-    #       	     Round(held_percent_institutions, 2) as held_percent_institutions,
-    #       	     Round(short_ratio, 2) as short_ratio,
-    #       	     Round(short_percent_of_float, 2) as short_percent_of_float
-    #       	     from TickerStockMetrics where ticker="{ticker_name}";
-    #       """
 
     info_sql = f"""
         Select * from TickerStockMetrics where ticker="{ticker_name}";

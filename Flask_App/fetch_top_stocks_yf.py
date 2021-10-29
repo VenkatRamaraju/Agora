@@ -1,9 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import pprint
-import re
-
-# link: https://finance.yahoo.com/trending-tickers
 
 
 def get_trending_stocks():
@@ -13,8 +9,6 @@ def get_trending_stocks():
     soup = BeautifulSoup(html, 'lxml')
     table = soup.find_all("a", class_="Fw(600) C($linkColor)")
     table_2 = soup.find_all("td", {'class': 'Va(m) Ta(end) Pstart(20px) Fw(600) Fz(s)', 'aria-label': 'Last Price'})
-
-    # pprint.pprint(table_2)
 
     trending_stocks_list = []
 
@@ -37,9 +31,4 @@ def get_trending_stocks():
         trending_stocks_list.append(stock_dict)
 
     return trending_stocks_list
-
-
-# pprint.pprint(get_trending_stocks())
-
-# pprint.pprint(get_trending_stocks())
 

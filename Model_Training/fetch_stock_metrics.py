@@ -31,17 +31,15 @@ def get_stock_metrics(company_df: pandas.DataFrame):
     # Building the CSV
     for index, row in company_df.iterrows():
         ticker = yf.Ticker(row["Symbol"])
-        print(ticker)
         if ticker is not None:
             for col in new_columns:
                 if col in ticker.info:
                     if ticker.info[col] is not None:
-                        # print(round(ticker.info[col], 2), type(ticker.info[col]))
                         company_df.at[index, col] = round(ticker.info[col], 2)
                     else:
                         company_df.at[index, col] = None
 
-    company_df.to_csv("finalized_stock_metrics_all.csv")
+    company_df.to_csv("analyst_preds_and_metrics.csv")
 
 
 def main():

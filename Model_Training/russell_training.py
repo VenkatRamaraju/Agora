@@ -63,7 +63,7 @@ def get_data():
                 company_dict[row['Symbol']] = row['Name']
 
                 training_row = {'Symbol': row['Symbol'], 'Name': company_dict[row['Symbol']],
-                                'Buy': master_dict[row['Symbol']], 'Analyst': analyst_dict[row['Symbol']]}
+                                'Analyst_Numeric': master_dict[row['Symbol']], 'Analyst_String': analyst_dict[row['Symbol']]}
                 training_df = training_df.append(training_row, ignore_index=True)
 
     master_df = pd.DataFrame(columns=['Symbol', 'Name', 'Buy', 'Analyst'])
