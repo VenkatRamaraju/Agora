@@ -9,6 +9,7 @@ Functionality implemented:
 
 # Libraries and Dependencies
 import demoji
+import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -20,7 +21,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from headlines_scraper import create_array
 from pathlib import Path
-import numpy as np
+from selenium.webdriver.chrome.service import Service
+import time
 
 # Setup
 demoji.download_codes()
@@ -36,7 +38,7 @@ def get_yahoo_conversations(stock):
     # Selenium Web Driver to click load more button and continue to retrieve conversation
     option = webdriver.ChromeOptions()
     option.add_argument('headless')  # Runs without opening browser
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=option)
 
     # Attempt to scroll as much as possible
     driver.get(url)
@@ -47,7 +49,7 @@ def get_yahoo_conversations(stock):
             WebDriverWait(driver, 5, ignored_exceptions).until(
                 EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
-            element = driver.find_element_by_xpath('//*[@id="canvass-0-CanvassApplet"]/div/button')
+            element = driver.find_element(By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')
             driver.execute_script("arguments[0].click();", element)
         except Exception as e:
             print("Error on iteration", i, "- Exception:", e)
@@ -117,7 +119,6 @@ def main():
             output(overall_conversations, stock)
         except RuntimeError as e:
             print(e, "was handled")
-
 
 if __name__ == "__main__":
     main()
