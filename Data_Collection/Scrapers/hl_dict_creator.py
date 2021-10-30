@@ -255,3 +255,4 @@ def get_cnbc_headlines(ticker):
 
     return cnbc_hls
 
+

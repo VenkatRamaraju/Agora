@@ -2,8 +2,7 @@ from flask import Flask, render_template, request, redirect
 import sqlite3
 from sqlite3 import Error
 import os.path
-from fetch_top_stocks_yf import get_trending_stocks
-from price import get_last_price
+import web_app_utilities
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -27,7 +26,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    trending_stocks = get_trending_stocks()
+    trending_stocks = web_app_utilities.get_trending_stocks()
     conn = get_db_connection()
 
     all_tickers_sql_preds = conn.execute(
@@ -93,13 +92,10 @@ def data():
         return render_template("dne.html",
                                ticker_name=ticker_name)
 
-    stock_price_dict = get_last_price(ticker_name)
+    stock_price_dict = web_app_utilities.get_last_price(ticker_name)
 
     predictions_sql = f"""
-            Select ticker, company_name, analyst_pred, agora_pred, 
-                   Round(headline_polarity, 2) as headline_polarity,
-                   Round(conversation_polarity, 2) as conversation_polarity 
-                   from TickerPredictions where ticker="{ticker_name}";
+            Select * from TickerPredictions where ticker="{ticker_name}";
             """
     ticker_preds = conn.execute(predictions_sql).fetchall()
 

@@ -30,7 +30,7 @@ def get_yahoo_conversations(stock):
     """
     Parses yahoo finance conversations page to get conversations related to the stock.
     """
-    stock = stock.replace('.', '-')     # In case a stock contains ".", EX: BRK.B
+    stock = stock.replace('.', '-')  # In case a stock contains ".", EX: BRK.B
     url = "https://finance.yahoo.com/quote/" + stock + "/community?p=" + stock
 
     # Selenium Web Driver to click load more button and continue to retrieve conversation
@@ -45,12 +45,12 @@ def get_yahoo_conversations(stock):
     while i < 50:
         try:
             WebDriverWait(driver, 5, ignored_exceptions).until(
-            EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
+                EC.element_to_be_clickable((By.XPATH, '//*[@id="canvass-0-CanvassApplet"]/div/button')))
 
             element = driver.find_element_by_xpath('//*[@id="canvass-0-CanvassApplet"]/div/button')
             driver.execute_script("arguments[0].click();", element)
         except Exception as e:
-            print(e)
+            print("Error on iteration", i, "- Exception:", e)
         i += 1
 
     # Retrieving soup after load more button is clicked
@@ -110,6 +110,7 @@ def main():
     tickers = list(stocks_dict.keys())
 
     for stock in tickers:
+        print("\n\n===================================================================")
         print("Getting conversations for:", stock)
         try:
             overall_conversations = get_all_conversations(stock)

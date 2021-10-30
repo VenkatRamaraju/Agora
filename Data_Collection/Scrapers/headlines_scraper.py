@@ -148,7 +148,7 @@ def get_all_headlines(stock, company_name):
         hl_list = hl_dict_creator.get_reuters_headlines(stock)
         for hl in hl_list:
             hl_tuple = (hl['title'], hl['url'], hl['publisher'])
-            relevant = contains_company_name(hl['title'], company_name)
+            relevant = stock in hl['title'] or contains_company_name(hl['title'], company_name)
             # relevant = True
             if relevant:
                 total_sources.append(hl_tuple)
@@ -159,7 +159,7 @@ def get_all_headlines(stock, company_name):
         hl_list = hl_dict_creator.get_cnbc_headlines(stock)
         for hl in hl_list:
             hl_tuple = (hl['title'], hl['url'], hl['publisher'])
-            relevant = contains_company_name(hl['title'], company_name)
+            relevant = stock in hl['title'] or contains_company_name(hl['title'], company_name)
             # relevant = True
             if relevant:
                 total_sources.append(hl_tuple)
@@ -170,7 +170,7 @@ def get_all_headlines(stock, company_name):
         hl_list = hl_dict_creator.get_yahoo_headlines(stock)
         for hl in hl_list:
             hl_tuple = (hl['title'], hl['url'], hl['publisher'])
-            relevant = contains_company_name(hl['title'], company_name)
+            relevant = stock in hl['title'] or contains_company_name(hl['title'], company_name)
             # relevant = True
             if relevant:
                 total_sources.append(hl_tuple)
@@ -181,7 +181,7 @@ def get_all_headlines(stock, company_name):
         hl_list = hl_dict_creator.get_cnn_headlines(stock)
         for hl in hl_list:
             hl_tuple = (hl['title'], hl['url'], hl['publisher'])
-            relevant = contains_company_name(hl['title'], company_name)
+            relevant = stock in hl['title'] or contains_company_name(hl['title'], company_name)
             # relevant = True
             if relevant:
                 total_sources.append(hl_tuple)
@@ -192,7 +192,7 @@ def get_all_headlines(stock, company_name):
         hl_list = hl_dict_creator.get_business_insider_headlines(stock)
         for hl in hl_list:
             hl_tuple = (hl['title'], hl['url'], hl['publisher'])
-            relevant = contains_company_name(hl['title'], company_name)
+            relevant = stock in hl['title'] or contains_company_name(hl['title'], company_name)
             # relevant = True
             if relevant:
                 total_sources.append(hl_tuple)
@@ -203,7 +203,7 @@ def get_all_headlines(stock, company_name):
         hl_list = hl_dict_creator.get_google_finance_headlines(stock)
         for hl in hl_list:
             hl_tuple = (hl['title'], hl['url'], hl['publisher'])
-            relevant = contains_company_name(hl['title'], company_name)
+            relevant = stock in hl['title'] or contains_company_name(hl['title'], company_name)
             # relevant = True
             if relevant:
                 total_sources.append(hl_tuple)
@@ -214,7 +214,7 @@ def get_all_headlines(stock, company_name):
         hl_list = hl_dict_creator.get_morningstar_headlines(stock)
         for hl in hl_list:
             hl_tuple = (hl['title'], hl['url'], hl['publisher'])
-            relevant = contains_company_name(hl['title'], company_name)
+            relevant = stock in hl['title'] or contains_company_name(hl['title'], company_name)
             # relevant = True
             if relevant:
                 total_sources.append(hl_tuple)

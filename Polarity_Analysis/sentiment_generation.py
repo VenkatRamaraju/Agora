@@ -42,14 +42,14 @@ def get_headline_sentiments():
     Analyze polarities of the given stock tickers, based on terminologies inserted in SentimentIntensityAnalyzer.
     Prints out the aggregated results to CSV.
     """
-    headlines_csv = pd.read_csv("../Data_Collection/Headlines_2.csv")
+    headlines_csv = pd.read_csv("../Data_Collection/headlines.csv")
     sum_of_polarities = {}
     count_of_headlines = {}
 
     # Aggregates data across headlines
     for index, row in headlines_csv.iterrows():
         try:
-            lemma_text = lemmatizer.lemmatize(str(row['headline']))
+            lemma_text = lemmatizer.lemmatize(str(row['Headline']))
             scores = sia.polarity_scores(lemma_text)
             row["Polarity"] = scores["compound"]
 
@@ -80,7 +80,9 @@ def generate_aggregated_csv():
             if ticker in conversations_map:
                 polarity = conversations_map[ticker]
             else:
-                polarity = twitter_sentiment(ticker)
+                # TODO: uncomment for twitter stuff
+                # polarity = twitter_sentiment(ticker)
+                continue
             row = {"Ticker": ticker, "Conversations": polarity, "Headlines": headlines_polarity}
             aggregated_df = aggregated_df.append(row, ignore_index=True)
         except RuntimeError as e:

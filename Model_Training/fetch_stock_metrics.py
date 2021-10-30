@@ -11,7 +11,7 @@ import pandas
 import yfinance as yf
 import pandas as pd
 
-all_comps = pd.read_csv("final_db.csv", index_col=0)
+all_comps = pd.read_csv("output_csvs/final_db.csv", index_col=0)
 
 
 def get_stock_metrics(company_df: pandas.DataFrame):
@@ -23,6 +23,10 @@ def get_stock_metrics(company_df: pandas.DataFrame):
     new_columns = ['beta', 'profitMargins', 'forwardEps', 'bookValue', 'heldPercentInstitutions',
                    'shortRatio', 'shortPercentOfFloat']
 
+    del company_df["Name"]
+    del company_df["Buy"]
+    del company_df["Analyst"]
+
     company_df = company_df.reindex(columns=company_df.columns.tolist() + new_columns)
 
     for column in new_columns:
@@ -31,6 +35,8 @@ def get_stock_metrics(company_df: pandas.DataFrame):
     # Building the CSV
     for index, row in company_df.iterrows():
         ticker = yf.Ticker(row["Symbol"])
+        print("Getting metrics for:", row["Symbol"])
+        print()
         if ticker is not None:
             for col in new_columns:
                 if col in ticker.info:
@@ -39,7 +45,7 @@ def get_stock_metrics(company_df: pandas.DataFrame):
                     else:
                         company_df.at[index, col] = None
 
-    company_df.to_csv("analyst_preds_and_metrics.csv")
+    company_df.to_csv("stock_metric_data.csv")
 
 
 def main():
