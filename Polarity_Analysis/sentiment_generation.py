@@ -80,9 +80,7 @@ def generate_aggregated_csv():
             if ticker in conversations_map:
                 polarity = conversations_map[ticker]
             else:
-                # TODO: uncomment for twitter stuff
-                # polarity = twitter_sentiment(ticker)
-                continue
+                polarity = twitter_sentiment(ticker)
             row = {"Ticker": ticker, "Conversations": polarity, "Headlines": headlines_polarity}
             aggregated_df = aggregated_df.append(row, ignore_index=True)
         except RuntimeError as e:
