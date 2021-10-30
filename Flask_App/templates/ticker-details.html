@@ -38,7 +38,7 @@
         {% endif %}
 
         <div style="display: flex; flex-direction: row; align-items: flex-start;">
-            {% if info_row[4] and info_row[5] %}
+            {% if info_row[4] != None or info_row[5] != None %}
             <div style="display: flex; flex-direction: column; padding-right: 2rem;">
                 <h4><small class="text-muted">Headline Polarity<a href="/about#polarity-scores"><sup class="text-muted">2</sup></a>: </small>{{info_row[4]}}</h4>
                 <h4><small class="text-muted">Conversation Polarity<a href="/about#polarity-scores"><sup class="text-muted">3</sup></a>: </small>{{info_row[5]}}</h4>
