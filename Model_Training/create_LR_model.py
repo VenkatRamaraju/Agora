@@ -30,18 +30,16 @@ def run_model(added_cols):
     columns have been feature selected to derive the highest accuracy.
     :param added_cols: set of columns that will be used to train the machine learning model.
     """
-    training_df = pd.read_csv('../Polarity_Analysis/aggregated_polarities.csv', index_col=[0])
-    list_of_cols = [x for x in training_df.columns if x in ['Buy', 'Ticker', 'Headlines', 'Conversations']]
+    training_df = pd.read_csv('final_dataset.csv', index_col=[0])
+    list_of_cols = [x for x in training_df.columns if x in ['Buy', 'Ticker', 'headline_polarity', 'convo_polarity']]
     for to_be_added in added_cols:
         list_of_cols.append(to_be_added)
 
     training_df = training_df[list_of_cols]
     training_df = training_df.dropna()
 
-    new_df = training_df
-
-    training_df['Headlines'] = training_df['Headlines'] * 2
-    training_df['Conversations'] = training_df['Conversations'] * 2
+    training_df['headline_polarity'] = training_df['headline_polarity'] * 2
+    training_df['convo_polarity'] = training_df['convo_polarity'] * 2
     
     # Creating training and testing datasets
     X_total = training_df[[x for x in training_df.columns if x not in ['Buy', 'Ticker']]]
@@ -64,6 +62,9 @@ def run_model(added_cols):
     loaded_model = pickle.load(open('pickle_model.sav', 'rb'))
     result = loaded_model.score(X_test, y_test)
 
+def main():
+    run_model(['beta', 'profitMargins', 'forwardEps', 'bookValue', 'heldPercentInstitutions',
+               'shortRatio', 'shortPercentOfFloat'])
 
-run_model(['beta', 'profitMargins', 'forwardEps', 'bookValue', 'heldPercentInstitutions',
-           'shortRatio', 'shortPercentOfFloat'])
+if __name__ == "__main__":
+    main()
