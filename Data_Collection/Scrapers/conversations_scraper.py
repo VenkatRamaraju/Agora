@@ -120,5 +120,6 @@ def main():
         except RuntimeError as e:
             print(e, "was handled")
 
+
 if __name__ == "__main__":
     main()
