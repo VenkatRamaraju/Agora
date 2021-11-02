@@ -86,6 +86,7 @@ def cleanup_conversations():
         print("LOL")
         os.remove(os.path.join(dir, f))
 
+
 def main():
     global all_companies_data
     # take aggregated_polarities.csv from /Polarity_Analysis/ and append to overall company list
