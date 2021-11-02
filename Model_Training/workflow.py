@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-import yfinance as yf
 import pickle
+import os
 pd.set_option("display.max_rows", None, "display.max_columns", None)
 
 
@@ -80,6 +80,12 @@ def generate_predictions():
         all_companies_data["agora_pred"][company_row.index.item()] = row["agora_pred"]
 
 
+def cleanup_conversations():
+    dir = '../Data_Collection/Conversations'
+    for f in os.listdir(dir):
+        print("LOL")
+        os.remove(os.path.join(dir, f))
+
 def main():
     global all_companies_data
     # take aggregated_polarities.csv from /Polarity_Analysis/ and append to overall company list
@@ -91,6 +97,7 @@ def main():
     generate_predictions()
 
     all_companies_data.to_csv("final_dataset.csv")
+    cleanup_conversations()
 
 
 if __name__ == "__main__":
