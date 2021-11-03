@@ -83,8 +83,8 @@ def generate_predictions():
 def cleanup_conversations():
     dir = '../Data_Collection/Conversations'
     for f in os.listdir(dir):
-        print("LOL")
-        os.remove(os.path.join(dir, f))
+        if f.endswith('csv'):
+            os.remove(os.path.join(dir, f))
 
 
 def main():
