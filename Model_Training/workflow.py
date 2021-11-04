@@ -2,6 +2,11 @@ import pandas as pd
 import numpy as np
 import pickle
 import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+
 pd.set_option("display.max_rows", None, "display.max_columns", None)
 
 
@@ -68,9 +73,25 @@ def generate_predictions():
     training_rows['convo_polarity'] = training_rows['convo_polarity'] * 2
 
     x_total = training_rows[[x for x in training_rows.columns if x not in ['Buy', 'Symbol']]]
+    y_total = training_rows["Buy"]
+
+    X_train, X_test, y_train, y_test = train_test_split(x_total, y_total, test_size=0.33, random_state=42)
 
     # get the predictions for all stocks with headlines/convos
     predictions = lr_model.predict(x_total)
+
+    y_predictions = lr_model.predict(X_test)
+    test_acc_score = metrics.accuracy_score(y_test, y_predictions)
+
+    # create a confusion matrix
+    cm = metrics.confusion_matrix(y_total, predictions)
+    plt.figure(figsize=(9, 9))
+    sns.heatmap(cm, annot=True, fmt=".1f", linewidths=.5, square=True, cmap='Blues_r')
+    plt.ylabel('Actual Ratings')
+    plt.xlabel('Predicted Ratings')
+    all_sample_title = 'Accuracy Score: {0}'.format(test_acc_score)
+    plt.title(all_sample_title, size=15)
+    plt.show()
 
     training_rows["agora_pred"] = predictions
 
