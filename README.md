@@ -2,9 +2,9 @@
 
 #### Sentiment Analysis Stock Predictor
 
-![Homepage](/Mockups/homepage.png?raw=true)
+![Homepage](/Interface/homepage.png?raw=true)
 
-![Ticker Search Page](/Mockups/ticker_page.png?raw=true)
+![Ticker Search Page](/Interface/ticker_page.png?raw=true)
 
 ## Usage
 
