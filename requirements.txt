@@ -1,5 +1,6 @@
 pandas~=1.2.0
 yfinance~=0.1.55
+gunicorn==20.1.0
 demoji~=0.4.0
 requests>=2.25.1
 numpy~=1.19.5
