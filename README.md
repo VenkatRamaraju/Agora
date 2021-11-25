@@ -18,13 +18,13 @@
 
 ### Containerized
 
-1. Clone this repository to your local machine
+1. Clone this repository to your local machine.
 
-1. Build the container with `docker build . -t agora`
+2. Build the container with `docker build . -t agora`.
 
-1. Run the container with `docker run -p5000:5000 agora`
+3. Run the container with `docker run -p5000:5000 agora`.
 
-1. Go to `http://localhost:5000/` in a web browser.
+4. Go to `http://localhost:5000/` in a web browser.
 
 ## Technical Information
 
