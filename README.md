@@ -40,3 +40,7 @@ This application uses
 ## Disclaimer
 This application does not offer investment advice. Do not invest what you cannot lose. You should
 carry out your own independent research before making any investment decision.
+
+## License
+
+MIT
