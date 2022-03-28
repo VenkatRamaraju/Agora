@@ -44,3 +44,6 @@ carry out your own independent research before making any investment decision.
 ## License
 
 MIT
+
+## Publication
+Agora was presented at the IEEE International Conference on Semantic Computing in January, 2022. The corresponding research paper is published in the IEEE Xplore digital library at https://ieeexplore.ieee.org/document/9736313.
