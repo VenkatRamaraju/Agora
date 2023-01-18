@@ -19,6 +19,7 @@ from sklearn.metrics import accuracy_score
 from itertools import combinations
 import time
 import pickle
+from lazypredict.Supervised import LazyClassifier
 
 # Global data
 new_training_df = pd.DataFrame()
